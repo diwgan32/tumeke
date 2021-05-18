@@ -1,4 +1,4 @@
 #!/bin/bash
-yq eval -j $PWD/config/rula.yaml &> $PWD/pytumeke/config/rula.json
-yq eval -j $PWD/config/reba.yaml &> $PWD/pytumeke/config/reba.json
-yq eval -j $PWD/config/niosh.yaml &> $PWD/pytumeke/config/niosh.json
+yq eval -j $PWD/config/rula.yaml &> $PWD/pytumeke/src/pytumeke/config/rula.json
+yq eval -j $PWD/config/reba.yaml &> $PWD/pytumeke/src/pytumeke/config/reba.json
+yq eval -j $PWD/config/niosh.yaml &> $PWD/pytumeke/src/pytumeke/config/niosh.json

@@ -1,0 +1,510 @@
+{
+  "constants": {
+    "light_green": {
+      "Color": "rgba(109, 208, 163, 1.0)"
+    },
+    "green": {
+      "Color": "rgba(20, 210, 184, 1.0)"
+    },
+    "orange": {
+      "Color": "rgba(234, 130, 130, 1.0)"
+    },
+    "red": {
+      "Color": "rgba(184, 15, 10, 1.0)"
+    },
+    "dark_red": {
+      "Color": "rgba(133, 4, 0, 1.0)"
+    },
+    "acceptable": {
+      "TranslateText": "rulareba.score.acceptable",
+      "ShortText": "Acceptable",
+      "Color": "rgba(109, 208, 163, 1.0)"
+    },
+    "low": {
+      "TranslateText": "rulareba.score.low",
+      "ShortText": "Low",
+      "Color": "rgba(20, 210, 184, 1.0)"
+    },
+    "medium": {
+      "TranslateText": "rulareba.score.medium",
+      "ShortText": "Medium",
+      "Color": "rgba(234, 130, 130, 1.0)"
+    },
+    "high": {
+      "TranslateText": "rulareba.score.high",
+      "ShortText": "High",
+      "Color": "rgba(184, 15, 10, 1.0)"
+    },
+    "vhigh": {
+      "TranslateText": "rulareba.score.vhigh",
+      "ShortText": "Very High",
+      "Color": "rgba(133, 4, 0, 1.0)"
+    }
+  },
+  "Colors": {
+    "acceptable": {
+      "Color": "rgba(109, 208, 163, 1.0)"
+    },
+    "low": {
+      "Color": "rgba(20, 210, 184, 1.0)"
+    },
+    "medium": {
+      "Color": "rgba(234, 130, 130, 1.0)"
+    },
+    "high": {
+      "Color": "rgba(184, 15, 10, 1.0)"
+    },
+    "vhigh": {
+      "Color": "rgba(133, 4, 0, 1.0)"
+    }
+  },
+  "BodyPartScores": {
+    "Overall": {
+      "1": {
+        "TranslateText": "rulareba.score.acceptable",
+        "ShortText": "Acceptable",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "2": {
+        "TranslateText": "rulareba.score.low",
+        "ShortText": "Low",
+        "Color": "rgba(20, 210, 184, 1.0)"
+      },
+      "3": {
+        "TranslateText": "rulareba.score.low",
+        "ShortText": "Low",
+        "Color": "rgba(20, 210, 184, 1.0)"
+      },
+      "4": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "5": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "6": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "7": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "8": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "9": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "10": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "11": {
+        "TranslateText": "rulareba.score.vhigh",
+        "ShortText": "Very High",
+        "Color": "rgba(133, 4, 0, 1.0)"
+      },
+      "12": {
+        "TranslateText": "rulareba.score.vhigh",
+        "ShortText": "Very High",
+        "Color": "rgba(133, 4, 0, 1.0)"
+      },
+      "13": {
+        "TranslateText": "rulareba.score.vhigh",
+        "ShortText": "Very High",
+        "Color": "rgba(133, 4, 0, 1.0)"
+      },
+      "14": {
+        "TranslateText": "rulareba.score.vhigh",
+        "ShortText": "Very High",
+        "Color": "rgba(133, 4, 0, 1.0)"
+      },
+      "15": {
+        "TranslateText": "rulareba.score.vhigh",
+        "ShortText": "Very High",
+        "Color": "rgba(133, 4, 0, 1.0)"
+      },
+      "16": {
+        "TranslateText": "rulareba.score.vhigh",
+        "ShortText": "Very High",
+        "Color": "rgba(133, 4, 0, 1.0)"
+      }
+    },
+    "Neck": {
+      "1": {
+        "TranslateText": "rulareba.score.acceptable",
+        "ShortText": "Acceptable",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "2": {
+        "TranslateText": "rulareba.score.low",
+        "ShortText": "Low",
+        "Color": "rgba(20, 210, 184, 1.0)"
+      },
+      "3": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "4": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "5": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "6": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      }
+    },
+    "Upper Arm": {
+      "1": {
+        "TranslateText": "rulareba.score.acceptable",
+        "ShortText": "Acceptable",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "2": {
+        "TranslateText": "rulareba.score.low",
+        "ShortText": "Low",
+        "Color": "rgba(20, 210, 184, 1.0)"
+      },
+      "3": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "4": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "5": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "6": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      }
+    },
+    "Lower Arm": {
+      "1": {
+        "TranslateText": "rulareba.score.acceptable",
+        "ShortText": "Acceptable",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "2": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      }
+    },
+    "Trunk": {
+      "1": {
+        "TranslateText": "rulareba.score.acceptable",
+        "ShortText": "Acceptable",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "2": {
+        "TranslateText": "rulareba.score.low",
+        "ShortText": "Low",
+        "Color": "rgba(20, 210, 184, 1.0)"
+      },
+      "3": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "4": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "5": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "6": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      }
+    },
+    "Leg": {
+      "1": {
+        "TranslateText": "rulareba.score.acceptable",
+        "ShortText": "Acceptable",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "2": {
+        "TranslateText": "rulareba.score.low",
+        "ShortText": "Low",
+        "Color": "rgba(20, 210, 184, 1.0)"
+      },
+      "3": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "4": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      }
+    },
+    "Wrist": {
+      "1": {
+        "TranslateText": "rulareba.score.acceptable",
+        "ShortText": "Acceptable",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "2": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "3": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      }
+    }
+  },
+  "ComponentValues": {
+    "Neck": {
+      "Score": {
+        "1": {
+          "Text": "0° - 20° forward",
+          "Warning": null
+        },
+        "2": {
+          "Text": "20°+ forward/backward",
+          "Warning": "Neck bent"
+        },
+        "Base": 1,
+        "type": "select",
+        "label": "Angle"
+      },
+      "SideBend": {
+        "1": {
+          "Text": "Yes",
+          "Warning": "Neck side bending"
+        },
+        "0": {
+          "Text": "No",
+          "Warning": null
+        },
+        "label": "Side bending",
+        "type": "boolean",
+        "Base": 0
+      },
+      "Twist": {
+        "1": {
+          "Text": "Yes",
+          "Warning": "Neck twisted"
+        },
+        "0": {
+          "Text": "No",
+          "Warning": null
+        },
+        "label": "Twisted",
+        "type": "boolean",
+        "Base": 0
+      },
+      "Image": "bodyParts/neck.png"
+    },
+    "Upper Arm": {
+      "Score": {
+        "1": {
+          "Text": "20° in front - 20° behind",
+          "Warning": null
+        },
+        "2": {
+          "Text": "20°+ behind OR 20° - 45° in front",
+          "Warning": "Upper arm bent slightly"
+        },
+        "3": {
+          "Text": "45° - 90° in front",
+          "Warning": "Upper arm bent forward"
+        },
+        "4": {
+          "Text": "90°+ in front",
+          "Warning": "Upper arm bent very forward"
+        },
+        "Base": 1,
+        "label": "Angle",
+        "TranslateLabel": "rulareba.upperarm.score",
+        "type": "select"
+      },
+      "Abducted": {
+        "1": {
+          "Text": "Yes",
+          "Warning": "Shoulder abducted"
+        },
+        "0": {
+          "Text": "No",
+          "Warning": null
+        },
+        "Base": 0,
+        "label": "Abducted",
+        "TranslateLabel": "rulareba.upperarm.abducted",
+        "type": "boolean"
+      },
+      "ShoulderRaised": {
+        "1": {
+          "Text": "Yes",
+          "Warning": "Shoulders raised"
+        },
+        "0": {
+          "Text": "No",
+          "Warning": null
+        },
+        "Base": 0,
+        "label": "Shoulder raised",
+        "TranslateLabel": "rulareba.upperarm.shoulder_raised",
+        "type": "boolean"
+      },
+      "Image": "bodyParts/shoulder.png"
+    },
+    "Trunk": {
+      "Score": {
+        "1": {
+          "Text": "0°",
+          "Warning": null
+        },
+        "2": {
+          "Text": "0° - 20° forward",
+          "Warning": null
+        },
+        "3": {
+          "Text": "20° - 60° forward",
+          "Warning": "Trunk bent forward too much"
+        },
+        "4": {
+          "Text": "60°+ forward",
+          "Warning": "Trunk bent forward too much"
+        },
+        "label": "Angle",
+        "TranslateLabel": "rulareba.trunk.score",
+        "type": "select",
+        "Base": 1
+      },
+      "SideBend": {
+        "1": {
+          "Text": "Yes",
+          "Warning": "Trunk side bending"
+        },
+        "0": {
+          "Text": "No",
+          "Warning": null
+        },
+        "Base": 0,
+        "label": "Side bending",
+        "TranslateLabel": "rulareba.trunk.sidebend",
+        "type": "boolean"
+      },
+      "Twist": {
+        "1": {
+          "Text": "Yes",
+          "Warning": "Trunk twisted"
+        },
+        "0": {
+          "Text": "No",
+          "Warning": null
+        },
+        "label": "Twisted",
+        "type": "boolean",
+        "TranslateLabel": "rulareba.trunk.twist",
+        "Base": 0
+      },
+      "Image": "bodyParts/back.png"
+    },
+    "Lower Arm": {
+      "Score": {
+        "1": {
+          "Text": "60° - 100°",
+          "Warning": null
+        },
+        "2": {
+          "Text": "0° - 60° OR 100°+",
+          "Warning": "Lower arm not in neutral 90° position"
+        },
+        "label": "Angle",
+        "type": "select",
+        "TranslateLabel": "rulareba.lower_arm.score",
+        "Base": 1
+      },
+      "Image": "bodyParts/arm.png"
+    },
+    "Wrist": {
+      "Score": {
+        "1": {
+          "Text": "15° up - 15° down",
+          "Warning": null
+        },
+        "2": {
+          "Text": "15°+ up OR 15°+ down",
+          "Warning": "Wrist far too bent"
+        },
+        "label": "Angle",
+        "type": "select",
+        "TranslateLabel": "rulareba.wrist.score",
+        "Base": 1
+      },
+      "Image": "bodyParts/wrist.png"
+    },
+    "Leg": {
+      "Score": {
+        "1": {
+          "Text": 0,
+          "Warning": null
+        },
+        "2": {
+          "Text": "30° - 60°",
+          "Warning": null
+        },
+        "3": {
+          "Text": "60°+",
+          "Warning": "Legs bent too much"
+        },
+        "label": "Angle",
+        "type": "select",
+        "TranslateLabel": "rulareba.leg.score",
+        "Base": 1
+      },
+      "FirmlyPlanted": {
+        "1": {
+          "Text": "Yes",
+          "Warning": null
+        },
+        "0": {
+          "Text": "No",
+          "Warning": null
+        },
+        "label": "Firmly planted",
+        "type": "boolean",
+        "Base": 0
+      },
+      "Image": "bodyParts/leg.png"
+    }
+  }
+}
