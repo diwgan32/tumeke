@@ -1,0 +1,45 @@
+{
+  "name": "@tumeke/tumekejs",
+  "version": "1.0.46",
+  "description": "Common code for tumeke js",
+  "main": "lib/index.js",
+  "scripts": {
+    "pretest": "./compile.sh",
+    "test": "jest",
+    "prepublish": "./compile.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diwgan32/tumekejs.git"
+  },
+  "author": "Diwakar Ganesan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diwgan32/tumekejs/issues"
+  },
+  "homepage": "https://github.com/diwgan32/tumekejs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.14.1",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.26.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "jest": "^26.6.3",
+    "regenerator-runtime": "^0.13.7",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.13.16",
+    "lodash": "^4.17.21",
+    "yaml-jest": "^1.0.5"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}

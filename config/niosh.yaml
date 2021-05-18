@@ -1,0 +1,144 @@
+constants:
+  SAMPLE_SIZE_SECONDS: 2
+  FM_FREQUENCIES: [0, .2, .5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  FM_SHORT_DURATION: [1.0, 1.0, .97, .91, .88, .84, .80, .75, .70, .60, .52, .45, .41, .37, .34, .31, .28, 0]
+  FM_MODERATE_DURATION: [.95, .95, .92, .88, .84, .79, .72, .60, .50, .42, .35, .30, .26, .23, .21, 0, 0, 0]
+  FM_LONG_DURATION: [.85, .81, .75, .65, .55, .45, .35, .27, .22, .18, .15, .13, 0, 0, 0, 0, 0, 0]
+  FM_SHORT_DURATION_VERTICAL_CUTOFF: 13
+  FM_MODERATE_DURATION_VERTICAL_CUTOFF: 10
+  FM_LONG_DURATION_VERTICAL_CUTOFF: 8
+
+  black: &black
+    Color:
+      rgba(15, 15, 30, 0.9)
+
+  light_green: &light_green
+    Color:
+      rgba(109, 208, 163, 1.0)
+
+  green: &green
+    Color:
+      rgba(20, 210, 184, 1.0)
+
+  orange: &orange
+    Color:
+      rgba(234, 130, 130, 1.0)
+
+  red: &red
+    Color:
+      rgba(184, 15, 10, 1.0)
+
+  missing: &missing
+    TranslateText: niosh.score.missing
+    ShortText: Missing average load
+    <<: *black
+  acceptable: &good
+    TranslateText: niosh.score.good
+    ShortText: Good
+    <<: *light_green
+  low: &fair
+    TranslateText: niosh.score.fair
+    ShortText: Fair
+    <<: *orange
+  medium: &poor
+    TranslateText: niosh.score.poor
+    ShortText: Poor
+    <<: *red
+
+
+ComponentValues:
+  li:
+    "[NaN, 0]":
+      Text: Missing average load
+      <<: *missing
+      Warning: ~
+    "[0, 1.5]":
+      Text: Safe weight to lift
+      <<: *good
+      Warning: ~
+    "[1.5, 2.5]":
+      Text: Weight moderately heavy
+      <<: *fair
+      Warning: Object heavy
+    "[2.5, 10.0]":
+      Text: Weight heavy for given task
+      <<: *poor
+      Warning: Object far too heavy
+    "[10.0, NaN]":
+      Text: Weight heavy for given task
+      <<: *poor
+      Warning: Object far too heavy
+  hm:
+    "[0, .4]":
+      <<: *poor
+      Warning: Object too far away horizontally
+    "[.4, .6]":
+      <<: *fair
+      Warning: Object too far away horizontally
+    "[.6, 1.0]":
+      <<: *good
+      Warning: ~
+  vm:
+    "[0, .8]":
+      <<: *poor
+      Warning: Object begins too far away vertically
+    "[.8, .9]":
+      <<: *fair
+      Warning: ~
+    "[.9, 1.0]":
+      <<: *good
+      Warning: ~
+  dm:
+    "[0, .9]":
+      <<: *poor
+      Warning: Object travels too far
+    "[.9, .95]":
+      <<: *fair
+      Warning: ~
+    "[.95, 1.0]":
+      <<: *good
+      Warning: ~
+  am:
+    "[0, .7]":
+      <<: *poor
+      Warning: Person twists too much
+    "[.7, .9]":
+      <<: *fair
+      Warning: ~
+    "[.9, 1.0]":
+      <<: *good
+      Warning: ~
+  fm:
+    "[0, .45]":
+      <<: *poor
+      Warning: Person twists too much
+    "[.45, .8]":
+      <<: *fair
+      Warning: ~
+    "[.8, 1.0]":
+      <<: *good
+      Warning: ~
+
+  
+CouplingStatus:
+  GOOD: 0
+  FAIR: 1
+  POOR: 2
+
+DurationStatus:
+  SHORT: 0
+  MODERATE: 1
+  LONG: 2
+
+HeightConstantsStandard:
+  LESS_FOUR: 0
+  FOUR_TO_FOUR_HALF: 1
+  FOUR_HALF_TO_FIVE: 2
+  FIVE_TO_FIVE_HALF: 3
+  FIVE_HALF_TO_SIX: 4
+  SIX_TO_SIX_HALF: 5
+  SIX_HALF_PLUS: 6
+
+Units:
+  STANDARD: 0
+  METRIC: 1

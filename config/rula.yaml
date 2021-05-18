@@ -1,0 +1,343 @@
+---
+constants:
+  light_green: &light_green
+    Color:
+      rgba(109, 208, 163, 1.0)
+
+  green: &green
+    Color:
+      rgba(0, 0, 0, 1.0)
+
+  orange: &orange
+    Color:
+      rgba(0, 0, 255, 1.0)
+
+  red: &red
+    Color:
+      rgba(184, 15, 10, 1.0)
+
+  acceptable: &acceptable
+    TranslateText: rulareba.score.acceptable
+    ShortText: Acceptable
+    <<: *light_green
+  low: &low
+    TranslateText: rulareba.score.low
+    ShortText: Low
+    <<: *green
+  medium: &medium
+    TranslateText: rulareba.score.medium
+    ShortText: Medium
+    <<: *orange
+  high: &high
+    TranslateText: rulareba.score.high
+    ShortText: High
+    <<: *red
+
+Colors:
+  acceptable: *light_green
+  low: *green
+  medium: *orange
+  high: *red
+
+BodyPartScores:
+  Overall:
+    1:
+      << : *acceptable
+    2:
+      << : *acceptable
+    3:
+      << : *low
+    4:
+      << : *low
+    5: 
+      << : *medium
+    6:
+      << : *medium
+    7:
+      << : *high
+  Neck:
+    1:
+      << : *acceptable
+    2:
+      << : *low
+    3:
+      << : *medium
+    4:
+      << : *medium
+    5:
+      << : *high
+    6:
+      << : *high
+  Upper Arm:
+    1:
+      << : *acceptable
+    2:
+      << : *low
+    3:
+      << : *medium
+    4:
+      << : *medium
+    5:
+      << : *high
+    6:
+      << : *high
+  Lower Arm:
+    1:
+      << : *low
+    2:
+      << : *medium
+    3:
+      << : *high
+  Trunk:
+    1:
+      << : *acceptable
+    2:
+      << : *low
+    3:
+      << : *medium
+    4:
+      << : *medium
+    5:
+      << : *high
+    6:
+      << : *high
+  Wrist:
+    1:
+      << : *acceptable
+    2:
+      << : *low
+    3:
+      << : *medium
+    4:
+      << : *high
+
+ComponentValues:
+  Neck:
+    Score:
+      1:
+        Text: 0° - 10° forward
+        TranslateText: rula.components.neck.score.1.text
+        TranslateWarning: rula.components.neck.score.1.warning
+        Warning: ~
+      2:
+        Text: 10° - 20° forward
+        TranslateText: rula.components.neck.score.2.text
+        TranslateWarning: rula.components.neck.score.2.warning
+        Warning: ~
+      3:
+        Text: 20°+ forward
+        TranslateText: rula.components.neck.score.3.text
+        TranslateWarning: rula.components.neck.score.3.warning
+        Warning: Neck bent forward too much
+      4:
+        Text: 0°+ backward
+        TranslateText: rula.components.neck.score.4.text
+        TranslateWarning: rula.components.neck.score.4.warning
+        Warning: Neck bent backward
+      Base: 1
+      label: Angle
+      TranslateLabel: rulareba.neck.score
+      type: select
+    SideBend:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: rula.components.neck.sidebend.1.warning
+        Warning: Neck side bending
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: rula.components.neck.sidebend.0.warning
+        Warning: ~
+      Base: 0
+      label: Side bending
+      TranslateLabel: rulareba.neck.sidebend
+      type: boolean
+    Twist:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: rula.components.neck.twist.1.warning
+        Warning: Neck twisted
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: rula.components.neck.twist.0.warning
+        Warning: 
+      Base: 0
+      label: Twisted
+      type: boolean
+      TranslateLabel: rulareba.neck.twist
+    Image: bodyParts/neck.png
+  Upper Arm:
+    Score:
+      1:
+        Text: 20° in front - 20° behind
+        TranslateText: rula.components.upperarm.score.1.text
+        TranslateWarning: rula.components.upperarm.score.1.warning
+        Warning: ~
+      2:
+        Text: 20°+ behind OR 20° - 45° in front
+        TranslateText: rula.components.upperarm.score.2.text
+        TranslateWarning: rula.components.upperarm.score.2.warning
+        Warning: ~
+      3:
+        Text: 45° - 90° in front
+        TranslateText: rula.components.upperarm.score.3.text
+        TranslateWarning: rula.components.upperarm.score.3.warning
+        Warning: Upper arm raised high
+
+      4:
+        Text: 90°+ in front
+        TranslateText: rula.components.upperarm.score.4.text
+        TranslateWarning: rula.components.upperarm.score.4.warning
+        Warning: Upper arm raised too high
+      Base: 1
+      label: Angle
+      TranslateLabel: rulareba.upperarm.score
+      type: select
+    Abducted:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: rula.components.upperarm.abducted.1.warning
+        Warning: Shoulder abducted
+      
+      0:
+        Text: No
+        TranslateWarning: rula.components.upperarm.abducted.0.warning
+        TranslateText: rulareba.no
+        Warning: 
+      Base: 0
+      label: Abducted
+      TranslateLabel: rulareba.upperarm.abducted
+      type: boolean
+    ShoulderRaised:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: rula.components.upperarm.shoulder_raised.1.warning
+        Warning: 
+      
+      0:
+        Text: No
+        TranslateWarning: rula.components.upperarm.shoulder_raised.0.warning
+        TranslateText: rulareba.no
+        Warning: 
+      Base: 0
+      type: boolean
+      label: Shoulder raised
+      TranslateLabel: rulareba.upperarm.shoulder_raised
+    Image: bodyParts/shoulder.png
+  Trunk:
+    Score:
+      1:
+        Text: 0°
+        TranslateText: rula.components.trunk.score.1.text
+        TranslateWarning: rula.components.trunk.score.1.warning
+        Warning: ~
+      2:
+        Text: 0° - 20° forward
+        TranslateText: rula.components.trunk.score.2.text
+        TranslateWarning: rula.components.trunk.score.2.warning
+        Warning: 
+      3:
+        Text: 20° - 60° forward
+        TranslateText: rula.components.trunk.score.3.text
+        TranslateWarning: rula.components.trunk.score.3.warning
+        Warning: Trunk bent forward too much
+      4:
+        Text: 60°+ forward
+        TranslateText: rula.components.trunk.score.4.text
+        TranslateWarning: rula.components.trunk.score.4.warning
+        Warning: Trunk bent forward too much
+      Base: 1
+      label: Angle
+      TranslateLabel: rulareba.trunk.score
+      type: select
+    SideBend:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: rula.components.trunk.sidebend.1.warning
+        Warning: Trunk side bending
+      0:
+        Text: No
+        TranslateWarning: rula.components.trunk.sidebend.0.warning
+        TranslateText: rulareba.no
+        Warning: ~
+      Base: 0
+      label: Side bending
+      TranslateLabel: rulareba.trunk.sidebend
+      type: boolean
+    Twist:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: rula.components.trunk.twist.1.warning
+        Warning: Trunk twisted
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: rula.components.trunk.twist.0.warning
+        Warning: ~
+      Base: 0
+      label: Twisted
+      TranslateLabel: rulareba.trunk.twist
+      type: boolean
+    Image: bodyParts/back.png
+  Lower Arm:
+    Score:
+      1:
+        Text: 60° - 100°
+        TranslateText: rula.components.lowerarm.score.1.text
+        TranslateWarning: rula.components.lowerarm.score.1.warning
+        Warning: ~
+      2:
+        Text: 0° - 60° OR 100°+
+        TranslateText: rula.components.lowerarm.score.2.text
+        TranslateWarning: rula.components.lowerarm.score.2.warning
+        Warning: ~
+      Base: 1
+      label: Angle
+      TranslateLabel: rulareba.lowerarm.score
+      type: select
+    Midline:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: rula.components.lowerarm.midline.1.warning
+        Warning: ~
+      0:
+        Text: No
+        TranslateWarning: rula.components.lowerarm.midline.0.warning
+        TranslateText: rulareba.no
+        Warning: ~
+      Base: 0
+      type: boolean
+      TranslateLabel: rulareba.lowerarm.midline
+      label: Elbow bent from side of body
+    Image: bodyParts/arm.png
+  Wrist:
+    Score:
+      1:
+        Text: 0°
+        TranslateText: rula.components.wrist.score.1.text
+        TranslateWarning: rula.components.wrist.score.1.warning
+        Warning: ~
+      2:
+        Text: 15° up - 15° down
+        TranslateText: rula.components.wrist.score.2.text
+        TranslateWarning: rula.components.wrist.score.2.warning
+        Warning: Wrist bent
+      3:
+        Text: 15°+ up OR 15°+ down
+        TranslateText: rula.components.wrist.score.3.text
+        TranslateWarning: rula.components.wrist.score.3.warning
+        Warning: Wrist far too bent
+      Base: 1
+      type: select
+      label: Angle
+      TranslateLabel: rulareba.wrist.score
+    Image: bodyParts/wrist.png
+... 

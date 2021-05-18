@@ -1,0 +1,318 @@
+---
+constants:
+  light_green: &light_green
+    Color:
+      rgba(109, 208, 163, 1.0)
+
+  green: &green
+    Color:
+      rgba(20, 210, 184, 1.0)
+
+  orange: &orange
+    Color:
+      rgba(234, 130, 130, 1.0)
+
+  red: &red
+    Color:
+      rgba(184, 15, 10, 1.0)
+
+  dark_red: &dark_red
+    Color:
+      rgba(133, 4, 0, 1.0)
+
+  acceptable: &acceptable
+    TranslateText: rulareba.score.acceptable
+    ShortText: Acceptable
+    <<: *light_green
+  low: &low
+    TranslateText: rulareba.score.low
+    ShortText: Low
+    <<: *green
+  medium: &medium
+    TranslateText: rulareba.score.medium
+    ShortText: Medium
+    <<: *orange
+  high: &high
+    TranslateText: rulareba.score.high
+    ShortText: High
+    <<: *red
+  vhigh: &vhigh
+    TranslateText: rulareba.score.vhigh
+    ShortText: Very High
+    <<: *dark_red
+
+Colors:
+  acceptable: *light_green
+  low: *green
+  medium: *orange
+  high: *red
+  vhigh: *dark_red
+
+BodyPartScores:
+  Overall:
+    1:
+      << : *acceptable
+    2:
+      << : *low
+    3:
+      << : *low
+    4:
+      << : *medium
+    5: 
+      << : *medium
+    6:
+      << : *medium
+    7:
+      << : *medium
+    8:
+      << : *high
+    9:
+      << : *high
+    10:
+      << : *high
+    11:
+      << : *vhigh
+    12:
+      << : *vhigh
+    13:
+      << : *vhigh
+    14:
+      << : *vhigh
+    15:
+      << : *vhigh
+    16:
+      << : *vhigh
+  Neck:
+    1:
+      << : *acceptable
+    2:
+      << : *low
+    3: 
+      << : *medium
+    4: 
+      << : *medium
+    5: 
+      << : *high
+    6:
+      << : *high
+  Upper Arm:
+    1:
+      << : *acceptable 
+    2:
+      << : *low
+    3: 
+      << : *medium
+    4: 
+      << : *medium
+    5: 
+      << : *high
+    6:
+      << : *high
+  Lower Arm:
+    1:
+      << : *acceptable
+    2:
+      << : *medium
+  Trunk:
+    1:
+      << : *acceptable
+    2:
+      << : *low
+    3: 
+      << : *medium
+    4: 
+      << : *medium
+    5: 
+      << : *high
+    6:
+      << : *high
+  Leg:
+    1:
+      << : *acceptable
+    2:
+      << : *low
+    3: 
+      << : *medium
+    4: 
+      << : *high
+  Wrist:
+    1:
+      << : *acceptable
+    2:
+      << : *medium
+    3:
+      << : *high
+
+ComponentValues:
+  Neck:
+    Score:
+      1:
+        Text: 0° - 20° forward
+        Warning: ~
+      2:
+        Text: 20°+ forward/backward
+        Warning: Neck bent 
+      Base: 1
+      type: select
+      label: Angle
+    SideBend:
+      1:
+        Text: Yes
+        Warning: Neck side bending
+      0:
+        Text: No
+        Warning: ~
+      label: Side bending
+      type: boolean
+      Base: 0
+    Twist:
+      1:
+        Text: Yes
+        Warning: Neck twisted
+      0:
+        Text: No
+        Warning: 
+      label: Twisted
+      type: boolean
+      Base: 0
+    Image: 'bodyParts/neck.png'
+
+  Upper Arm:
+    Score:
+      1:
+        Text: 20° in front - 20° behind
+        Warning: ~
+      2:
+        Text: 20°+ behind OR 20° - 45° in front
+        Warning: Upper arm bent slightly
+      3:
+        Text: 45° - 90° in front
+        Warning: Upper arm bent forward
+      4:
+        Text: 90°+ in front
+        Warning: Upper arm bent very forward
+      Base: 1
+      label: Angle
+      TranslateLabel: rulareba.upperarm.score
+      type: select
+    Abducted:
+      1:
+        Text: Yes
+        Warning: Shoulder abducted
+      0:
+        Text: No
+        Warning: ~
+      Base: 0
+      label: Abducted
+      TranslateLabel: rulareba.upperarm.abducted
+      type: boolean
+    ShoulderRaised:
+      1:
+        Text: Yes
+        Warning: Shoulders raised
+      0:
+        Text: No
+        Warning: 
+      Base: 0
+      label: Shoulder raised
+      TranslateLabel: rulareba.upperarm.shoulder_raised
+      type: boolean
+    Image: 'bodyParts/shoulder.png'
+
+  Trunk:
+    Score:
+      1:
+        Text: 0°
+        Warning: ~
+      2:
+        Text: 0° - 20° forward
+        Warning: ~
+      3:
+        Text: 20° - 60° forward
+        Warning: Trunk bent forward too much
+      
+      4:
+        Text: 60°+ forward
+        Warning: Trunk bent forward too much
+      label: Angle
+      TranslateLabel: rulareba.trunk.score
+      type: select
+      Base: 1
+    SideBend:
+      1:
+        Text: Yes
+        Warning: Trunk side bending
+      0:
+        Text: No
+        Warning: 
+      Base: 0
+      label: Side bending
+      TranslateLabel: rulareba.trunk.sidebend
+      type: boolean
+    Twist:
+      1:
+        Text: Yes
+        Warning: Trunk twisted
+      0:
+        Text: No
+        Warning: ~
+      label: Twisted
+      type: boolean
+      TranslateLabel: rulareba.trunk.twist
+      Base: 0
+    Image: 'bodyParts/back.png'
+  Lower Arm:
+    Score:
+      1:
+        Text: 60° - 100°
+        Warning: ~
+      2:
+        Text: 0° - 60° OR 100°+
+        Warning: Lower arm not in neutral 90° position
+      label: Angle
+      type: select
+      TranslateLabel: rulareba.lower_arm.score
+      Base: 1
+    Image: 'bodyParts/arm.png'
+  Wrist:
+    Score:
+      1:
+        Text: 15° up - 15° down
+        Warning: 
+      2:
+        Text: 15°+ up OR 15°+ down
+        Warning: Wrist far too bent
+      label: Angle
+      type: select
+      TranslateLabel: rulareba.wrist.score
+      Base: 1
+    Image: 'bodyParts/wrist.png'
+
+  Leg:
+    Score:
+      1:
+        Text: 0
+        Warning: ~
+      2:
+        Text: 30° - 60°
+        Warning: ~
+      3:
+        Text: 60°+
+        Warning: Legs bent too much
+      label: Angle
+      type: select
+      TranslateLabel: rulareba.leg.score
+      Base: 1
+    FirmlyPlanted:
+      1:
+        Text: Yes
+        Warning: ~
+      0:
+        Text: No
+        Warning: ~
+      label: Firmly planted
+      type: boolean
+      Base: 0
+    Image: 'bodyParts/leg.png'
+    
+...
