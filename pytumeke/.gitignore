@@ -1,2 +1,2 @@
-config/*.json
+src/pytumeke/config/*.json
 env/
