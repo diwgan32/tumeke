@@ -18,26 +18,31 @@
     "acceptable": {
       "TranslateText": "rulareba.score.acceptable",
       "ShortText": "Acceptable",
+      "Text": "Acceptable",
       "Color": "rgba(109, 208, 163, 1.0)"
     },
     "low": {
       "TranslateText": "rulareba.score.low",
       "ShortText": "Low",
+      "Text": "Low risk of injury",
       "Color": "rgba(20, 210, 184, 1.0)"
     },
     "medium": {
       "TranslateText": "rulareba.score.medium",
       "ShortText": "Medium",
+      "Text": "Medium risk of injury",
       "Color": "rgba(234, 130, 130, 1.0)"
     },
     "high": {
       "TranslateText": "rulareba.score.high",
       "ShortText": "High",
+      "Text": "High risk of injury",
       "Color": "rgba(184, 15, 10, 1.0)"
     },
     "vhigh": {
       "TranslateText": "rulareba.score.vhigh",
       "ShortText": "Very High",
+      "Text": "Very high risk of injury",
       "Color": "rgba(133, 4, 0, 1.0)"
     }
   },
@@ -63,81 +68,97 @@
       "1": {
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
+        "Text": "Acceptable",
         "Color": "rgba(109, 208, 163, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
+        "Text": "Low risk of injury",
         "Color": "rgba(20, 210, 184, 1.0)"
       },
       "3": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
+        "Text": "Low risk of injury",
         "Color": "rgba(20, 210, 184, 1.0)"
       },
       "4": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
       "5": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
       "6": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
       "7": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
       "8": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
+        "Text": "High risk of injury",
         "Color": "rgba(184, 15, 10, 1.0)"
       },
       "9": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
+        "Text": "High risk of injury",
         "Color": "rgba(184, 15, 10, 1.0)"
       },
       "10": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
+        "Text": "High risk of injury",
         "Color": "rgba(184, 15, 10, 1.0)"
       },
       "11": {
         "TranslateText": "rulareba.score.vhigh",
         "ShortText": "Very High",
+        "Text": "Very high risk of injury",
         "Color": "rgba(133, 4, 0, 1.0)"
       },
       "12": {
         "TranslateText": "rulareba.score.vhigh",
         "ShortText": "Very High",
+        "Text": "Very high risk of injury",
         "Color": "rgba(133, 4, 0, 1.0)"
       },
       "13": {
         "TranslateText": "rulareba.score.vhigh",
         "ShortText": "Very High",
+        "Text": "Very high risk of injury",
         "Color": "rgba(133, 4, 0, 1.0)"
       },
       "14": {
         "TranslateText": "rulareba.score.vhigh",
         "ShortText": "Very High",
+        "Text": "Very high risk of injury",
         "Color": "rgba(133, 4, 0, 1.0)"
       },
       "15": {
         "TranslateText": "rulareba.score.vhigh",
         "ShortText": "Very High",
+        "Text": "Very high risk of injury",
         "Color": "rgba(133, 4, 0, 1.0)"
       },
       "16": {
         "TranslateText": "rulareba.score.vhigh",
         "ShortText": "Very High",
+        "Text": "Very high risk of injury",
         "Color": "rgba(133, 4, 0, 1.0)"
       }
     },
@@ -145,31 +166,37 @@
       "1": {
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
+        "Text": "Acceptable",
         "Color": "rgba(109, 208, 163, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
+        "Text": "Low risk of injury",
         "Color": "rgba(20, 210, 184, 1.0)"
       },
       "3": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
       "4": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
       "5": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
+        "Text": "High risk of injury",
         "Color": "rgba(184, 15, 10, 1.0)"
       },
       "6": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
+        "Text": "High risk of injury",
         "Color": "rgba(184, 15, 10, 1.0)"
       }
     },
@@ -177,31 +204,37 @@
       "1": {
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
+        "Text": "Acceptable",
         "Color": "rgba(109, 208, 163, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
+        "Text": "Low risk of injury",
         "Color": "rgba(20, 210, 184, 1.0)"
       },
       "3": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
       "4": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
       "5": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
+        "Text": "High risk of injury",
         "Color": "rgba(184, 15, 10, 1.0)"
       },
       "6": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
+        "Text": "High risk of injury",
         "Color": "rgba(184, 15, 10, 1.0)"
       }
     },
@@ -209,11 +242,13 @@
       "1": {
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
+        "Text": "Acceptable",
         "Color": "rgba(109, 208, 163, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       }
     },
@@ -221,31 +256,37 @@
       "1": {
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
+        "Text": "Acceptable",
         "Color": "rgba(109, 208, 163, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
+        "Text": "Low risk of injury",
         "Color": "rgba(20, 210, 184, 1.0)"
       },
       "3": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
       "4": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
       "5": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
+        "Text": "High risk of injury",
         "Color": "rgba(184, 15, 10, 1.0)"
       },
       "6": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
+        "Text": "High risk of injury",
         "Color": "rgba(184, 15, 10, 1.0)"
       }
     },
@@ -253,21 +294,25 @@
       "1": {
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
+        "Text": "Acceptable",
         "Color": "rgba(109, 208, 163, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
+        "Text": "Low risk of injury",
         "Color": "rgba(20, 210, 184, 1.0)"
       },
       "3": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
       "4": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
+        "Text": "High risk of injury",
         "Color": "rgba(184, 15, 10, 1.0)"
       }
     },
@@ -275,16 +320,19 @@
       "1": {
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
+        "Text": "Acceptable",
         "Color": "rgba(109, 208, 163, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
+        "Text": "Medium risk of injury",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
       "3": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
+        "Text": "High risk of injury",
         "Color": "rgba(184, 15, 10, 1.0)"
       }
     }
