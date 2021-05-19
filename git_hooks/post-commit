@@ -1,10 +1,9 @@
 #!/bin/bash
 
-if [ -e .commit ]
-    then
+if [ -e .commit ] then
+	echo Exists!
     rm .commit
     git add $PWD/pytumeke/src/pytumeke/config/*
-	git commit --amend
     git commit --amend -C HEAD --no-verify
 fi
 exit 
