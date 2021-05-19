@@ -4,13 +4,13 @@
       "Color": "rgba(109, 208, 163, 1.0)"
     },
     "green": {
-      "Color": "rgba(20, 210, 184, 1.0)"
+      "Color": "rgba(0, 0, 0, 1.0)"
     },
     "orange": {
-      "Color": "rgba(234, 130, 130, 1.0)"
+      "Color": "rgba(0, 0, 255, 1.0)"
     },
     "red": {
-      "Color": "rgba(184, 15, 10, 1.0)"
+      "Color": "rgba(255, 0, 255, 1.0)"
     },
     "acceptable": {
       "TranslateText": "rulareba.score.acceptable",
@@ -20,17 +20,17 @@
     "low": {
       "TranslateText": "rulareba.score.low",
       "ShortText": "Low",
-      "Color": "rgba(20, 210, 184, 1.0)"
+      "Color": "rgba(0, 0, 0, 1.0)"
     },
     "medium": {
       "TranslateText": "rulareba.score.medium",
       "ShortText": "Medium",
-      "Color": "rgba(234, 130, 130, 1.0)"
+      "Color": "rgba(0, 0, 255, 1.0)"
     },
     "high": {
       "TranslateText": "rulareba.score.high",
       "ShortText": "High",
-      "Color": "rgba(184, 15, 10, 1.0)"
+      "Color": "rgba(255, 0, 255, 1.0)"
     }
   },
   "Colors": {
@@ -38,13 +38,13 @@
       "Color": "rgba(109, 208, 163, 1.0)"
     },
     "low": {
-      "Color": "rgba(20, 210, 184, 1.0)"
+      "Color": "rgba(0, 0, 0, 1.0)"
     },
     "medium": {
-      "Color": "rgba(234, 130, 130, 1.0)"
+      "Color": "rgba(0, 0, 255, 1.0)"
     },
     "high": {
-      "Color": "rgba(184, 15, 10, 1.0)"
+      "Color": "rgba(255, 0, 255, 1.0)"
     }
   },
   "BodyPartScores": {
@@ -62,27 +62,27 @@
       "3": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
-        "Color": "rgba(20, 210, 184, 1.0)"
+        "Color": "rgba(0, 0, 0, 1.0)"
       },
       "4": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
-        "Color": "rgba(20, 210, 184, 1.0)"
+        "Color": "rgba(0, 0, 0, 1.0)"
       },
       "5": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
-        "Color": "rgba(234, 130, 130, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "6": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
-        "Color": "rgba(234, 130, 130, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "7": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Color": "rgba(255, 0, 255, 1.0)"
       }
     },
     "Neck": {
@@ -94,27 +94,27 @@
       "2": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
-        "Color": "rgba(20, 210, 184, 1.0)"
+        "Color": "rgba(0, 0, 0, 1.0)"
       },
       "3": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
-        "Color": "rgba(234, 130, 130, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "4": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
-        "Color": "rgba(234, 130, 130, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "5": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Color": "rgba(255, 0, 255, 1.0)"
       },
       "6": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Color": "rgba(255, 0, 255, 1.0)"
       }
     },
     "Upper Arm": {
@@ -126,44 +126,44 @@
       "2": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
-        "Color": "rgba(20, 210, 184, 1.0)"
+        "Color": "rgba(0, 0, 0, 1.0)"
       },
       "3": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
-        "Color": "rgba(234, 130, 130, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "4": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
-        "Color": "rgba(234, 130, 130, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "5": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Color": "rgba(255, 0, 255, 1.0)"
       },
       "6": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Color": "rgba(255, 0, 255, 1.0)"
       }
     },
     "Lower Arm": {
       "1": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
-        "Color": "rgba(20, 210, 184, 1.0)"
+        "Color": "rgba(0, 0, 0, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
-        "Color": "rgba(234, 130, 130, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "3": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Color": "rgba(255, 0, 255, 1.0)"
       }
     },
     "Trunk": {
@@ -175,27 +175,27 @@
       "2": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
-        "Color": "rgba(20, 210, 184, 1.0)"
+        "Color": "rgba(0, 0, 0, 1.0)"
       },
       "3": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
-        "Color": "rgba(234, 130, 130, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "4": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
-        "Color": "rgba(234, 130, 130, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "5": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Color": "rgba(255, 0, 255, 1.0)"
       },
       "6": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Color": "rgba(255, 0, 255, 1.0)"
       }
     },
     "Wrist": {
@@ -207,17 +207,17 @@
       "2": {
         "TranslateText": "rulareba.score.low",
         "ShortText": "Low",
-        "Color": "rgba(20, 210, 184, 1.0)"
+        "Color": "rgba(0, 0, 0, 1.0)"
       },
       "3": {
         "TranslateText": "rulareba.score.medium",
         "ShortText": "Medium",
-        "Color": "rgba(234, 130, 130, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "4": {
         "TranslateText": "rulareba.score.high",
         "ShortText": "High",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Color": "rgba(255, 0, 255, 1.0)"
       }
     }
   },

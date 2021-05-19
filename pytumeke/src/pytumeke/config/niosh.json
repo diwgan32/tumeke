@@ -1,6 +1,6 @@
 {
   "constants": {
-    "SAMPLE_SIZE_SECONDS": 2,
+    "SAMPLE_SIZE_SECONDS": 0.5,
     "FM_FREQUENCIES": [
       0,
       0.2,
