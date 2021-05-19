@@ -10,7 +10,7 @@ constants:
 
   orange: &orange
     Color:
-      rgba(0, 0, 255, 1.0)
+      rgba(0, 255, 255, 1.0)
 
   red: &red
     Color:
