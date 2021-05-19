@@ -1,7 +1,7 @@
 {
   "constants": {
     "light_green": {
-      "Color": "rgba(109, 208, 163, 1.0)"
+      "Color": "rgba(0, 0, 255, 1.0)"
     },
     "green": {
       "Color": "rgba(0, 0, 0, 1.0)"
@@ -16,7 +16,7 @@
       "TranslateText": "rulareba.score.acceptable",
       "ShortText": "Acceptable",
       "Text": "Acceptable",
-      "Color": "rgba(109, 208, 163, 1.0)"
+      "Color": "rgba(0, 0, 255, 1.0)"
     },
     "low": {
       "TranslateText": "rulareba.score.low",
@@ -39,7 +39,7 @@
   },
   "Colors": {
     "acceptable": {
-      "Color": "rgba(109, 208, 163, 1.0)"
+      "Color": "rgba(0, 0, 255, 1.0)"
     },
     "low": {
       "Color": "rgba(0, 0, 0, 1.0)"
@@ -57,13 +57,13 @@
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
         "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
         "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "3": {
         "TranslateText": "rulareba.score.low",
@@ -101,7 +101,7 @@
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
         "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.low",
@@ -139,7 +139,7 @@
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
         "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.low",
@@ -197,7 +197,7 @@
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
         "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.low",
@@ -235,7 +235,7 @@
         "TranslateText": "rulareba.score.acceptable",
         "ShortText": "Acceptable",
         "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Color": "rgba(0, 0, 255, 1.0)"
       },
       "2": {
         "TranslateText": "rulareba.score.low",

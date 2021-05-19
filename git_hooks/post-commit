@@ -1,4 +1,4 @@
 #!/bin/bash
 
-git add src/pytumeke/config
+git add $PWD/pytumeke/src/pytumeke/config/*
 git commit --amend
