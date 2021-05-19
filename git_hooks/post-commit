@@ -1,4 +1,12 @@
 #!/bin/bash
 
-git add $PWD/pytumeke/src/pytumeke/config/*
-git commit --amend
+if [ -e .commit ]
+    then
+    rm .commit
+    git add $PWD/pytumeke/src/pytumeke/config/*
+	git commit --amend
+    git commit --amend -C HEAD --no-verify
+fi
+exit 
+
+

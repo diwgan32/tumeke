@@ -1,4 +1,6 @@
 #!/bin/bash
+touch $PWD/.commit
+
 yq eval -j $PWD/config/rula.yaml &> $PWD/pytumeke/src/pytumeke/config/rula.json
 yq eval -j $PWD/config/reba.yaml &> $PWD/pytumeke/src/pytumeke/config/reba.json
 yq eval -j $PWD/config/niosh.yaml &> $PWD/pytumeke/src/pytumeke/config/niosh.json
