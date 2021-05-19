@@ -23,6 +23,9 @@ setup(
     long_description_content_type="text/markdown",
     license='GPLv3+',
     packages=find_packages(where='src'),
+    package_data={
+        "": ["*.json"]
+    },
     package_dir={'': 'src'},
     test_suite='',
     install_requires=[],
