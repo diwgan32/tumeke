@@ -1,2 +1,2 @@
 include README.md
-include src/pytumeke/config/rula.json
+include src/pytumeke/config/*.json
