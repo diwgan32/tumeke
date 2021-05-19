@@ -2,7 +2,7 @@
 constants:
   light_green: &light_green
     Color:
-      rgba(109, 208, 163, 1.0)
+      rgba(0, 0, 255, 1.0)
 
   green: &green
     Color:
