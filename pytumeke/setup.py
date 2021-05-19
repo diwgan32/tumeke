@@ -24,7 +24,7 @@ setup(
     license='GPLv3+',
     packages=find_packages(where='src'),
     package_data={
-        "": ["*.json"]
+        "pytumeke": ["config/*.json"]
     },
     package_dir={'': 'src'},
     test_suite='',
