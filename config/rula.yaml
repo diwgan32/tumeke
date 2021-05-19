@@ -6,31 +6,35 @@ constants:
 
   green: &green
     Color:
-      rgba(20, 210, 184, 1.0)
+      rgba(0, 0, 0, 1.0)
 
   orange: &orange
     Color:
-      rgba(234, 130, 130, 1.0)
+      rgba(0, 0, 255, 1.0)
 
   red: &red
     Color:
-      rgba(184, 15, 10, 1.0)
+      rgba(255, 0, 255, 1.0)
 
   acceptable: &acceptable
     TranslateText: rulareba.score.acceptable
     ShortText: Acceptable
+    Text: Acceptable
     <<: *light_green
   low: &low
     TranslateText: rulareba.score.low
     ShortText: Low
+    Text: Low risk of injury
     <<: *green
   medium: &medium
     TranslateText: rulareba.score.medium
     ShortText: Medium
+    Text: Medium risk of injury
     <<: *orange
   high: &high
     TranslateText: rulareba.score.high
     ShortText: High
+    Text: High risk of injury
     <<: *red
 
 Colors:

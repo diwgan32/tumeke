@@ -94,15 +94,24 @@ export const equalizeFreqHelper = (chartTables) => {
 		}
 	}
 	return chartTables;
-
 }
+
+const isSummaryStatsInvalid = (videoData) => {
+	const subjectId = "0";
+	return (!("summaryStats" in videoData) ||
+		!videoData.summaryStats ||
+		videoData.summaryStats === {} ||
+		!videoData.summaryStats[subjectId] ||
+		videoData.summaryStats[subjectId] === {});
+}
+
 export const getChartData = (videoDatas, type, detailedView) => {
 	const subjectId = "0";
 	if (type !== "Overall") {
 		let maxNumEntry = 0;
 		for (let i = 0; i < videoDatas.length; i++) {
-			if (!("summaryStats" in videoDatas[i]) ||
-				!videoDatas[i].summaryStats ||
+			if (isSummaryStatsInvalid(videoDatas[i]) ||
+				!("componentFrequency" in videoDatas[i].summaryStats[subjectId]) ||
 				!(type in videoDatas[i].summaryStats[subjectId].componentFrequency)) {
 				return [];
 			}
@@ -118,7 +127,7 @@ export const getChartData = (videoDatas, type, detailedView) => {
 	}
 
 	for (let i = 0; i < videoDatas.length; i++) {
-		if (!("summaryStats" in videoDatas[i]) || !videoDatas[i].summaryStats) {
+		if (isSummaryStatsInvalid(videoDatas[i])) {
 			return [];
 		}
 		
