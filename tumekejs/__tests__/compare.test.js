@@ -20,7 +20,7 @@ test('expect basic compare helper', () => {
     "6": "rgba(234, 130, 130, 1.0)",
     "7": "rgba(184, 15, 10, 1.0)"
   }
-  expect(getChartDataForVideo(videoObj1, "Overall")).toStrictEqual({
+  expect(getChartDataForVideo(videoObj1, "0", "Overall")).toStrictEqual({
     data: data,
     colors: colors,
     videoId: videoObj1.key
@@ -40,7 +40,7 @@ test('expect basic low detail table correctness', () => {
     "Medium": "rgba(234, 130, 130, 1.0)",
     "High": "rgba(184, 15, 10, 1.0)"
   }
-  expect(getChartDataForVideo(videoObj1, "Overall", false)).toStrictEqual({
+  expect(getChartDataForVideo(videoObj1, "0", "Overall", false)).toStrictEqual({
     data: data,
     colors: colors,
     videoId: videoObj1.key
@@ -63,7 +63,7 @@ test('expect missing compare helper', () => {
     "Not Identified": '#6c7b8a'
   }
 
-  expect(getChartDataForVideo(videoObj1, "Wrist")).toStrictEqual({
+  expect(getChartDataForVideo(videoObj1, "0", "Wrist")).toStrictEqual({
     data: data,
     colors: colors,
     videoId: videoObj1.key
