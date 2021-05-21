@@ -52,6 +52,8 @@ export class Rula {
       this.getRiskScoreInfo("Lower Arm", lower_arm);
     this.assessmentResult['Components']['Neck'] = 
       this.getRiskScoreInfo("Neck", neck_score);
+    this.assessmentResult['Components']['Wrist'] =
+      this.getRiskScoreInfo("Wrist", wrist);
   };
 
   getRiskScoreInfo = (bodyPart, score) => {
