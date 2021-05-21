@@ -98,6 +98,8 @@ export class Reba {
       this.getRiskScoreInfo("Neck", neck_score);
     this.assessmentResult['Components']['Leg'] =
       this.getRiskScoreInfo("Leg", leg_score);
+    this.assessmentResult['Components']['Wrist'] =
+      this.getRiskScoreInfo("Wrist", wrist);
   }
 
   getRiskComponentValue = (bodyPart, componentId) => {

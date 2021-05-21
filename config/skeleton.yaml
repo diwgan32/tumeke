@@ -1,0 +1,12 @@
+---
+Hip:
+  "[0, 15]": 
+    type: solid
+    Color: rgba(255, 0, 0, 1.0)
+  "[15, 20]":
+    type: gradient
+    StartColor: "rgba(0, 255, 0, 1.0)"
+    EndColor: "rgba(255, 255, 0, 1.0)"
+
+
+... 

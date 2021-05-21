@@ -2,19 +2,19 @@
 constants:
   light_green: &light_green
     Color:
-      rgba(255, 100, 255, 1.0)
+      rgba(109, 208, 163, 1.0)
 
   green: &green
     Color:
-      rgba(0, 0, 0, 1.0)
+      rgba(20, 210, 184, 1.0)
 
   orange: &orange
     Color:
-      rgba(0, 255, 255, 1.0)
+      rgba(234, 130, 130, 1.0)
 
   red: &red
     Color:
-      rgba(255, 0, 255, 1.0)
+      rgba(184, 15, 10, 1.0)
 
   acceptable: &acceptable
     TranslateText: rulareba.score.acceptable

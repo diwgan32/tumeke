@@ -17,8 +17,7 @@ export const getChartDataHelper = (frequencyTable) => {
 	return percentages;
 }
 
-export const getChartDataForVideo = (videoData, type, detailedView=true) => {
-	const subjectId = "0";
+export const getChartDataForVideo = (videoData, subjectId, type, detailedView=true) => {
 	const videoId = videoData.key;
 	const assessmentType = videoData.assessmentType;
 	let frequencyTable;
@@ -96,8 +95,7 @@ export const equalizeFreqHelper = (chartTables) => {
 	return chartTables;
 }
 
-const isSummaryStatsInvalid = (videoData) => {
-	const subjectId = "0";
+const isSummaryStatsInvalid = (videoData, subjectId) => {
 	return (!("summaryStats" in videoData) ||
 		!videoData.summaryStats ||
 		videoData.summaryStats === {} ||
@@ -105,21 +103,22 @@ const isSummaryStatsInvalid = (videoData) => {
 		videoData.summaryStats[subjectId] === {});
 }
 
-export const getChartData = (videoDatas, type, detailedView) => {
-	const subjectId = "0";
+export const getChartData = (videoDatas, subjectId, type, detailedView) => {
 	if (type !== "Overall") {
 		let maxNumEntry = 0;
 		for (let i = 0; i < videoDatas.length; i++) {
-			if (isSummaryStatsInvalid(videoDatas[i]) ||
+			if (isSummaryStatsInvalid(videoDatas[i], subjectId) ||
 				!("componentFrequency" in videoDatas[i].summaryStats[subjectId]) ||
 				!(type in videoDatas[i].summaryStats[subjectId].componentFrequency)) {
 				return [];
+			
 			}
 		}
 
 		return equalizeFreqHelper(videoDatas.map( (videoData) => {
 			return getChartDataForVideo(
 				videoData,
+				subjectId,
 				type,
 				detailedView
 			)
@@ -127,7 +126,7 @@ export const getChartData = (videoDatas, type, detailedView) => {
 	}
 
 	for (let i = 0; i < videoDatas.length; i++) {
-		if (isSummaryStatsInvalid(videoDatas[i])) {
+		if (isSummaryStatsInvalid(videoDatas[i], subjectId)) {
 			return [];
 		}
 		
@@ -136,6 +135,7 @@ export const getChartData = (videoDatas, type, detailedView) => {
 	return equalizeFreqHelper(videoDatas.map( (videoData) => {
 		return getChartDataForVideo(
 			videoData,
+			subjectId,
 			type,
 			detailedView
 		)
@@ -143,15 +143,14 @@ export const getChartData = (videoDatas, type, detailedView) => {
 }
 
 // videoDatas is an array of data objs from our server
-export const getCompareObject = (videoDatas, detailedView=true) => {
+export const getCompareObject = (videoDatas, detailedView=true, subjectId="0") => {
 	const compareObject = {};
-	const subjectId = "";
-	compareObject["Overall"] = getChartData(videoDatas, "Overall", detailedView);
-	compareObject["Leg"] = getChartData(videoDatas, "Leg", detailedView);
-	compareObject["Lower Arm"] = getChartData(videoDatas, "Lower Arm", detailedView);
-	compareObject["Upper Arm"] = getChartData(videoDatas, "Upper Arm", detailedView);
-	compareObject["Neck"] = getChartData(videoDatas, "Neck", detailedView);
-	compareObject["Trunk"] = getChartData(videoDatas, "Trunk", detailedView);
-	compareObject["Wrist"] = getChartData(videoDatas, "Wrist", detailedView);
+	compareObject["Overall"] = getChartData(videoDatas, subjectId, "Overall", detailedView);
+	compareObject["Leg"] = getChartData(videoDatas, subjectId, "Leg", detailedView);
+	compareObject["Lower Arm"] = getChartData(videoDatas, subjectId, "Lower Arm", detailedView);
+	compareObject["Upper Arm"] = getChartData(videoDatas, subjectId, "Upper Arm", detailedView);
+	compareObject["Neck"] = getChartData(videoDatas, subjectId, "Neck", detailedView);
+	compareObject["Trunk"] = getChartData(videoDatas, subjectId, "Trunk", detailedView);
+	compareObject["Wrist"] = getChartData(videoDatas, subjectId, "Wrist", detailedView);
 	return compareObject;
 }
