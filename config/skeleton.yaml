@@ -1,12 +1,166 @@
 ---
+constants:
+  green: &green
+    Color:
+      [0, 255, 0]
+
+  orange: &orange
+    Color:
+      [255, 103, 0]
+
+  red: &red
+    Color:
+      [255, 0, 0]
+
+  green_to_orange: &green_to_orange
+    StartColor: [0, 255, 0]
+    EndColor: [255, 103, 0]
+
+  orange_to_red: &orange_to_red
+    StartColor: [255, 103, 0]
+    EndColor: [255, 0, 0]
+
+  green_to_red: &green_to_red
+    StartColor: [0, 255, 0]
+    EndColor: [255, 0, 0]
+
+  red_to_green: &red_to_green
+    StartColor: [255, 0, 0]
+    EndColor: [0, 255, 0]
+
+  orange_to_green: &orange_to_green
+    StartColor: [255, 103, 0]
+    EndColor: [0, 255, 0]
+
+  lower_arm_cutoff: 35
+
 Hip:
+  default:
+    type: solid
+    <<: *green
   "[0, 15]": 
     type: solid
-    Color: rgba(255, 0, 0, 1.0)
-  "[15, 20]":
+    <<: *green
+  "[15, 25]":
     type: gradient
-    StartColor: "rgba(0, 255, 0, 1.0)"
-    EndColor: "rgba(255, 255, 0, 1.0)"
+    <<: *green_to_orange
+  "[25, 40]":
+    type: solid
+    <<: *orange
+  "[45, 55]":
+    type: gradient
+    <<: *orange_to_red
+  "[55, None]":
+    type: solid
+    <<: *red
 
+Left elbow:
+  default:
+    type: solid
+    <<: *green
+  "[0, 45]":
+    type: solid
+    <<: *orange
+  "[45, 55]":
+    type: gradient
+    <<: *orange_to_green
+  "[55, 95]":
+    type: solid
+    <<: *green
+  "[95, 105]":
+    type: gradient
+    <<: *green_to_orange
+  "[55, None]":
+    type: solid
+    <<: *orange
+
+Right elbow:
+  default:
+    type: solid
+    <<: *green
+  "[0, 45]":
+    type: solid
+    <<: *orange
+  "[45, 55]":
+    type: gradient
+    <<: *orange_to_green
+  "[55, 95]":
+    type: solid
+    <<: *green
+  "[95, 105]":
+    type: gradient
+    <<: *green_to_orange
+  "[55, None]":
+    type: solid
+    <<: *orange
+
+Left shoulder:
+  default:
+    type: solid
+    <<: *green
+  default:
+    type: solid
+    <<: *green
+  "[-20, 32.5]": 
+    type: solid
+    <<: *green
+  "[32.5, 42.5]":
+    type: gradient
+    <<: *green_to_orange
+  "[42.5, 85]":
+    type: solid
+    <<: *orange
+  "[85, 95]":
+    type: gradient
+    <<: *orange_to_red
+  "[95, None]":
+    type: solid
+    <<: *red
+
+Right shoulder:
+  default:
+    type: solid
+    <<: *green
+  "[-20, 32.5]": 
+    type: solid
+    <<: *green
+  "[32.5, 42.5]":
+    type: gradient
+    <<: *green_to_orange
+  "[42.5, 85]":
+    type: solid
+    <<: *orange
+  "[85, 95]":
+    type: gradient
+    <<: *orange_to_red
+  "[95, None]":
+    type: solid
+    <<: *red
+
+Neck:
+  default:
+    type: solid
+    <<: *green
+  "[None, -10]":
+    type: solid
+    <<: *red
+  "[-10, -5]":
+    type: gradient
+    <<: *red_to_green
+  "[-5, 7.5]":
+    type: solid
+    <<: *green
+  "[7.5, 12.5]":
+    type: gradient
+    <<: *green_to_orange
+  "[12.5, 17.5]":
+    type: solid
+    <<: *orange
+  "[17.5, 22.5]":
+    type: gradient
+    <<: *orange_to_red
+  "[22.5, None]":
+    type: solid
+    <<: *red
 
 ... 

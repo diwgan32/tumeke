@@ -8,7 +8,7 @@ export const getChartDataHelper = (frequencyTable) => {
 	}
 	if (s == 0) s = 1;
 	for (const score in frequencyTable) {
-		percentages[score] = Math.floor((frequencyTable[score]/s) * 1000)/100.0;
+		percentages[score] = Math.floor((frequencyTable[score]/s) * 1000)/10.0;
 	}
 	if ("-1" in percentages) {
 		percentages["Not Identified"] = percentages["-1"];

@@ -1,0 +1,467 @@
+{
+  "constants": {
+    "green": {
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "orange": {
+      "Color": [
+        255,
+        103,
+        0
+      ]
+    },
+    "red": {
+      "Color": [
+        255,
+        0,
+        0
+      ]
+    },
+    "green_to_orange": {
+      "StartColor": [
+        0,
+        255,
+        0
+      ],
+      "EndColor": [
+        255,
+        103,
+        0
+      ]
+    },
+    "orange_to_red": {
+      "StartColor": [
+        255,
+        103,
+        0
+      ],
+      "EndColor": [
+        255,
+        0,
+        0
+      ]
+    },
+    "green_to_red": {
+      "StartColor": [
+        0,
+        255,
+        0
+      ],
+      "EndColor": [
+        255,
+        0,
+        0
+      ]
+    },
+    "red_to_green": {
+      "StartColor": [
+        255,
+        0,
+        0
+      ],
+      "EndColor": [
+        0,
+        255,
+        0
+      ]
+    },
+    "orange_to_green": {
+      "StartColor": [
+        255,
+        103,
+        0
+      ],
+      "EndColor": [
+        0,
+        255,
+        0
+      ]
+    },
+    "lower_arm_cutoff": 35
+  },
+  "Hip": {
+    "default": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[0, 15]": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[15, 25]": {
+      "type": "gradient",
+      "StartColor": [
+        0,
+        255,
+        0
+      ],
+      "EndColor": [
+        255,
+        103,
+        0
+      ]
+    },
+    "[25, 40]": {
+      "type": "solid",
+      "Color": [
+        255,
+        103,
+        0
+      ]
+    },
+    "[45, 55]": {
+      "type": "gradient",
+      "StartColor": [
+        255,
+        103,
+        0
+      ],
+      "EndColor": [
+        255,
+        0,
+        0
+      ]
+    },
+    "[55, None]": {
+      "type": "solid",
+      "Color": [
+        255,
+        0,
+        0
+      ]
+    }
+  },
+  "Left elbow": {
+    "default": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[0, 45]": {
+      "type": "solid",
+      "Color": [
+        255,
+        103,
+        0
+      ]
+    },
+    "[45, 55]": {
+      "type": "gradient",
+      "StartColor": [
+        255,
+        103,
+        0
+      ],
+      "EndColor": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[55, 95]": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[95, 105]": {
+      "type": "gradient",
+      "StartColor": [
+        0,
+        255,
+        0
+      ],
+      "EndColor": [
+        255,
+        103,
+        0
+      ]
+    },
+    "[55, None]": {
+      "type": "solid",
+      "Color": [
+        255,
+        103,
+        0
+      ]
+    }
+  },
+  "Right elbow": {
+    "default": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[0, 45]": {
+      "type": "solid",
+      "Color": [
+        255,
+        103,
+        0
+      ]
+    },
+    "[45, 55]": {
+      "type": "gradient",
+      "StartColor": [
+        255,
+        103,
+        0
+      ],
+      "EndColor": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[55, 95]": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[95, 105]": {
+      "type": "gradient",
+      "StartColor": [
+        0,
+        255,
+        0
+      ],
+      "EndColor": [
+        255,
+        103,
+        0
+      ]
+    },
+    "[55, None]": {
+      "type": "solid",
+      "Color": [
+        255,
+        103,
+        0
+      ]
+    }
+  },
+  "Left shoulder": {
+    "default": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[-20, 32.5]": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[32.5, 42.5]": {
+      "type": "gradient",
+      "StartColor": [
+        0,
+        255,
+        0
+      ],
+      "EndColor": [
+        255,
+        103,
+        0
+      ]
+    },
+    "[42.5, 85]": {
+      "type": "solid",
+      "Color": [
+        255,
+        103,
+        0
+      ]
+    },
+    "[85, 95]": {
+      "type": "gradient",
+      "StartColor": [
+        255,
+        103,
+        0
+      ],
+      "EndColor": [
+        255,
+        0,
+        0
+      ]
+    },
+    "[95, None]": {
+      "type": "solid",
+      "Color": [
+        255,
+        0,
+        0
+      ]
+    }
+  },
+  "Right shoulder": {
+    "default": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[-20, 32.5]": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[32.5, 42.5]": {
+      "type": "gradient",
+      "StartColor": [
+        0,
+        255,
+        0
+      ],
+      "EndColor": [
+        255,
+        103,
+        0
+      ]
+    },
+    "[42.5, 85]": {
+      "type": "solid",
+      "Color": [
+        255,
+        103,
+        0
+      ]
+    },
+    "[85, 95]": {
+      "type": "gradient",
+      "StartColor": [
+        255,
+        103,
+        0
+      ],
+      "EndColor": [
+        255,
+        0,
+        0
+      ]
+    },
+    "[95, None]": {
+      "type": "solid",
+      "Color": [
+        255,
+        0,
+        0
+      ]
+    }
+  },
+  "Neck": {
+    "default": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[None, -10]": {
+      "type": "solid",
+      "Color": [
+        255,
+        0,
+        0
+      ]
+    },
+    "[-10, -5]": {
+      "type": "gradient",
+      "StartColor": [
+        255,
+        0,
+        0
+      ],
+      "EndColor": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[-5, 7.5]": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[7.5, 12.5]": {
+      "type": "gradient",
+      "StartColor": [
+        0,
+        255,
+        0
+      ],
+      "EndColor": [
+        255,
+        103,
+        0
+      ]
+    },
+    "[12.5, 17.5]": {
+      "type": "solid",
+      "Color": [
+        255,
+        103,
+        0
+      ]
+    },
+    "[17.5, 22.5]": {
+      "type": "gradient",
+      "StartColor": [
+        255,
+        103,
+        0
+      ],
+      "EndColor": [
+        255,
+        0,
+        0
+      ]
+    },
+    "[22.5, None]": {
+      "type": "solid",
+      "Color": [
+        255,
+        0,
+        0
+      ]
+    }
+  }
+}

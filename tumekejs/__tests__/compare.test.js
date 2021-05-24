@@ -3,13 +3,13 @@ import { videoObj1, videoObj2 } from './constants';
 
 test('expect basic compare helper', () => {
   const data = {
-    "1": 14.95,
-    "2": 22.46,
-    "3": 46.38,
-    "4": 10.94,
-    "5": 3.64,
-    "6": .80,
-    "7": .80
+    "1": 14.9,
+    "2": 22.4,
+    "3": 46.3,
+    "4": 10.9,
+    "5": 3.6,
+    "6": .8,
+    "7": .8
   };
   const colors = {
     "1": "rgba(109, 208, 163, 1.0)",
@@ -29,10 +29,10 @@ test('expect basic compare helper', () => {
 
 test('expect basic low detail table correctness', () => {
   const data = {
-    "Acceptable": 37.41,
-    "Low": 57.33,
-    "Medium": 4.44,
-    "High": .80
+    "Acceptable": 37.4,
+    "Low": 57.3,
+    "Medium": 4.4,
+    "High": .8
   };
   const colors = {
     "Acceptable": "rgba(109, 208, 163, 1.0)",
@@ -49,11 +49,11 @@ test('expect basic low detail table correctness', () => {
 
 test('expect missing compare helper', () => {
   const data = {
-    "1": 26.76,
-    "2": 21.66,
-    "3": 17.94,
+    "1": 26.7,
+    "2": 21.6,
+    "3": 17.9,
     "4": 0.0,
-    "Not Identified": 33.62
+    "Not Identified": 33.6
   }
   const colors = {
     "1": "rgba(109, 208, 163, 1.0)",
@@ -78,11 +78,11 @@ test('expect overall compare correctness', () => {
         {
           "videoId": "8fe410e0-d38a-4670-bd8a-0ff038f56170",
           "data": {
-            "1": 14.95,
-            "2": 22.46,
-            "3": 46.38,
-            "4": 10.94,
-            "5": 3.64,
+            "1": 14.9,
+            "2": 22.4,
+            "3": 46.3,
+            "4": 10.9,
+            "5": 3.6,
             "6": 0.8,
             "7": 0.8
           },
@@ -102,9 +102,9 @@ test('expect overall compare correctness', () => {
         {
           "videoId": "8fe410e0-d38a-4670-bd8a-0ff038f56170",
           "data": {
-            "1": 70.89,
-            "2": 28.15,
-            "3": 0.94,
+            "1": 70.8,
+            "2": 28.1,
+            "3": 0.9,
             "Not Identified": 0
           },
           "colors": {
@@ -121,8 +121,8 @@ test('expect overall compare correctness', () => {
           "data": {
             "1": 27.2,
             "2": 47.7,
-            "3": 13.49,
-            "4": 11.59,
+            "3": 13.4,
+            "4": 11.5,
             "5": 0,
             "6": 0,
             "Not Identified": 0
@@ -142,10 +142,10 @@ test('expect overall compare correctness', () => {
         {
           "videoId": "8fe410e0-d38a-4670-bd8a-0ff038f56170",
           "data": {
-            "1": 68.49,
-            "2": 19.54,
+            "1": 68.4,
+            "2": 19.5,
             "3": 9.4,
-            "4": 2.55,
+            "4": 2.5,
             "5": 0,
             "6": 0,
             "Not Identified": 0
@@ -165,13 +165,13 @@ test('expect overall compare correctness', () => {
         {
           "videoId": "8fe410e0-d38a-4670-bd8a-0ff038f56170",
           "data": {
-            "1": 53.53,
-            "2": 26.11,
-            "3": 15.17,
-            "4": 4.88,
-            "5": 0.29,
-            "6": 0,
-            "Not Identified": 0
+            "1": 53.5,
+            "2": 26.1,
+            "3": 15.1,
+            "4": 4.8,
+            "5": 0.2,
+            "6": 0.0,
+            "Not Identified": 0.0
           },
           "colors": {
             "1": "rgba(109, 208, 163, 1.0)",
@@ -188,11 +188,11 @@ test('expect overall compare correctness', () => {
         {
           "videoId": "8fe410e0-d38a-4670-bd8a-0ff038f56170",
           "data": {
-            "1": 26.76,
-            "2": 21.66,
-            "3": 17.94,
+            "1": 26.7,
+            "2": 21.6,
+            "3": 17.9,
             "4": 0,
-            "Not Identified": 33.62
+            "Not Identified": 33.6
           },
           "colors": {
             "1": "rgba(109, 208, 163, 1.0)",
