@@ -48,7 +48,7 @@ constants:
 
 ComponentValues:
   li:
-    "[NaN, 0]":
+    "[None, 0]":
       Text: Missing average load
       <<: *missing
       Warning: ~
@@ -64,7 +64,7 @@ ComponentValues:
       Text: Weight heavy for given task
       <<: *poor
       Warning: Object far too heavy
-    "[10.0, NaN]":
+    "[10.0, None]":
       Text: Weight heavy for given task
       <<: *poor
       Warning: Object far too heavy

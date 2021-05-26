@@ -122,7 +122,7 @@
   },
   "ComponentValues": {
     "li": {
-      "[NaN, 0]": {
+      "[None, 0]": {
         "Text": "Missing average load",
         "TranslateText": "niosh.score.missing",
         "ShortText": "Missing average load",
@@ -150,7 +150,7 @@
         "Color": "rgba(184, 15, 10, 1.0)",
         "Warning": "Object far too heavy"
       },
-      "[10.0, NaN]": {
+      "[10.0, None]": {
         "Text": "Weight heavy for given task",
         "TranslateText": "niosh.score.poor",
         "ShortText": "Poor",
