@@ -260,14 +260,32 @@
     }
   },
   "CouplingStatus": {
-    "GOOD": 0,
-    "FAIR": 1,
-    "POOR": 2
+    "GOOD": {
+      "Number": 0,
+      "Text": "Good"
+    },
+    "FAIR": {
+      "Number": 1,
+      "Text": "Fair"
+    },
+    "POOR": {
+      "Number": 2,
+      "Text": "Poor"
+    }
   },
   "DurationStatus": {
-    "SHORT": 0,
-    "MODERATE": 1,
-    "LONG": 2
+    "SHORT": {
+      "Number": 0,
+      "Text": "Short (1 hour)"
+    },
+    "MODERATE": {
+      "Number": 1,
+      "Text": "Moderate (1 - 2 hours)"
+    },
+    "LONG": {
+      "Number": 2,
+      "Text": "Long (2 - 8 hours)"
+    }
   },
   "HeightConstantsStandard": {
     "LESS_FOUR": 0,
