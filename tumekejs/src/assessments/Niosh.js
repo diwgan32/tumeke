@@ -45,10 +45,10 @@ export class Niosh {
       "subjectHeight" : 6.0,
       "averageLoad": -1,
       "units": Units.STANDARD,
-      "coupling" : CouplingStatus.GOOD, // NIOSH coupling score
+      "coupling" : CouplingStatus["GOOD"]["Number"], // NIOSH coupling score
       "shortRest": -1.0, // rest in between lifts, in seconds. If rest < 0 then
                          // we attempt to estimate it from the video
-      "liftingDuration": DurationStatus.MODERATE // Length of a single lifting session, bucketed
+      "liftingDuration": DurationStatus["MODERATE"]["Number"] // Length of a single lifting session, bucketed
     }
     return inputs
   }
@@ -145,19 +145,19 @@ export class Niosh {
 
   computeFreqHelper = (verticalStart, liftDuration) => {
     const frequency = 1.0/((liftDuration + this.additionalInputs["shortRest"])/60)
-    if (this.additionalInputs["liftingDuration"] == DurationStatus.SHORT) {
+    if (this.additionalInputs["liftingDuration"] == DurationStatus["SHORT"]["Number"]) {
       const cutoff = verticalStart < 30 ? FM_SHORT_DURATION_VERTICAL_CUTOFF : 15
       const fm = this.interpolateFreqTable(frequency, FM_SHORT_DURATION, cutoff)
       return fm
     }
 
-    if (this.additionalInputs["liftingDuration"] == DurationStatus.MODERATE) {
+    if (this.additionalInputs["liftingDuration"] == DurationStatus["MODERATE"]["Number"]) {
       const cutoff = verticalStart < 30 ? FM_MODERATE_DURATION_VERTICAL_CUTOFF : 15
       const fm = this.interpolateFreqTable(frequency, FM_MODERATE_DURATION, cutoff)
       return fm
     }
 
-    if (this.additionalInputs["liftingDuration"] == DurationStatus.LONG) {
+    if (this.additionalInputs["liftingDuration"] == DurationStatus["LONG"]["Number"]) {
       const cutoff = verticalStart < 30 ? FM_LONG_DURATION_VERTICAL_CUTOFF : 15
       const fm = this.interpolateFreqTable(frequency, FM_LONG_DURATION, cutoff)
       return fm
@@ -193,23 +193,23 @@ export class Niosh {
 
   computeCouplingHelper = (v) => {
     if (v < 30) {
-      if (this.additionalInputs["coupling"] == CouplingStatus.GOOD) {
+      if (this.additionalInputs["coupling"] == CouplingStatus["GOOD"]["Number"]) {
         return 1.0
       }
-      if (this.additionalInputs["coupling"] == CouplingStatus.FAIR) {
+      if (this.additionalInputs["coupling"] == CouplingStatus["FAIR"]["Number"]) {
         return .95
       }
-      if (this.additionalInputs["coupling"] == CouplingStatus.POOR) {
+      if (this.additionalInputs["coupling"] == CouplingStatus["POOR"]["Number"]) {
         return .90
       }
     } else {
-      if (this.additionalInputs["coupling"] == CouplingStatus.GOOD) {
+      if (this.additionalInputs["coupling"] == CouplingStatus["GOOD"]["Number"]) {
         return 1.0
       }
-      if (this.additionalInputs["coupling"] == CouplingStatus.FAIR) {
+      if (this.additionalInputs["coupling"] == CouplingStatus["FAIR"]["Number"]) {
         return 1.0
       }
-      if (this.additionalInputs["coupling"] == CouplingStatus.POOR) {
+      if (this.additionalInputs["coupling"] == CouplingStatus["POOR"]["Number"]) {
         return .90
       }
     }
