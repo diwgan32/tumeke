@@ -1,6 +1,6 @@
 {
   "name": "@tumeke/tumekejs",
-  "version": "1.0.57",
+  "version": "1.1.2",
   "description": "Common code for tumeke js",
   "main": "lib/index.js",
   "scripts": {
@@ -36,6 +36,11 @@
     "@babel/cli": "^7.13.16",
     "lodash": "^4.17.21",
     "yaml-jest": "^1.0.5"
+  },
+  "peerDependencies": {
+    "@virgilsecurity/e3kit-browser": "^2.1.0",
+    "@virgilsecurity/e3kit-native": "^2.1.0",
+    "@virgilsecurity/key-storage-rn": "^0.2.2"
   },
   "babel": {
     "presets": [

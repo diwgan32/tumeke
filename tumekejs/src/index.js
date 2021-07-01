@@ -1,18 +1,18 @@
-import { Rula } from './assessments/Rula'
-import { Reba } from './assessments/Reba'
-import { Niosh } from './assessments/Niosh'
+import { Rula } from "./assessments/Rula";
+import { Reba } from "./assessments/Reba";
+import { Niosh } from "./assessments/Niosh";
 
-import RulaConfig from '../config/rula.json'
-import RebaConfig from '../config/reba.json'
-import NioshConfig from '../config/niosh.json'
+import RulaConfig from "../config/rula.json";
+import RebaConfig from "../config/reba.json";
+import NioshConfig from "../config/niosh.json";
 
 import {
 	getCompareObject
-} from './utils/compare'
+} from "./utils/compare";
 
 import {
 	getRecommendations
-} from './utils/recommendations'
+} from "./utils/recommendations";
 
 export {
 	Rula,
@@ -22,5 +22,5 @@ export {
 	RebaConfig,
 	NioshConfig,
 	getCompareObject,
-	getRecommendations
+	getRecommendations,
 }
