@@ -1,5 +1,15 @@
-import { EThree_browser } from '@virgilsecurity/e3kit-browser';
-import { EThree_mobile } from '@virgilsecurity/e3kit-native'
+let EThree_mobile, EThree_browser;
+try {
+	EThree_browser = require("@virgilsecurity/e3kit-browser");
+} catch (e) {
+	// pass
+}
+try {
+	EThree_mobile =  require('@virgilsecurity/e3kit-native');
+} catch (e) {
+	// pass
+}
+ 
 import * as db from 'tumeke-database';
 
 let EThree = null;
@@ -7,19 +17,17 @@ var eThree = null;
 var groupChat = null;
 let source = "web";
 
-function setSource() {
+export function setSource() {
 	if (typeof document != 'undefined') {
 	    // I'm on the web!
 	    EThree = EThree_browser;
 	    source = "web"
 	}
 	else if (typeof navigator != 'undefined' && navigator.product == 'ReactNative') {
-	  	EThree = EThree_mobile;
+	  	EThree = EThree_web;
 	  	source = "mobile";
 	}
 }
-
-setSource();
 
 // Assumes that device already authenticated w cognito
 export async function initializeVirgil() {
@@ -49,6 +57,9 @@ export async function logoutVirgil() {
 }
 
 export async function createNewUserVirgil(password) {
+	if (await eThree.hasLocalPrivateKey()) {
+		await eThree.cleanup();
+	}
 	try {
 		await eThree.register();
 		await eThree.backupPrivateKey(password);
@@ -168,4 +179,4 @@ export async function getVirgilPrivateKey(keyPassword, createNewAccount) {
 
 export {
 	eThree
-};
+}
