@@ -1,40 +1,38 @@
-let EThree_mobile, EThree_browser;
-try {
-	EThree_browser = require("@virgilsecurity/e3kit-browser");
-} catch (e) {
-	// pass
-}
-try {
-	EThree_mobile =  require('@virgilsecurity/e3kit-native');
-} catch (e) {
-	// pass
-}
- 
 import * as db from 'tumeke-database';
+import { cognitoAuthUser, asyncStoreIdToken } from 'tumeke-database/Cognito';
+import { virgilIdGenerator } from "./utils";
+import AsyncStorage from '@react-native-community/async-storage';
 
 let EThree = null;
+let PrivateKeyAlreadyExistsError = null;
 var eThree = null;
 var groupChat = null;
 let source = "web";
 
-export function setSource() {
-	if (typeof document != 'undefined') {
-	    // I'm on the web!
-	    EThree = EThree_browser;
-	    source = "web"
-	}
-	else if (typeof navigator != 'undefined' && navigator.product == 'ReactNative') {
-	  	EThree = EThree_web;
-	  	source = "mobile";
-	}
+export function InitializeVirgilLibrary(EThree_remote) {
+	EThree = EThree_remote;
+}
+
+export function InitializeMobileRequirements(PrivateKeyAlreadyExistsError_remote) {
+	PrivateKeyAlreadyExistsError = PrivateKeyAlreadyExistsError_remote;
+	source = "mobile";
 }
 
 // Assumes that device already authenticated w cognito
-export async function initializeVirgil() {
-	const getToken = db.virgilJwt;
-	const initializeFunction = () => getToken().then(result => result.virgil_token);
+export async function initializeVirgil(virgilId, initializeFunction = undefined) {
+	const getToken = async () => {
+		return await db.getVirgilJwt(virgilId);
+	}
+
+	if (initializeFunction === undefined) {
+		initializeFunction = () => getToken().then(result => result.virgil_token);
+	}
 	try {
-		eThree = await EThree.initialize(initializeFunction)
+		if (source === "mobile") {
+	        eThree = await EThree.initialize(initializeFunction, { AsyncStorage });
+	    } else {
+	        eThree = await EThree.initialize(initializeFunction);
+	    }
 		console.log("Successfully initialized virgil")
 	} catch (err) {
 		console.log("Virgil error: " + err);
@@ -48,8 +46,8 @@ export function isVirgilInitialized() {
 export async function logoutVirgil() {
 	if (!eThree) return;
 	try {
-		
-		//await eThree.cleanup();
+		// TODO Comment this out
+		await eThree.cleanup();
 	} catch (err) {
 		console.log("Error cleaning up " + err)
 	}
@@ -103,19 +101,15 @@ async function addUserToGroup(uid) {
 }
 
 export async function canResetPassword(virgilId) {
-	const getToken = async () => {
-		return await db.getVirgilJwt(virgilId);
-	}
-	const initializeFunction = () => getToken().then(result => result.virgil_token);
 	try {
-		eThree = await EThree.initialize(initializeFunction)
+		await initializeVirgil(virgilId);
 		console.log("Successfully initialized virgil")
 	} catch (err) {
 		console.log("Virgil error: " + err);
 		return false;
 	}
 	try {
-		await getVirgilPrivateKey("", false);
+		await restorePrivateKey("");
 	} catch (e) {
 		console.log("Virgil error: " + e);
 		return false;
@@ -125,6 +119,8 @@ export async function canResetPassword(virgilId) {
 }
 
 export async function resetPassword(newPassword) {
+	// Expects `canResetFunction` to already have been called
+	// Just checking here to make sure. 
 	if (!eThree) {
 		const ret = await canResetPassword();
 		if (!ret) {
@@ -160,22 +156,83 @@ export async function changePassword(oldPassword, newPassword) {
 	await eThree.changePassword(oldPassword, newPassword);
 }
 
-export async function getVirgilPrivateKey(keyPassword, createNewAccount) {
-	const hasLocalKey = await eThree.hasLocalPrivateKey()
-	if (!hasLocalKey) {
-		try {
-			await eThree.restorePrivateKey(keyPassword);
-		} catch (err) {
-			if (createNewAccount) {
-				createNewUserVirgil(keyPassword)
-			} else {
-				console.log("key password: " + keyPassword);
-				throw new Error("No local key exists")
-			}
-
-		}
-	}
+async function hasLocalPrivateKeyWrapper() {
+	try {
+        return (await eThree.hasLocalPrivateKey());
+    } catch {
+        await eThree.keyEntryStorage.storage.clear();
+        eThree.keyLoader.cachedPrivateKey = null;
+        return (await eThree.hasLocalPrivateKey());
+    }
 }
+
+export async function restorePrivateKey(password) {
+    // inside try catch for Virgil bug in iOS
+    const hasLocalKey = await hasLocalPrivateKeyWrapper();
+    if (hasLocalKey) return;
+    try {
+      	await eThree.restorePrivateKey(password);
+    } catch (e) {
+    	if (PrivateKeyAlreadyExistsError === null) {
+    		throw e;
+    	}
+		if (e instanceof PrivateKeyAlreadyExistsError) {
+			await eThree.cleanup();
+		} else {
+			await eThree.keyEntryStorage.storage.clear();
+			eThree.keyLoader.cachedPrivateKey = null;
+		} 
+      	await eThree.restorePrivateKey(password);
+    }
+}
+
+export async function initiateResetPasswordFlow(email) {
+	const encoded_email = encodeURIComponent(email);
+	const userObj = await db.getUserVirgilId(encoded_email);
+	const virgilId = userObj.virgilId;
+	const ableToReset = await canResetPassword(virgilId);
+	if (!ableToReset) {
+		const ret = await db.resetPasswordHelper(encoded_email);
+		return ret.code;
+	}
+	await db.initiateResetUserPassword(encoded_email);
+	return "INITIATED_RESET";
+}
+
+export async function initiateResetPasswordCognito(email) {
+	const encoded_email = encodeURIComponent(email);
+	await db.initiateResetUserPassword(encoded_email);
+}
+
+const cognitologinWithEmailPasswordAsync = async (email, password) =>
+    await cognitoAuthUser(email,password)
+        .then(authUser => authUser)
+        .catch(error => error);
+
+export async function confirmPasswordReset(email, confirmCode, newPassword, resetAccount=false) {
+	const encoded_email = encodeURIComponent(email);
+	const ret = await db.confirmResetUserPassword(
+		encoded_email,
+		confirmCode,
+		newPassword,
+		resetAccount
+	)
+	if (resetAccount) {
+		// Set state to requesting and reset virgil account
+		// Somehow need to log back into cognito before all that 
+		// can be done however
+		const cognitoUser = await cognitologinWithEmailPasswordAsync(email, newPassword);
+		const idToken = cognitoUser.getIdToken().getJwtToken()
+		await asyncStoreIdToken(idToken);
+        await initializeVirgil(ret["virgilId"]);
+        await createNewUserVirgil(newPassword)
+	} else {
+		// If not resetting account then change password on Virgil
+		await resetPassword(newPassword);
+	}
+
+}
+
 
 export {
 	eThree

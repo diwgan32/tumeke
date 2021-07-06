@@ -1,0 +1,5 @@
+{
+	"name" : "@tumeke/tumekejs/auth",
+	"version" : "0.0.1",
+	"main": "index.js"
+}

@@ -1,6 +1,6 @@
 {
   "name": "@tumeke/tumekejs",
-  "version": "1.1.9",
+  "version": "1.1.17",
   "description": "Common code for tumeke js",
   "main": "lib/index.js",
   "scripts": {
@@ -33,8 +33,10 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.12.0",
     "@babel/cli": "^7.13.16",
     "lodash": "^4.17.21",
+    "tumeke-database": "https://github.com/diwgan32/tumeke-database.git",
     "yaml-jest": "^1.0.5"
   },
   "peerDependencies": {
