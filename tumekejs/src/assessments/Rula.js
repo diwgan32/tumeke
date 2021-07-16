@@ -4,7 +4,8 @@ import { getSchemaFromComponentValues } from './RulaReba';
 
 export class Rula {
   computeRula = () => {
-    const wrist = this.getRiskComponentValue("Wrist", "Score")
+    const wrist = this.getRiskComponentValue("Wrist", "Score") + 
+                  this.getRiskComponentValue("Wrist", "Twist")
     const upper_arm = this.getRiskComponentValue("Upper Arm", "Score") + 
       this.getRiskComponentValue("Upper Arm", "Abducted") + 
       this.getRiskComponentValue("Upper Arm", "ShoulderRaised")

@@ -47,7 +47,7 @@ export async function logoutVirgil() {
 	if (!eThree) return;
 	try {
 		// TODO Comment this out
-		await eThree.cleanup();
+		// await eThree.cleanup();
 	} catch (err) {
 		console.log("Error cleaning up " + err)
 	}

@@ -10,7 +10,7 @@ constants:
 
   orange: &orange
     Color:
-      rgba(230, 126, 34, 1.0)
+      rgba(234, 130, 130, 1.0)
 
   red: &red
     Color:
@@ -343,5 +343,20 @@ ComponentValues:
       type: select
       label: Angle
       TranslateLabel: rulareba.wrist.score
+    Twist:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: ~
+        Warning: ~
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: ~
+        Warning: ~
+      Base: 0
+      type: boolean
+      label: Twisted
+      TranslateLabel: rulareba.wrist.twist
     Image: bodyParts/wrist.png
 ... 
