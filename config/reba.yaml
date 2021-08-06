@@ -323,14 +323,14 @@ ComponentValues:
       type: select
       TranslateLabel: rulareba.leg.score
       Base: 1
-    FirmlyPlanted:
+    UnstableFooting:
       1:
         Text: Yes
         Warning: ~
       0:
         Text: No
         Warning: ~
-      label: Firmly planted
+      label: Feet crossed or otherwise unstable on ground
       type: boolean
       Base: 0
     Image: 'bodyParts/leg.png'

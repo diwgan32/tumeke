@@ -50,7 +50,11 @@ export class Reba {
       this.getRiskComponentValue("Trunk", "SideBend"), 
     5)
 
-    const leg_score = this.getRiskComponentValue("Leg", "Score")
+    const leg_score = Math.min(
+      this.getRiskComponentValue("Leg", "Score") + 
+      this.getRiskComponentValue("Leg", "UnstableFooting"),
+      4
+    )
 
     const table_a_score = Reba.rebaTableA[trunk_score][neck_score][leg_score - 1]
 
