@@ -547,6 +547,24 @@
         "label": "Twisted",
         "TranslateLabel": "rulareba.wrist.twist"
       },
+      "Midline": {
+        "1": {
+          "Text": "Yes",
+          "TranslateText": "rulareba.yes",
+          "TranslateWarning": null,
+          "Warning": null
+        },
+        "0": {
+          "Text": "No",
+          "TranslateText": "rulareba.no",
+          "TranslateWarning": null,
+          "Warning": null
+        },
+        "Base": 0,
+        "type": "boolean",
+        "label": "Wrist bent from midline",
+        "TranslateLabel": "rulareba.wrist.midline"
+      },
       "Image": "bodyParts/wrist.png"
     }
   }

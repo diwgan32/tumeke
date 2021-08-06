@@ -4,14 +4,19 @@ import { getSchemaFromComponentValues } from './RulaReba';
 
 export class Rula {
   computeRula = () => {
-    const wrist = this.getRiskComponentValue("Wrist", "Score") + 
-                  this.getRiskComponentValue("Wrist", "Twist")
+    const wrist = Math.min(
+      this.getRiskComponentValue("Wrist", "Score") + 
+      this.getRiskComponentValue("Wrist", "Midline")
+    )
+    const twist = this.getRiskComponentValue("Wrist", "Twist")
     const upper_arm = this.getRiskComponentValue("Upper Arm", "Score") + 
       this.getRiskComponentValue("Upper Arm", "Abducted") + 
       this.getRiskComponentValue("Upper Arm", "ShoulderRaised")
     const lower_arm = this.getRiskComponentValue("Lower Arm", "Score") +
       this.getRiskComponentValue("Lower Arm", "Midline")
-    const table_a_score = Rula.rulaTableA[wrist][upper_arm - 1][lower_arm - 1]
+
+    // Don't need to subtract from twist bc it's already 0 or 1
+    const table_a_score = Rula.rulaTableA[wrist][twist][upper_arm - 1][lower_arm - 1]
 
     const trunk_score = this.getRiskComponentValue("Trunk", "Score") +
       this.getRiskComponentValue("Trunk", "Twist") +
@@ -132,12 +137,24 @@ Rula.getRiskScoresFromLevel = (level) => {
 
 Rula.Schema = getSchemaFromComponentValues(config.ComponentValues)
 
-//wrist, upper_arm - 1, lower_arm - 1
+//wrist, wrist_twist - 1, upper_arm - 1, lower_arm - 1
 Rula.rulaTableA = {}
-Rula.rulaTableA[1] = [[1, 2, 2], [2, 3, 3], [3, 3, 4], [4, 4, 4], [5, 5, 6], [7, 8, 9]]
-Rula.rulaTableA[2] = [[2, 2, 3], [3, 3, 4], [4, 4, 4], [4, 4, 4], [5, 6, 6], [7, 8, 9]]
-Rula.rulaTableA[3] = [[2, 3, 3], [3, 3, 4], [4, 4, 4], [4, 4, 5], [5, 6, 7], [7, 8, 9]]
-Rula.rulaTableA[4] = [[3, 3, 4], [4, 4, 5], [5, 5, 5], [5, 5, 6], [6, 7, 7], [8, 9, 9]]
+Rula.rulaTableA[1] = [
+  [[1, 2, 2], [2, 3, 3], [3, 3, 4], [4, 4, 4], [5, 5, 6], [7, 8, 9]],
+  [[2, 2, 3], [3, 3, 4], [3, 4, 4], [4, 4, 4], [5, 6, 6], [7, 8, 9]]
+]
+Rula.rulaTableA[2] = [
+  [[2, 2, 3], [3, 3, 4], [4, 4, 4], [4, 4, 5], [5, 6, 6], [7, 8, 9]],
+  [[2, 2, 3], [3, 3, 4], [4, 4, 4], [4, 4, 5], [5, 6, 7], [7, 8, 9]]
+]
+Rula.rulaTableA[3] = [
+  [[2, 3, 3], [3, 3, 4], [4, 4, 4], [4, 4, 5], [5, 6, 7], [7, 8, 9]],
+  [[3, 3, 3], [4, 4, 4], [4, 4, 5], [5, 5, 6], [6, 7, 7], [8, 9, 9]]
+]
+Rula.rulaTableA[4] = [
+  [[3, 3, 4], [4, 4, 5], [5, 5, 5], [5, 5, 6], [6, 7, 7], [8, 9, 9]],
+  [[3, 3, 4], [4, 4, 5], [5, 5, 5], [5, 5, 6], [7, 7, 8], [9, 9, 9]]
+]
 
 //[Trunk, leg, neck - 1]
 Rula.rulaTableB = {}
