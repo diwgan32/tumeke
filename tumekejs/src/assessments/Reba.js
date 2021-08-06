@@ -55,7 +55,7 @@ export class Reba {
     const table_a_score = Reba.rebaTableA[trunk_score][neck_score][leg_score - 1]
 
     const wrist = this.getRiskComponentValue("Wrist", "Score") + 
-                  this.getRiskComponentValue("Wrist", "Score")
+                  this.getRiskComponentValue("Wrist", "Twist")
     const upper_arm = this.getRiskComponentValue("Upper Arm", "Score") + 
       this.getRiskComponentValue("Upper Arm", "Abducted") + 
       this.getRiskComponentValue("Upper Arm", "ShoulderRaised")
