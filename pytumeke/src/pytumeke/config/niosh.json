@@ -99,9 +99,9 @@
     "red": {
       "Color": "rgba(184, 15, 10, 1.0)"
     },
-    "missing": {
-      "TranslateText": "niosh.score.missing",
-      "ShortText": "No safe weight limit",
+    "unsafe": {
+      "TranslateText": "niosh.score.unsafe",
+      "ShortText": "Unsafe",
       "Color": "rgba(15, 15, 30, 0.9)"
     },
     "acceptable": {
@@ -123,9 +123,9 @@
   "ComponentValues": {
     "li": {
       "[None, 0]": {
-        "Text": "Missing average load",
-        "TranslateText": "niosh.score.missing",
-        "ShortText": "No safe weight limit",
+        "Text": "Unsafe lift at all weights",
+        "TranslateText": "niosh.score.unsafe",
+        "ShortText": "Unsafe",
         "Color": "rgba(15, 15, 30, 0.9)",
         "Warning": null
       },

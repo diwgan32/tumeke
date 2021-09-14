@@ -28,9 +28,9 @@ constants:
     Color:
       rgba(184, 15, 10, 1.0)
 
-  missing: &missing
-    TranslateText: niosh.score.missing
-    ShortText: No safe weight limit
+  unsafe: &unsafe
+    TranslateText: niosh.score.unsafe
+    ShortText: Unsafe
     <<: *black
   acceptable: &good
     TranslateText: niosh.score.good
@@ -49,8 +49,8 @@ constants:
 ComponentValues:
   li:
     "[None, 0]":
-      Text: Missing average load
-      <<: *missing
+      Text: Unsafe lift at all weights
+      <<: *unsafe
       Warning: ~
     "[0, 1.5]":
       Text: Safe weight to lift
