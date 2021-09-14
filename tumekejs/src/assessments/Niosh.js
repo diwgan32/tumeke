@@ -135,7 +135,7 @@ export class Niosh {
       return 0.0
     }
     for (let i = 1; i < FM_FREQUENCIES.length; i++) {
-      if (frequency >= FM_SHORT_DURATION[i-1] && frequency <= FM_FREQUENCIES[i]) {
+      if (frequency >= FM_FREQUENCIES[i-1] && frequency <= FM_FREQUENCIES[i]) {
         // TODO: Carry over interp
         return interp(frequency, FM_FREQUENCIES[i-1], FM_FREQUENCIES[i], table[i-1], table[i])
       }
@@ -268,10 +268,10 @@ export class Niosh {
     h = h/this.nioshMetadata['numLifts']
     d = d/this.nioshMetadata['numLifts']
 
-    let vm = 1 - .0075 * Math.abs(v - 30)
-    let hm = 10.0/h
-    let dm = .82 + (1.8/d)
-    let am = 1 - .0032*a
+    let vm = Math.min(Math.max(1 - .0075 * Math.abs(v - 30), 0.0), 1.0)
+    let hm = Math.min(Math.max(10.0/h, 0.0), 1.0)
+    let dm = Math.min(Math.max(.82 + (1.8/d), 0.0), 1.0)
+    let am = Math.min(Math.max(1 - .0032*a, 0.0), 1.0)
     
     const duration = this.computeLiftDurationHelper()
 
@@ -281,11 +281,10 @@ export class Niosh {
     }
 
     let fm = this.computeFreqHelper(v, duration)
-    console.log("fm: " + fm)
     let cm = this.computeCouplingHelper(v)
     rwl = lc * hm * vm * dm * am * fm * cm
     this.assessmentResult["rwl"] = rwl
-    if (rwl == 0) {
+    if (rwl == 0 || this.additionalInputs["averageLoad"] < 0) {
       this.assessmentResult["li"] = this.getRiskScoreInfo("li", -1)
     } else {
       this.assessmentResult["li"] = this.getRiskScoreInfo("li", this.additionalInputs["averageLoad"]/rwl)

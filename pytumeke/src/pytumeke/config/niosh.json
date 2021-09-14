@@ -101,7 +101,7 @@
     },
     "missing": {
       "TranslateText": "niosh.score.missing",
-      "ShortText": "Missing average load",
+      "ShortText": "No safe weight limit",
       "Color": "rgba(15, 15, 30, 0.9)"
     },
     "acceptable": {
@@ -125,7 +125,7 @@
       "[None, 0]": {
         "Text": "Missing average load",
         "TranslateText": "niosh.score.missing",
-        "ShortText": "Missing average load",
+        "ShortText": "No safe weight limit",
         "Color": "rgba(15, 15, 30, 0.9)",
         "Warning": null
       },
