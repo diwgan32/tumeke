@@ -123,21 +123,25 @@ ComponentValues:
         TranslateText: rula.components.neck.score.1.text
         TranslateWarning: rula.components.neck.score.1.warning
         Warning: ~
+        Image: angleIcons/rulaReba/neck_0_10_example.png
       2:
         Text: 10° - 20° forward
         TranslateText: rula.components.neck.score.2.text
         TranslateWarning: rula.components.neck.score.2.warning
         Warning: ~
+        Image: angleIcons/rulaReba/neck_10_20_example.png
       3:
         Text: 20°+ forward
         TranslateText: rula.components.neck.score.3.text
         TranslateWarning: rula.components.neck.score.3.warning
         Warning: Neck bent forward too much
+        Image: angleIcons/rulaReba/neck_20_plus_example.png
       4:
         Text: 0°+ backward
         TranslateText: rula.components.neck.score.4.text
         TranslateWarning: rula.components.neck.score.4.warning
         Warning: Neck bent backward
+        Image: angleIcons/rulaReba/neck_backwards_example.png
       Base: 1
       label: Angle
       TranslateLabel: rulareba.neck.score
