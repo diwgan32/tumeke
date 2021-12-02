@@ -1,2 +1,3 @@
 config/*.json
 .commit
+.DS_Store

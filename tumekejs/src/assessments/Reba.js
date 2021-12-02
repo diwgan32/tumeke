@@ -192,7 +192,7 @@ Reba.rebaTableA[4][3] = [6, 7, 8, 9]
 Reba.rebaTableA[5] = {}
 Reba.rebaTableA[5][1] = [4, 6, 7, 8]
 Reba.rebaTableA[5][2] = [6, 7, 8, 9]
-Reba.rebaTableA[5][3] = [7, 8, 9, 10]
+Reba.rebaTableA[5][3] = [7, 8, 9, 9]
 
 Reba.rebaTableB = {};
 Reba.rebaTableB[1] = {}
