@@ -123,25 +123,25 @@ ComponentValues:
         TranslateText: rula.components.neck.score.1.text
         TranslateWarning: rula.components.neck.score.1.warning
         Warning: ~
-        Image: angleIcons/rulaReba/neck_0_10_example.png
+        Image: angleIcons/rulaReba/Neck_0_10_deg@2x.png
       2:
         Text: 10° - 20° forward
         TranslateText: rula.components.neck.score.2.text
         TranslateWarning: rula.components.neck.score.2.warning
         Warning: ~
-        Image: angleIcons/rulaReba/neck_10_20_example.png
+        Image: angleIcons/rulaReba/Neck_10_20_deg@2x.png
       3:
         Text: 20°+ forward
         TranslateText: rula.components.neck.score.3.text
         TranslateWarning: rula.components.neck.score.3.warning
         Warning: Neck bent forward too much
-        Image: angleIcons/rulaReba/neck_20_plus_example.png
+        Image: angleIcons/rulaReba/Neck_20+_deg@2x.png
       4:
         Text: 0°+ backward
         TranslateText: rula.components.neck.score.4.text
         TranslateWarning: rula.components.neck.score.4.warning
         Warning: Neck bent backward
-        Image: angleIcons/rulaReba/neck_backwards_example.png
+        Image: angleIcons/rulaReba/Neck_in_extension@2x.png
       Base: 1
       label: Angle
       TranslateLabel: rulareba.neck.score
@@ -161,6 +161,7 @@ ComponentValues:
       label: Side bending
       TranslateLabel: rulareba.neck.sidebend
       type: boolean
+      Image: angleIcons/rulaReba/Neck_side_bending@2x.png
     Twist:
       1:
         Text: Yes
@@ -176,6 +177,7 @@ ComponentValues:
       label: Twisted
       type: boolean
       TranslateLabel: rulareba.neck.twist
+      Image: angleIcons/rulaReba/Neck_Twisted@2x.png
     Image: bodyParts/neck.png
   Upper Arm:
     Score:
@@ -184,22 +186,25 @@ ComponentValues:
         TranslateText: rula.components.upperarm.score.1.text
         TranslateWarning: rula.components.upperarm.score.1.warning
         Warning: ~
+        Image: angleIcons/rulaReba/UpperArm_20_20_deg@2x.png
       2:
         Text: 20°+ behind OR 20° - 45° in front
         TranslateText: rula.components.upperarm.score.2.text
         TranslateWarning: rula.components.upperarm.score.2.warning
         Warning: ~
+        Image: angleIcons/rulaReba/UpperArm_20_45_deg@2x.png
       3:
         Text: 45° - 90° in front
         TranslateText: rula.components.upperarm.score.3.text
         TranslateWarning: rula.components.upperarm.score.3.warning
         Warning: Upper arm raised high
-
+        Image: angleIcons/rulaReba/UpperArm_45_90_deg@2x.png
       4:
         Text: 90°+ in front
         TranslateText: rula.components.upperarm.score.4.text
         TranslateWarning: rula.components.upperarm.score.4.warning
         Warning: Upper arm raised too high
+        Image: angleIcons/rulaReba/UpperArm_90+_deg@2x.png
       Base: 1
       label: Angle
       TranslateLabel: rulareba.upperarm.score
@@ -220,6 +225,7 @@ ComponentValues:
       label: Abducted
       TranslateLabel: rulareba.upperarm.abducted
       type: boolean
+      Image: angleIcons/rulaReba/UpperArm_abducted@2x.png
     ShoulderRaised:
       1:
         Text: Yes
@@ -236,6 +242,7 @@ ComponentValues:
       type: boolean
       label: Shoulder raised
       TranslateLabel: rulareba.upperarm.shoulder_raised
+      Image: angleIcons/rulaReba/UpperArm_shoulder_raised@2x.png
     Image: bodyParts/shoulder.png
   Trunk:
     Score:
@@ -244,21 +251,25 @@ ComponentValues:
         TranslateText: rula.components.trunk.score.1.text
         TranslateWarning: rula.components.trunk.score.1.warning
         Warning: ~
+        Image: angleIcons/rulaReba/Trunk_0_deg@2x.png
       2:
         Text: 0° - 20° forward
         TranslateText: rula.components.trunk.score.2.text
         TranslateWarning: rula.components.trunk.score.2.warning
-        Warning: 
+        Warning:
+        Image: angleIcons/rulaReba/Trunk_0_20_deg@2x.png
       3:
         Text: 20° - 60° forward
         TranslateText: rula.components.trunk.score.3.text
         TranslateWarning: rula.components.trunk.score.3.warning
         Warning: Trunk bent forward too much
+        Image: angleIcons/rulaReba/Trunk_20_60_deg@2x.png
       4:
         Text: 60°+ forward
         TranslateText: rula.components.trunk.score.4.text
         TranslateWarning: rula.components.trunk.score.4.warning
         Warning: Trunk bent forward too much
+        Image: angleIcons/rulaReba/Trunk_60+_deg@2x.png
       Base: 1
       label: Angle
       TranslateLabel: rulareba.trunk.score
@@ -278,6 +289,7 @@ ComponentValues:
       label: Side bending
       TranslateLabel: rulareba.trunk.sidebend
       type: boolean
+      Image: angleIcons/rulaReba/Trunk_side_bending@2x.png
     Twist:
       1:
         Text: Yes
@@ -293,6 +305,7 @@ ComponentValues:
       label: Twisted
       TranslateLabel: rulareba.trunk.twist
       type: boolean
+      Image: angleIcons/rulaReba/Trunk_Twisted@2x.png
     Image: bodyParts/back.png
   Lower Arm:
     Score:
@@ -301,11 +314,14 @@ ComponentValues:
         TranslateText: rula.components.lowerarm.score.1.text
         TranslateWarning: rula.components.lowerarm.score.1.warning
         Warning: ~
+        Image: angleIcons/rulaReba/LowerArm_60_100_deg@2x.png
       2:
         Text: 0° - 60° OR 100°+
         TranslateText: rula.components.lowerarm.score.2.text
         TranslateWarning: rula.components.lowerarm.score.2.warning
         Warning: ~
+        Image: angleIcons/rulaReba/LowerArm_0_60_deg@2x.png
+        Image2: angleIcons/rulaReba/LowerArm_100+_deg@2x.png
       Base: 1
       label: Angle
       TranslateLabel: rulareba.lowerarm.score
@@ -333,16 +349,20 @@ ComponentValues:
         TranslateText: rula.components.wrist.score.1.text
         TranslateWarning: rula.components.wrist.score.1.warning
         Warning: ~
+        Image: angleIcons/rulaReba/Wrist_0_deg@2x.png
       2:
         Text: 15° up - 15° down
         TranslateText: rula.components.wrist.score.2.text
         TranslateWarning: rula.components.wrist.score.2.warning
         Warning: Wrist bent
+        Image: angleIcons/rulaReba/Wrist_15_15_Deg@2x.png
       3:
         Text: 15°+ up OR 15°+ down
         TranslateText: rula.components.wrist.score.3.text
         TranslateWarning: rula.components.wrist.score.3.warning
         Warning: Wrist far too bent
+        Image: angleIcons/rulaReba/Wrist_15+Up_Deg@2x.png
+        Imag2: angleIcons/rulaReba/Wrist_15+Down_Deg@2x.png
       Base: 1
       type: select
       label: Angle
@@ -362,6 +382,8 @@ ComponentValues:
       type: boolean
       label: Twisted
       TranslateLabel: rulareba.wrist.twist
+      Image: angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png
+      Image2: angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png
     Midline:
       1:
         Text: Yes
@@ -377,5 +399,6 @@ ComponentValues:
       type: boolean
       label: Wrist bent from midline
       TranslateLabel: rulareba.wrist.midline
+      Image: angleIcons/rulaReba/Wrist_bent_from_midline@2x.png
     Image: bodyParts/wrist.png
 ... 

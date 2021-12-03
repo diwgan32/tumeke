@@ -1,6 +1,6 @@
 {
   "name": "@tumeke/tumekejs",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "Common code for tumeke js",
   "main": "lib/index.js",
   "scripts": {
