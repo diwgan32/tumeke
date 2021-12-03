@@ -298,7 +298,6 @@ ComponentValues:
       type: select
       TranslateLabel: rulareba.lower_arm.score
       Base: 1
-      Image: angleIcons/rulaReba/XXX
     Image: 'bodyParts/arm.png'
   Wrist:
     Score:
