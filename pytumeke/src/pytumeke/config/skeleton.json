@@ -1,3 +1,4 @@
+Flag --tojson has been deprecated, please use -o=json instead
 {
   "constants": {
     "green": {
@@ -264,6 +265,14 @@
     }
   },
   "Left shoulder": {
+    "default": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
     "default": {
       "type": "solid",
       "Color": [
