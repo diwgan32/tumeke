@@ -192,7 +192,8 @@ ComponentValues:
         TranslateText: rula.components.upperarm.score.2.text
         TranslateWarning: rula.components.upperarm.score.2.warning
         Warning: ~
-        Image: angleIcons/rulaReba/UpperArm_20_45_deg@2x.png
+        Image: angleIcons/rulaReba/UpperArm_20_deg_extension@2x.png
+        Image2: angleIcons/rulaReba/UpperArm_20_45_deg@2x.png
       3:
         Text: 45° - 90° in front
         TranslateText: rula.components.upperarm.score.3.text
@@ -362,7 +363,7 @@ ComponentValues:
         TranslateWarning: rula.components.wrist.score.3.warning
         Warning: Wrist far too bent
         Image: angleIcons/rulaReba/Wrist_15+Up_Deg@2x.png
-        Imag2: angleIcons/rulaReba/Wrist_15+Down_Deg@2x.png
+        Image2: angleIcons/rulaReba/Wrist_15+Down_Deg@2x.png
       Base: 1
       type: select
       label: Angle
