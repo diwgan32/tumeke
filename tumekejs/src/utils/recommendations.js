@@ -1,7 +1,7 @@
 import { RulaConfig, RebaConfig, Rula, Reba } from '../';
 
 const getImprovementObj = (config, videoData, selectedPosture, bodyPartId, componentId) => {
-    const posture = videoData.postures[selectedPosture];
+    const posture = videoData.posture_assessments[selectedPosture];
     const riskAssessment = posture.riskAssessment;
     const oldAssessmentObj = riskAssessment;
     let newAssessmentObj = null;
@@ -10,7 +10,7 @@ const getImprovementObj = (config, videoData, selectedPosture, bodyPartId, compo
     // Assign min value for bodypart + type
     const minValue = config.ComponentValues[bodyPartId][componentId].Base;
     // const minValue = 1; // TODO(znoland): get min value for component
-    const assessmentType = videoData.assessmentType;
+    const assessmentType = videoData['data'].assessmentType;
     // Get new RULA or REBA object
     if (assessmentType === 1) {
       newAssessmentObj = new Rula(oldAssessmentObj)
@@ -68,9 +68,9 @@ const getImprovementObj = (config, videoData, selectedPosture, bodyPartId, compo
 const getRiskComponent = (config, videoData, selectedPosture, bodyPartId, componentId, componentObj) => {
   const label = componentObj.label;
   const translateLabel = componentObj.TranslateLabel;
-  const posture = videoData.postures[selectedPosture];
+  const posture = videoData.posture_assessments[selectedPosture];
   const riskAssessment = posture.riskAssessment;
-  const assessmentType = videoData.assessmentType;
+  const assessmentType = videoData['data'].assessmentType;
   let assessmentObj;
   if (assessmentType === 1) {
     assessmentObj = new Rula(riskAssessment)
@@ -124,13 +124,13 @@ const getRiskComponent = (config, videoData, selectedPosture, bodyPartId, compon
 }
 
 const getConfig = (videoData) => {
-    const config = videoData.assessmentType == 1 ? RulaConfig : RebaConfig;
+    const config = videoData['data'].assessmentType == 1 ? RulaConfig : RebaConfig;
     return config;
 }
 
 export const getRecommendations = (videoData, selectedPosture) => {
   const arr = [];
-  const assessmentType = videoData.assessmentType;
+  const assessmentType = videoData['data'].assessmentType;
   const config = getConfig(videoData);
   const bodyParts = Object.keys(config.ComponentValues);
   for (let i = 0; i < bodyParts.length; i++) {
