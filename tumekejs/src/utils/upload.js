@@ -17,6 +17,7 @@ const requestCreateJob = async (config) => {
     body.append('assessmentType', config.assessmentType);
     body.append('assessmentMetadata', JSON.stringify(config.assessmentMetadata));
     body.append('videoName', config.videoName);
+    body.append('clipSegments', JSON.stringify(config.clipSegments));
     body.append("deviceToken", config.deviceToken);
     body.append("privacyMetadata", JSON.stringify(config.privacyMetadata));
     body.append("assessmentType", config.assessmentType);
