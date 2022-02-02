@@ -6411,9 +6411,9 @@ tsutils@^3.17.1:
   dependencies:
     tslib "^1.8.1"
 
-"tumeke-database@https://github.com/diwgan32/tumeke-database.git":
+"tumeke-database@git+ssh://git@github.com:diwgan32/tumeke-database.git":
   version "1.0.0"
-  resolved "https://github.com/diwgan32/tumeke-database.git#63054dda71dcaa2d63cbe847381aff13211733c3"
+  resolved "git+ssh://git@github.com:diwgan32/tumeke-database.git#8c09882e7238ef322b16772e9d6d7d88e1253f79"
   dependencies:
     "@react-native-community/async-storage" "^1.12.0"
     amazon-cognito-identity-js "^4.4.0"

@@ -17,14 +17,14 @@ export const getChartDataHelper = (frequencyTable) => {
 	return percentages;
 }
 
-export const getChartDataForVideo = (videoData, subjectId, type, detailedView=true) => {
-	const videoId = videoData.key;
-	const assessmentType = videoData.assessmentType;
+export const getChartDataForAssessment = (assessmentData, subjectId, type, detailedView=true) => {
+    const videoId = assessmentData.videoId;
+	const assessmentType = assessmentData['data'].assessmentType;
 	let frequencyTable;
 	if (type === "Overall") {
-		frequencyTable = videoData.summaryStats[subjectId].riskFrequency;
+		frequencyTable = assessmentData['data'].summaryStats[subjectId].riskFrequency;
 	} else {
-		frequencyTable = videoData.summaryStats[subjectId].componentFrequency[type]["Combined"];
+		frequencyTable = assessmentData['data'].summaryStats[subjectId].componentFrequency[type]["Combined"];
 	}
 	let processedFreqTable = {};
 	let colors = {};
@@ -59,7 +59,7 @@ export const getChartDataForVideo = (videoData, subjectId, type, detailedView=tr
 	const data = getChartDataHelper(processedFreqTable);
 
 	return {
-		videoId: videoId,
+        videoId: videoId,
 		data: data,
 		colors: colors
 	}
@@ -95,29 +95,29 @@ export const equalizeFreqHelper = (chartTables) => {
 	return chartTables;
 }
 
-const isSummaryStatsInvalid = (videoData, subjectId) => {
-	return (!("summaryStats" in videoData) ||
-		!videoData.summaryStats ||
-		videoData.summaryStats === {} ||
-		!videoData.summaryStats[subjectId] ||
-		videoData.summaryStats[subjectId] === {});
+const isSummaryStatsInvalid = (assessmentData, subjectId) => {
+	return (!("summaryStats" in assessmentData['data']) ||
+		!assessmentData['data'].summaryStats ||
+		assessmentData['data'].summaryStats === {} ||
+		!assessmentData['data'].summaryStats[subjectId] ||
+		assessmentData['data'].summaryStats[subjectId] === {});
 }
 
-export const getChartData = (videoDatas, subjectId, type, detailedView) => {
+export const getChartData = (assessmentDatas, subjectId, type, detailedView) => {
 	if (type !== "Overall") {
 		let maxNumEntry = 0;
-		for (let i = 0; i < videoDatas.length; i++) {
-			if (isSummaryStatsInvalid(videoDatas[i], subjectId) ||
-				!("componentFrequency" in videoDatas[i].summaryStats[subjectId]) ||
-				!(type in videoDatas[i].summaryStats[subjectId].componentFrequency)) {
+		for (let i = 0; i < assessmentDatas.length; i++) {
+			if (isSummaryStatsInvalid(assessmentDatas[i], subjectId) ||
+				!("componentFrequency" in assessmentDatas[i]['data'].summaryStats[subjectId]) ||
+				!(type in assessmentDatas[i]['data'].summaryStats[subjectId].componentFrequency)) {
 				return [];
 			
 			}
 		}
 
-		return equalizeFreqHelper(videoDatas.map( (videoData) => {
-			return getChartDataForVideo(
-				videoData,
+		return equalizeFreqHelper(assessmentDatas.map( (assessmentData) => {
+			return getChartDataForAssessment(
+				assessmentData,
 				subjectId,
 				type,
 				detailedView
@@ -125,16 +125,16 @@ export const getChartData = (videoDatas, subjectId, type, detailedView) => {
 		}));
 	}
 
-	for (let i = 0; i < videoDatas.length; i++) {
-		if (isSummaryStatsInvalid(videoDatas[i], subjectId)) {
+	for (let i = 0; i < assessmentDatas.length; i++) {
+		if (isSummaryStatsInvalid(assessmentDatas[i], subjectId)) {
 			return [];
 		}
 		
 	}
 
-	return equalizeFreqHelper(videoDatas.map( (videoData) => {
-		return getChartDataForVideo(
-			videoData,
+	return equalizeFreqHelper(assessmentDatas.map( (assessmentData) => {
+		return getChartDataForAssessment(
+			assessmentData,
 			subjectId,
 			type,
 			detailedView
@@ -142,15 +142,15 @@ export const getChartData = (videoDatas, subjectId, type, detailedView) => {
 	}));
 }
 
-// videoDatas is an array of data objs from our server
-export const getCompareObject = (videoDatas, detailedView=true, subjectId="0") => {
+// assessmentDatas is an array of data objs from our server
+export const getCompareObject = (assessmentDatas, detailedView=true, subjectId="0") => {
 	const compareObject = {};
-	compareObject["Overall"] = getChartData(videoDatas, subjectId, "Overall", detailedView);
-	compareObject["Leg"] = getChartData(videoDatas, subjectId, "Leg", detailedView);
-	compareObject["Lower Arm"] = getChartData(videoDatas, subjectId, "Lower Arm", detailedView);
-	compareObject["Upper Arm"] = getChartData(videoDatas, subjectId, "Upper Arm", detailedView);
-	compareObject["Neck"] = getChartData(videoDatas, subjectId, "Neck", detailedView);
-	compareObject["Trunk"] = getChartData(videoDatas, subjectId, "Trunk", detailedView);
-	compareObject["Wrist"] = getChartData(videoDatas, subjectId, "Wrist", detailedView);
+	compareObject["Overall"] = getChartData(assessmentDatas, subjectId, "Overall", detailedView);
+	compareObject["Leg"] = getChartData(assessmentDatas, subjectId, "Leg", detailedView);
+	compareObject["Lower Arm"] = getChartData(assessmentDatas, subjectId, "Lower Arm", detailedView);
+	compareObject["Upper Arm"] = getChartData(assessmentDatas, subjectId, "Upper Arm", detailedView);
+	compareObject["Neck"] = getChartData(assessmentDatas, subjectId, "Neck", detailedView);
+	compareObject["Trunk"] = getChartData(assessmentDatas, subjectId, "Trunk", detailedView);
+	compareObject["Wrist"] = getChartData(assessmentDatas, subjectId, "Wrist", detailedView);
 	return compareObject;
 }
