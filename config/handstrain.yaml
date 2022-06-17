@@ -1,0 +1,239 @@
+constants:
+  black: &black
+    Color:
+      rgba(15, 15, 30, 0.9)
+
+  light_green: &light_green
+    Color:
+      rgba(109, 208, 163, 1.0)
+
+  green: &green
+    Color:
+      rgba(20, 210, 184, 1.0)
+
+  orange: &orange
+    Color:
+      rgba(234, 130, 130, 1.0)
+
+  red: &red
+    Color:
+      rgba(184, 15, 10, 1.0)
+
+  unsafe: &unsafe
+    TranslateText: hand_strain.score.unsafe
+    ShortText: Unsafe
+    <<: *black
+  acceptable: &good
+    TranslateText: hand_strain.score.good
+    ShortText: Good
+    <<: *light_green
+  low: &fair
+    TranslateText: hand_strain.score.fair
+    ShortText: Fair
+    <<: *orange
+  medium: &poor
+    TranslateText: hand_strain.score.poor
+    ShortText: Poor
+    <<: *red
+
+
+ResultValues:
+  resultLeft:
+    "[0, 10]":
+      Text: Safe job for upper extremity
+      <<: *good
+      Warning: ~
+    "[10, None]":
+      Text: Unsafe job for upper extremity
+      <<: *poor
+      Warning: Job needs to be redesigned
+
+  resultRight:
+    "[0, 10]":
+      Text: Safe job for upper extremity
+      <<: *good
+      Warning: ~
+    "[10, None]":
+      Text: Unsafe job for upper extremity
+      <<: *poor
+      Warning: Job needs to be redesigned
+
+  im:
+    "[0, 5]":
+      <<: *good
+      Warning: ~
+    "[5, 15]":
+      <<: *fair
+      Warning: Job has high level of intensity
+    "[15, None]":
+      <<: *poor
+      Warning: Job has very high level of intensity
+
+  eml:
+    "[0, 10]":
+      <<: *good
+      Warning: ~
+    "[10, 20]":
+      <<: *fair
+      Warning: High level of repetition on left hand
+    "[20, None]":
+      <<: *poor
+      Warning: Very high level of repetition on left hand
+
+  pml:
+    "[0, 1.5]":
+      <<: *good
+      Warning: ~
+    "[1.5, 2]":
+      <<: *fair
+      Warning: Lefthand posture OK
+    "[2, None]":
+      <<: *poor
+      Warning: Lefthand posture bad
+  
+  dml:
+    "[0, 10]":
+      <<: *good
+      Warning: ~
+    "[10, 20]":
+      <<: *fair
+      Warning: Each repetition has high duration on left hand
+    "[20, None]":
+      <<: *poor
+      Warning: Each repetition has very high duration on left hand
+
+  wm:
+    "[0, .5]":
+      <<: *good
+      Warning: ~
+    "[.5, 1]":
+      <<: *fair
+      Warning: Job should be done for shorter period
+    "[1, None]":
+      <<: *poor
+      Warning: Job should be done for shorter period
+
+  emr:
+    "[0, 10]":
+      <<: *good
+      Warning: ~
+    "[10, 20]":
+      <<: *fair
+      Warning: High level of repetition on right hand
+    "[20, None]":
+      <<: *poor
+      Warning: Very high level of repetition on right hand
+
+  pmr:
+    "[0, 1.5]":
+      <<: *good
+      Warning: ~
+    "[1.5, 2]":
+      <<: *fair
+      Warning: Righthand posture OK
+    "[2, None]":
+      <<: *poor
+      Warning: Righthand posture bad
+  
+  dmr:
+    "[0, 10]":
+      <<: *good
+      Warning: ~
+    "[10, 20]":
+      <<: *fair
+      Warning: Each repetition has high duration on left hand
+    "[20, None]":
+      <<: *poor
+      Warning: Each repetition has very high duration on left hand
+
+ComponentValues:
+  durationPerExertionLeft:
+    "[0, 10]":
+      <<: *good
+      Warning: ~
+    "[10, 20]":
+      <<: *fair
+      Text: Duration per exertion (left)
+      Warning: Each repetition has high duration on left hand
+    "[20, None]":
+      <<: *poor
+      Text: Duration per exertion (left)
+      Warning: Each repetition has very high duration on left hand
+    Base: 1
+    Multiplier: "dml"
+    label: Duration per exertion (left)
+  durationPerExertionRight:
+    "[0, 10]":
+      <<: *good
+      Warning: ~
+    "[10, 20]":
+      <<: *fair
+      Text: Duration per exertion (right)
+      Warning: Each repetition has high duration on left hand
+    "[20, None]":
+      <<: *poor
+      Text: Duration per exertion (right)
+      Warning: Each repetition has very high duration on left hand
+    Base: 1
+    Multiplier: "dmr"
+    label: Duration per exertion (right)
+  flexionAngleLeft:
+    "[0, 10]":
+      <<: *good
+      Warning: ~
+    "[10, 20]":
+      <<: *fair
+      Text: Wrist posture angle (left)
+      Warning: Each repetition has high duration on left hand
+    "[20, None]":
+      <<: *poor
+      Text: Wrist posture angle (left)
+      Warning: Each repetition has very high duration on left hand
+    Base: 1
+    Multiplier: "pml"
+    label: Wrist posture angle (left)
+  flexionAngleRight:
+    "[0, 10]":
+      <<: *good
+      Warning: ~
+    "[10, 20]":
+      <<: *fair
+      Text: Wrist posture angle (right)
+      Warning: Each repetition has high duration on left hand
+    "[20, None]":
+      <<: *poor
+      Text: Wrist posture angle (right)
+      Warning: Each repetition has very high duration on left hand
+    Base: 1
+    Multiplier: "pmr"
+    label: Wrist posture angle (right)
+  effortsLeft:
+    "[0, 10]":
+      <<: *good
+      Warning: ~
+    "[10, 20]":
+      <<: *fair
+      Text: Efforts per hand (left)
+      Warning: Each repetition has high duration on left hand
+    "[20, None]":
+      <<: *poor
+      Text: Efforts per hand (left)
+      Warning: Each repetition has very high duration on left hand
+    Base: 1
+    Multiplier: "eml"
+    label: Efforts per hand (left)
+  effortsRight:
+    "[0, 10]":
+      <<: *good
+      Warning: ~
+    "[10, 20]":
+      <<: *fair
+      Text: Efforts per hand (right)
+      Warning: Each repetition has high duration on left hand
+    "[20, None]":
+      <<: *poor
+      Text: Efforts per hand (right)
+      Warning: Each repetition has very high duration on left hand
+    Base: 1
+    Multiplier: "emr"
+    label: Efforts per hand (right)

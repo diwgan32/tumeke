@@ -127,6 +127,20 @@ export class Niosh {
     this.computeAssessment();
   };
 
+  updateRiskComponents = (typeOfInput, bodyGroup, newValue) => {
+    if (this.additionalInputs["units"] == Units.METRIC) {
+      if (bodyGroup === "asymmetryAngle") {
+        this.riskComponents[typeOfInput]["asymmetryAngle"] = newValue;
+      } else {
+        this.riskComponents[typeOfInput][bodyGroup] = (1/.3048) * newValue; 
+      }
+      
+    } else {
+      this.riskComponents[typeOfInput][bodyGroup] = newValue;
+    }
+    this.computeAssessment();
+  };
+
   interpolateFreqTable = (frequency, table, cutoff) => {
     if (frequency < 0) {
       throw "Frequency cannot be negative"
@@ -229,14 +243,14 @@ export class Niosh {
     for (const key in map[component]) {
       const array = strToArr(key);
       
-      if (isNaN(array[0]) && score < array[1]) {
+      if (isNaN(array[0]) && score <= array[1]) {
         return key;
       }
-      if (isNaN(array[1]) && score > array[0]) {
+      if (isNaN(array[1]) && score >= array[0]) {
         return key;
       }
 
-      if (score >= array[0] && score <= array[1]) {
+      if (score >= array[0] && score < array[1]) {
         return key;
       }
     }

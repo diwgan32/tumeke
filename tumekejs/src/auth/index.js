@@ -190,6 +190,7 @@ export async function initiateResetPasswordFlow(email) {
 	const encoded_email = encodeURIComponent(email);
 	const userObj = await db.getUserVirgilId(encoded_email);
 	const virgilId = userObj.virgilId;
+
 	const ableToReset = await canResetPassword(virgilId);
 	if (!ableToReset) {
 		const ret = await db.resetPasswordHelper(encoded_email);

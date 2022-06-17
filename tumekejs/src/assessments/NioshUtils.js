@@ -20,3 +20,24 @@ export const interp = (val, x1, x2, y1, y2) => {
   }
   return ((val - x1)/(x2 - x1)) * (y2 - y1) + y1;
 }
+
+export const computeRangesHelper = (map, score) => {
+  for (const key in map) {
+    if (key === "Base" || key === "Multiplier") {
+      continue;
+    }
+    const array = strToArr(key);
+    
+    if (isNaN(array[0]) && score <= array[1]) {
+      return key;
+    }
+    if (isNaN(array[1]) && score >= array[0]) {
+      return key;
+    }
+
+    if (score >= array[0] && score < array[1]) {
+      return key;
+    }
+  }
+  return null;
+}

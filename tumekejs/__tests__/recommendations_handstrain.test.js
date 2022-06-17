@@ -1,5 +1,5 @@
-import { getRecommendations } from '../lib/utils/recommendations';
-import { videoObj1, videoObj2, assessmentObj3 } from './constants';
+import { getRecommendations } from '../lib/utils/recommendations_handstrain';
+import { assessmentObj3 } from './constants';
 
 // test('expect basic recommendation helper', () => {
 //   const recs = getRecommendations(videoObj1, 0);
