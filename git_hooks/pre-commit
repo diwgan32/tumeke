@@ -1,7 +1,8 @@
 #!/bin/bash
 touch $PWD/.commit
 
-yq eval -j $PWD/config/rula.yaml &> $PWD/pytumeke/src/pytumeke/config/rula.json
-yq eval -j $PWD/config/reba.yaml &> $PWD/pytumeke/src/pytumeke/config/reba.json
-yq eval -j $PWD/config/niosh.yaml &> $PWD/pytumeke/src/pytumeke/config/niosh.json
-yq eval -j $PWD/config/skeleton.yaml &> $PWD/pytumeke/src/pytumeke/config/skeleton.json
+yq eval -o=json $PWD/config/rula.yaml &> $PWD/pytumeke/src/pytumeke/config/rula.json
+yq eval -o=json $PWD/config/reba.yaml &> $PWD/pytumeke/src/pytumeke/config/reba.json
+yq eval -o=json $PWD/config/niosh.yaml &> $PWD/pytumeke/src/pytumeke/config/niosh.json
+yq eval -o=json $PWD/config/handstrain.yaml &> $PWD/pytumeke/src/pytumeke/config/handstrain.json
+yq eval -o=json $PWD/config/skeleton.yaml &> $PWD/pytumeke/src/pytumeke/config/skeleton.json

@@ -1,4 +1,3 @@
-Flag --tojson has been deprecated, please use -o=json instead
 {
   "constants": {
     "green": {
