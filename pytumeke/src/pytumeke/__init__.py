@@ -16,6 +16,10 @@ f = open(f"{dir_path}/config/niosh.json")
 niosh_config = json.load(f)
 f.close()
 
+f = open(f"{dir_path}/config/handstrain.json")
+handstrain_config = json.load(f)
+f.close()
+
 f = open(f"{dir_path}/config/skeleton.json")
 skeleton_config = json.load(f)
 f.close()
