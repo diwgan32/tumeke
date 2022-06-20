@@ -70,13 +70,13 @@ ResultValues:
       Warning: Job has very high level of intensity
 
   eml:
-    "[0, 10]":
+    "[0, 5]":
       <<: *good
       Warning: ~
-    "[10, 20]":
+    "[5, 10]":
       <<: *fair
       Warning: High level of repetition on left hand
-    "[20, None]":
+    "[10, None]":
       <<: *poor
       Warning: Very high level of repetition on left hand
 
@@ -92,13 +92,13 @@ ResultValues:
       Warning: Lefthand posture bad
   
   dml:
-    "[0, 10]":
+    "[0, 7.5]":
       <<: *good
       Warning: ~
-    "[10, 20]":
+    "[7.5, 15]":
       <<: *fair
       Warning: Each repetition has high duration on left hand
-    "[20, None]":
+    "[15, None]":
       <<: *poor
       Warning: Each repetition has very high duration on left hand
 
@@ -114,15 +114,15 @@ ResultValues:
       Warning: Job should be done for shorter period
 
   emr:
-    "[0, 10]":
+    "[0, 5]":
       <<: *good
       Warning: ~
-    "[10, 20]":
+    "[5, 10]":
       <<: *fair
-      Warning: High level of repetition on right hand
-    "[20, None]":
+      Warning: High level of repetition on left hand
+    "[10, None]":
       <<: *poor
-      Warning: Very high level of repetition on right hand
+      Warning: Very high level of repetition on left hand
 
   pmr:
     "[0, 1.5]":
@@ -136,13 +136,13 @@ ResultValues:
       Warning: Righthand posture bad
   
   dmr:
-    "[0, 10]":
+    "[0, 7.5]":
       <<: *good
       Warning: ~
-    "[10, 20]":
+    "[7.5, 15]":
       <<: *fair
       Warning: Each repetition has high duration on left hand
-    "[20, None]":
+    "[15, None]":
       <<: *poor
       Warning: Each repetition has very high duration on left hand
 

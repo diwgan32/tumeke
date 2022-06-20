@@ -90,19 +90,19 @@
       }
     },
     "eml": {
-      "[0, 10]": {
+      "[0, 5]": {
         "TranslateText": "hand_strain.score.good",
         "ShortText": "Good",
         "Color": "rgba(109, 208, 163, 1.0)",
         "Warning": null
       },
-      "[10, 20]": {
+      "[5, 10]": {
         "TranslateText": "hand_strain.score.fair",
         "ShortText": "Fair",
         "Color": "rgba(234, 130, 130, 1.0)",
         "Warning": "High level of repetition on left hand"
       },
-      "[20, None]": {
+      "[10, None]": {
         "TranslateText": "hand_strain.score.poor",
         "ShortText": "Poor",
         "Color": "rgba(184, 15, 10, 1.0)",
@@ -130,19 +130,19 @@
       }
     },
     "dml": {
-      "[0, 10]": {
+      "[0, 7.5]": {
         "TranslateText": "hand_strain.score.good",
         "ShortText": "Good",
         "Color": "rgba(109, 208, 163, 1.0)",
         "Warning": null
       },
-      "[10, 20]": {
+      "[7.5, 15]": {
         "TranslateText": "hand_strain.score.fair",
         "ShortText": "Fair",
         "Color": "rgba(234, 130, 130, 1.0)",
         "Warning": "Each repetition has high duration on left hand"
       },
-      "[20, None]": {
+      "[15, None]": {
         "TranslateText": "hand_strain.score.poor",
         "ShortText": "Poor",
         "Color": "rgba(184, 15, 10, 1.0)",
@@ -170,23 +170,23 @@
       }
     },
     "emr": {
-      "[0, 10]": {
+      "[0, 5]": {
         "TranslateText": "hand_strain.score.good",
         "ShortText": "Good",
         "Color": "rgba(109, 208, 163, 1.0)",
         "Warning": null
       },
-      "[10, 20]": {
+      "[5, 10]": {
         "TranslateText": "hand_strain.score.fair",
         "ShortText": "Fair",
         "Color": "rgba(234, 130, 130, 1.0)",
-        "Warning": "High level of repetition on right hand"
+        "Warning": "High level of repetition on left hand"
       },
-      "[20, None]": {
+      "[10, None]": {
         "TranslateText": "hand_strain.score.poor",
         "ShortText": "Poor",
         "Color": "rgba(184, 15, 10, 1.0)",
-        "Warning": "Very high level of repetition on right hand"
+        "Warning": "Very high level of repetition on left hand"
       }
     },
     "pmr": {
@@ -210,19 +210,19 @@
       }
     },
     "dmr": {
-      "[0, 10]": {
+      "[0, 7.5]": {
         "TranslateText": "hand_strain.score.good",
         "ShortText": "Good",
         "Color": "rgba(109, 208, 163, 1.0)",
         "Warning": null
       },
-      "[10, 20]": {
+      "[7.5, 15]": {
         "TranslateText": "hand_strain.score.fair",
         "ShortText": "Fair",
         "Color": "rgba(234, 130, 130, 1.0)",
         "Warning": "Each repetition has high duration on left hand"
       },
-      "[20, None]": {
+      "[15, None]": {
         "TranslateText": "hand_strain.score.poor",
         "ShortText": "Poor",
         "Color": "rgba(184, 15, 10, 1.0)",
