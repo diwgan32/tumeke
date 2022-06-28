@@ -4,7 +4,7 @@ import { computeRangesHelper } from "../assessments/NioshUtils";
 const getImprovementObj = (config, videoData, selectedPosture, bodyPartId, range) => {
     const posture = videoData.posture_assessments[selectedPosture];
     const riskAssessment = posture.riskAssessment;
-    const oldAssessmentObj = riskAssessment;
+    const oldAssessmentObj = new HandStrain(riskAssessment);
     let newAssessmentObj = null;
     let improvementObj = {};
 
@@ -22,28 +22,27 @@ const getImprovementObj = (config, videoData, selectedPosture, bodyPartId, range
      *   3. Body part risk
      */
     //TODO(znoland): come up with other recommendations for warnings without a score impact
-
-    const oldScore = oldAssessmentObj.assessmentResult["resultLeft"]["Score"];
-    const newScore = newAssessmentObj.assessmentResult["resultLeft"]["Score"];
+    const oldScore = oldAssessmentObj.assessmentResult["OverallScore"]["Score"];
+    const newScore = newAssessmentObj.assessmentResult["OverallScore"]["Score"];
     console.log("Score", oldScore, newScore);
     improvementObj["overall-risk-reduction"] = Math.abs(Math.round((newScore / oldScore - 1) * 100))
     improvementObj["original-component-value"] = riskAssessment.riskComponents[bodyPartId];
     if (newScore < oldScore) {
       improvementObj['type'] = 'overall';
       improvementObj['translateType'] = 'breakdown.overall';
-      improvementObj['old-risk-text'] = oldAssessmentObj.assessmentResult["ShortText"];
-      improvementObj['old-risk-translate-text'] = oldAssessmentObj.assessmentResult["TranslateText"];
-      improvementObj['old-risk-score'] = oldAssessmentObj.assessmentResult["resultLeft"]["Score"];
-      improvementObj['new-risk-text'] = newAssessmentObj.assessmentResult["ShortText"];
+      improvementObj['old-risk-text'] = oldAssessmentObj.assessmentResult["OverallScore"]["ShortText"];
+      improvementObj['old-risk-translate-text'] = oldAssessmentObj.assessmentResult["OverallScore"]["TranslateText"];
+      improvementObj['old-risk-score'] = oldAssessmentObj.assessmentResult["OverallScore"]["Score"];
+      improvementObj['new-risk-text'] = newAssessmentObj.assessmentResult["OverallScore"]["ShortText"];
       improvementObj['new-risk-translate-text'] = newAssessmentObj.assessmentResult["TranslateText"];
-      improvementObj['new-risk-score'] = newAssessmentObj.assessmentResult["resultLeft"]["Score"];
+      improvementObj['new-risk-score'] = newAssessmentObj.assessmentResult["OverallScore"]["Score"];
     } else if (!(bodyPartId in newAssessmentObj.riskComponents)) {
       // return (<div>No component score</div>);
       return;
     } else if (
       newAssessmentObj.assessmentResult[multiplierName]["Score"] < oldAssessmentObj.assessmentResult[multiplierName]["Score"]
     ) {
-      improvementObj['type'] = bodyPartId;
+      improvementObj['type'] = config.ComponentValues[bodyPartId]["ShortLabel"];
       improvementObj['translateType'] = 'rulareba.'+bodyPartId.toLowerCase().split(' ').join('')+'.name';
       improvementObj['old-risk-text'] = oldAssessmentObj.assessmentResult[multiplierName]["ShortText"];
       improvementObj['old-risk-translate-text'] = oldAssessmentObj.assessmentResult[multiplierName]["TranslateText"];

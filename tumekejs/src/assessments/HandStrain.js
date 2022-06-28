@@ -142,6 +142,10 @@ export class HandStrain {
         postureMultiplierRight * 
         this.getWorkdayMultiplier(this.additionalInputs["taskDuration"]))
 
+    this.assessmentResult["OverallScore"] = this.getRiskScoreInfo("OverallScore", 
+      (this.assessmentResult["resultRight"]["Score"] + this.assessmentResult["resultLeft"]["Score"])/2.0
+    )
+    
     this.assessmentResult["im"] = this.getRiskScoreInfo("im", this.getIntensityMultiplier(this.additionalInputs["borgScale"]));
     this.assessmentResult["eml"] = this.getRiskScoreInfo("eml", this.getEffortMultiplier(this.riskComponents["effortsLeft"]));
     this.assessmentResult["dml"] = this.getRiskScoreInfo("dml", this.getDurationMultiplier(this.riskComponents["durationPerExertionLeft"]));

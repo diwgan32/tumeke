@@ -37,6 +37,22 @@
     }
   },
   "ResultValues": {
+    "OverallScore": {
+      "[0, 10]": {
+        "Text": "Safe job for upper extremity",
+        "TranslateText": "hand_strain.score.good",
+        "ShortText": "Good",
+        "Color": "rgba(109, 208, 163, 1.0)",
+        "Warning": null
+      },
+      "[10, None]": {
+        "Text": "Unsafe job for upper extremity",
+        "TranslateText": "hand_strain.score.poor",
+        "ShortText": "Poor",
+        "Color": "rgba(184, 15, 10, 1.0)",
+        "Warning": "Job needs to be redesigned"
+      }
+    },
     "resultLeft": {
       "[0, 10]": {
         "Text": "Safe job for upper extremity",
@@ -254,7 +270,8 @@
       },
       "Base": 1,
       "Multiplier": "dml",
-      "label": "Duration per exertion (left)"
+      "label": "Duration per exertion (left)",
+      "ShortLabel": "duration (l)"
     },
     "durationPerExertionRight": {
       "[0, 10]": {
@@ -268,18 +285,19 @@
         "ShortText": "Fair",
         "Color": "rgba(234, 130, 130, 1.0)",
         "Text": "Duration per exertion (right)",
-        "Warning": "Each repetition has high duration on left hand"
+        "Warning": "Each repetition has high duration on right hand"
       },
       "[20, None]": {
         "TranslateText": "hand_strain.score.poor",
         "ShortText": "Poor",
         "Color": "rgba(184, 15, 10, 1.0)",
         "Text": "Duration per exertion (right)",
-        "Warning": "Each repetition has very high duration on left hand"
+        "Warning": "Each repetition has very high duration on right hand"
       },
       "Base": 1,
       "Multiplier": "dmr",
-      "label": "Duration per exertion (right)"
+      "label": "Duration per exertion (right)",
+      "ShortLabel": "duration (r)"
     },
     "flexionAngleLeft": {
       "[0, 10]": {
@@ -293,18 +311,19 @@
         "ShortText": "Fair",
         "Color": "rgba(234, 130, 130, 1.0)",
         "Text": "Wrist posture angle (left)",
-        "Warning": "Each repetition has high duration on left hand"
+        "Warning": "Left wrist repeatedly flexing/extending"
       },
       "[20, None]": {
         "TranslateText": "hand_strain.score.poor",
         "ShortText": "Poor",
         "Color": "rgba(184, 15, 10, 1.0)",
         "Text": "Wrist posture angle (left)",
-        "Warning": "Each repetition has very high duration on left hand"
+        "Warning": "Left wrist repeatedly flexing/extending at a high level"
       },
       "Base": 1,
       "Multiplier": "pml",
-      "label": "Wrist posture angle (left)"
+      "label": "Wrist posture angle (left)",
+      "ShortLabel": "posture (l)"
     },
     "flexionAngleRight": {
       "[0, 10]": {
@@ -318,18 +337,19 @@
         "ShortText": "Fair",
         "Color": "rgba(234, 130, 130, 1.0)",
         "Text": "Wrist posture angle (right)",
-        "Warning": "Each repetition has high duration on left hand"
+        "Warning": "Right wrist repeatedly flexing/extending"
       },
       "[20, None]": {
         "TranslateText": "hand_strain.score.poor",
         "ShortText": "Poor",
         "Color": "rgba(184, 15, 10, 1.0)",
         "Text": "Wrist posture angle (right)",
-        "Warning": "Each repetition has very high duration on left hand"
+        "Warning": "Right wrist repeatedly flexing/extending at a high level"
       },
       "Base": 1,
       "Multiplier": "pmr",
-      "label": "Wrist posture angle (right)"
+      "label": "Wrist posture angle (right)",
+      "ShortLabel": "posture (r)"
     },
     "effortsLeft": {
       "[0, 10]": {
@@ -343,18 +363,19 @@
         "ShortText": "Fair",
         "Color": "rgba(234, 130, 130, 1.0)",
         "Text": "Efforts per hand (left)",
-        "Warning": "Each repetition has high duration on left hand"
+        "Warning": "Left wrist exerting force frequently"
       },
       "[20, None]": {
         "TranslateText": "hand_strain.score.poor",
         "ShortText": "Poor",
         "Color": "rgba(184, 15, 10, 1.0)",
         "Text": "Efforts per hand (left)",
-        "Warning": "Each repetition has very high duration on left hand"
+        "Warning": "Left wrist exerting force highly frequently"
       },
       "Base": 1,
       "Multiplier": "eml",
-      "label": "Efforts per hand (left)"
+      "label": "Efforts per hand (left)",
+      "ShortLabel": "efforts (l)"
     },
     "effortsRight": {
       "[0, 10]": {
@@ -368,18 +389,19 @@
         "ShortText": "Fair",
         "Color": "rgba(234, 130, 130, 1.0)",
         "Text": "Efforts per hand (right)",
-        "Warning": "Each repetition has high duration on left hand"
+        "Warning": "Right wrist exerting force frequently"
       },
       "[20, None]": {
         "TranslateText": "hand_strain.score.poor",
         "ShortText": "Poor",
         "Color": "rgba(184, 15, 10, 1.0)",
         "Text": "Efforts per hand (right)",
-        "Warning": "Each repetition has very high duration on left hand"
+        "Warning": "Right wrist exerting force highly frequently"
       },
       "Base": 1,
       "Multiplier": "emr",
-      "label": "Efforts per hand (right)"
+      "label": "Efforts per hand (right)",
+      "ShortLabel": "efforts (r)"
     }
   }
 }

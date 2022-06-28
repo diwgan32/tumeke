@@ -38,6 +38,16 @@ constants:
 
 
 ResultValues:
+  OverallScore:
+    "[0, 10]":
+      Text: Safe job for upper extremity
+      <<: *good
+      Warning: ~
+    "[10, None]":
+      Text: Unsafe job for upper extremity
+      <<: *poor
+      Warning: Job needs to be redesigned
+
   resultLeft:
     "[0, 10]":
       Text: Safe job for upper extremity
@@ -162,6 +172,7 @@ ComponentValues:
     Base: 1
     Multiplier: "dml"
     label: Duration per exertion (left)
+    ShortLabel: duration (l)
   durationPerExertionRight:
     "[0, 10]":
       <<: *good
@@ -169,14 +180,15 @@ ComponentValues:
     "[10, 20]":
       <<: *fair
       Text: Duration per exertion (right)
-      Warning: Each repetition has high duration on left hand
+      Warning: Each repetition has high duration on right hand
     "[20, None]":
       <<: *poor
       Text: Duration per exertion (right)
-      Warning: Each repetition has very high duration on left hand
+      Warning: Each repetition has very high duration on right hand
     Base: 1
     Multiplier: "dmr"
     label: Duration per exertion (right)
+    ShortLabel: duration (r)
   flexionAngleLeft:
     "[0, 10]":
       <<: *good
@@ -184,14 +196,15 @@ ComponentValues:
     "[10, 20]":
       <<: *fair
       Text: Wrist posture angle (left)
-      Warning: Each repetition has high duration on left hand
+      Warning: Left wrist repeatedly flexing/extending
     "[20, None]":
       <<: *poor
       Text: Wrist posture angle (left)
-      Warning: Each repetition has very high duration on left hand
+      Warning: Left wrist repeatedly flexing/extending at a high level
     Base: 1
     Multiplier: "pml"
     label: Wrist posture angle (left)
+    ShortLabel: posture (l)
   flexionAngleRight:
     "[0, 10]":
       <<: *good
@@ -199,14 +212,15 @@ ComponentValues:
     "[10, 20]":
       <<: *fair
       Text: Wrist posture angle (right)
-      Warning: Each repetition has high duration on left hand
+      Warning: Right wrist repeatedly flexing/extending
     "[20, None]":
       <<: *poor
       Text: Wrist posture angle (right)
-      Warning: Each repetition has very high duration on left hand
+      Warning: Right wrist repeatedly flexing/extending at a high level
     Base: 1
     Multiplier: "pmr"
     label: Wrist posture angle (right)
+    ShortLabel: posture (r)
   effortsLeft:
     "[0, 10]":
       <<: *good
@@ -214,14 +228,15 @@ ComponentValues:
     "[10, 20]":
       <<: *fair
       Text: Efforts per hand (left)
-      Warning: Each repetition has high duration on left hand
+      Warning: Left wrist exerting force frequently
     "[20, None]":
       <<: *poor
       Text: Efforts per hand (left)
-      Warning: Each repetition has very high duration on left hand
+      Warning: Left wrist exerting force highly frequently
     Base: 1
     Multiplier: "eml"
     label: Efforts per hand (left)
+    ShortLabel: efforts (l)
   effortsRight:
     "[0, 10]":
       <<: *good
@@ -229,11 +244,12 @@ ComponentValues:
     "[10, 20]":
       <<: *fair
       Text: Efforts per hand (right)
-      Warning: Each repetition has high duration on left hand
+      Warning: Right wrist exerting force frequently
     "[20, None]":
       <<: *poor
       Text: Efforts per hand (right)
-      Warning: Each repetition has very high duration on left hand
+      Warning: Right wrist exerting force highly frequently
     Base: 1
     Multiplier: "emr"
     label: Efforts per hand (right)
+    ShortLabel: efforts (r)
