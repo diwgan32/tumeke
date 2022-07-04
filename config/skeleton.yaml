@@ -163,4 +163,44 @@ Neck:
     type: solid
     <<: *red
 
+Left wrist:
+  default:
+    type: solid
+    <<: *green
+  "[None, -15]":
+    type: solid
+    <<: *red
+  "[-15, -10]":
+    type: gradient
+    <<: *red_to_green
+  "[-10, 10]":
+    type: solid
+    <<: *green
+  "[10, 15]":
+    type: gradient
+    <<: *green_to_red
+  "[15, None]":
+    type: solid
+    <<: *red
+
+Right wrist:
+  default:
+    type: solid
+    <<: *green
+  "[None, -15]":
+    type: solid
+    <<: *red
+  "[-15, -10]":
+    type: gradient
+    <<: *red_to_green
+  "[-10, 10]":
+    type: solid
+    <<: *green
+  "[10, 15]":
+    type: gradient
+    <<: *green_to_red
+  "[15, None]":
+    type: solid
+    <<: *red
+
 ... 
