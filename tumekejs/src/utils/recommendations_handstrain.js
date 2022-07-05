@@ -15,6 +15,18 @@ const getImprovementObj = (config, videoData, selectedPosture, bodyPartId, range
     // Get new RULA or REBA object
     newAssessmentObj = new HandStrain(oldAssessmentObj);
     newAssessmentObj.updateRiskComponents(bodyPartId, "", minValue);
+
+    // If it's flexion/extension, we need to set the counterpart to 0 as well
+    // Otherwise we're not nulling out the entire postural component.
+    if (bodyPartId.includes("flexion")) {
+      const otherPostureName = "extensionAngle"+bodyPartId.substr(("flexionAngle").length);
+      newAssessmentObj.updateRiskComponents(otherPostureName, "", minValue);
+    }
+    if (bodyPartId.includes("extension")) {
+      const otherPostureName = "flexionAngle"+bodyPartId.substr(("extensionAngle").length);
+      newAssessmentObj.updateRiskComponents(otherPostureName, "", minValue);
+    }
+
     const multiplierName = config.ComponentValues[bodyPartId].Multiplier;
     /* Determine score card type:
      *   1. Overall risk
@@ -24,7 +36,6 @@ const getImprovementObj = (config, videoData, selectedPosture, bodyPartId, range
     //TODO(znoland): come up with other recommendations for warnings without a score impact
     const oldScore = oldAssessmentObj.assessmentResult["OverallScore"]["Score"];
     const newScore = newAssessmentObj.assessmentResult["OverallScore"]["Score"];
-    console.log("Score", oldScore, newScore);
     improvementObj["overall-risk-reduction"] = Math.abs(Math.round((newScore / oldScore - 1) * 100))
     improvementObj["original-component-value"] = riskAssessment.riskComponents[bodyPartId];
     if (newScore < oldScore) {
@@ -50,6 +61,8 @@ const getImprovementObj = (config, videoData, selectedPosture, bodyPartId, range
       improvementObj['new-risk-text'] = newAssessmentObj.assessmentResult[multiplierName]["ShortText"];
       improvementObj['new-risk-translate-text'] = newAssessmentObj.assessmentResult[multiplierName]["TranslateText"];
       improvementObj['new-risk-score'] = newAssessmentObj.assessmentResult[multiplierName]["Score"];
+    } else {
+      return;
     }
 
     improvementObj['risk-reduction-perc'] = (
@@ -100,7 +113,8 @@ const getRiskComponent = (config, videoData, selectedPosture, bodyPartId, compon
     bodyPartTranslateId: undefined,
     id: bodyPartId + "-" + label,
     improvementObj: improvementObj,
-    componentValue: improvementObj["original-component-value"]
+    componentValue: improvementObj["original-component-value"],
+    units: config.ComponentValues[bodyPartId]["Units"]
   } 
   
 }

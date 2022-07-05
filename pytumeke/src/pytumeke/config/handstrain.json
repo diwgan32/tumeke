@@ -268,10 +268,11 @@
         "Text": "Duration per exertion (left)",
         "Warning": "Each repetition has very high duration on left hand"
       },
-      "Base": 1,
+      "Base": 0.5,
       "Multiplier": "dml",
       "label": "Duration per exertion (left)",
-      "ShortLabel": "duration (l)"
+      "ShortLabel": "duration (l)",
+      "Units": "sec./exertion"
     },
     "durationPerExertionRight": {
       "[0, 10]": {
@@ -294,10 +295,11 @@
         "Text": "Duration per exertion (right)",
         "Warning": "Each repetition has very high duration on right hand"
       },
-      "Base": 1,
+      "Base": 0.5,
       "Multiplier": "dmr",
       "label": "Duration per exertion (right)",
-      "ShortLabel": "duration (r)"
+      "ShortLabel": "duration (r)",
+      "Units": "sec./exertion"
     },
     "flexionAngleLeft": {
       "[0, 10]": {
@@ -320,10 +322,11 @@
         "Text": "Wrist posture angle (left)",
         "Warning": "Left wrist repeatedly flexing/extending at a high level"
       },
-      "Base": 1,
+      "Base": 0,
       "Multiplier": "pml",
       "label": "Wrist posture angle (left)",
-      "ShortLabel": "posture (l)"
+      "ShortLabel": "posture (l)",
+      "Units": "degrees"
     },
     "flexionAngleRight": {
       "[0, 10]": {
@@ -346,10 +349,65 @@
         "Text": "Wrist posture angle (right)",
         "Warning": "Right wrist repeatedly flexing/extending at a high level"
       },
-      "Base": 1,
+      "Base": 0,
       "Multiplier": "pmr",
       "label": "Wrist posture angle (right)",
-      "ShortLabel": "posture (r)"
+      "ShortLabel": "posture (r)",
+      "Units": "degrees"
+    },
+    "extensionAngleLeft": {
+      "[0, 10]": {
+        "TranslateText": "hand_strain.score.good",
+        "ShortText": "Good",
+        "Color": "rgba(109, 208, 163, 1.0)",
+        "Warning": null
+      },
+      "[10, 20]": {
+        "TranslateText": "hand_strain.score.fair",
+        "ShortText": "Fair",
+        "Color": "rgba(234, 130, 130, 1.0)",
+        "Text": "Wrist posture angle (left)",
+        "Warning": "Left wrist repeatedly flexing/extending"
+      },
+      "[20, None]": {
+        "TranslateText": "hand_strain.score.poor",
+        "ShortText": "Poor",
+        "Color": "rgba(184, 15, 10, 1.0)",
+        "Text": "Wrist posture angle (left)",
+        "Warning": "Left wrist repeatedly flexing/extending at a high level"
+      },
+      "Base": 0,
+      "Multiplier": "pml",
+      "label": "Wrist posture angle (left)",
+      "ShortLabel": "posture (l)",
+      "Units": "degrees"
+    },
+    "extensionAngleRight": {
+      "[0, 10]": {
+        "TranslateText": "hand_strain.score.good",
+        "ShortText": "Good",
+        "Color": "rgba(109, 208, 163, 1.0)",
+        "Warning": null
+      },
+      "[10, 20]": {
+        "TranslateText": "hand_strain.score.fair",
+        "ShortText": "Fair",
+        "Color": "rgba(234, 130, 130, 1.0)",
+        "Text": "Wrist posture angle (right)",
+        "Warning": "Right wrist repeatedly flexing/extending"
+      },
+      "[20, None]": {
+        "TranslateText": "hand_strain.score.poor",
+        "ShortText": "Poor",
+        "Color": "rgba(184, 15, 10, 1.0)",
+        "Text": "Wrist posture angle (right)",
+        "Warning": "Right wrist repeatedly flexing/extending at a high level"
+      },
+      "Base": 0,
+      "Multiplier": "pmr",
+      "label": "Wrist posture angle (right)",
+      "ShortLabel": "posture (r)",
+      "Units": "degrees"
     },
     "effortsLeft": {
       "[0, 10]": {
@@ -372,10 +430,11 @@
         "Text": "Efforts per hand (left)",
         "Warning": "Left wrist exerting force highly frequently"
       },
-      "Base": 1,
+      "Base": 5,
       "Multiplier": "eml",
       "label": "Efforts per hand (left)",
-      "ShortLabel": "efforts (l)"
+      "ShortLabel": "efforts (l)",
+      "Units": "efforts/min"
     },
     "effortsRight": {
       "[0, 10]": {
@@ -398,10 +457,11 @@
         "Text": "Efforts per hand (right)",
         "Warning": "Right wrist exerting force highly frequently"
       },
-      "Base": 1,
+      "Base": 5,
       "Multiplier": "emr",
       "label": "Efforts per hand (right)",
-      "ShortLabel": "efforts (r)"
+      "ShortLabel": "efforts (r)",
+      "Units": "efforts/min"
     }
   }
 }

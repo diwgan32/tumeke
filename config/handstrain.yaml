@@ -169,10 +169,11 @@ ComponentValues:
       <<: *poor
       Text: Duration per exertion (left)
       Warning: Each repetition has very high duration on left hand
-    Base: 1
+    Base: .5
     Multiplier: "dml"
     label: Duration per exertion (left)
     ShortLabel: duration (l)
+    Units: sec./exertion
   durationPerExertionRight:
     "[0, 10]":
       <<: *good
@@ -185,10 +186,11 @@ ComponentValues:
       <<: *poor
       Text: Duration per exertion (right)
       Warning: Each repetition has very high duration on right hand
-    Base: 1
+    Base: .5
     Multiplier: "dmr"
     label: Duration per exertion (right)
     ShortLabel: duration (r)
+    Units: sec./exertion
   flexionAngleLeft:
     "[0, 10]":
       <<: *good
@@ -201,10 +203,11 @@ ComponentValues:
       <<: *poor
       Text: Wrist posture angle (left)
       Warning: Left wrist repeatedly flexing/extending at a high level
-    Base: 1
+    Base: 0
     Multiplier: "pml"
     label: Wrist posture angle (left)
     ShortLabel: posture (l)
+    Units: degrees
   flexionAngleRight:
     "[0, 10]":
       <<: *good
@@ -217,10 +220,45 @@ ComponentValues:
       <<: *poor
       Text: Wrist posture angle (right)
       Warning: Right wrist repeatedly flexing/extending at a high level
-    Base: 1
+    Base: 0
     Multiplier: "pmr"
     label: Wrist posture angle (right)
     ShortLabel: posture (r)
+    Units: degrees
+  extensionAngleLeft:
+    "[0, 10]":
+      <<: *good
+      Warning: ~
+    "[10, 20]":
+      <<: *fair
+      Text: Wrist posture angle (left)
+      Warning: Left wrist repeatedly flexing/extending
+    "[20, None]":
+      <<: *poor
+      Text: Wrist posture angle (left)
+      Warning: Left wrist repeatedly flexing/extending at a high level
+    Base: 0
+    Multiplier: "pml"
+    label: Wrist posture angle (left)
+    ShortLabel: posture (l)
+    Units: degrees
+  extensionAngleRight:
+    "[0, 10]":
+      <<: *good
+      Warning: ~
+    "[10, 20]":
+      <<: *fair
+      Text: Wrist posture angle (right)
+      Warning: Right wrist repeatedly flexing/extending
+    "[20, None]":
+      <<: *poor
+      Text: Wrist posture angle (right)
+      Warning: Right wrist repeatedly flexing/extending at a high level
+    Base: 0
+    Multiplier: "pmr"
+    label: Wrist posture angle (right)
+    ShortLabel: posture (r)
+    Units: degrees
   effortsLeft:
     "[0, 10]":
       <<: *good
@@ -233,10 +271,11 @@ ComponentValues:
       <<: *poor
       Text: Efforts per hand (left)
       Warning: Left wrist exerting force highly frequently
-    Base: 1
+    Base: 5
     Multiplier: "eml"
     label: Efforts per hand (left)
     ShortLabel: efforts (l)
+    Units: efforts/min
   effortsRight:
     "[0, 10]":
       <<: *good
@@ -249,7 +288,8 @@ ComponentValues:
       <<: *poor
       Text: Efforts per hand (right)
       Warning: Right wrist exerting force highly frequently
-    Base: 1
+    Base: 5
     Multiplier: "emr"
     label: Efforts per hand (right)
     ShortLabel: efforts (r)
+    Units: efforts/min
