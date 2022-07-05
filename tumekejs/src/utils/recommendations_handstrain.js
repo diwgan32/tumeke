@@ -93,7 +93,7 @@ const getRiskComponent = (config, videoData, selectedPosture, bodyPartId, compon
   }
   const componentTranslateText = undefined;
   const componentTranslateWarning = undefined;
-  const componentImage = undefined;
+  const componentImage = "bodyParts/wrist.png";
   const severityColor = config.ComponentValues[bodyPartId][range]["Color"];
   const label = config.ComponentValues[bodyPartId]["label"];
   const translateLabel = undefined;
@@ -105,7 +105,7 @@ const getRiskComponent = (config, videoData, selectedPosture, bodyPartId, compon
     componentWarning: componentWarning,
     componentTranslateText: componentTranslateText,
     componentTranslateWarning: componentTranslateWarning,
-    componentImage: undefined,
+    componentImage: componentImage,
     severityColor: severityColor,
     label: label,
     translateLabel: translateLabel,
