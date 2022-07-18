@@ -75,7 +75,7 @@ ComponentValues:
     "[.4, .6]":
       <<: *fair
       Warning: Object too far away horizontally
-    "[.6, 1.0]":
+    "[.6, None]":
       <<: *good
       Warning: ~
   vm:
@@ -85,7 +85,7 @@ ComponentValues:
     "[.8, .9]":
       <<: *fair
       Warning: ~
-    "[.9, 1.0]":
+    "[.9, None]":
       <<: *good
       Warning: ~
   dm:
@@ -95,7 +95,7 @@ ComponentValues:
     "[.9, .95]":
       <<: *fair
       Warning: ~
-    "[.95, 1.0]":
+    "[.95, None]":
       <<: *good
       Warning: ~
   am:
@@ -105,7 +105,7 @@ ComponentValues:
     "[.7, .9]":
       <<: *fair
       Warning: ~
-    "[.9, 1.0]":
+    "[.9, None]":
       <<: *good
       Warning: ~
   fm:
@@ -115,7 +115,7 @@ ComponentValues:
     "[.45, .8]":
       <<: *fair
       Warning: ~
-    "[.8, 1.0]":
+    "[.8, None]":
       <<: *good
       Warning: ~
 

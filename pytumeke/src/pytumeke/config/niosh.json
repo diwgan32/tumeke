@@ -171,7 +171,7 @@
         "Color": "rgba(234, 130, 130, 1.0)",
         "Warning": "Object too far away horizontally"
       },
-      "[.6, 1.0]": {
+      "[.6, None]": {
         "TranslateText": "niosh.score.good",
         "ShortText": "Good",
         "Color": "rgba(109, 208, 163, 1.0)",
@@ -191,7 +191,7 @@
         "Color": "rgba(234, 130, 130, 1.0)",
         "Warning": null
       },
-      "[.9, 1.0]": {
+      "[.9, None]": {
         "TranslateText": "niosh.score.good",
         "ShortText": "Good",
         "Color": "rgba(109, 208, 163, 1.0)",
@@ -211,7 +211,7 @@
         "Color": "rgba(234, 130, 130, 1.0)",
         "Warning": null
       },
-      "[.95, 1.0]": {
+      "[.95, None]": {
         "TranslateText": "niosh.score.good",
         "ShortText": "Good",
         "Color": "rgba(109, 208, 163, 1.0)",
@@ -231,7 +231,7 @@
         "Color": "rgba(234, 130, 130, 1.0)",
         "Warning": null
       },
-      "[.9, 1.0]": {
+      "[.9, None]": {
         "TranslateText": "niosh.score.good",
         "ShortText": "Good",
         "Color": "rgba(109, 208, 163, 1.0)",
@@ -251,7 +251,7 @@
         "Color": "rgba(234, 130, 130, 1.0)",
         "Warning": null
       },
-      "[.8, 1.0]": {
+      "[.8, None]": {
         "TranslateText": "niosh.score.good",
         "ShortText": "Good",
         "Color": "rgba(109, 208, 163, 1.0)",
