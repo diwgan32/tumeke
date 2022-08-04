@@ -27,6 +27,7 @@ const requestCreateJob = async (config) => {
     body.append("chunksize", config.chunksize);
     body.append('uid', config.auth.uid);
     body.append('aesKeys', JSON.stringify(config.auth.aesKeys));
+    body.append('metadata', JSON.stringify(config.metadata));
     let responseJson = null;
     responseJson = await requestFileUpload(body);
     return responseJson;
