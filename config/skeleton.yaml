@@ -202,18 +202,12 @@ Left leg:
   default:
     type: solid
     <<: *green
-  "[None, 27.5]":
+  "[None, 57.5]":
     type: solid
     <<: *green
-  "[27.5, 32.5]":
-    type: gradient
-    <<: *green_to_orange
-  "[32.5, 57.5]":
-    type: solid
-    <<: *orange
   "[57.5, 62.5]":
     type: gradient
-    <<: *orange_to_red
+    <<: *green_to_red
   "[62.5, None]":
     type: solid
     <<: *red
@@ -222,18 +216,12 @@ Right leg:
   default:
     type: solid
     <<: *green
-  "[None, 27.5]":
+  "[None, 57.5]":
     type: solid
     <<: *green
-  "[27.5, 32.5]":
-    type: gradient
-    <<: *green_to_orange
-  "[32.5, 57.5]":
-    type: solid
-    <<: *orange
   "[57.5, 62.5]":
     type: gradient
-    <<: *orange_to_red
+    <<: *green_to_red
   "[62.5, None]":
     type: solid
     <<: *red
