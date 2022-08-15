@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import config from '../../config/handstrain.json'
 import {
   strToArr,
@@ -15,9 +15,9 @@ export class HandStrain {
       this.additionalInputs = this.getAdditionalInputs();
       return;
     }
-    this.assessmentResult = _.cloneDeep(oldObject.assessmentResult);
-    this.additionalInputs = _.cloneDeep(oldObject.additionalInputs);
-    this.riskComponents = _.cloneDeep(oldObject.riskComponents);
+    this.assessmentResult = cloneDeep(oldObject.assessmentResult);
+    this.additionalInputs = cloneDeep(oldObject.additionalInputs);
+    this.riskComponents = cloneDeep(oldObject.riskComponents);
 
     this.computeAssessment();
   }

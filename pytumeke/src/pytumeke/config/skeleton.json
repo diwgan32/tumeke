@@ -421,40 +421,19 @@
         0
       ]
     },
-    "[-5, 7.5]": {
+    "[-5, 17.5]": {
       "type": "solid",
       "Color": [
         0,
         255,
-        0
-      ]
-    },
-    "[7.5, 12.5]": {
-      "type": "gradient",
-      "StartColor": [
-        0,
-        255,
-        0
-      ],
-      "EndColor": [
-        255,
-        103,
-        0
-      ]
-    },
-    "[12.5, 17.5]": {
-      "type": "solid",
-      "Color": [
-        255,
-        103,
         0
       ]
     },
     "[17.5, 22.5]": {
       "type": "gradient",
       "StartColor": [
+        0,
         255,
-        103,
         0
       ],
       "EndColor": [
@@ -584,6 +563,84 @@
       ]
     },
     "[15, None]": {
+      "type": "solid",
+      "Color": [
+        255,
+        0,
+        0
+      ]
+    }
+  },
+  "Left leg": {
+    "default": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[None, 57.5]": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[57.5, 62.5]": {
+      "type": "gradient",
+      "StartColor": [
+        0,
+        255,
+        0
+      ],
+      "EndColor": [
+        255,
+        0,
+        0
+      ]
+    },
+    "[62.5, None]": {
+      "type": "solid",
+      "Color": [
+        255,
+        0,
+        0
+      ]
+    }
+  },
+  "Right leg": {
+    "default": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[None, 57.5]": {
+      "type": "solid",
+      "Color": [
+        0,
+        255,
+        0
+      ]
+    },
+    "[57.5, 62.5]": {
+      "type": "gradient",
+      "StartColor": [
+        0,
+        255,
+        0
+      ],
+      "EndColor": [
+        255,
+        0,
+        0
+      ]
+    },
+    "[62.5, None]": {
       "type": "solid",
       "Color": [
         255,

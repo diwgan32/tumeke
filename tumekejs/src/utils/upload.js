@@ -1,4 +1,4 @@
-import { requestFileUpload, uploadFinished } from "tumeke-database";
+import * as db from 'tumeke-database';
 import axios from 'axios';
 
 // etags: [{eTag, partNum}, ...]
@@ -29,7 +29,7 @@ const requestCreateJob = async (config) => {
     body.append('aesKeys', JSON.stringify(config.auth.aesKeys));
     body.append('metadata', JSON.stringify(config.metadata));
     let responseJson = null;
-    responseJson = await requestFileUpload(body);
+    responseJson = await db.requestFileUpload(body);
     return responseJson;
 }
 
@@ -71,7 +71,29 @@ export const submitJob = async (config, file, uploadCallback) => {
     const etag = headers["etag"];
     const parts = [{ETag: etag, PartNumber: 1}]
 
-    await uploadFinished(responseJson['job_id'], {parts: parts, uploadId: responseJson["uploadId"]});
+    await db.uploadFinished(responseJson['job_id'], {parts: parts, uploadId: responseJson["uploadId"]});
     return responseJson;
+}
 
+/* Function that submits request to create new posture for existing assessment API */
+/* 
+    config: {
+        aesKeys,
+        assessmentId,
+        videoId,
+        uid,
+        postureTime, // The time to add new posture on
+        personId
+    }
+*/
+export const submitNewPosture = async (config, uploadCallback) => {
+    const body = new FormData();
+    body.append("personId", config.personId);
+    body.append("postureTime", config.postureTime);
+    body.append("videoId", config.videoId);
+    body.append("assessmentId", config.assessmentId);
+    body.append('uid', config.uid);
+    body.append('aesKeys', JSON.stringify(config.aesKeys));
+    let responseJson = await db.submitNewPosture(body);
+    return responseJson;
 }

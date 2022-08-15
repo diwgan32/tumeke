@@ -147,18 +147,12 @@ Neck:
   "[-10, -5]":
     type: gradient
     <<: *red_to_green
-  "[-5, 7.5]":
+  "[-5, 17.5]":
     type: solid
     <<: *green
-  "[7.5, 12.5]":
-    type: gradient
-    <<: *green_to_orange
-  "[12.5, 17.5]":
-    type: solid
-    <<: *orange
   "[17.5, 22.5]":
     type: gradient
-    <<: *orange_to_red
+    <<: *green_to_red
   "[22.5, None]":
     type: solid
     <<: *red
@@ -200,6 +194,35 @@ Right wrist:
     type: gradient
     <<: *green_to_red
   "[15, None]":
+    type: solid
+    <<: *red
+
+
+Left leg:
+  default:
+    type: solid
+    <<: *green
+  "[None, 57.5]":
+    type: solid
+    <<: *green
+  "[57.5, 62.5]":
+    type: gradient
+    <<: *green_to_red
+  "[62.5, None]":
+    type: solid
+    <<: *red
+
+Right leg:
+  default:
+    type: solid
+    <<: *green
+  "[None, 57.5]":
+    type: solid
+    <<: *green
+  "[57.5, 62.5]":
+    type: gradient
+    <<: *green_to_red
+  "[62.5, None]":
     type: solid
     <<: *red
 
