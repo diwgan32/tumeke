@@ -1,5 +1,5 @@
-import * as db from 'tumeke-database';
-import { cognitoAuthUser, asyncStoreIdToken } from 'tumeke-database/Cognito';
+import * as db from '../utils/Database';
+import { cognitoAuthUser, asyncStoreIdToken } from './Cognito';
 import { virgilIdGenerator } from "./utils";
 import AsyncStorage from '@react-native-community/async-storage';
 

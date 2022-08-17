@@ -1,4 +1,4 @@
-import * as db from 'tumeke-database';
+import * as db from './Database';
 import axios from 'axios';
 
 // etags: [{eTag, partNum}, ...]

@@ -283,7 +283,7 @@ export class Niosh {
     d = d/this.nioshMetadata['numLifts']
 
     let vm = Math.min(Math.max(1 - .0075 * Math.abs(v - 30), 0.0), 1.0)
-    let hm = Math.min(Math.max(10.0/h, 0.0), 1.0)
+    let hm = h > 25 ? 0.0 : Math.min(Math.max(10.0/h, 0.0), 1.0)
     let dm = Math.min(Math.max(.82 + (1.8/d), 0.0), 1.0)
     let am = Math.min(Math.max(1 - .0032*a, 0.0), 1.0)
     

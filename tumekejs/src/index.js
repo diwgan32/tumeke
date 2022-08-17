@@ -3,6 +3,27 @@ import { Reba } from "./assessments/Reba";
 import { Niosh } from "./assessments/Niosh";
 import { HandStrain } from "./assessments/HandStrain";
 
+import {
+	cognitoAuthUser,
+	cognitoRegisterUser,
+	cognitoChangePasswordWeb,
+	cognitoChangePasswordRN,
+	cognitoRefreshTokenWeb,
+	cognitoRefreshTokenRN,
+	COGNITO_CONFIG,
+	initializeUserPools,
+	asyncGetIdToken,
+	refreshTokenHelper,
+	asyncStoreIdToken,
+	asyncStore,
+	cognitoInitiateForgotPassword,
+	cognitoConfirmPasswordReset,
+	cognitoSendVerificationcode,
+	hasCurrentUser,
+	setUserSession,
+	cognitoSignoutUser
+} from "./auth/Cognito";
+
 import RulaConfig from "../config/rula.json";
 import RebaConfig from "../config/reba.json";
 import NioshConfig from "../config/niosh.json";
@@ -27,4 +48,22 @@ export {
 	HandStrainConfig,
 	getCompareObject,
 	getRecommendations,
+	cognitoAuthUser,
+	cognitoRegisterUser,
+	cognitoChangePasswordWeb,
+	cognitoChangePasswordRN,
+	cognitoRefreshTokenWeb,
+	cognitoRefreshTokenRN,
+	COGNITO_CONFIG,
+	initializeUserPools,
+	asyncGetIdToken,
+	refreshTokenHelper,
+	asyncStoreIdToken,
+	asyncStore,
+	cognitoInitiateForgotPassword,
+	cognitoConfirmPasswordReset,
+	cognitoSendVerificationcode,
+	hasCurrentUser,
+	setUserSession,
+	cognitoSignoutUser
 }
