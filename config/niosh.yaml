@@ -31,7 +31,7 @@ constants:
   unsafe: &unsafe
     TranslateText: niosh.score.unsafe
     ShortText: Unsafe
-    <<: *black
+    <<: *red
   acceptable: &good
     TranslateText: niosh.score.good
     ShortText: Good

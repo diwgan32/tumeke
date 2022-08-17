@@ -20,8 +20,11 @@ const noAuthEndpoints = [
 axios.interceptors.request.use(async function (config) {
   const url = config.url;
   const arr = url.split("/");
+  // Do not add auth for amazonaws endpoints, and any
+  // of the non-auth endpoints on our server (list above)
   const isNonAuthEndpoint = 
-    arr.length < 4 || noAuthEndpoints.includes(arr[3])
+    arr.length < 4 || noAuthEndpoints.includes(arr[3]) ||
+    arr[2].includes("amazonaws")
   if (!isNonAuthEndpoint) {
     let id_token = await asyncGetIdToken(PLATFORM, logoutCallback);
     if (id_token == undefined) {

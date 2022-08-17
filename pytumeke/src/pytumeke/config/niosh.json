@@ -102,7 +102,7 @@
     "unsafe": {
       "TranslateText": "niosh.score.unsafe",
       "ShortText": "Unsafe",
-      "Color": "rgba(15, 15, 30, 0.9)"
+      "Color": "rgba(184, 15, 10, 1.0)"
     },
     "acceptable": {
       "TranslateText": "niosh.score.good",
@@ -126,7 +126,7 @@
         "Text": "Unsafe lift at all weights",
         "TranslateText": "niosh.score.unsafe",
         "ShortText": "Unsafe",
-        "Color": "rgba(15, 15, 30, 0.9)",
+        "Color": "rgba(184, 15, 10, 1.0)",
         "Warning": null
       },
       "[0, 1.5]": {
