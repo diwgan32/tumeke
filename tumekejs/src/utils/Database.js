@@ -103,7 +103,14 @@ export const getUserByCognitoId = async (cognito_id) => (await axios.get(`${TUME
 
 export const getGroup = async (group_id) => (await axios.get(`${TUMEKE_API}/getGroup/${group_id}`)).data
 
-export const getAllUserVideos = async () => (await axios.get(`${TUMEKE_API}/getAllUserVideos`)).data
+export const getAllUserVideos = async (filter_object,
+    assessments_by_field_param,
+    date_granularity_param,
+    client_timezone,
+    page_size,
+    page_offset) => 
+
+  (await axios.post(`${TUMEKE_API}/getAllUserVideos`, {filter_object, assessments_by_field_param, date_granularity_param, client_timezone, page_size, page_offset})).data
 
 export const doesEmailExist = async(encoded_email) => (await axios.get(`${TUMEKE_API}/doesEmailExist/${encoded_email}`)).data
 
@@ -271,7 +278,7 @@ export const confirmResetUserPassword = async (encoded_email, confirmation_code,
     {confirmation_code, new_password, reset_user})).data
 }
 
-export const setUserRole = async (user_id) => {
+export const setUserRole = async (user_id, role) => {
   return (await axios.post(`${TUMEKE_API}/setUserRole/${user_id}`, { role })).data
 }
 
