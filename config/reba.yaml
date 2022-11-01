@@ -6,11 +6,11 @@ constants:
 
   green: &green
     Color:
-      rgba(20, 210, 184, 1.0)
+      rgba(241, 196, 15, 1.0)
 
   orange: &orange
     Color:
-      rgba(234, 130, 130, 1.0)
+      rgba(230, 126, 34, 1.0)
 
   red: &red
     Color:
