@@ -13,7 +13,7 @@ export var logoutCallback = undefined;
 const noAuthEndpoints = [
   "doesEmailExist", "doesCompanyExist", "getUserVirgilId", "getVirgilJwt",
   "initiateResetUserPassword", "resetPasswordHelper", "confirmResetUserPassword",
-  "checkSSO", "getCognitoFromCode"
+  "checkSSO", "getCognitoFromCode", "getAsyncUploadInfo", "asyncUploadFinished"
 ]
 
 // Axios Auth Interceptor
@@ -59,8 +59,20 @@ export const requestFileUpload = async (body) => {
   return (await axios.post(`${TUMEKE_API}/requestFileUpload`, body)).data;
 }
 
+export const requestAsyncFileUpload = async (body) => {
+  return (await axios.post(`${TUMEKE_API}/requestAsyncFileUpload`, body)).data;
+}
+
+export const getAsyncUploadInfo = async (job_id) => {
+  return (await axios.get(`${TUMEKE_API}/getAsyncUploadInfo/${job_id}`)).data;
+}
+
 export const uploadFinished = async (video_id, uploadData) => {
   return (await axios.post(`${TUMEKE_API}/uploadFinished/${video_id}`, uploadData)).data;
+}
+
+export const asyncUploadFinished = async (video_id, uploadData) => {
+  return (await axios.post(`${TUMEKE_API}/asyncUploadFinished/${video_id}`, uploadData)).data;
 }
 
 export const submitNewPosture = async (body) => {
