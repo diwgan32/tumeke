@@ -13,7 +13,9 @@ export var logoutCallback = undefined;
 const noAuthEndpoints = [
   "doesEmailExist", "doesCompanyExist", "getUserVirgilId", "getVirgilJwt",
   "initiateResetUserPassword", "resetPasswordHelper", "confirmResetUserPassword",
-  "checkSSO", "getCognitoFromCode", "getAsyncUploadInfo", "asyncUploadFinished"
+  "checkSSO", "getCognitoFromCode", "getAsyncUploadInfo", "asyncUploadFinished",
+  "externalGetVideoDoc", "externalGetVideoManifest", "externalGetVideoSlice",
+  "externalDownloadVideoRequest"
 ]
 
 // Axios Auth Interceptor
@@ -215,6 +217,10 @@ export const migrateFirebaseIdtoCognito = async (email) => {
   return await axios.post(`${TUMEKE_API}/migrateFirebaseIdtoCognito`,{email: email})
 };
 
+export const externalGetVideoDoc = async (short_key) => {
+  return (await axios.get(`${TUMEKE_API}/externalGetVideoDoc/${short_key}`)).data
+};
+
 export const getThumbnail = async (video_id) => {
   return (await axios.get(`${TUMEKE_API}/getThumbnail/${video_id}`)).data
 };
@@ -227,12 +233,20 @@ export const getVideoManifest = async (video_id) => {
   return (await axios.get(`${TUMEKE_API}/getVideoManifest/${video_id}`)).data
 }
 
+export const externalGetVideoManifest = async (short_key) => {
+  return (await axios.get(`${TUMEKE_API}/externalGetVideoManifest/${short_key}`)).data
+}
+
 export const getVideoJointData = async (video_id, chunk) => {
   return (await axios.get(`${TUMEKE_API}/getVideoJointData/${video_id}/${chunk}`)).data
 }
 
 export const getVideoSlice = async (video_id, res, slice) => {
   return (await axios.get(`${TUMEKE_API}/getVideoSlice/${video_id}/${res}/${slice}`)).data
+}
+
+export const externalGetVideoSlice = async (short_key, res, slice) => {
+  return (await axios.get(`${TUMEKE_API}/externalGetVideoSlice/${short_key}/${res}/${slice}`)).data
 }
 
 export const getAllVideoSlices = async (video_id, res) => {
@@ -246,6 +260,14 @@ export const generateReport = async (videoId, assessmentId, subjectId) => {
 
 export const downloadVideoRequest = async (videoId, aesKeys) => {
   return (await axios.post(`${TUMEKE_API}/downloadVideoRequest/${videoId}`, { aesKeys })).data;
+}
+
+export const externalDownloadVideoRequest = async (videoId, aesKeys, email) => {
+  return (await axios.post(`${TUMEKE_API}/externalDownloadVideoRequest/${videoId}`, { aesKeys, email })).data;
+}
+
+export const generateViewOnlyLink = async (videoId, aesKeys, ttl) => {
+  return (await axios.post(`${TUMEKE_API}/generateViewOnlyLink/${videoId}`, {aesKeys, ttl})).data;
 }
 
 export const getAssessmentOverTime = async (videoId, subjectId) => {

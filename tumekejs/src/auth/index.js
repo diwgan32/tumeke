@@ -231,7 +231,6 @@ export async function confirmPasswordReset(email, confirmCode, newPassword, rese
 		// If not resetting account then change password on Virgil
 		await resetPassword(newPassword);
 	}
-
 }
 
 
