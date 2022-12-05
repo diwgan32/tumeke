@@ -120,9 +120,10 @@ export const getAllUserVideos = async (filter_object,
     date_granularity_param,
     client_timezone,
     page_size,
-    page_offset) => 
+    page_offset,
+    search) => 
 
-  (await axios.post(`${TUMEKE_API}/getAllUserVideos`, {filter_object, assessments_by_field_param, date_granularity_param, client_timezone, page_size, page_offset})).data
+  (await axios.post(`${TUMEKE_API}/getAllUserVideos`, {filter_object, assessments_by_field_param, date_granularity_param, client_timezone, page_size, page_offset, search})).data
 
 export const doesEmailExist = async(encoded_email) => (await axios.get(`${TUMEKE_API}/doesEmailExist/${encoded_email}`)).data
 
