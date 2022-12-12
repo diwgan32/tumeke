@@ -156,6 +156,8 @@ export const getProcessedVideo = async (job_id) => (await axios.get(`${TUMEKE_AP
 
 export const getJobJointData = async (job_id) => (await axios.get(`${TUMEKE_API}/getJobJointData/${job_id}`)).data
 
+export const getJobJointDataWeb = async (job_id) => (await axios.get(`${TUMEKE_API}/getJobJointDataWeb/${job_id}`)).data
+
 export const getJobResult = async (job_id) => (await axios.get(`${TUMEKE_API}/getJobResult/${job_id}`)).data
 
 export const getClientDepartmentCards = async (company_id, returnType) => 
