@@ -2,7 +2,7 @@ import json
 import os 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-__version__ = "1.0.17"
+__version__ = "1.0.18"
 
 f = open(f"{dir_path}/config/rula.json")
 rula_config = json.load(f)
