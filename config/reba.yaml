@@ -296,7 +296,7 @@ ComponentValues:
         Image2: angleIcons/rulaReba/LowerArm_100+_deg@2x.png
       label: Angle
       type: select
-      TranslateLabel: rulareba.lower_arm.score
+      TranslateLabel: rulareba.lowerarm.score
       Base: 1
     Image: 'bodyParts/arm.png'
   Wrist:
