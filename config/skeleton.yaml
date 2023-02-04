@@ -44,7 +44,7 @@ Hip:
   "[15, 25]":
     type: gradient
     <<: *green_to_orange
-  "[25, 40]":
+  "[25, 45]":
     type: solid
     <<: *orange
   "[45, 55]":
@@ -70,7 +70,7 @@ Left elbow:
   "[95, 105]":
     type: gradient
     <<: *green_to_orange
-  "[55, None]":
+  "[105, None]":
     type: solid
     <<: *orange
 
@@ -90,7 +90,7 @@ Right elbow:
   "[95, 105]":
     type: gradient
     <<: *green_to_orange
-  "[55, None]":
+  "[105, None]":
     type: solid
     <<: *orange
 
