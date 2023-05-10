@@ -1,9 +1,9 @@
 constants:
   SAMPLE_SIZE_SECONDS: .5
   FM_FREQUENCIES: [0, .2, .5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-  FM_SHORT_DURATION: [1.0, 1.0, .97, .91, .88, .84, .80, .75, .70, .60, .52, .45, .41, .37, .34, .31, .28, 0]
+  FM_SHORT_DURATION: [1.0, 1.0, .97, .94, .91, .88, .84, .80, .75, .70, .60, .52, .45, .41, .37, .34, .31, .28]
   FM_MODERATE_DURATION: [.95, .95, .92, .88, .84, .79, .72, .60, .50, .42, .35, .30, .26, .23, .21, 0, 0, 0]
-  FM_LONG_DURATION: [.85, .81, .75, .65, .55, .45, .35, .27, .22, .18, .15, .13, 0, 0, 0, 0, 0, 0]
+  FM_LONG_DURATION: [.85, .85, .81, .75, .65, .55, .45, .35, .27, .22, .18, .15, .13, 0, 0, 0, 0, 0]
   FM_SHORT_DURATION_VERTICAL_CUTOFF: 13
   FM_MODERATE_DURATION_VERTICAL_CUTOFF: 10
   FM_LONG_DURATION_VERTICAL_CUTOFF: 8
