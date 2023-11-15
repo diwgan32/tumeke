@@ -1,0 +1,131 @@
+constants:
+  black: &black
+    Color:
+      rgba(15, 15, 30, 0.9)
+
+  light_green: &light_green
+    Color:
+      rgba(109, 208, 163, 1.0)
+
+  green: &green
+    Color:
+      rgba(20, 210, 184, 1.0)
+
+  orange: &orange
+    Color:
+      rgba(234, 130, 130, 1.0)
+
+  red: &red
+    Color:
+      rgba(184, 15, 10, 1.0)
+
+  unsafe: &unsafe
+    TranslateText: libertymutual.score.unsafe
+    ShortText: Unsafe
+    <<: *red
+  acceptable: &good
+    TranslateText: libertymutual.score.good
+    ShortText: Good
+    <<: *light_green
+  low: &fair
+    TranslateText: libertymutual.score.fair
+    ShortText: Fair
+    <<: *orange
+  medium: &poor
+    TranslateText: libertymutual.score.poor
+    ShortText: Poor
+    <<: *red
+
+ComponentValues:
+  mal:
+    "unsafe":
+      Text: Unsafe {tableType} at all weights
+      <<: *unsafe
+    "acceptable":
+      Text: Safe weight to {tableType}
+      <<: *good
+    "unacceptable":
+      Text: Unsafe weight to {tableType}
+      <<: *poor
+  malSustained:
+    "unsafe":
+      Text: Unsafe {tableType} at all weights
+      <<: *unsafe
+    "acceptable":
+      Text: Safe weight to {tableType}
+      <<: *good
+    "unacceptable":
+      Text: Unsafe weight to {tableType}
+      <<: *poor
+  frequencyMultiplier:
+    "[None, 0]":
+      <<: *poor
+    "[0, None]":
+      <<: *good
+  frequencyMultiplierSustained:
+    "[None, 0]":
+      <<: *poor
+    "[0, None]":
+      <<: *good
+  horizontalDistanceMultiplier:
+    "[None, 0]":
+      <<: *poor
+    "[0, None]":
+      <<: *good
+  horizontalDistanceMultiplierSustained:
+    "[None, 0]":
+      <<: *poor
+    "[0, None]":
+      <<: *good
+  verticalHeightMultiplier:
+    "[None, 0]":
+      <<: *poor
+    "[0, None]":
+      <<: *good
+  verticalDistanceMultiplier:
+    "[None, 0]":
+      <<: *poor
+    "[0, None]":
+      <<: *good
+  verticalDistanceMultiplierSustained:
+    "[None, 0]":
+      <<: *poor
+    "[0, None]":
+      <<: *good
+
+TableTypes:
+  LIFT: 
+    Number: 1
+    Text: Lift
+  LOWER:
+    Number: 2
+    Text: Lower
+  PUSH:
+    Number: 3
+    Text: Push
+  PULL:
+    Number: 4
+    Text: Pull
+  CARRY:
+    Number: 5
+    Text: Carry
+  "1": "LIFT"
+  "2": "LOWER"
+  "3": "PUSH"
+  "4": "PULL"
+  "5": "CARRY"
+
+CouplingStatus:
+  GOOD: 
+    Number: 0
+    Text: With handles
+  POOR:
+    Number: 1
+    Text: Poor handles
+  WITHOUT:
+    Number: 2
+    Text: Without handles
+
+Units:
+  STANDARD: 0
+  METRIC: 1

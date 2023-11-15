@@ -1,0 +1,211 @@
+{
+    "constants": {
+      "black": {
+        "Color": "rgba(15, 15, 30, 0.9)"
+      },
+      "light_green": {
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "green": {
+        "Color": "rgba(20, 210, 184, 1.0)"
+      },
+      "orange": {
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "red": {
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "unsafe": {
+        "TranslateText": "libertymutual.score.unsafe",
+        "ShortText": "Unsafe",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "acceptable": {
+        "TranslateText": "libertymutual.score.good",
+        "ShortText": "Good",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "low": {
+        "TranslateText": "libertymutual.score.fair",
+        "ShortText": "Fair",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "medium": {
+        "TranslateText": "libertymutual.score.poor",
+        "ShortText": "Poor",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      }
+    },
+    "ComponentValues": {
+      "mal": {
+        "unsafe": {
+          "Text": "Unsafe {tableType} at all weights",
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "acceptable": {
+          "Text": "Safe weight to {tableType}",
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "unacceptable": {
+          "Text": "Unsafe weight to {tableType}",
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "malSustained": {
+        "unsafe": {
+          "Text": "Unsafe {tableType} at all weights",
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "acceptable": {
+          "Text": "Safe weight to {tableType}",
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "unacceptable": {
+          "Text": "Unsafe weight to {tableType}",
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "frequencyMultiplier": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "frequencyMultiplierSustained": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "horizontalDistanceMultiplier": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "horizontalDistanceMultiplierSustained": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "verticalHeightMultiplier": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "verticalDistanceMultiplier": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "verticalDistanceMultiplierSustained": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "TableTypes": {
+      "LIFT": {
+        "Number": 1,
+        "Text": "Lift"
+      },
+      "LOWER": {
+        "Number": 2,
+        "Text": "Lower"
+      },
+      "PUSH": {
+        "Number": 3,
+        "Text": "Push"
+      },
+      "PULL": {
+        "Number": 4,
+        "Text": "Pull"
+      },
+      "CARRY": {
+        "Number": 5,
+        "Text": "Carry"
+      },
+      "1": "LIFT",
+      "2": "LOWER",
+      "3": "PUSH",
+      "4": "PULL",
+      "5": "CARRY"
+    },
+    "CouplingStatus": {
+      "GOOD": {
+        "Number": 0,
+        "Text": "With handles"
+      },
+      "POOR": {
+        "Number": 1,
+        "Text": "Poor handles"
+      },
+      "WITHOUT": {
+        "Number": 2,
+        "Text": "Without handles"
+      }
+    },
+    "Units": {
+      "STANDARD": 0,
+      "METRIC": 1
+    }
+  }
+  
