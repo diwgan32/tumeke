@@ -77,85 +77,811 @@
           "Color": "rgba(184, 15, 10, 1.0)"
         }
       },
-      "frequencyMultiplier": {
+      "frequencyMultiplierLiftMale": {
         "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.48]": {
           "TranslateText": "libertymutual.score.poor",
           "ShortText": "Poor",
           "Color": "rgba(184, 15, 10, 1.0)"
         },
-        "[0, None]": {
+        "[0.48, 0.74]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.74, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
           "TranslateText": "libertymutual.score.good",
           "ShortText": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
-      "frequencyMultiplierSustained": {
+      "frequencyMultiplierLiftFemale": {
         "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.6]": {
           "TranslateText": "libertymutual.score.poor",
           "ShortText": "Poor",
           "Color": "rgba(184, 15, 10, 1.0)"
         },
-        "[0, None]": {
+        "[0.6, 0.8]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.8, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
           "TranslateText": "libertymutual.score.good",
           "ShortText": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
-      "horizontalDistanceMultiplier": {
+      "verticalHeightMultiplierLiftMale": {
         "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.85]": {
           "TranslateText": "libertymutual.score.poor",
           "ShortText": "Poor",
           "Color": "rgba(184, 15, 10, 1.0)"
         },
-        "[0, None]": {
+        "[0.85, 0.93]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.93, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
           "TranslateText": "libertymutual.score.good",
           "ShortText": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
-      "horizontalDistanceMultiplierSustained": {
+      "verticalHeightMultiplierLiftFemale": {
         "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.8]": {
           "TranslateText": "libertymutual.score.poor",
           "ShortText": "Poor",
           "Color": "rgba(184, 15, 10, 1.0)"
         },
-        "[0, None]": {
+        "[0.8, 0.9]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.9, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
           "TranslateText": "libertymutual.score.good",
           "ShortText": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
-      "verticalHeightMultiplier": {
+      "horizontalDistanceMultiplierLiftMale": {
         "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.56]": {
           "TranslateText": "libertymutual.score.poor",
           "ShortText": "Poor",
           "Color": "rgba(184, 15, 10, 1.0)"
         },
-        "[0, None]": {
+        "[0.56, 0.8]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.8, 1.04]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1.04, None]": {
           "TranslateText": "libertymutual.score.good",
           "ShortText": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
-      "verticalDistanceMultiplier": {
+      "horizontalDistanceMultiplierLiftFemale": {
         "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.58]": {
           "TranslateText": "libertymutual.score.poor",
           "ShortText": "Poor",
           "Color": "rgba(184, 15, 10, 1.0)"
         },
-        "[0, None]": {
+        "[0.58, 0.79]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.79, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
           "TranslateText": "libertymutual.score.good",
           "ShortText": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
-      "verticalDistanceMultiplierSustained": {
+      "frequencyMultiplierLowerMale": {
         "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.51]": {
           "TranslateText": "libertymutual.score.poor",
           "ShortText": "Poor",
           "Color": "rgba(184, 15, 10, 1.0)"
         },
-        "[0, None]": {
+        "[0.51, 0.75]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.75, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "frequencyMultiplierLowerFemale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.6]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.6, 0.8]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.8, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "verticalHeightMultiplierLowerMale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.85]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.85, 0.93]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.93, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "verticalHeightMultiplierLowerFemale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.8]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.8, 0.9]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.9, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "horizontalDistanceMultiplierLowerMale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.56]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.56, 0.8]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.8, 1.04]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1.04, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "horizontalDistanceMultiplierLowerFemale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.58]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.58, 0.79]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.79, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "frequencyMultiplierPushMale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.63]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.63, 0.81]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.81, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "frequencyMultiplierPushFemale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.68]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.68, 0.84]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.84, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "verticalDistanceMultiplierPushMale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.97]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.97, 0.99]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.99, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "verticalDistanceMultiplierPushFemale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.91]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.91, 0.96]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.96, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "horizontalDistanceMultiplierPushMale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.76]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.76, 0.88]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.88, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "horizontalDistanceMultiplierPushFemale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.71]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.71, 0.85]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.85, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "frequencyMultiplierPullMale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.63]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.63, 0.81]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.81, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "frequencyMultiplierPullFemale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.68]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.68, 0.84]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.84, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "verticalDistanceMultiplierPullMale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.77]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.77, 0.88]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.88, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "verticalDistanceMultiplierPullFemale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.91]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.91, 0.96]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.96, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "horizontalDistanceMultiplierPullMale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.76]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.76, 0.88]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.88, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "horizontalDistanceMultiplierPullFemale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.71]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.71, 0.85]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.85, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "frequencyMultiplierCarryMale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.46]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.46, 0.73]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.73, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "frequencyMultiplierCarryFemale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.65]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.65, 0.83]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.83, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "verticalDistanceMultiplierCarryMale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.85]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.85, 0.92]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.92, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "verticalDistanceMultiplierCarryFemale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.95]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.95, 0.98]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.98, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "horizontalDistanceMultiplierCarryMale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.84]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.84, 0.92]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.92, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "horizontalDistanceMultiplierCarryFemale": {
+        "[None, 0]": {
+          "TranslateText": "libertymutual.score.unsafe",
+          "ShortText": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0, 0.97]": {
+          "TranslateText": "libertymutual.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "[0.97, 0.99]": {
+          "TranslateText": "libertymutual.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "[0.99, 1]": {
+          "TranslateText": "libertymutual.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "[1, None]": {
           "TranslateText": "libertymutual.score.good",
           "ShortText": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"

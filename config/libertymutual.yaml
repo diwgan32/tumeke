@@ -57,40 +57,335 @@ ComponentValues:
     "unacceptable":
       Text: Unsafe weight to {tableType}
       <<: *poor
-  frequencyMultiplier:
+  frequencyMultiplierLiftMale:
     "[None, 0]":
+      <<: *unsafe
+    "[0, 0.48]":
       <<: *poor
-    "[0, None]":
+    "[0.48, 0.74]":
+      <<: *fair
+    "[0.74, 1]":
       <<: *good
-  frequencyMultiplierSustained:
-    "[None, 0]":
-      <<: *poor
-    "[0, None]":
+    "[1, None]":
       <<: *good
-  horizontalDistanceMultiplier:
+  frequencyMultiplierLiftFemale:
     "[None, 0]":
+      <<: *unsafe
+    "[0, 0.6]":
       <<: *poor
-    "[0, None]":
+    "[0.6, 0.8]":
+      <<: *fair
+    "[0.8, 1]":
       <<: *good
-  horizontalDistanceMultiplierSustained:
-    "[None, 0]":
-      <<: *poor
-    "[0, None]":
+    "[1, None]":
       <<: *good
-  verticalHeightMultiplier:
+  verticalHeightMultiplierLiftMale:
     "[None, 0]":
+      <<: *unsafe
+    "[0, 0.85]":
       <<: *poor
-    "[0, None]":
+    "[0.85, 0.93]":
+      <<: *fair
+    "[0.93, 1]":
       <<: *good
-  verticalDistanceMultiplier:
-    "[None, 0]":
-      <<: *poor
-    "[0, None]":
+    "[1, None]":
       <<: *good
-  verticalDistanceMultiplierSustained:
+  verticalHeightMultiplierLiftFemale:
     "[None, 0]":
+      <<: *unsafe
+    "[0, 0.8]":
       <<: *poor
-    "[0, None]":
+    "[0.8, 0.9]":
+      <<: *fair
+    "[0.9, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  horizontalDistanceMultiplierLiftMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.56]":
+      <<: *poor
+    "[0.56, 0.8]":
+      <<: *fair
+    "[0.8, 1.04]":
+      <<: *good
+    "[1.04, None]":
+      <<: *good
+  horizontalDistanceMultiplierLiftFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.58]":
+      <<: *poor
+    "[0.58, 0.79]":
+      <<: *fair
+    "[0.79, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  frequencyMultiplierLowerMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.51]":
+      <<: *poor
+    "[0.51, 0.75]":
+      <<: *fair
+    "[0.75, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  frequencyMultiplierLowerFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.6]":
+      <<: *poor
+    "[0.6, 0.8]":
+      <<: *fair
+    "[0.8, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  verticalHeightMultiplierLowerMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.85]":
+      <<: *poor
+    "[0.85, 0.93]":
+      <<: *fair
+    "[0.93, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  verticalHeightMultiplierLowerFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.8]":
+      <<: *poor
+    "[0.8, 0.9]":
+      <<: *fair
+    "[0.9, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  horizontalDistanceMultiplierLowerMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.56]":
+      <<: *poor
+    "[0.56, 0.8]":
+      <<: *fair
+    "[0.8, 1.04]":
+      <<: *good
+    "[1.04, None]":
+      <<: *good
+  horizontalDistanceMultiplierLowerFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.58]":
+      <<: *poor
+    "[0.58, 0.79]":
+      <<: *fair
+    "[0.79, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  frequencyMultiplierPushMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.63]":
+      <<: *poor
+    "[0.63, 0.81]":
+      <<: *fair
+    "[0.81, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  frequencyMultiplierPushFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.68]":
+      <<: *poor
+    "[0.68, 0.84]":
+      <<: *fair
+    "[0.84, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  verticalDistanceMultiplierPushMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.97]":
+      <<: *poor
+    "[0.97, 0.99]":
+      <<: *fair
+    "[0.99, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  verticalDistanceMultiplierPushFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.91]":
+      <<: *poor
+    "[0.91, 0.96]":
+      <<: *fair
+    "[0.96, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  horizontalDistanceMultiplierPushMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.76]":
+      <<: *poor
+    "[0.76, 0.88]":
+      <<: *fair
+    "[0.88, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  horizontalDistanceMultiplierPushFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.71]":
+      <<: *poor
+    "[0.71, 0.85]":
+      <<: *fair
+    "[0.85, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  frequencyMultiplierPullMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.63]":
+      <<: *poor
+    "[0.63, 0.81]":
+      <<: *fair
+    "[0.81, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  frequencyMultiplierPullFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.68]":
+      <<: *poor
+    "[0.68, 0.84]":
+      <<: *fair
+    "[0.84, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  verticalDistanceMultiplierPullMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.77]":
+      <<: *poor
+    "[0.77, 0.88]":
+      <<: *fair
+    "[0.88, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  verticalDistanceMultiplierPullFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.91]":
+      <<: *poor
+    "[0.91, 0.96]":
+      <<: *fair
+    "[0.96, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  horizontalDistanceMultiplierPullMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.76]":
+      <<: *poor
+    "[0.76, 0.88]":
+      <<: *fair
+    "[0.88, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  horizontalDistanceMultiplierPullFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.71]":
+      <<: *poor
+    "[0.71, 0.85]":
+      <<: *fair
+    "[0.85, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  frequencyMultiplierCarryMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.46]":
+      <<: *poor
+    "[0.46, 0.73]":
+      <<: *fair
+    "[0.73, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  frequencyMultiplierCarryFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.65]":
+      <<: *poor
+    "[0.65, 0.83]":
+      <<: *fair
+    "[0.83, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  verticalDistanceMultiplierCarryMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.85]":
+      <<: *poor
+    "[0.85, 0.92]":
+      <<: *fair
+    "[0.92, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  verticalDistanceMultiplierCarryFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.95]":
+      <<: *poor
+    "[0.95, 0.98]":
+      <<: *fair
+    "[0.98, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  horizontalDistanceMultiplierCarryMale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.84]":
+      <<: *poor
+    "[0.84, 0.92]":
+      <<: *fair
+    "[0.92, 1]":
+      <<: *good
+    "[1, None]":
+      <<: *good
+  horizontalDistanceMultiplierCarryFemale:
+    "[None, 0]":
+      <<: *unsafe
+    "[0, 0.97]":
+      <<: *poor
+    "[0.97, 0.99]":
+      <<: *fair
+    "[0.99, 1]":
+      <<: *good
+    "[1, None]":
       <<: *good
 
 TableTypes:
