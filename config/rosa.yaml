@@ -349,6 +349,21 @@ ComponentValues:
       type: select
       TranslateLabel: rosa.chair.back-support
       label: Back support
+    ChairNoBackSupport:
+      2:
+        Text: Yes
+        TranslateText: general.yes
+        Warning: ~
+        TranslateWarning: ~
+      0:
+        Text: No
+        TranslateText: general.no
+        Warning: ~
+        TranslateWarning: ~
+      label: Chair has no back support
+      type: boolean
+      Base: 0
+      TranslateLabel: rosa.chair.back-support-not-found
     ChairBackSupportSurfaceTooHigh:
       1:
         Text: Yes
