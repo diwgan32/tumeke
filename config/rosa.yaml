@@ -1029,8 +1029,8 @@ ComponentValues:
       type: select
       Base: 0
       TranslateLabel: rosa.computer.phone-duration
+      TranslateDesc: ~
       TranslateFullDesc: ~
-      TranslateImageDesc: ~
     KeyboardDuration:
       0:
         Text: Keyboard is used between 1-4 hours intermittently, or 30minutes to 1 hour consecutively
@@ -1060,8 +1060,8 @@ ComponentValues:
       type: select
       Base: 0
       TranslateLabel: rosa.computer.keyboard-duration
+      TranslateDesc: ~
       TranslateFullDesc: ~
-      TranslateImageDesc: ~
     MouseDuration:
       0:
         Text: Mouse is used between 1-4 hours intermittently, or 30minutes to 1 hour consecutively
@@ -1091,7 +1091,7 @@ ComponentValues:
       type: select
       Base: 0
       TranslateLabel: rosa.computer.mouse-duration
+      TranslateDesc: ~
       TranslateFullDesc: ~
-      TranslateImageDesc: ~
     
 ...

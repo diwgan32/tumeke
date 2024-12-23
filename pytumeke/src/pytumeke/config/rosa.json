@@ -1383,8 +1383,8 @@
           "type": "select",
           "Base": 0,
           "TranslateLabel": "rosa.computer.phone-duration",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "KeyboardDuration": {
           "0": {
@@ -1418,8 +1418,8 @@
           "type": "select",
           "Base": 0,
           "TranslateLabel": "rosa.computer.keyboard-duration",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "MouseDuration": {
           "0": {
@@ -1453,8 +1453,8 @@
           "type": "select",
           "Base": 0,
           "TranslateLabel": "rosa.computer.mouse-duration",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         }
       }
     }
