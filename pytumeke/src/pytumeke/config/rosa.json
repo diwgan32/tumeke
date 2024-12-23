@@ -416,108 +416,157 @@
             "Text": "Knees at 90°",
             "TranslateText": "rosa.chair.chair-height-knees-at-90",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "2": {
             "Text": "Knee angle < 90°",
             "TranslateText": "rosa.chair.chair-height-knees-less-90",
             "Warning": "Too low",
-            "TranslateWarning": "rosa.chair.chair-height-too-low"
+            "TranslateWarning": "rosa.chair.chair-height-too-low",
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "2.1": {
             "Text": "Knee angle > 90°",
             "TranslateText": "rosa.chair.chair-height-knees-more-90",
             "Warning": "Too high",
-            "TranslateWarning": "rosa.chair.chair-height-too-high"
+            "TranslateWarning": "rosa.chair.chair-height-too-high",
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "3": {
             "Text": "Not foot contact on ground",
             "TranslateText": "rosa.chair.chair-height-foot-no-contact",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
-          "Base": 1,
           "type": "select",
+          "label": "Chair Height",
+          "Base": 1,
           "TranslateLabel": "rosa.chair.chair-height",
-          "label": "Chair Height"
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "ChairInsufficientSpace": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": "No ability to cross legs",
-            "TranslateWarning": "rosa.chair.insufficient-space-cross-legs"
+            "TranslateWarning": "rosa.chair.insufficient-space-cross-legs",
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Insufficient space under desk",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.insufficient-space"
+          "TranslateLabel": "rosa.chair.insufficient-space",
+          "TranslateDesc": "rosa.chair.insufficient-space-desc",
+          "TranslateFullDesc": null
         },
         "ChairHeightNonAdjustable": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Chair height non adjustable",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.height-non-adjustable"
+          "TranslateLabel": "rosa.chair.height-non-adjustable",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "ChairPanDepth": {
           "1": {
             "Text": "Approximately 3 inches of space between knee and edge of seat",
-            "TranslateText": "rosa.chair.pan-depth-3-inch",
+            "TranslateText": "rosa.chair.pan-depth-normal",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.chair.pan-depth-normal-desc",
+            "TranslateFullDesc": "rosa.chair.pan-depth-normal-full-desc",
+            "TranslateImageDesc": "rosa.chair.pan-depth-normal-image-desc"
           },
           "2": {
             "Text": "Less than 3 inches of space between knee and edge of seat",
-            "TranslateText": "rosa.chair.pan-depth-less-3-inch",
+            "TranslateText": "rosa.chair.pan-depth-short",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.chair.pan-depth-short-desc",
+            "TranslateFullDesc": "rosa.chair.pan-depth-short-full-desc",
+            "TranslateImageDesc": "rosa.chair.pan-depth-short-image-desc"
           },
           "2.1": {
             "Text": "More than 3 inches of space between knee and edge of seat",
-            "TranslateText": "rosa.chair.pan-depth-more-3-inch",
+            "TranslateText": "rosa.chair.pan-depth-long",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.chair.pan-depth-long-desc",
+            "TranslateFullDesc": "rosa.chair.pan-depth-long-full-desc",
+            "TranslateImageDesc": "rosa.chair.pan-depth-long-image-desc"
           },
-          "Base": 1,
+          "label": "Chair Height",
           "type": "select",
+          "Base": 1,
           "TranslateLabel": "rosa.chair.pan-depth",
-          "label": "Chair Height"
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "ChairPanNonAdjustable": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Chair pan non adjustable",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.pan-non-adjustable"
+          "TranslateLabel": "rosa.chair.pan-non-adjustable",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         }
       },
       "ArmsBackRest": {
@@ -526,254 +575,367 @@
             "Text": "Elbows supported in line with shoulders, shoulders relaxed",
             "TranslateText": "rosa.chair.armrests-elbow-supported",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "2": {
             "Text": "Shoulders shrugged or arms unsupported",
             "TranslateText": "rosa.chair.armrests-shoulders-shrugged",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
-          "Base": 1,
+          "label": "Armrests",
           "type": "select",
+          "Base": 1,
           "TranslateLabel": "rosa.chair.armrests",
-          "label": "Armrests"
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "ChairArmrestHardDamaged": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Hard/damaged surface",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.armrest-damaged"
+          "TranslateLabel": "rosa.chair.armrest-damaged",
+          "TranslateDesc": "rosa.chair.armrest-damaged-desc",
+          "TranslateFullDesc": null
         },
         "ChairArmrestTooWide": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Armrests too wide",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.armrest-to-wide"
+          "TranslateLabel": "rosa.chair.armrest-to-wide",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "ChairArmrestNonAdjustable": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Armrests non adjustable",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.armrest-non-adjustable"
+          "TranslateLabel": "rosa.chair.armrest-non-adjustable",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "ChairBackSupport": {
           "1": {
             "Text": "Adequate lumbar support",
             "TranslateText": "rosa.chair.back-support-adequate",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.chair.back-support-adequate-desc",
+            "TranslateFullDesc": "rosa.chair.back-support-adequate-full-desc",
+            "TranslateImageDesc": null
           },
           "2": {
             "Text": "No lumbar support",
             "TranslateText": "rosa.chair.back-support-no-lumbar-support",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.chair.back-support-no-lumbar-support-desc",
+            "TranslateFullDesc": "rosa.chair.back-support-no-lumbar-support-full-desc",
+            "TranslateImageDesc": null
           },
           "2.1": {
             "Text": "Angled too far back (greated than 110°) or forward (less than 95°)",
             "TranslateText": "rosa.chair.back-support-angled-too-far",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.chair.back-support-angled-too-far-desc",
+            "TranslateFullDesc": "rosa.chair.back-support-angled-too-far-full-desc",
+            "TranslateImageDesc": null
           },
           "2.2": {
             "Text": "No back support",
             "TranslateText": "rosa.chair.back-support-no-back-support",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.chair.back-support-no-back-support-desc",
+            "TranslateFullDesc": "rosa.chair.back-support-no-back-support-full-desc",
+            "TranslateImageDesc": null
           },
-          "Base": 1,
+          "label": "Back support",
           "type": "select",
+          "Base": 1,
           "TranslateLabel": "rosa.chair.back-support",
-          "label": "Back support"
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "ChairNoBackSupport": {
           "2": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Chair has no back support",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.back-support-not-found"
+          "TranslateLabel": "rosa.chair.back-support-not-found",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "ChairBackSupportSurfaceTooHigh": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Work surface too high (shoulders shrugged)",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.back-support-surface-to-high"
+          "TranslateLabel": "rosa.chair.back-support-surface-to-high",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "ChairBackSupportNonAdjustable": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Back support non adjustable",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.back-support-surface-non-adjustable"
+          "TranslateLabel": "rosa.chair.back-support-surface-non-adjustable",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         }
       },
       "Monitor": {
         "MonitorDistance": {
           "1": {
             "Text": "Arm's length distance (40-75cm) / Screen at eye",
-            "TranslateText": "rosa.chair.monitor-screen-at-eye",
+            "TranslateText": "rosa.computer.monitor-screen-at-eye",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "2": {
             "Text": "Screen too low (bellow 30°)",
-            "TranslateText": "rosa.chair.monitor-screen-too-low",
+            "TranslateText": "rosa.computer.monitor-screen-too-low",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "3": {
             "Text": "Screen too high (neck extension)",
-            "TranslateText": "rosa.chair.monitor-screen-too-high",
+            "TranslateText": "rosa.computer.monitor-screen-too-high",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
-          "Base": 1,
+          "label": "Monitor distance",
           "type": "select",
+          "Base": 1,
           "TranslateLabel": "rosa.computer.monitor-distance",
-          "label": "Monitor distance"
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "MonitorToFar": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Monitor too far",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.monitor-too-far"
+          "TranslateLabel": "rosa.computer.monitor-too-far",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "MonitorNeckTwist": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Neck twist greater the 30°",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.monitor-neck-twist"
+          "TranslateLabel": "rosa.computer.monitor-neck-twist",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "MonitorGlareOnScreen": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Glare on screen",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.monitor-glare-on-screen"
+          "TranslateLabel": "rosa.computer.monitor-glare-on-screen",
+          "TranslateDesc": "rosa.computer.monitor-glare-on-screen-desc",
+          "TranslateFullDesc": null
         },
         "MonitorDocumentsNoHolder": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Documents (no holder)",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.chair.monitor-documents-no-holder"
+          "TranslateLabel": "rosa.computer.monitor-documents-no-holder",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         }
       },
       "Phone": {
@@ -782,105 +944,177 @@
             "Text": "Headset / One hand on phone & neutral neck posture",
             "TranslateText": "rosa.computer.phone-headset",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "2": {
             "Text": "To far of reach (outside of 30cm)",
             "TranslateText": "rosa.computer.phone-too-far",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
-          "Base": 1,
+          "label": "Phone",
           "type": "select",
+          "Base": 1,
           "TranslateLabel": "rosa.computer.phone",
-          "label": "Phone"
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
+        },
+        "PhoneExists": {
+          "2": {
+            "Text": "Yes",
+            "TranslateText": "general.yes",
+            "Warning": null,
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
+          },
+          "0": {
+            "Text": "No",
+            "TranslateText": "general.no",
+            "Warning": null,
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
+          },
+          "label": "The workplace includes phone",
+          "type": "boolean",
+          "Base": 0,
+          "TranslateLabel": "rosa.computer.phone-exists",
+          "TranslateDesc": "rosa.computer.phone-exists-desc",
+          "TranslateFullDesc": null
         },
         "PhoneNeckShoulder": {
           "2": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Neck and shoulder hold",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.computer.phone-neck-shoulder"
+          "TranslateLabel": "rosa.computer.phone-neck-shoulder",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "PhoneNoHandsFree": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "No hands-free",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.computer.phone-no-hands-free"
+          "TranslateLabel": "rosa.computer.phone-no-hands-free",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         }
       },
       "Mouse": {
         "Mouse": {
           "1": {
             "Text": "Mouse in line with shoulder",
-            "TranslateText": "rosa.computer.mouse-on-line",
+            "TranslateText": "rosa.computer.mouse-in-line",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "2": {
             "Text": "Reaching to mouse",
             "TranslateText": "rosa.computer.mouse-reaching",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "Base": 1,
           "type": "select",
           "TranslateLabel": "rosa.computer.mouse",
-          "label": "Mouse"
+          "label": "Mouse",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "MouseKeyboardDifferentSurfaces": {
           "2": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Mouse/keyboard in different surfaces",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.computer.mouse-keyboard-different-surfaces"
+          "TranslateLabel": "rosa.computer.mouse-keyboard-different-surfaces",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "MousePinchGripOnMouse": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Pinch grip on mouse",
           "type": "boolean",
@@ -892,18 +1126,26 @@
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
-          "label": "Parmrest in front of mouse",
+          "label": "Palmrest in front of mouse",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.computer.mouse-parmrest"
+          "TranslateLabel": "rosa.computer.mouse-palmrest",
+          "TranslateDesc": null,
+          "TranslateFullDesc": "rosa.computer.mouse-palmrest-full-desc"
         }
       },
       "Keyboard": {
@@ -912,111 +1154,160 @@
             "Text": "Wrists straight, shoulders relaxed",
             "TranslateText": "rosa.computer.keyboard-wrists-straight",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "2": {
             "Text": "Wrists extended / Keyboard on positive angle (>15° wrist extension)",
-            "TranslateText": "rosa.computer.keyboard-rist-extended",
+            "TranslateText": "rosa.computer.keyboard-wrists-extended",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
-          "Base": 1,
+          "label": "Keyboard",
           "type": "select",
+          "Base": 1,
           "TranslateLabel": "rosa.computer.keyboard",
-          "label": "Keyboard"
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "KeyboardDeviation": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Deviation while typing",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.computer.keyboard-deviation"
+          "TranslateLabel": "rosa.computer.keyboard-deviation",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "KeyboardTooHigh": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Keyboard too high / Shoulders shrugged",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.computer.keyboard-deviation"
+          "TranslateLabel": "rosa.computer.keyboard-too-high",
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "KeyboardReachingItems": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Reaching to overhead items",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.computer.keyboard-reaching-items"
+          "TranslateLabel": "rosa.computer.keyboard-reaching-items",
+          "TranslateDesc": "rosa.computer.keyboard-reaching-items-desc",
+          "TranslateFullDesc": null
         },
         "KeyboardPlatformNonAdjustable": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "0": {
             "Text": "No",
             "TranslateText": "general.no",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": null,
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "label": "Platform non adjustable",
           "type": "boolean",
           "Base": 0,
-          "TranslateLabel": "rosa.computer.keyboard-platform-non-adjustable"
+          "TranslateLabel": "rosa.computer.keyboard-platform-non-adjustable",
+          "TranslateDesc": "rosa.computer.keyboard-platform-non-adjustable-desc",
+          "TranslateFullDesc": null
         }
       },
       "Duration": {
         "ChairDuration": {
           "0": {
             "Text": "Worker spends 1-4 hours a day intermittently, or between 30 minutes to 1 hour continuously in the chair",
-            "TranslateText": "rosa.chair.duration-less-4-hours",
+            "TranslateText": "rosa.chair.duration-moderate",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.chair.duration-moderate-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "-1": {
             "Text": "Worker spends less than 1 hour a day in the chair throughout the day, or for less than 30 minutes consecutively",
-            "TranslateText": "rosa.chair.duration-less-1-hour",
+            "TranslateText": "rosa.chair.duration-light",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.chair.duration-light-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "1": {
             "Text": "Worker spends more than 4 hours a day in the chair intermittently, or greater than 1 hour consecutively",
-            "TranslateText": "rosa.chair.duration-more-4-hours",
+            "TranslateText": "rosa.chair.duration-heavy",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.chair.duration-heavy-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "Base": 1,
           "type": "select",
@@ -1026,45 +1317,63 @@
         "MonitorDuration": {
           "0": {
             "Text": "Use of the monitor between 1-4 hours intermittently, or 30minutes to 1 hour consecutively",
-            "TranslateText": "rosa.computer.computer-duration-less-4-hours",
+            "TranslateText": "rosa.computer.monitor-duration-moderate",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.computer.monitor-duration-moderate-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "-1": {
             "Text": "Use of the monitor less than 1 hour of work done per day intermittently, or less than 30 minutes consecutively",
-            "TranslateText": "rosa.computer.computer-duration-less-1-hour",
+            "TranslateText": "rosa.computer.monitor-duration-light",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.computer.monitor-duration-light-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "1": {
             "Text": "Use of the monitor of greater than 4 hours per day intermittently, or 1 hour consecutively",
-            "TranslateText": "rosa.computer.computer-duration-more-4-hours",
+            "TranslateText": "rosa.computer.monitor-duration-heavy",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.computer.monitor-duration-heavy-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "Base": 1,
           "type": "select",
-          "TranslateLabel": "rosa.computer.computer-duration",
+          "TranslateLabel": "rosa.computer.monitor-duration",
           "label": "Computer duration"
         },
         "PhoneDuration": {
           "0": {
             "Text": "Use of the phone between 1-4 hours intermittently, or 30minutes to 1 hour consecutively",
-            "TranslateText": "rosa.computer.phone-duration-less-4-hours",
+            "TranslateText": "rosa.computer.phone-duration-moderate",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.computer.phone-duration-moderate-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "-1": {
             "Text": "Use of the phone less than 1 hour of work done per day intermittently, or less than 30 minutes consecutively",
-            "TranslateText": "rosa.computer.phone-duration-less-1-hour",
+            "TranslateText": "rosa.computer.phone-duration-light",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.computer.phone-duration-light-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "1": {
             "Text": "Use of the phone of greater than 4 hours per day intermittently, or 1 hour consecutively",
-            "TranslateText": "rosa.computer.phone-duration-more-4-hours",
+            "TranslateText": "rosa.computer.phone-duration-heavy",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.computer.phone-duration-heavy-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "Base": 1,
           "type": "select",
@@ -1074,21 +1383,30 @@
         "KeyboardDuration": {
           "0": {
             "Text": "Keyboard is used between 1-4 hours intermittently, or 30minutes to 1 hour consecutively",
-            "TranslateText": "rosa.computer.keyboard-duration-less-4-hours",
+            "TranslateText": "rosa.computer.keyboard-duration-moderate",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.computer.keyboard-duration-moderate-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "-1": {
             "Text": "Keyboard is used for 1 hour or less intermittently",
-            "TranslateText": "rosa.computer.keyboard-duration-less-1-hour",
+            "TranslateText": "rosa.computer.keyboard-duration-light",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.computer.keyboard-duration-light-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "1": {
             "Text": "Keyboard is used for greater than 4 hours per day intermittently, or 1 hour consecutively",
-            "TranslateText": "rosa.computer.keyboard-duration-more-4-hours",
+            "TranslateText": "rosa.computer.keyboard-duration-heavy",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.computer.keyboard-duration-heavy-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "Base": 1,
           "type": "select",
@@ -1098,21 +1416,30 @@
         "MouseDuration": {
           "0": {
             "Text": "Mouse is used between 1-4 hours intermittently, or 30minutes to 1 hour consecutively",
-            "TranslateText": "rosa.computer.mouse-duration-less-4-hours",
+            "TranslateText": "rosa.computer.mouse-duration-moderate",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.computer.mouse-duration-moderate-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "-1": {
             "Text": "Mouse is used for 1 hour or less intermittently, or less than 30 minutes consecutively",
-            "TranslateText": "rosa.computer.mouse-duration-less-1-hour",
+            "TranslateText": "rosa.computer.mouse-duration-light",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.computer.mouse-duration-light-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "1": {
             "Text": "Mouse is used for greater than 4 hours per day intermittently, or 1 hour consecutively",
-            "TranslateText": "rosa.computer.mouse-duration-more-4-hours",
+            "TranslateText": "rosa.computer.mouse-duration-heavy",
             "Warning": null,
-            "TranslateWarning": null
+            "TranslateWarning": null,
+            "TranslateDesc": "rosa.computer.mouse-duration-heavy-desc",
+            "TranslateFullDesc": null,
+            "TranslateImageDesc": null
           },
           "Base": 1,
           "type": "select",
