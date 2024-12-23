@@ -1309,10 +1309,12 @@
             "TranslateFullDesc": null,
             "TranslateImageDesc": null
           },
-          "Base": 1,
+          "label": "Chair duration",
           "type": "select",
+          "Base": 0,
           "TranslateLabel": "rosa.chair.duration",
-          "label": "Chair duration"
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "MonitorDuration": {
           "0": {
@@ -1342,10 +1344,12 @@
             "TranslateFullDesc": null,
             "TranslateImageDesc": null
           },
-          "Base": 1,
+          "label": "Computer duration",
           "type": "select",
+          "Base": 0,
           "TranslateLabel": "rosa.computer.monitor-duration",
-          "label": "Computer duration"
+          "TranslateDesc": null,
+          "TranslateFullDesc": null
         },
         "PhoneDuration": {
           "0": {
@@ -1375,10 +1379,12 @@
             "TranslateFullDesc": null,
             "TranslateImageDesc": null
           },
-          "Base": 1,
+          "label": "Phone duration",
           "type": "select",
+          "Base": 0,
           "TranslateLabel": "rosa.computer.phone-duration",
-          "label": "Phone duration"
+          "TranslateFullDesc": null,
+          "TranslateImageDesc": null
         },
         "KeyboardDuration": {
           "0": {
@@ -1408,10 +1414,12 @@
             "TranslateFullDesc": null,
             "TranslateImageDesc": null
           },
-          "Base": 1,
+          "label": "Keyboard duration",
           "type": "select",
+          "Base": 0,
           "TranslateLabel": "rosa.computer.keyboard-duration",
-          "label": "Keyboard duration"
+          "TranslateFullDesc": null,
+          "TranslateImageDesc": null
         },
         "MouseDuration": {
           "0": {
@@ -1441,10 +1449,12 @@
             "TranslateFullDesc": null,
             "TranslateImageDesc": null
           },
-          "Base": 1,
+          "label": "Mouse duration",
           "type": "select",
+          "Base": 0,
           "TranslateLabel": "rosa.computer.mouse-duration",
-          "label": "Mouse duration"
+          "TranslateFullDesc": null,
+          "TranslateImageDesc": null
         }
       }
     }

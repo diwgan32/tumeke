@@ -963,10 +963,12 @@ ComponentValues:
         TranslateDesc: rosa.chair.duration-heavy-desc
         TranslateFullDesc: ~
         TranslateImageDesc: ~
-      Base: 1
-      type: select
-      TranslateLabel: rosa.chair.duration
       label: Chair duration
+      type: select
+      Base: 0
+      TranslateLabel: rosa.chair.duration
+      TranslateDesc: ~
+      TranslateFullDesc: ~
     MonitorDuration:
       0:
         Text: Use of the monitor between 1-4 hours intermittently, or 30minutes to 1 hour consecutively
@@ -992,10 +994,12 @@ ComponentValues:
         TranslateDesc: rosa.computer.monitor-duration-heavy-desc
         TranslateFullDesc: ~
         TranslateImageDesc: ~
-      Base: 1
-      type: select
-      TranslateLabel: rosa.computer.monitor-duration
       label: Computer duration
+      type: select
+      Base: 0
+      TranslateLabel: rosa.computer.monitor-duration
+      TranslateDesc: ~
+      TranslateFullDesc: ~
     PhoneDuration:
       0:
         Text: Use of the phone between 1-4 hours intermittently, or 30minutes to 1 hour consecutively
@@ -1021,10 +1025,12 @@ ComponentValues:
         TranslateDesc: rosa.computer.phone-duration-heavy-desc
         TranslateFullDesc: ~
         TranslateImageDesc: ~
-      Base: 1
-      type: select
-      TranslateLabel: rosa.computer.phone-duration
       label: Phone duration
+      type: select
+      Base: 0
+      TranslateLabel: rosa.computer.phone-duration
+      TranslateFullDesc: ~
+      TranslateImageDesc: ~
     KeyboardDuration:
       0:
         Text: Keyboard is used between 1-4 hours intermittently, or 30minutes to 1 hour consecutively
@@ -1050,10 +1056,12 @@ ComponentValues:
         TranslateDesc: rosa.computer.keyboard-duration-heavy-desc
         TranslateFullDesc: ~
         TranslateImageDesc: ~
-      Base: 1
-      type: select
-      TranslateLabel: rosa.computer.keyboard-duration
       label: Keyboard duration
+      type: select
+      Base: 0
+      TranslateLabel: rosa.computer.keyboard-duration
+      TranslateFullDesc: ~
+      TranslateImageDesc: ~
     MouseDuration:
       0:
         Text: Mouse is used between 1-4 hours intermittently, or 30minutes to 1 hour consecutively
@@ -1079,9 +1087,11 @@ ComponentValues:
         TranslateDesc: rosa.computer.mouse-duration-heavy-desc
         TranslateFullDesc: ~
         TranslateImageDesc: ~
-      Base: 1
-      type: select
-      TranslateLabel: rosa.computer.mouse-duration
       label: Mouse duration
+      type: select
+      Base: 0
+      TranslateLabel: rosa.computer.mouse-duration
+      TranslateFullDesc: ~
+      TranslateImageDesc: ~
     
 ...
