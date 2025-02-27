@@ -833,7 +833,7 @@
           "TranslateDesc": null,
           "TranslateFullDesc": null
         },
-        "MonitorToFar": {
+        "MonitorTooFar": {
           "1": {
             "Text": "Yes",
             "TranslateText": "general.yes",
