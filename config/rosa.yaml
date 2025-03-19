@@ -185,7 +185,7 @@ ComponentValues:
       2:
         Text: Knee angle < 90°
         TranslateText: rosa.chair.chair-height-knees-less-90
-        Warning: Too low
+        Warning: Chair is too low
         TranslateWarning: rosa.chair.chair-height-too-low
         TranslateDesc: ~
         TranslateFullDesc: ~
@@ -193,15 +193,15 @@ ComponentValues:
       2.1:
         Text: Knee angle > 90°
         TranslateText: rosa.chair.chair-height-knees-more-90
-        Warning: Too high
+        Warning: Chair is too high
         TranslateWarning: rosa.chair.chair-height-too-high
         TranslateDesc: ~
         TranslateFullDesc: ~
         TranslateImageDesc: ~
       3:
-        Text: Not foot contact on ground
+        Text: No foot contact on ground
         TranslateText: rosa.chair.chair-height-foot-no-contact
-        Warning: ~
+        Warning: 
         TranslateWarning: ~
         TranslateDesc: ~
         TranslateFullDesc: ~
@@ -239,7 +239,7 @@ ComponentValues:
       1:
         Text: Yes
         TranslateText: general.yes
-        Warning: ~
+        Warning: Chair is not adjustable
         TranslateWarning: ~
         TranslateDesc: ~
         TranslateFullDesc: ~
@@ -363,9 +363,9 @@ ComponentValues:
       1:
         Text: Yes
         TranslateText: general.yes
-        Warning: ~
-        TranslateWarning: ~
-        TranslateDesc: ~
+        Warning: Armrests are positioned too widely
+        TranslateWarning: rosa.chair.armrest-too-wide
+        TranslateDesc: rosa.chair.armrest-too-wide-desc
         TranslateFullDesc: ~
         TranslateImageDesc: ~
       0:
@@ -545,13 +545,13 @@ ComponentValues:
       TranslateLabel: rosa.computer.monitor-distance
       TranslateDesc: ~
       TranslateFullDesc: ~
-    MonitorTooFar:
+    MonitorToFar:
       1:
         Text: Yes
         TranslateText: general.yes
-        Warning: ~
-        TranslateWarning: ~
-        TranslateDesc: ~
+        Warning: Monitor is positioned too far
+        TranslateWarning: rosa.computer.monitor-too-far
+        TranslateDesc: rosa.computer.monitor-too-far-desc
         TranslateFullDesc: ~
         TranslateImageDesc: ~
       0:
@@ -572,9 +572,9 @@ ComponentValues:
       1:
         Text: Yes
         TranslateText: general.yes
-        Warning: ~
-        TranslateWarning: ~
-        TranslateDesc: ~
+        Warning: Neck twist greater than 30°
+        TranslateWarning: rosa.computer.monitor-twist
+        TranslateDesc: rosa.computer.monitor-twist-desc
         TranslateFullDesc: ~
         TranslateImageDesc: ~
       0:
@@ -781,9 +781,9 @@ ComponentValues:
       1:
         Text: Yes
         TranslateText: general.yes
-        Warning: ~
-        TranslateWarning: ~
-        TranslateDesc: ~
+        Warning: Pinch grip on mouse
+        TranslateWarning: rosa.computer.mouse-pinch-grip
+        TranslateDesc: rosa.computer.mouse-pinch-grip-desc
         TranslateFullDesc: ~
         TranslateImageDesc: ~
       0:
@@ -849,9 +849,9 @@ ComponentValues:
       1:
         Text: Yes
         TranslateText: general.yes
-        Warning: ~
-        TranslateWarning: ~
-        TranslateDesc: ~
+        Warning: High ulnar deviation on wrists
+        TranslateWarning: rosa.computer.keyboard-deviation
+        TranslateDesc: rosa.computer.keyboard-deviation-desc
         TranslateFullDesc: ~
         TranslateImageDesc: ~
       0:
