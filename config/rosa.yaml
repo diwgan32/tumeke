@@ -201,7 +201,7 @@ ComponentValues:
       3:
         Text: No foot contact on ground
         TranslateText: rosa.chair.chair-height-foot-no-contact
-        Warning: 
+        Warning: ~
         TranslateWarning: ~
         TranslateDesc: ~
         TranslateFullDesc: ~
@@ -234,6 +234,29 @@ ComponentValues:
       Base: 0
       TranslateLabel: rosa.chair.insufficient-space
       TranslateDesc: rosa.chair.insufficient-space-desc
+      TranslateFullDesc: ~
+    ChairHeightNoFootGround:
+      1:
+        Text: Yes
+        TranslateText: general.yes
+        Warning: ~
+        TranslateWarning: ~
+        TranslateDesc: ~
+        TranslateFullDesc: ~
+        TranslateImageDesc: ~
+      0:
+        Text: No
+        TranslateText: general.no
+        Warning: ~
+        TranslateWarning: ~
+        TranslateDesc: ~
+        TranslateFullDesc: ~
+        TranslateImageDesc: ~
+      label: No foot contact on ground
+      type: boolean
+      Base: 0
+      TranslateLabel: rosa.chair.chair-height-no-foot-ground
+      TranslateDesc: ~
       TranslateFullDesc: ~
     ChairHeightNonAdjustable:
       1:
@@ -319,16 +342,16 @@ ComponentValues:
         TranslateText: rosa.chair.armrests-elbow-supported
         Warning: ~
         TranslateWarning: ~
-        TranslateDesc: ~
-        TranslateFullDesc: ~
+        TranslateDesc: rosa.chair.armrests-elbow-supported-desc
+        TranslateFullDesc: rosa.chair.armrests-elbow-supported-full-desc
         TranslateImageDesc: ~
       2:
         Text: Shoulders shrugged or arms unsupported
         TranslateText: rosa.chair.armrests-shoulders-shrugged
         Warning: ~
         TranslateWarning: ~
-        TranslateDesc: ~
-        TranslateFullDesc: ~
+        TranslateDesc: rosa.chair.armrests-shoulders-shrugged-desc
+        TranslateFullDesc: rosa.chair.armrests-shoulders-shrugged-full-desc
         TranslateImageDesc: ~
       label: Armrests
       type: select
@@ -488,8 +511,8 @@ ComponentValues:
       type: boolean
       Base: 0
       TranslateLabel: rosa.chair.back-support-surface-to-high
-      TranslateDesc: ~
-      TranslateFullDesc: ~
+      TranslateDesc: rosa.chair.back-support-surface-to-high-desc
+      TranslateFullDesc: rosa.chair.back-support-surface-to-high-full-desc
     ChairBackSupportNonAdjustable:
       1:
         Text: Yes
@@ -545,7 +568,7 @@ ComponentValues:
       TranslateLabel: rosa.computer.monitor-distance
       TranslateDesc: ~
       TranslateFullDesc: ~
-    MonitorToFar:
+    MonitorTooFar:
       1:
         Text: Yes
         TranslateText: general.yes
@@ -889,7 +912,7 @@ ComponentValues:
       type: boolean
       Base: 0
       TranslateLabel: rosa.computer.keyboard-too-high
-      TranslateDesc: ~
+      TranslateDesc: rosa.computer.keyboard-too-high-desc
       TranslateFullDesc: ~
     KeyboardReachingItems:
       1:

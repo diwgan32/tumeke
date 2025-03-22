@@ -481,6 +481,32 @@
         "TranslateDesc": "rosa.chair.insufficient-space-desc",
         "TranslateFullDesc": null
       },
+      "ChairHeightNoFootGround": {
+        "1": {
+          "Text": "Yes",
+          "TranslateText": "general.yes",
+          "Warning": null,
+          "TranslateWarning": null,
+          "TranslateDesc": null,
+          "TranslateFullDesc": null,
+          "TranslateImageDesc": null
+        },
+        "0": {
+          "Text": "No",
+          "TranslateText": "general.no",
+          "Warning": null,
+          "TranslateWarning": null,
+          "TranslateDesc": null,
+          "TranslateFullDesc": null,
+          "TranslateImageDesc": null
+        },
+        "label": "No foot contact on ground",
+        "type": "boolean",
+        "Base": 0,
+        "TranslateLabel": "rosa.chair.chair-height-no-foot-ground",
+        "TranslateDesc": null,
+        "TranslateFullDesc": null
+      },
       "ChairHeightNonAdjustable": {
         "1": {
           "Text": "Yes",
@@ -576,8 +602,8 @@
           "TranslateText": "rosa.chair.armrests-elbow-supported",
           "Warning": null,
           "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
+          "TranslateDesc": "rosa.chair.armrests-elbow-supported-desc",
+          "TranslateFullDesc": "rosa.chair.armrests-elbow-supported-full-desc",
           "TranslateImageDesc": null
         },
         "2": {
@@ -585,8 +611,8 @@
           "TranslateText": "rosa.chair.armrests-shoulders-shrugged",
           "Warning": null,
           "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
+          "TranslateDesc": "rosa.chair.armrests-shoulders-shrugged-desc",
+          "TranslateFullDesc": "rosa.chair.armrests-shoulders-shrugged-full-desc",
           "TranslateImageDesc": null
         },
         "label": "Armrests",
@@ -767,8 +793,8 @@
         "type": "boolean",
         "Base": 0,
         "TranslateLabel": "rosa.chair.back-support-surface-to-high",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "TranslateDesc": "rosa.chair.back-support-surface-to-high-desc",
+        "TranslateFullDesc": "rosa.chair.back-support-surface-to-high-full-desc"
       },
       "ChairBackSupportNonAdjustable": {
         "1": {
@@ -833,7 +859,7 @@
         "TranslateDesc": null,
         "TranslateFullDesc": null
       },
-      "MonitorToFar": {
+      "MonitorTooFar": {
         "1": {
           "Text": "Yes",
           "TranslateText": "general.yes",
@@ -1224,7 +1250,7 @@
         "type": "boolean",
         "Base": 0,
         "TranslateLabel": "rosa.computer.keyboard-too-high",
-        "TranslateDesc": null,
+        "TranslateDesc": "rosa.computer.keyboard-too-high-desc",
         "TranslateFullDesc": null
       },
       "KeyboardReachingItems": {
