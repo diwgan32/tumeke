@@ -63,6 +63,68 @@
       "Color": "rgba(133, 4, 0, 1.0)"
     }
   },
+  "AdditionalInputsScores": {
+    "2": {
+      "0": {
+        "TranslateText": "rulareba.score.acceptable",
+        "ShortText": "Acceptable",
+        "Text": "Acceptable",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "1": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Text": "High risk of injury",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      }
+    },
+    "3": {
+      "0": {
+        "TranslateText": "rulareba.score.acceptable",
+        "ShortText": "Acceptable",
+        "Text": "Acceptable",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "1": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Text": "Medium risk of injury",
+        "Color": "rgba(230, 126, 34, 1.0)"
+      },
+      "2": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Text": "High risk of injury",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      }
+    },
+    "4": {
+      "0": {
+        "TranslateText": "rulareba.score.acceptable",
+        "ShortText": "Acceptable",
+        "Text": "Acceptable",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "1": {
+        "TranslateText": "rulareba.score.low",
+        "ShortText": "Low",
+        "Text": "Low risk of injury",
+        "Color": "rgba(241, 196, 15, 1.0)"
+      },
+      "2": {
+        "TranslateText": "rulareba.score.medium",
+        "ShortText": "Medium",
+        "Text": "Medium risk of injury",
+        "Color": "rgba(230, 126, 34, 1.0)"
+      },
+      "3": {
+        "TranslateText": "rulareba.score.high",
+        "ShortText": "High",
+        "Text": "High risk of injury",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      }
+    }
+  },
   "BodyPartScores": {
     "Overall": {
       "1": {
@@ -601,6 +663,141 @@
         "Image": "angleIcons/rulaReba/Leg_one_raised@2x.png"
       },
       "Image": "bodyParts/leg.png"
+    }
+  },
+  "AdditionalInputs": {
+    "Force": {
+      "Load": {
+        "0": {
+          "Text": "< 5 kg",
+          "Warning": null,
+          "Image": "angleIcons/rulaReba/Trunk_0_deg@2x.png"
+        },
+        "1": {
+          "Text": "5 - 10 kg",
+          "Warning": null,
+          "Image": "angleIcons/rulaReba/Trunk_0_20_deg@2x.png"
+        },
+        "2": {
+          "Text": "\\> 10 kg",
+          "Warning": "Trunk bent forward too much",
+          "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png"
+        },
+        "label": "Force/Load",
+        "TranslateLabel": "rulareba.trunk.score",
+        "type": "select",
+        "Base": 0,
+        "Image": "additionalInputs/ForceLoad.png"
+      },
+      "ForceBuildup": {
+        "1": {
+          "Text": "Yes",
+          "TranslateText": "rulareba.yes",
+          "TranslateWarning": null,
+          "Warning": null
+        },
+        "0": {
+          "Text": "No",
+          "TranslateText": "rulareba.no",
+          "TranslateWarning": null,
+          "Warning": null
+        },
+        "Base": 0,
+        "type": "boolean",
+        "label": "Shock force",
+        "TranslateLabel": "rulareba.wrist.twist",
+        "Image": "angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png",
+        "Image2": "angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png"
+      }
+    },
+    "Misc": {
+      "CouplingScore": {
+        "0": {
+          "Text": "Good",
+          "Warning": null,
+          "Image": "angleIcons/rulaReba/Trunk_0_deg@2x.png"
+        },
+        "1": {
+          "Text": "Fair",
+          "Warning": null,
+          "Image": "angleIcons/rulaReba/Trunk_0_20_deg@2x.png"
+        },
+        "2": {
+          "Text": "Poor",
+          "Warning": "Trunk bent forward too much",
+          "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png"
+        },
+        "3": {
+          "Text": "Unacceptable",
+          "Warning": "Trunk bent forward too much",
+          "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png"
+        },
+        "label": "Coupling score",
+        "TranslateLabel": "rulareba.trunk.score",
+        "type": "select",
+        "Base": 0,
+        "Image": "additionalInputs/Coupling.png"
+      },
+      "BodyPartHeldStatic": {
+        "1": {
+          "Text": "Yes",
+          "TranslateText": "rulareba.yes",
+          "TranslateWarning": null,
+          "Warning": null
+        },
+        "0": {
+          "Text": "No",
+          "TranslateText": "rulareba.no",
+          "TranslateWarning": null,
+          "Warning": null
+        },
+        "Base": 0,
+        "type": "boolean",
+        "label": "Static body parts",
+        "TranslateLabel": "rulareba.wrist.twist",
+        "Image": "angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png",
+        "Image2": "angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png"
+      },
+      "RepeatedSmallActions": {
+        "1": {
+          "Text": "Yes",
+          "TranslateText": "rulareba.yes",
+          "TranslateWarning": null,
+          "Warning": null
+        },
+        "0": {
+          "Text": "No",
+          "TranslateText": "rulareba.no",
+          "TranslateWarning": null,
+          "Warning": null
+        },
+        "Base": 0,
+        "type": "boolean",
+        "label": "Repeated range actions",
+        "TranslateLabel": "rulareba.wrist.twist",
+        "Image": "angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png",
+        "Image2": "angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png"
+      },
+      "RapidPostureChange": {
+        "1": {
+          "Text": "Yes",
+          "TranslateText": "rulareba.yes",
+          "TranslateWarning": null,
+          "Warning": null
+        },
+        "0": {
+          "Text": "No",
+          "TranslateText": "rulareba.no",
+          "TranslateWarning": null,
+          "Warning": null
+        },
+        "Base": 0,
+        "type": "boolean",
+        "label": "Rapid posture change",
+        "TranslateLabel": "rulareba.wrist.twist",
+        "Image": "angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png",
+        "Image2": "angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png"
+      }
     }
   }
 }

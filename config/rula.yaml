@@ -43,6 +43,29 @@ Colors:
   medium: *orange
   high: *red
 
+AdditionalInputsScores:
+  2:
+    0:
+      <<: *acceptable
+    1:
+      <<: *high
+  3:
+    0:
+      <<: *acceptable
+    1:
+      <<: *medium
+    2:
+      <<: *high
+  4:
+    0:
+      <<: *acceptable
+    1:
+      <<: *low
+    2:
+      <<: *medium
+    3:
+      <<: *high
+
 BodyPartScores:
   Overall:
     1:
@@ -402,4 +425,123 @@ ComponentValues:
       TranslateLabel: rulareba.wrist.midline
       Image: angleIcons/rulaReba/Wrist_bent_from_midline@2x.png
     Image: bodyParts/wrist.png
+AdditionalInputs:
+  Force:
+    Arm:
+      0:
+        Text: < 1.8 kg
+        Warning: ~
+        Image: angleIcons/rulaReba/Trunk_0_deg@2x.png
+      1:
+        Text: 1.8 - 10 kg
+        Warning: ~
+        Image: angleIcons/rulaReba/Trunk_0_20_deg@2x.png
+      2:
+        Text: \> 10 kg
+        Warning: Trunk bent forward too much
+        Image: angleIcons/rulaReba/Trunk_20_60_deg@2x.png
+      label: Arm Force
+      TranslateLabel: rulareba.trunk.score
+      type: select
+      Base: 0
+      Image: additionalInputs/ForceLoad.png
+    Leg:
+      0:
+        Text: < 1.8 kg
+        Warning: ~
+        Image: angleIcons/rulaReba/Trunk_0_deg@2x.png
+      1:
+        Text: 1.8 - 10 kg
+        Warning: ~
+        Image: angleIcons/rulaReba/Trunk_0_20_deg@2x.png
+      2:
+        Text: \> 10 kg
+        Warning: Trunk bent forward too much
+        Image: angleIcons/rulaReba/Trunk_20_60_deg@2x.png
+      label: Leg Force
+      TranslateLabel: rulareba.trunk.score
+      type: select
+      Base: 0
+      Image: additionalInputs/ForceLoad.png
+    ArmSuddenExertion:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: ~
+        Warning: ~
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: ~
+        Warning: ~
+      Base: 0
+      type: boolean
+      label: Arm Sudden Exertion
+      TranslateLabel: rulareba.wrist.twist
+      Image: angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png
+      Image2: angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png
+    LegSuddenExertion:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: ~
+        Warning: ~
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: ~
+        Warning: ~
+      Base: 0
+      type: boolean
+      label: Leg Sudden Exertion
+      TranslateLabel: rulareba.wrist.twist
+      Image: angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png
+      Image2: angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png
+  Misc:
+    LegsSupported:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: ~
+        Warning: ~
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: ~
+        Warning: ~
+      Base: 0
+      type: boolean
+      label: Legs Supported
+      TranslateLabel: rulareba.wrist.twist
+      Image: angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png
+      Image2: angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png
+  Muscle Use:
+    Arm:
+      0:
+        Text: Holds still
+        Warning: ~
+        Image: angleIcons/rulaReba/Trunk_0_deg@2x.png
+      1:
+        Text: Moves 4 times/min
+        Warning: ~
+        Image: angleIcons/rulaReba/Trunk_0_20_deg@2x.png
+      label: Arms
+      TranslateLabel: rulareba.trunk.score
+      type: select
+      Base: 0
+      Image: additionalInputs/ForceLoad.png
+    Leg:
+      0:
+        Text: Holds still
+        Warning: ~
+        Image: angleIcons/rulaReba/Trunk_0_deg@2x.png
+      1:
+        Text: Moves 4 times/min
+        Warning: ~
+        Image: angleIcons/rulaReba/Trunk_0_20_deg@2x.png
+      label: Legs
+      TranslateLabel: rulareba.trunk.score
+      type: select
+      Base: 0
+      Image: additionalInputs/ForceLoad.png
 ... 
