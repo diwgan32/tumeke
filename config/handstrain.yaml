@@ -36,6 +36,53 @@ constants:
     ShortText: Poor
     <<: *red
 
+AdditionalInputsScores:
+  10:
+    0:
+      <<: *good
+    1:
+      <<: *good
+    2:
+      <<: *fair
+    3:
+      <<: *fair
+    4:
+      <<: *fair
+    5:
+      <<: *fair
+    6:
+      <<: *poor
+    7:
+      <<: *poor
+    8:
+      <<: *poor
+    9:
+      <<: *unsafe
+    10:
+      <<: *unsafe
+  11:
+    0:
+      <<: *good
+    1:
+      <<: *good
+    2:
+      <<: *fair
+    3:
+      <<: *fair
+    4:
+      <<: *fair
+    5:
+      <<: *fair
+    6:
+      <<: *poor
+    7:
+      <<: *poor
+    8:
+      <<: *poor
+    9:
+      <<: *unsafe
+    10:
+      <<: *unsafe
 
 ResultValues:
   OverallScore:
@@ -293,3 +340,102 @@ ComponentValues:
     label: Efforts per hand (right)
     ShortLabel: efforts (r)
     Units: efforts/min
+
+AdditionalInputs:
+  borgScale:
+    1:
+      Text: Light
+      Warning: ~
+      Image: angleIcons/rulaReba/Trunk_0_deg@2x.png
+    2:
+      Text: Light
+      Warning: ~
+      Image: angleIcons/rulaReba/Trunk_0_deg@2x.png
+    3:
+      Text: Somewhat hard
+      Warning: ~
+      Image: angleIcons/rulaReba/Trunk_0_20_deg@2x.png
+    4:
+      Text: Somewhat hard
+      Warning: ~
+      Image: angleIcons/rulaReba/Trunk_0_20_deg@2x.png
+    5:
+      Text: Hard
+      Warning: Trunk bent forward too much
+      Image: angleIcons/rulaReba/Trunk_20_60_deg@2x.png
+    6:
+      Text: Hard
+      Warning: Trunk bent forward too much
+      Image: angleIcons/rulaReba/Trunk_20_60_deg@2x.png
+    7:
+      Text: Very hard
+      Warning: Trunk bent forward too much
+      Image: angleIcons/rulaReba/Trunk_20_60_deg@2x.png
+    8:
+      Text: Very hard
+      Warning: Trunk bent forward too much
+      Image: angleIcons/rulaReba/Trunk_20_60_deg@2x.png
+    9:
+      Text: Maximal
+      Warning: Trunk bent forward too much
+      Image: angleIcons/rulaReba/Trunk_20_60_deg@2x.png
+    10:
+      Text: Maximal
+      Warning: Trunk bent forward too much
+      Image: angleIcons/rulaReba/Trunk_20_60_deg@2x.png
+    label: Borg scale
+    TranslateLabel: rulareba.trunk.score
+    type: select
+    Base: 0
+    Image: additionalInputs/ForceLoad.png
+  taskDuration:
+    0:
+      Text: 0
+      TranslateWarning: ~
+      Warning: ~
+    1:
+      Text: 1
+      TranslateWarning: ~
+      Warning: ~
+    2:
+      Text: 2
+      TranslateWarning: ~
+      Warning: ~
+    3:
+      Text: 3
+      TranslateWarning: ~
+      Warning: ~
+    4:
+      Text: 4
+      TranslateWarning: ~
+      Warning: ~
+    5:
+      Text: 5
+      TranslateWarning: ~
+      Warning: ~
+    6:
+      Text: 6
+      TranslateWarning: ~
+      Warning: ~
+    7:
+      Text: 7
+      TranslateWarning: ~
+      Warning: ~
+    8:
+      Text: 8
+      TranslateWarning: ~
+      Warning: ~
+    9:
+      Text: 9
+      TranslateWarning: ~
+      Warning: ~
+    10:
+      Text: 10
+      TranslateWarning: ~
+      Warning: ~
+    Base: 1
+    type: select
+    label: Task duration
+    TranslateLabel: rulareba.wrist.twist
+    Image: angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png
+    Image2: angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png

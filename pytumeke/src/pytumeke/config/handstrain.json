@@ -36,6 +36,122 @@
       "Color": "rgba(184, 15, 10, 1.0)"
     }
   },
+  "AdditionalInputsScores": {
+    "10": {
+      "0": {
+        "TranslateText": "handstrain.risk.good",
+        "ShortText": "Good",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "1": {
+        "TranslateText": "handstrain.risk.good",
+        "ShortText": "Good",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "2": {
+        "TranslateText": "handstrain.risk.fair",
+        "ShortText": "Fair",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "3": {
+        "TranslateText": "handstrain.risk.fair",
+        "ShortText": "Fair",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "4": {
+        "TranslateText": "handstrain.risk.fair",
+        "ShortText": "Fair",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "5": {
+        "TranslateText": "handstrain.risk.fair",
+        "ShortText": "Fair",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "6": {
+        "TranslateText": "handstrain.risk.poor",
+        "ShortText": "Poor",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "7": {
+        "TranslateText": "handstrain.risk.poor",
+        "ShortText": "Poor",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "8": {
+        "TranslateText": "handstrain.risk.poor",
+        "ShortText": "Poor",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "9": {
+        "TranslateText": "handstrain.risk.unacceptable",
+        "ShortText": "Unsafe",
+        "Color": "rgba(15, 15, 30, 0.9)"
+      },
+      "10": {
+        "TranslateText": "handstrain.risk.unacceptable",
+        "ShortText": "Unsafe",
+        "Color": "rgba(15, 15, 30, 0.9)"
+      }
+    },
+    "11": {
+      "0": {
+        "TranslateText": "handstrain.risk.good",
+        "ShortText": "Good",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "1": {
+        "TranslateText": "handstrain.risk.good",
+        "ShortText": "Good",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "2": {
+        "TranslateText": "handstrain.risk.fair",
+        "ShortText": "Fair",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "3": {
+        "TranslateText": "handstrain.risk.fair",
+        "ShortText": "Fair",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "4": {
+        "TranslateText": "handstrain.risk.fair",
+        "ShortText": "Fair",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "5": {
+        "TranslateText": "handstrain.risk.fair",
+        "ShortText": "Fair",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "6": {
+        "TranslateText": "handstrain.risk.poor",
+        "ShortText": "Poor",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "7": {
+        "TranslateText": "handstrain.risk.poor",
+        "ShortText": "Poor",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "8": {
+        "TranslateText": "handstrain.risk.poor",
+        "ShortText": "Poor",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      },
+      "9": {
+        "TranslateText": "handstrain.risk.unacceptable",
+        "ShortText": "Unsafe",
+        "Color": "rgba(15, 15, 30, 0.9)"
+      },
+      "10": {
+        "TranslateText": "handstrain.risk.unacceptable",
+        "ShortText": "Unsafe",
+        "Color": "rgba(15, 15, 30, 0.9)"
+      }
+    }
+  },
   "ResultValues": {
     "OverallScore": {
       "[0, 10]": {
@@ -462,6 +578,128 @@
       "label": "Efforts per hand (right)",
       "ShortLabel": "efforts (r)",
       "Units": "efforts/min"
+    }
+  },
+  "AdditionalInputs": {
+    "borgScale": {
+      "1": {
+        "Text": "Light",
+        "Warning": null,
+        "Image": "angleIcons/rulaReba/Trunk_0_deg@2x.png"
+      },
+      "2": {
+        "Text": "Light",
+        "Warning": null,
+        "Image": "angleIcons/rulaReba/Trunk_0_deg@2x.png"
+      },
+      "3": {
+        "Text": "Somewhat hard",
+        "Warning": null,
+        "Image": "angleIcons/rulaReba/Trunk_0_20_deg@2x.png"
+      },
+      "4": {
+        "Text": "Somewhat hard",
+        "Warning": null,
+        "Image": "angleIcons/rulaReba/Trunk_0_20_deg@2x.png"
+      },
+      "5": {
+        "Text": "Hard",
+        "Warning": "Trunk bent forward too much",
+        "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png"
+      },
+      "6": {
+        "Text": "Hard",
+        "Warning": "Trunk bent forward too much",
+        "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png"
+      },
+      "7": {
+        "Text": "Very hard",
+        "Warning": "Trunk bent forward too much",
+        "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png"
+      },
+      "8": {
+        "Text": "Very hard",
+        "Warning": "Trunk bent forward too much",
+        "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png"
+      },
+      "9": {
+        "Text": "Maximal",
+        "Warning": "Trunk bent forward too much",
+        "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png"
+      },
+      "10": {
+        "Text": "Maximal",
+        "Warning": "Trunk bent forward too much",
+        "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png"
+      },
+      "label": "Borg scale",
+      "TranslateLabel": "rulareba.trunk.score",
+      "type": "select",
+      "Base": 0,
+      "Image": "additionalInputs/ForceLoad.png"
+    },
+    "taskDuration": {
+      "0": {
+        "Text": 0,
+        "TranslateWarning": null,
+        "Warning": null
+      },
+      "1": {
+        "Text": 1,
+        "TranslateWarning": null,
+        "Warning": null
+      },
+      "2": {
+        "Text": 2,
+        "TranslateWarning": null,
+        "Warning": null
+      },
+      "3": {
+        "Text": 3,
+        "TranslateWarning": null,
+        "Warning": null
+      },
+      "4": {
+        "Text": 4,
+        "TranslateWarning": null,
+        "Warning": null
+      },
+      "5": {
+        "Text": 5,
+        "TranslateWarning": null,
+        "Warning": null
+      },
+      "6": {
+        "Text": 6,
+        "TranslateWarning": null,
+        "Warning": null
+      },
+      "7": {
+        "Text": 7,
+        "TranslateWarning": null,
+        "Warning": null
+      },
+      "8": {
+        "Text": 8,
+        "TranslateWarning": null,
+        "Warning": null
+      },
+      "9": {
+        "Text": 9,
+        "TranslateWarning": null,
+        "Warning": null
+      },
+      "10": {
+        "Text": 10,
+        "TranslateWarning": null,
+        "Warning": null
+      },
+      "Base": 1,
+      "type": "select",
+      "label": "Task duration",
+      "TranslateLabel": "rulareba.wrist.twist",
+      "Image": "angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png",
+      "Image2": "angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png"
     }
   }
 }
