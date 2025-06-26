@@ -252,6 +252,45 @@
       }
     }
   },
+  "RiskComponents": {
+    "asymmetryAngle": {
+      "type": "input",
+      "Base": 0,
+      "Units": "deg"
+    },
+    "horizontalEnd": {
+      "type": "input",
+      "Base": 10,
+      "Units": [
+        "inches",
+        "sm"
+      ]
+    },
+    "horizontalStart": {
+      "type": "input",
+      "Base": 0,
+      "Units": [
+        "inches",
+        "sm"
+      ]
+    },
+    "verticalEnd": {
+      "type": "input",
+      "Base": 0,
+      "Units": [
+        "inches",
+        "sm"
+      ]
+    },
+    "verticalStart": {
+      "type": "input",
+      "Base": 0,
+      "Units": [
+        "inches",
+        "sm"
+      ]
+    }
+  },
   "CouplingStatus": {
     "GOOD": {
       "Number": 0,
@@ -292,5 +331,60 @@
   "Units": {
     "STANDARD": 0,
     "METRIC": 1
+  },
+  "AdditionalInputs": {
+    "averageLoad": {
+      "label": "Average Load",
+      "type": "input",
+      "Base": 0,
+      "units": [
+        "lbs",
+        "kgs"
+      ],
+      "Image": null
+    },
+    "frequency": {
+      "label": "Frequency",
+      "type": "input",
+      "Base": 1,
+      "units": "min",
+      "Image": null
+    },
+    "coupling": {
+      "0": {
+        "Text": "Good",
+        "Warning": null
+      },
+      "1": {
+        "Text": "Fair",
+        "Warning": null
+      },
+      "2": {
+        "Text": "Poor",
+        "Warning": "Poor coupling"
+      },
+      "label": "Coupling",
+      "type": "select",
+      "Base": 0,
+      "Image": "additionalInputs/Coupling.png"
+    },
+    "liftingDuration": {
+      "0": {
+        "Text": "Short (1 hour)",
+        "Warning": null
+      },
+      "1": {
+        "Text": "Moderate (1-2 hours)",
+        "Warning": null
+      },
+      "2": {
+        "Text": "Long (2-8 hours)",
+        "Warning": "Long lifting duration"
+      },
+      "label": "Lifting Duration",
+      "type": "select",
+      "Base": 0,
+      "Image": null
+    }
   }
 }

@@ -665,45 +665,89 @@
         "0": {
           "Text": "< 1.8 kg",
           "Warning": null,
-          "Image": "angleIcons/rulaReba/Trunk_0_deg@2x.png"
+          "TranslateText": null,
+          "TranslateWarning": null
         },
         "1": {
           "Text": "1.8 - 10 kg",
           "Warning": null,
-          "Image": "angleIcons/rulaReba/Trunk_0_20_deg@2x.png"
+          "TranslateText": null,
+          "TranslateWarning": null
         },
         "2": {
           "Text": "\\> 10 kg",
-          "Warning": "Trunk bent forward too much",
-          "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png"
+          "Warning": "To much weight for an arm",
+          "TranslateText": null,
+          "TranslateWarning": null
         },
         "label": "Arm Force",
-        "TranslateLabel": "rulareba.trunk.score",
         "type": "select",
         "Base": 0,
-        "Image": "additionalInputs/ForceLoad.png"
+        "Image": "additionalInputs/ArmForceLoad.png",
+        "Score": {
+          "0": {
+            "TranslateText": "rulareba.score.acceptable",
+            "ShortText": "Acceptable",
+            "Text": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          },
+          "1": {
+            "TranslateText": "rulareba.score.medium",
+            "ShortText": "Medium",
+            "Text": "Medium risk of injury",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          },
+          "2": {
+            "TranslateText": "rulareba.score.high",
+            "ShortText": "High",
+            "Text": "High risk of injury",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        }
       },
       "Leg": {
         "0": {
           "Text": "< 1.8 kg",
           "Warning": null,
-          "Image": "angleIcons/rulaReba/Trunk_0_deg@2x.png"
+          "TranslateText": null,
+          "TranslateWarning": null
         },
         "1": {
           "Text": "1.8 - 10 kg",
           "Warning": null,
-          "Image": "angleIcons/rulaReba/Trunk_0_20_deg@2x.png"
+          "TranslateText": null,
+          "TranslateWarning": null
         },
         "2": {
           "Text": "\\> 10 kg",
-          "Warning": "Trunk bent forward too much",
-          "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png"
+          "Warning": "To much weight for a leg",
+          "TranslateText": null,
+          "TranslateWarning": null
         },
         "label": "Leg Force",
-        "TranslateLabel": "rulareba.trunk.score",
         "type": "select",
         "Base": 0,
-        "Image": "additionalInputs/ForceLoad.png"
+        "Image": "additionalInputs/LegForceLoad.png",
+        "Score": {
+          "0": {
+            "TranslateText": "rulareba.score.acceptable",
+            "ShortText": "Acceptable",
+            "Text": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          },
+          "1": {
+            "TranslateText": "rulareba.score.medium",
+            "ShortText": "Medium",
+            "Text": "Medium risk of injury",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          },
+          "2": {
+            "TranslateText": "rulareba.score.high",
+            "ShortText": "High",
+            "Text": "High risk of injury",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        }
       },
       "ArmSuddenExertion": {
         "1": {
@@ -721,9 +765,21 @@
         "Base": 0,
         "type": "boolean",
         "label": "Arm Sudden Exertion",
-        "TranslateLabel": "rulareba.wrist.twist",
-        "Image": "angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png",
-        "Image2": "angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png"
+        "Image": "additionalInputs/ArmSuddenExertion.png",
+        "Score": {
+          "0": {
+            "TranslateText": "rulareba.score.acceptable",
+            "ShortText": "Acceptable",
+            "Text": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          },
+          "1": {
+            "TranslateText": "rulareba.score.high",
+            "ShortText": "High",
+            "Text": "High risk of injury",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        }
       },
       "LegSuddenExertion": {
         "1": {
@@ -741,9 +797,21 @@
         "Base": 0,
         "type": "boolean",
         "label": "Leg Sudden Exertion",
-        "TranslateLabel": "rulareba.wrist.twist",
-        "Image": "angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png",
-        "Image2": "angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png"
+        "Image": "additionalInputs/LegSuddenExertion.png",
+        "Score": {
+          "0": {
+            "TranslateText": "rulareba.score.acceptable",
+            "ShortText": "Acceptable",
+            "Text": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          },
+          "1": {
+            "TranslateText": "rulareba.score.high",
+            "ShortText": "High",
+            "Text": "High risk of injury",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        }
       }
     },
     "Misc": {
@@ -763,9 +831,20 @@
         "Base": 0,
         "type": "boolean",
         "label": "Legs Supported",
-        "TranslateLabel": "rulareba.wrist.twist",
-        "Image": "angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png",
-        "Image2": "angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png"
+        "Score": {
+          "0": {
+            "TranslateText": "rulareba.score.acceptable",
+            "ShortText": "Acceptable",
+            "Text": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          },
+          "1": {
+            "TranslateText": "rulareba.score.high",
+            "ShortText": "High",
+            "Text": "High risk of injury",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        }
       }
     },
     "Muscle Use": {
@@ -773,35 +852,63 @@
         "0": {
           "Text": "Holds still",
           "Warning": null,
-          "Image": "angleIcons/rulaReba/Trunk_0_deg@2x.png"
+          "TranslateText": null,
+          "TranslateWarning": null
         },
         "1": {
           "Text": "Moves 4 times/min",
           "Warning": null,
-          "Image": "angleIcons/rulaReba/Trunk_0_20_deg@2x.png"
+          "TranslateText": null,
+          "TranslateWarning": null
         },
         "label": "Arms",
-        "TranslateLabel": "rulareba.trunk.score",
         "type": "select",
         "Base": 0,
-        "Image": "additionalInputs/ForceLoad.png"
+        "Score": {
+          "0": {
+            "TranslateText": "rulareba.score.acceptable",
+            "ShortText": "Acceptable",
+            "Text": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          },
+          "1": {
+            "TranslateText": "rulareba.score.high",
+            "ShortText": "High",
+            "Text": "High risk of injury",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        }
       },
       "Leg": {
         "0": {
           "Text": "Holds still",
           "Warning": null,
-          "Image": "angleIcons/rulaReba/Trunk_0_deg@2x.png"
+          "TranslateText": null,
+          "TranslateWarning": null
         },
         "1": {
           "Text": "Moves 4 times/min",
           "Warning": null,
-          "Image": "angleIcons/rulaReba/Trunk_0_20_deg@2x.png"
+          "TranslateText": null,
+          "TranslateWarning": null
         },
         "label": "Legs",
-        "TranslateLabel": "rulareba.trunk.score",
         "type": "select",
         "Base": 0,
-        "Image": "additionalInputs/ForceLoad.png"
+        "Score": {
+          "0": {
+            "TranslateText": "rulareba.score.acceptable",
+            "ShortText": "Acceptable",
+            "Text": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          },
+          "1": {
+            "TranslateText": "rulareba.score.high",
+            "ShortText": "High",
+            "Text": "High risk of injury",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        }
       }
     }
   }
