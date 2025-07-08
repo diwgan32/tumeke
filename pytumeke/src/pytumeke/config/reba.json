@@ -690,6 +690,7 @@
           "TranslateWarning": null
         },
         "label": "Force/Load",
+        "TranslateLabel": "rulareba.force.load",
         "type": "select",
         "Base": 0,
         "Image": "additionalInputs/ForceLoad.png",
@@ -730,6 +731,7 @@
         "Base": 0,
         "type": "boolean",
         "label": "Shock force",
+        "TranslateLabel": "rulareba.force.forcebuildup",
         "Image": "additionalInputs/ShockForce.png",
         "Score": {
           "0": {
@@ -774,6 +776,7 @@
           "TranslateWarning": null
         },
         "label": "Coupling score",
+        "TranslateLabel": "rulareba.misc.couplingscore",
         "type": "select",
         "Base": 0,
         "Image": "additionalInputs/Coupling.png",
@@ -820,6 +823,7 @@
         "Base": 0,
         "type": "boolean",
         "label": "Static body parts",
+        "TranslateLabel": "rulareba.misc.bodypartheldstatic",
         "Image": "additionalInputs/StaticBodyPart.png",
         "Score": {
           "0": {
@@ -852,6 +856,7 @@
         "Base": 0,
         "type": "boolean",
         "label": "Repeated range actions",
+        "TranslateLabel": "rulareba.misc.repeatedsmallactions",
         "Image": "additionalInputs/RepeatedSmallActions.png",
         "Score": {
           "0": {
@@ -884,6 +889,7 @@
         "Base": 0,
         "type": "boolean",
         "label": "Rapid posture change",
+        "TranslateLabel": "rulareba.misc.rapidposturechange",
         "Image": "additionalInputs/RepeatedSmallActions.png",
         "Score": {
           "0": {

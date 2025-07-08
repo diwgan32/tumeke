@@ -37,28 +37,13 @@
     }
   },
   "AdditionalInputsScores": {
-    "10": {
-      "0": {
-        "TranslateText": "handstrain.risk.good",
-        "ShortText": "Good",
-        "Color": "rgba(109, 208, 163, 1.0)"
-      },
+    "5": {
       "1": {
         "TranslateText": "handstrain.risk.good",
         "ShortText": "Good",
         "Color": "rgba(109, 208, 163, 1.0)"
       },
-      "2": {
-        "TranslateText": "handstrain.risk.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)"
-      },
       "3": {
-        "TranslateText": "handstrain.risk.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)"
-      },
-      "4": {
         "TranslateText": "handstrain.risk.fair",
         "ShortText": "Fair",
         "Color": "rgba(234, 130, 130, 1.0)"
@@ -68,87 +53,15 @@
         "ShortText": "Fair",
         "Color": "rgba(234, 130, 130, 1.0)"
       },
-      "6": {
-        "TranslateText": "handstrain.risk.poor",
-        "ShortText": "Poor",
-        "Color": "rgba(184, 15, 10, 1.0)"
-      },
       "7": {
         "TranslateText": "handstrain.risk.poor",
         "ShortText": "Poor",
         "Color": "rgba(184, 15, 10, 1.0)"
       },
-      "8": {
-        "TranslateText": "handstrain.risk.poor",
-        "ShortText": "Poor",
-        "Color": "rgba(184, 15, 10, 1.0)"
-      },
       "9": {
-        "TranslateText": "handstrain.risk.unacceptable",
-        "ShortText": "Unsafe",
-        "Color": "rgba(15, 15, 30, 0.9)"
-      },
-      "10": {
-        "TranslateText": "handstrain.risk.unacceptable",
-        "ShortText": "Unsafe",
-        "Color": "rgba(15, 15, 30, 0.9)"
-      }
-    },
-    "11": {
-      "0": {
-        "TranslateText": "handstrain.risk.good",
-        "ShortText": "Good",
-        "Color": "rgba(109, 208, 163, 1.0)"
-      },
-      "1": {
-        "TranslateText": "handstrain.risk.good",
-        "ShortText": "Good",
-        "Color": "rgba(109, 208, 163, 1.0)"
-      },
-      "2": {
-        "TranslateText": "handstrain.risk.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)"
-      },
-      "3": {
-        "TranslateText": "handstrain.risk.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)"
-      },
-      "4": {
-        "TranslateText": "handstrain.risk.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)"
-      },
-      "5": {
-        "TranslateText": "handstrain.risk.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)"
-      },
-      "6": {
         "TranslateText": "handstrain.risk.poor",
         "ShortText": "Poor",
         "Color": "rgba(184, 15, 10, 1.0)"
-      },
-      "7": {
-        "TranslateText": "handstrain.risk.poor",
-        "ShortText": "Poor",
-        "Color": "rgba(184, 15, 10, 1.0)"
-      },
-      "8": {
-        "TranslateText": "handstrain.risk.poor",
-        "ShortText": "Poor",
-        "Color": "rgba(184, 15, 10, 1.0)"
-      },
-      "9": {
-        "TranslateText": "handstrain.risk.unacceptable",
-        "ShortText": "Unsafe",
-        "Color": "rgba(15, 15, 30, 0.9)"
-      },
-      "10": {
-        "TranslateText": "handstrain.risk.unacceptable",
-        "ShortText": "Unsafe",
-        "Color": "rgba(15, 15, 30, 0.9)"
       }
     }
   },
@@ -385,10 +298,12 @@
         "Warning": "Each repetition has very high duration on left hand"
       },
       "Base": 0.5,
+      "Max": 50,
       "Multiplier": "dml",
       "label": "Duration per exertion (left)",
       "ShortLabel": "duration (l)",
-      "Units": "sec./exertion"
+      "Units": "sec./exertion",
+      "type": "input"
     },
     "durationPerExertionRight": {
       "[0, 10]": {
@@ -412,10 +327,12 @@
         "Warning": "Each repetition has very high duration on right hand"
       },
       "Base": 0.5,
+      "Max": 50,
       "Multiplier": "dmr",
       "label": "Duration per exertion (right)",
       "ShortLabel": "duration (r)",
-      "Units": "sec./exertion"
+      "Units": "sec./exertion",
+      "type": "input"
     },
     "flexionAngleLeft": {
       "[0, 10]": {
@@ -439,10 +356,12 @@
         "Warning": "Left wrist repeatedly flexing/extending at a high level"
       },
       "Base": 0,
+      "Max": 50,
       "Multiplier": "pml",
-      "label": "Wrist posture angle (left)",
+      "label": "Flexion Wrist angle (left)",
       "ShortLabel": "posture (l)",
-      "Units": "degrees"
+      "Units": "degrees",
+      "type": "input"
     },
     "flexionAngleRight": {
       "[0, 10]": {
@@ -466,10 +385,12 @@
         "Warning": "Right wrist repeatedly flexing/extending at a high level"
       },
       "Base": 0,
+      "Max": 50,
       "Multiplier": "pmr",
-      "label": "Wrist posture angle (right)",
+      "label": "Flexion Wrist angle (right)",
       "ShortLabel": "posture (r)",
-      "Units": "degrees"
+      "Units": "degrees",
+      "type": "input"
     },
     "extensionAngleLeft": {
       "[0, 10]": {
@@ -493,10 +414,12 @@
         "Warning": "Left wrist repeatedly flexing/extending at a high level"
       },
       "Base": 0,
+      "Max": 50,
       "Multiplier": "pml",
-      "label": "Wrist posture angle (left)",
+      "label": "Extension Wrist angle (left)",
       "ShortLabel": "posture (l)",
-      "Units": "degrees"
+      "Units": "degrees",
+      "type": "input"
     },
     "extensionAngleRight": {
       "[0, 10]": {
@@ -520,10 +443,12 @@
         "Warning": "Right wrist repeatedly flexing/extending at a high level"
       },
       "Base": 0,
+      "Max": 50,
       "Multiplier": "pmr",
-      "label": "Wrist posture angle (right)",
+      "label": "Extension Wrist angle (right)",
       "ShortLabel": "posture (r)",
-      "Units": "degrees"
+      "Units": "degrees",
+      "type": "input"
     },
     "effortsLeft": {
       "[0, 10]": {
@@ -547,10 +472,12 @@
         "Warning": "Left wrist exerting force highly frequently"
       },
       "Base": 5,
+      "Max": 50,
       "Multiplier": "eml",
       "label": "Efforts per hand (left)",
       "ShortLabel": "efforts (l)",
-      "Units": "efforts/min"
+      "Units": "efforts/min",
+      "type": "input"
     },
     "effortsRight": {
       "[0, 10]": {
@@ -574,65 +501,84 @@
         "Warning": "Right wrist exerting force highly frequently"
       },
       "Base": 5,
+      "Max": 50,
       "Multiplier": "emr",
       "label": "Efforts per hand (right)",
       "ShortLabel": "efforts (r)",
-      "Units": "efforts/min"
+      "Units": "efforts/min",
+      "type": "input"
     }
   },
   "AdditionalInputs": {
     "borgScale": {
       "1": {
         "Text": "Light",
-        "Warning": null
-      },
-      "2": {
-        "Text": "Light",
-        "Warning": null
+        "TranslateText": "handstrain.risk.light",
+        "Warning": null,
+        "TranslateWarning": null
       },
       "3": {
         "Text": "Somewhat hard",
-        "Warning": null
-      },
-      "4": {
-        "Text": "Somewhat hard",
-        "Warning": null
+        "TranslateText": "handstrain.risk.somewhat-hard",
+        "Warning": null,
+        "TranslateWarning": null
       },
       "5": {
         "Text": "Hard",
-        "Warning": "Hard"
-      },
-      "6": {
-        "Text": "Hard",
-        "Warning": "Very hard"
+        "TranslateText": "handstrain.risk.hard",
+        "Warning": "Hard",
+        "TranslateWarning": "handstrain.risk.hard"
       },
       "7": {
         "Text": "Very hard",
-        "Warning": "Extreme physical effort"
-      },
-      "8": {
-        "Text": "Very hard",
-        "Warning": "Extreme physical effort"
+        "TranslateText": "handstrain.risk.very-hard",
+        "Warning": "Extreme physical effort",
+        "TranslateWarning": "handstrain.risk.extreme-effort"
       },
       "9": {
         "Text": "Maximal",
-        "Warning": "Maximal exertion"
-      },
-      "10": {
-        "Text": "Maximal",
-        "Warning": "Extreme physical effort"
+        "TranslateText": "handstrain.risk.maximal",
+        "Warning": "Maximal exertion",
+        "TranslateWarning": "handstrain.risk.maximal-exertion"
       },
       "label": "Borg scale",
       "type": "select",
-      "Base": 0,
-      "Image": null
+      "Base": 1,
+      "Image": null,
+      "Score": {
+        "1": {
+          "TranslateText": "handstrain.risk.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "3": {
+          "TranslateText": "handstrain.risk.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "5": {
+          "TranslateText": "handstrain.risk.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "7": {
+          "TranslateText": "handstrain.risk.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        },
+        "9": {
+          "TranslateText": "handstrain.risk.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      }
     },
     "taskDuration": {
       "Base": 1,
       "type": "input",
       "label": "Task duration",
       "Max": 10,
-      "Units": "min",
+      "Units": "hrs",
       "Image": null
     }
   }

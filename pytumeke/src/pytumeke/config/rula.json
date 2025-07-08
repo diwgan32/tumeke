@@ -681,6 +681,7 @@
           "TranslateWarning": null
         },
         "label": "Arm Force",
+        "TranslateLabel": "rulareba.force.arm",
         "type": "select",
         "Base": 0,
         "Image": "additionalInputs/ArmForceLoad.png",
@@ -725,6 +726,7 @@
           "TranslateWarning": null
         },
         "label": "Leg Force",
+        "TranslateLabel": "rulareba.force.leg",
         "type": "select",
         "Base": 0,
         "Image": "additionalInputs/LegForceLoad.png",
@@ -765,7 +767,8 @@
         "Base": 0,
         "type": "boolean",
         "label": "Arm Sudden Exertion",
-        "Image": "additionalInputs/ArmSuddenExertion.png",
+        "TranslateLabel": "rulareba.force.armsuddenexertion",
+        "Image": "additionalInputs/ArmForceLoad.png",
         "Score": {
           "0": {
             "TranslateText": "rulareba.score.acceptable",
@@ -797,7 +800,8 @@
         "Base": 0,
         "type": "boolean",
         "label": "Leg Sudden Exertion",
-        "Image": "additionalInputs/LegSuddenExertion.png",
+        "TranslateLabel": "rulareba.force.legsuddenexertion",
+        "Image": "additionalInputs/LegForceLoad.png",
         "Score": {
           "0": {
             "TranslateText": "rulareba.score.acceptable",
@@ -831,6 +835,8 @@
         "Base": 0,
         "type": "boolean",
         "label": "Legs Supported",
+        "TranslateLabel": "rulareba.misc.legssupported",
+        "Image": "additionalInputs/LegMuscleUse.png",
         "Score": {
           "0": {
             "TranslateText": "rulareba.score.acceptable",
@@ -861,7 +867,9 @@
           "TranslateText": null,
           "TranslateWarning": null
         },
-        "label": "Arms",
+        "label": "Arms / Muscle Use",
+        "TranslateLabel": "rulareba.muscleuse.arm",
+        "Image": "additionalInputs/ArmMuscleUse.png",
         "type": "select",
         "Base": 0,
         "Score": {
@@ -892,7 +900,9 @@
           "TranslateText": null,
           "TranslateWarning": null
         },
-        "label": "Legs",
+        "label": "Legs / Muscle Use",
+        "TranslateLabel": "rulareba.muscleuse.leg",
+        "Image": "additionalInputs/LegMuscleUse.png",
         "type": "select",
         "Base": 0,
         "Score": {

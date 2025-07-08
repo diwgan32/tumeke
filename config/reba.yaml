@@ -403,6 +403,7 @@ AdditionalInputs:
         TranslateText: ~
         TranslateWarning: ~
       label: Force/Load
+      TranslateLabel: rulareba.force.load
       type: select
       Base: 0
       Image: additionalInputs/ForceLoad.png
@@ -421,6 +422,7 @@ AdditionalInputs:
       Base: 0
       type: boolean
       label: Shock force
+      TranslateLabel: rulareba.force.forcebuildup
       Image: additionalInputs/ShockForce.png
       Score: *two
   Misc:
@@ -446,6 +448,7 @@ AdditionalInputs:
         TranslateText: ~
         TranslateWarning: ~
       label: Coupling score
+      TranslateLabel: rulareba.misc.couplingscore
       type: select
       Base: 0
       Image: additionalInputs/Coupling.png
@@ -464,6 +467,7 @@ AdditionalInputs:
       Base: 0
       type: boolean
       label: Static body parts
+      TranslateLabel: rulareba.misc.bodypartheldstatic
       Image: additionalInputs/StaticBodyPart.png
       Score: *two
     RepeatedSmallActions:
@@ -480,6 +484,7 @@ AdditionalInputs:
       Base: 0
       type: boolean
       label: Repeated range actions
+      TranslateLabel: rulareba.misc.repeatedsmallactions
       Image: additionalInputs/RepeatedSmallActions.png
       Score: *two
     RapidPostureChange:
@@ -496,5 +501,6 @@ AdditionalInputs:
       Base: 0
       type: boolean
       label: Rapid posture change
+      TranslateLabel: rulareba.misc.rapidposturechange
       Image: additionalInputs/RepeatedSmallActions.png
       Score: *two

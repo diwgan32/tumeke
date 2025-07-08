@@ -173,23 +173,28 @@ RiskComponents:
   asymmetryAngle:
     type: input
     Base: 0
+    Max: 135
     Units: deg
   horizontalEnd:
     type: input
-    Base: 10
-    Units: [inches, sm]
+    Base: 0.83
+    Max: 5.83333
+    Units: [ft, sm]
   horizontalStart:
     type: input
-    Base: 0
-    Units: [inches, sm]
+    Base: 0.83
+    Max: 2.08
+    Units: [ft, sm]
   verticalEnd:
     type: input
-    Base: 0
-    Units: [inches, sm]
+    Base: 0.83
+    Max: 5.83333
+    Units: [ft, sm]
   verticalStart:
     type: input
-    Base: 0
-    Units: [inches, sm]
+    Base: 0.83
+    Max: 5.83333
+    Units: [ft, sm]
 
 CouplingStatus:
   GOOD:
@@ -226,44 +231,70 @@ Units:
   STANDARD: 0
   METRIC: 1
 
+AdditionalInputsScores:
+  3: &three
+    0:
+      <<: *good
+    1:
+      <<: *fair
+    2:
+      <<: *poor
+
 AdditionalInputs:
   averageLoad:
     label: Average Load
     type: input
-    Base: 0
-    units: [lbs, kgs]
+    Base: 0.01
+    Max: 60
+    Units: [lbs, kgs]
     Image: ~
   frequency:
     label: Frequency
     type: input
     Base: 1
-    units: min
+    Max: 15
+    Units: min
     Image: ~
   coupling:
     0:
       Text: Good
+      TranslateText: niosh.score.good
       Warning: ~
+      TranslateWarning: ~
     1:
       Text: Fair
+      TranslateText: niosh.score.fair
       Warning: ~
+      TranslateWarning: ~
     2:
       Text: Poor
+      TranslateText: niosh.score.poor
       Warning: Poor coupling
+      TranslateWarning: niosh.score.poor-coupling
     label: Coupling
     type: select
     Base: 0
     Image: additionalInputs/Coupling.png
+    Score: *three
   liftingDuration:
     0:
       Text: Short (1 hour)
+      TranslateText: niosh.score.short
       Warning: ~
+      TranslateWarning: ~
     1:
       Text: Moderate (1-2 hours)
+      TranslateText: niosh.score.moderate
       Warning: ~
+      TranslateWarning: ~
     2:
       Text: Long (2-8 hours)
+      TranslateText: niosh.score.long
       Warning: Long lifting duration
+      TranslateWarning: niosh.score.long-lifting
     label: Lifting Duration
     type: select
     Base: 0
     Image: ~
+    Score: *three
+

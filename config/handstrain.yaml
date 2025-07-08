@@ -32,52 +32,17 @@ constants:
     <<: *red
 
 AdditionalInputsScores:
-  10:
-    0:
-      <<: *good
+  5: &five
     1:
       <<: *good
-    2:
-      <<: *fair
     3:
-      <<: *fair
-    4:
       <<: *fair
     5:
       <<: *fair
-    6:
-      <<: *poor
     7:
       <<: *poor
-    8:
-      <<: *poor
     9:
-      <<: *unsafe
-    10:
-      <<: *unsafe
-  11:
-    0:
-      <<: *good
-    1:
-      <<: *good
-    2:
-      <<: *fair
-    3:
-      <<: *fair
-    4:
-      <<: *fair
-    5:
-      <<: *fair
-    6:
       <<: *poor
-    7:
-      <<: *poor
-    8:
-      <<: *poor
-    9:
-      <<: *unsafe
-    10:
-      <<: *unsafe
 
 ResultValues:
   OverallScore:
@@ -212,10 +177,12 @@ ComponentValues:
       Text: Duration per exertion (left)
       Warning: Each repetition has very high duration on left hand
     Base: .5
+    Max: 50
     Multiplier: "dml"
     label: Duration per exertion (left)
     ShortLabel: duration (l)
     Units: sec./exertion
+    type: input
   durationPerExertionRight:
     "[0, 10]":
       <<: *good
@@ -229,10 +196,12 @@ ComponentValues:
       Text: Duration per exertion (right)
       Warning: Each repetition has very high duration on right hand
     Base: .5
+    Max: 50
     Multiplier: "dmr"
     label: Duration per exertion (right)
     ShortLabel: duration (r)
     Units: sec./exertion
+    type: input
   flexionAngleLeft:
     "[0, 10]":
       <<: *good
@@ -246,10 +215,12 @@ ComponentValues:
       Text: Wrist posture angle (left)
       Warning: Left wrist repeatedly flexing/extending at a high level
     Base: 0
+    Max: 50
     Multiplier: "pml"
-    label: Wrist posture angle (left)
+    label: Flexion Wrist angle (left)
     ShortLabel: posture (l)
     Units: degrees
+    type: input
   flexionAngleRight:
     "[0, 10]":
       <<: *good
@@ -263,10 +234,12 @@ ComponentValues:
       Text: Wrist posture angle (right)
       Warning: Right wrist repeatedly flexing/extending at a high level
     Base: 0
+    Max: 50
     Multiplier: "pmr"
-    label: Wrist posture angle (right)
+    label: Flexion Wrist angle (right)
     ShortLabel: posture (r)
     Units: degrees
+    type: input
   extensionAngleLeft:
     "[0, 10]":
       <<: *good
@@ -280,10 +253,12 @@ ComponentValues:
       Text: Wrist posture angle (left)
       Warning: Left wrist repeatedly flexing/extending at a high level
     Base: 0
+    Max: 50
     Multiplier: "pml"
-    label: Wrist posture angle (left)
+    label: Extension Wrist angle (left)
     ShortLabel: posture (l)
     Units: degrees
+    type: input
   extensionAngleRight:
     "[0, 10]":
       <<: *good
@@ -297,10 +272,12 @@ ComponentValues:
       Text: Wrist posture angle (right)
       Warning: Right wrist repeatedly flexing/extending at a high level
     Base: 0
+    Max: 50
     Multiplier: "pmr"
-    label: Wrist posture angle (right)
+    label: Extension Wrist angle (right)
     ShortLabel: posture (r)
     Units: degrees
+    type: input
   effortsLeft:
     "[0, 10]":
       <<: *good
@@ -314,10 +291,12 @@ ComponentValues:
       Text: Efforts per hand (left)
       Warning: Left wrist exerting force highly frequently
     Base: 5
+    Max: 50
     Multiplier: "eml"
     label: Efforts per hand (left)
     ShortLabel: efforts (l)
     Units: efforts/min
+    type: input
   effortsRight:
     "[0, 10]":
       <<: *good
@@ -331,51 +310,49 @@ ComponentValues:
       Text: Efforts per hand (right)
       Warning: Right wrist exerting force highly frequently
     Base: 5
+    Max: 50
     Multiplier: "emr"
     label: Efforts per hand (right)
     ShortLabel: efforts (r)
     Units: efforts/min
+    type: input
 
 AdditionalInputs:
   borgScale:
     1:
       Text: Light
+      TranslateText: handstrain.risk.light
       Warning: ~
-    2:
-      Text: Light
-      Warning: ~
+      TranslateWarning: ~
     3:
       Text: Somewhat hard
+      TranslateText: handstrain.risk.somewhat-hard
       Warning: ~
-    4:
-      Text: Somewhat hard
-      Warning: ~
+      TranslateWarning: ~
     5:
       Text: Hard
+      TranslateText: handstrain.risk.hard
       Warning: Hard
-    6:
-      Text: Hard
-      Warning: Very hard
+      TranslateWarning: handstrain.risk.hard
     7:
       Text: Very hard
+      TranslateText: handstrain.risk.very-hard
       Warning: Extreme physical effort
-    8:
-      Text: Very hard
-      Warning: Extreme physical effort
+      TranslateWarning: handstrain.risk.extreme-effort
     9:
       Text: Maximal
+      TranslateText: handstrain.risk.maximal
       Warning: Maximal exertion
-    10:
-      Text: Maximal
-      Warning: Extreme physical effort
+      TranslateWarning: handstrain.risk.maximal-exertion
     label: Borg scale
     type: select
-    Base: 0
+    Base: 1
     Image: ~
+    Score: *five
   taskDuration:
     Base: 1
     type: input
     label: Task duration
     Max: 10
-    Units: min
+    Units: hrs
     Image: ~
