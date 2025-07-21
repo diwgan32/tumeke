@@ -1,41 +1,48 @@
 constants:
   black: &black
-    Color:
-      rgba(15, 15, 30, 0.9)
+    Color: rgba(15, 15, 30, 0.9)
 
   light_green: &light_green
-    Color:
-      rgba(109, 208, 163, 1.0)
+    Color: rgba(109, 208, 163, 1.0)
 
   green: &green
-    Color:
-      rgba(20, 210, 184, 1.0)
+    Color: rgba(20, 210, 184, 1.0)
 
   orange: &orange
-    Color:
-      rgba(234, 130, 130, 1.0)
+    Color: rgba(234, 130, 130, 1.0)
 
   red: &red
-    Color:
-      rgba(184, 15, 10, 1.0)
+    Color: rgba(184, 15, 10, 1.0)
 
   unsafe: &unsafe
-    TranslateText: hand_strain.score.unsafe
+    TranslateText: handstrain.risk.unacceptable
     ShortText: Unsafe
     <<: *black
   acceptable: &good
-    TranslateText: hand_strain.score.good
+    TranslateText: handstrain.risk.good
     ShortText: Good
     <<: *light_green
   low: &fair
-    TranslateText: hand_strain.score.fair
+    TranslateText: handstrain.risk.fair
     ShortText: Fair
     <<: *orange
   medium: &poor
-    TranslateText: hand_strain.score.poor
+    TranslateText: handstrain.risk.poor
     ShortText: Poor
     <<: *red
 
+AdditionalInputsScores:
+  5: &five
+    1:
+      <<: *good
+    3:
+      <<: *fair
+    5:
+      <<: *fair
+    7:
+      <<: *poor
+    9:
+      <<: *poor
 
 ResultValues:
   OverallScore:
@@ -100,7 +107,7 @@ ResultValues:
     "[2, None]":
       <<: *poor
       Warning: Lefthand posture bad
-  
+
   dml:
     "[0, 7.5]":
       <<: *good
@@ -144,7 +151,7 @@ ResultValues:
     "[2, None]":
       <<: *poor
       Warning: Righthand posture bad
-  
+
   dmr:
     "[0, 7.5]":
       <<: *good
@@ -170,10 +177,12 @@ ComponentValues:
       Text: Duration per exertion (left)
       Warning: Each repetition has very high duration on left hand
     Base: .5
+    Max: 50
     Multiplier: "dml"
     label: Duration per exertion (left)
     ShortLabel: duration (l)
     Units: sec./exertion
+    type: input
   durationPerExertionRight:
     "[0, 10]":
       <<: *good
@@ -187,10 +196,12 @@ ComponentValues:
       Text: Duration per exertion (right)
       Warning: Each repetition has very high duration on right hand
     Base: .5
+    Max: 50
     Multiplier: "dmr"
     label: Duration per exertion (right)
     ShortLabel: duration (r)
     Units: sec./exertion
+    type: input
   flexionAngleLeft:
     "[0, 10]":
       <<: *good
@@ -204,10 +215,12 @@ ComponentValues:
       Text: Wrist posture angle (left)
       Warning: Left wrist repeatedly flexing/extending at a high level
     Base: 0
+    Max: 50
     Multiplier: "pml"
-    label: Wrist posture angle (left)
+    label: Flexion Wrist angle (left)
     ShortLabel: posture (l)
     Units: degrees
+    type: input
   flexionAngleRight:
     "[0, 10]":
       <<: *good
@@ -221,10 +234,12 @@ ComponentValues:
       Text: Wrist posture angle (right)
       Warning: Right wrist repeatedly flexing/extending at a high level
     Base: 0
+    Max: 50
     Multiplier: "pmr"
-    label: Wrist posture angle (right)
+    label: Flexion Wrist angle (right)
     ShortLabel: posture (r)
     Units: degrees
+    type: input
   extensionAngleLeft:
     "[0, 10]":
       <<: *good
@@ -238,10 +253,12 @@ ComponentValues:
       Text: Wrist posture angle (left)
       Warning: Left wrist repeatedly flexing/extending at a high level
     Base: 0
+    Max: 50
     Multiplier: "pml"
-    label: Wrist posture angle (left)
+    label: Extension Wrist angle (left)
     ShortLabel: posture (l)
     Units: degrees
+    type: input
   extensionAngleRight:
     "[0, 10]":
       <<: *good
@@ -255,10 +272,12 @@ ComponentValues:
       Text: Wrist posture angle (right)
       Warning: Right wrist repeatedly flexing/extending at a high level
     Base: 0
+    Max: 50
     Multiplier: "pmr"
-    label: Wrist posture angle (right)
+    label: Extension Wrist angle (right)
     ShortLabel: posture (r)
     Units: degrees
+    type: input
   effortsLeft:
     "[0, 10]":
       <<: *good
@@ -272,10 +291,12 @@ ComponentValues:
       Text: Efforts per hand (left)
       Warning: Left wrist exerting force highly frequently
     Base: 5
+    Max: 50
     Multiplier: "eml"
     label: Efforts per hand (left)
     ShortLabel: efforts (l)
     Units: efforts/min
+    type: input
   effortsRight:
     "[0, 10]":
       <<: *good
@@ -289,7 +310,49 @@ ComponentValues:
       Text: Efforts per hand (right)
       Warning: Right wrist exerting force highly frequently
     Base: 5
+    Max: 50
     Multiplier: "emr"
     label: Efforts per hand (right)
     ShortLabel: efforts (r)
     Units: efforts/min
+    type: input
+
+AdditionalInputs:
+  borgScale:
+    1:
+      Text: Light
+      TranslateText: handstrain.risk.light
+      Warning: ~
+      TranslateWarning: ~
+    3:
+      Text: Somewhat hard
+      TranslateText: handstrain.risk.somewhat-hard
+      Warning: ~
+      TranslateWarning: ~
+    5:
+      Text: Hard
+      TranslateText: handstrain.risk.hard
+      Warning: Hard
+      TranslateWarning: handstrain.risk.hard
+    7:
+      Text: Very hard
+      TranslateText: handstrain.risk.very-hard
+      Warning: Extreme physical effort
+      TranslateWarning: handstrain.risk.extreme-effort
+    9:
+      Text: Maximal
+      TranslateText: handstrain.risk.maximal
+      Warning: Maximal exertion
+      TranslateWarning: handstrain.risk.maximal-exertion
+    label: Borg scale
+    type: select
+    Base: 1
+    Image: ~
+    Score: *five
+  taskDuration:
+    Base: 1
+    type: input
+    label: Task duration
+    Max: 10
+    Units: hrs
+    Image: ~

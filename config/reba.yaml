@@ -1,24 +1,19 @@
 ---
 constants:
   light_green: &light_green
-    Color:
-      rgba(109, 208, 163, 1.0)
+    Color: rgba(109, 208, 163, 1.0)
 
   green: &green
-    Color:
-      rgba(241, 196, 15, 1.0)
+    Color: rgba(241, 196, 15, 1.0)
 
   orange: &orange
-    Color:
-      rgba(230, 126, 34, 1.0)
+    Color: rgba(230, 126, 34, 1.0)
 
   red: &red
-    Color:
-      rgba(184, 15, 10, 1.0)
+    Color: rgba(184, 15, 10, 1.0)
 
   dark_red: &dark_red
-    Color:
-      rgba(133, 4, 0, 1.0)
+    Color: rgba(133, 4, 0, 1.0)
 
   acceptable: &acceptable
     TranslateText: rulareba.score.acceptable
@@ -53,100 +48,123 @@ Colors:
   high: *red
   vhigh: *dark_red
 
+AdditionalInputsScores:
+  2: &two
+    0:
+      <<: *acceptable
+    1:
+      <<: *high
+  3: &three
+    0:
+      <<: *acceptable
+    1:
+      <<: *medium
+    2:
+      <<: *high
+  4: &four
+    0:
+      <<: *acceptable
+    1:
+      <<: *low
+    2:
+      <<: *medium
+    3:
+      <<: *high
+
 BodyPartScores:
   Overall:
     1:
-      << : *acceptable
+      <<: *acceptable
     2:
-      << : *low
+      <<: *low
     3:
-      << : *low
+      <<: *low
     4:
-      << : *medium
-    5: 
-      << : *medium
+      <<: *medium
+    5:
+      <<: *medium
     6:
-      << : *medium
+      <<: *medium
     7:
-      << : *medium
+      <<: *medium
     8:
-      << : *high
+      <<: *high
     9:
-      << : *high
+      <<: *high
     10:
-      << : *high
+      <<: *high
     11:
-      << : *vhigh
+      <<: *vhigh
     12:
-      << : *vhigh
+      <<: *vhigh
     13:
-      << : *vhigh
+      <<: *vhigh
     14:
-      << : *vhigh
+      <<: *vhigh
     15:
-      << : *vhigh
+      <<: *vhigh
     16:
-      << : *vhigh
+      <<: *vhigh
   Neck:
     1:
-      << : *acceptable
+      <<: *acceptable
     2:
-      << : *low
-    3: 
-      << : *medium
-    4: 
-      << : *medium
-    5: 
-      << : *high
+      <<: *low
+    3:
+      <<: *medium
+    4:
+      <<: *medium
+    5:
+      <<: *high
     6:
-      << : *high
+      <<: *high
   Upper Arm:
     1:
-      << : *acceptable 
+      <<: *acceptable
     2:
-      << : *low
-    3: 
-      << : *medium
-    4: 
-      << : *medium
-    5: 
-      << : *high
+      <<: *low
+    3:
+      <<: *medium
+    4:
+      <<: *medium
+    5:
+      <<: *high
     6:
-      << : *high
+      <<: *high
   Lower Arm:
     1:
-      << : *acceptable
+      <<: *acceptable
     2:
-      << : *medium
+      <<: *medium
   Trunk:
     1:
-      << : *acceptable
+      <<: *acceptable
     2:
-      << : *low
-    3: 
-      << : *medium
-    4: 
-      << : *medium
-    5: 
-      << : *high
+      <<: *low
+    3:
+      <<: *medium
+    4:
+      <<: *medium
+    5:
+      <<: *high
     6:
-      << : *high
+      <<: *high
   Leg:
     1:
-      << : *acceptable
+      <<: *acceptable
     2:
-      << : *low
-    3: 
-      << : *medium
-    4: 
-      << : *high
+      <<: *low
+    3:
+      <<: *medium
+    4:
+      <<: *high
   Wrist:
     1:
-      << : *acceptable
+      <<: *acceptable
     2:
-      << : *medium
+      <<: *medium
     3:
-      << : *high
+      <<: *high
 
 ComponentValues:
   Neck:
@@ -162,6 +180,7 @@ ComponentValues:
         Image2: angleIcons/rulaReba/Neck_in_extension@2x.png
       Base: 1
       type: select
+      TranslateLabel: rulareba.neck.score
       label: Angle
     SideBend:
       1:
@@ -173,6 +192,7 @@ ComponentValues:
       label: Side bending
       type: boolean
       Base: 0
+      TranslateLabel: rulareba.neck.sidebend
       Image: angleIcons/rulaReba/Neck_side_bending@2x.png
     Twist:
       1:
@@ -180,12 +200,13 @@ ComponentValues:
         Warning: Neck twisted
       0:
         Text: No
-        Warning: 
+        Warning:
       label: Twisted
       type: boolean
       Base: 0
+      TranslateLabel: rulareba.neck.twist
       Image: angleIcons/rulaReba/Neck_Twisted@2x.png
-    Image: 'bodyParts/neck.png'
+    Image: "bodyParts/neck.png"
 
   Upper Arm:
     Score:
@@ -228,13 +249,13 @@ ComponentValues:
         Warning: Shoulders raised
       0:
         Text: No
-        Warning: 
+        Warning:
       Base: 0
       label: Shoulder raised
       TranslateLabel: rulareba.upperarm.shoulder_raised
       type: boolean
       Image: angleIcons/rulaReba/UpperArm_shoulder_raised@2x.png
-    Image: 'bodyParts/shoulder.png'
+    Image: "bodyParts/shoulder.png"
 
   Trunk:
     Score:
@@ -264,7 +285,7 @@ ComponentValues:
         Warning: Trunk side bending
       0:
         Text: No
-        Warning: 
+        Warning:
       Base: 0
       label: Side bending
       TranslateLabel: rulareba.trunk.sidebend
@@ -282,7 +303,7 @@ ComponentValues:
       TranslateLabel: rulareba.trunk.twist
       Base: 0
       Image: angleIcons/rulaReba/Trunk_Twisted@2x.png
-    Image: 'bodyParts/back.png'
+    Image: "bodyParts/back.png"
   Lower Arm:
     Score:
       1:
@@ -298,7 +319,7 @@ ComponentValues:
       type: select
       TranslateLabel: rulareba.lowerarm.score
       Base: 1
-    Image: 'bodyParts/arm.png'
+    Image: "bodyParts/arm.png"
   Wrist:
     Score:
       1:
@@ -331,7 +352,7 @@ ComponentValues:
       TranslateLabel: rulareba.wrist.twist
       Image: angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png
       Image2: angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png
-    Image: 'bodyParts/wrist.png'
+    Image: "bodyParts/wrist.png"
 
   Leg:
     Score:
@@ -362,6 +383,124 @@ ComponentValues:
       type: boolean
       Base: 0
       Image: angleIcons/rulaReba/Leg_one_raised@2x.png
-    Image: 'bodyParts/leg.png'
-    
-...
+    Image: "bodyParts/leg.png"
+AdditionalInputs:
+  Force:
+    Load:
+      0:
+        Text: < 5 kg
+        Warning: ~
+        TranslateText: ~
+        TranslateWarning: ~
+      1:
+        Text: 5 - 10 kg
+        Warning: ~
+        TranslateText: ~
+        TranslateWarning: ~
+      2:
+        Text: \> 10 kg
+        Warning: Force/load too high
+        TranslateText: ~
+        TranslateWarning: ~
+      label: Force/Load
+      TranslateLabel: rulareba.force.load
+      type: select
+      Base: 0
+      Image: additionalInputs/ForceLoad.png
+      Score: *three
+    ForceBuildup:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: ~
+        Warning: ~
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: ~
+        Warning: ~
+      Base: 0
+      type: boolean
+      label: Shock force
+      TranslateLabel: rulareba.force.forcebuildup
+      Image: additionalInputs/ShockForce.png
+      Score: *two
+  Misc:
+    CouplingScore:
+      0:
+        Text: Good
+        Warning: ~
+        TranslateText: ~
+        TranslateWarning: ~
+      1:
+        Text: Fair
+        Warning: ~
+        TranslateText: ~
+        TranslateWarning: ~
+      2:
+        Text: Poor
+        Warning: Coupling is poor
+        TranslateText: ~
+        TranslateWarning: ~
+      3:
+        Text: Unacceptable
+        Warning: Coupling is unacceptable
+        TranslateText: ~
+        TranslateWarning: ~
+      label: Coupling score
+      TranslateLabel: rulareba.misc.couplingscore
+      type: select
+      Base: 0
+      Image: additionalInputs/Coupling.png
+      Score: *four
+    BodyPartHeldStatic:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: ~
+        Warning: ~
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: ~
+        Warning: ~
+      Base: 0
+      type: boolean
+      label: Static body parts
+      TranslateLabel: rulareba.misc.bodypartheldstatic
+      Image: additionalInputs/StaticBodyPart.png
+      Score: *two
+    RepeatedSmallActions:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: ~
+        Warning: ~
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: ~
+        Warning: ~
+      Base: 0
+      type: boolean
+      label: Repeated range actions
+      TranslateLabel: rulareba.misc.repeatedsmallactions
+      Image: additionalInputs/RepeatedSmallActions.png
+      Score: *two
+    RapidPostureChange:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: ~
+        Warning: ~
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: ~
+        Warning: ~
+      Base: 0
+      type: boolean
+      label: Rapid posture change
+      TranslateLabel: rulareba.misc.rapidposturechange
+      Image: additionalInputs/RepeatedSmallActions.png
+      Score: *two

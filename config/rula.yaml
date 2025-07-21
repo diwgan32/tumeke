@@ -1,20 +1,16 @@
 ---
 constants:
   light_green: &light_green
-    Color:
-      rgba(109, 208, 163, 1.0)
+    Color: rgba(109, 208, 163, 1.0)
 
   green: &green
-    Color:
-      rgba(241, 196, 15, 1.0)
+    Color: rgba(241, 196, 15, 1.0)
 
   orange: &orange
-    Color:
-      rgba(230, 126, 34, 1.0)
+    Color: rgba(230, 126, 34, 1.0)
 
   red: &red
-    Color:
-      rgba(184, 15, 10, 1.0)
+    Color: rgba(184, 15, 10, 1.0)
 
   acceptable: &acceptable
     TranslateText: rulareba.score.acceptable
@@ -43,77 +39,100 @@ Colors:
   medium: *orange
   high: *red
 
+AdditionalInputsScores:
+  2: &two
+    0:
+      <<: *acceptable
+    1:
+      <<: *high
+  3: &three
+    0:
+      <<: *acceptable
+    1:
+      <<: *medium
+    2:
+      <<: *high
+  4: &four
+    0:
+      <<: *acceptable
+    1:
+      <<: *low
+    2:
+      <<: *medium
+    3:
+      <<: *high
+
 BodyPartScores:
   Overall:
     1:
-      << : *acceptable
+      <<: *acceptable
     2:
-      << : *acceptable
+      <<: *acceptable
     3:
-      << : *low
+      <<: *low
     4:
-      << : *low
-    5: 
-      << : *medium
+      <<: *low
+    5:
+      <<: *medium
     6:
-      << : *medium
+      <<: *medium
     7:
-      << : *high
+      <<: *high
   Neck:
     1:
-      << : *acceptable
+      <<: *acceptable
     2:
-      << : *low
+      <<: *low
     3:
-      << : *medium
+      <<: *medium
     4:
-      << : *medium
+      <<: *medium
     5:
-      << : *high
+      <<: *high
     6:
-      << : *high
+      <<: *high
   Upper Arm:
     1:
-      << : *acceptable
+      <<: *acceptable
     2:
-      << : *low
+      <<: *low
     3:
-      << : *medium
+      <<: *medium
     4:
-      << : *medium
+      <<: *medium
     5:
-      << : *high
+      <<: *high
     6:
-      << : *high
+      <<: *high
   Lower Arm:
     1:
-      << : *low
+      <<: *low
     2:
-      << : *medium
+      <<: *medium
     3:
-      << : *high
+      <<: *high
   Trunk:
     1:
-      << : *acceptable
+      <<: *acceptable
     2:
-      << : *low
+      <<: *low
     3:
-      << : *medium
+      <<: *medium
     4:
-      << : *medium
+      <<: *medium
     5:
-      << : *high
+      <<: *high
     6:
-      << : *high
+      <<: *high
   Wrist:
     1:
-      << : *acceptable
+      <<: *acceptable
     2:
-      << : *low
+      <<: *low
     3:
-      << : *medium
+      <<: *medium
     4:
-      << : *high
+      <<: *high
 
 ComponentValues:
   Neck:
@@ -172,7 +191,7 @@ ComponentValues:
         Text: No
         TranslateText: rulareba.no
         TranslateWarning: rula.components.neck.twist.0.warning
-        Warning: 
+        Warning:
       Base: 0
       label: Twisted
       type: boolean
@@ -216,12 +235,12 @@ ComponentValues:
         TranslateText: rulareba.yes
         TranslateWarning: rula.components.upperarm.abducted.1.warning
         Warning: Shoulder abducted
-      
+
       0:
         Text: No
         TranslateWarning: rula.components.upperarm.abducted.0.warning
         TranslateText: rulareba.no
-        Warning: 
+        Warning:
       Base: 0
       label: Abducted
       TranslateLabel: rulareba.upperarm.abducted
@@ -232,13 +251,13 @@ ComponentValues:
         Text: Yes
         TranslateText: rulareba.yes
         TranslateWarning: rula.components.upperarm.shoulder_raised.1.warning
-        Warning: 
-      
+        Warning:
+
       0:
         Text: No
         TranslateWarning: rula.components.upperarm.shoulder_raised.0.warning
         TranslateText: rulareba.no
-        Warning: 
+        Warning:
       Base: 0
       type: boolean
       label: Shoulder raised
@@ -402,4 +421,136 @@ ComponentValues:
       TranslateLabel: rulareba.wrist.midline
       Image: angleIcons/rulaReba/Wrist_bent_from_midline@2x.png
     Image: bodyParts/wrist.png
-... 
+AdditionalInputs:
+  Force:
+    Arm:
+      0:
+        Text: < 1.8 kg
+        Warning: ~
+        TranslateText: ~
+        TranslateWarning: ~
+      1:
+        Text: 1.8 - 10 kg
+        Warning: ~
+        TranslateText: ~
+        TranslateWarning: ~
+      2:
+        Text: \> 10 kg
+        Warning: To much weight for an arm
+        TranslateText: ~
+        TranslateWarning: ~
+      label: Arm Force
+      TranslateLabel: rulareba.force.arm
+      type: select
+      Base: 0
+      Image: additionalInputs/ArmForceLoad.png
+      Score: *three
+    Leg:
+      0:
+        Text: < 1.8 kg
+        Warning: ~
+        TranslateText: ~
+        TranslateWarning: ~
+      1:
+        Text: 1.8 - 10 kg
+        Warning: ~
+        TranslateText: ~
+        TranslateWarning: ~
+      2:
+        Text: \> 10 kg
+        Warning: To much weight for a leg
+        TranslateText: ~
+        TranslateWarning: ~
+      label: Leg Force
+      TranslateLabel: rulareba.force.leg
+      type: select
+      Base: 0
+      Image: additionalInputs/LegForceLoad.png
+      Score: *three
+    ArmSuddenExertion:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: ~
+        Warning: ~
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: ~
+        Warning: ~
+      Base: 0
+      type: boolean
+      label: Arm Sudden Exertion
+      TranslateLabel: rulareba.force.armsuddenexertion
+      Image: additionalInputs/ArmForceLoad.png
+      Score: *two
+    LegSuddenExertion:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: ~
+        Warning: ~
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: ~
+        Warning: ~
+      Base: 0
+      type: boolean
+      label: Leg Sudden Exertion
+      TranslateLabel: rulareba.force.legsuddenexertion
+      Image: additionalInputs/LegForceLoad.png
+      Score: *two
+  Misc:
+    LegsSupported:
+      1:
+        Text: Yes
+        TranslateText: rulareba.yes
+        TranslateWarning: ~
+        Warning: ~
+      0:
+        Text: No
+        TranslateText: rulareba.no
+        TranslateWarning: ~
+        Warning: ~
+      Base: 0
+      type: boolean
+      label: Legs Supported
+      TranslateLabel: rulareba.misc.legssupported
+      Image: additionalInputs/LegMuscleUse.png
+      Score: *two
+  Muscle Use:
+    Arm:
+      0:
+        Text: Holds still
+        Warning: ~
+        TranslateText: ~
+        TranslateWarning: ~
+      1:
+        Text: Moves 4 times/min
+        Warning: ~
+        TranslateText: ~
+        TranslateWarning: ~
+      label: Arms / Muscle Use
+      TranslateLabel: rulareba.muscleuse.arm
+      Image: additionalInputs/ArmMuscleUse.png
+      type: select
+      Base: 0
+      Score: *two
+    Leg:
+      0:
+        Text: Holds still
+        Warning: ~
+        TranslateText: ~
+        TranslateWarning: ~
+      1:
+        Text: Moves 4 times/min
+        Warning: ~
+        TranslateText: ~
+        TranslateWarning: ~
+      label: Legs / Muscle Use
+      TranslateLabel: rulareba.muscleuse.leg
+      Image: additionalInputs/LegMuscleUse.png
+      type: select
+      Base: 0
+      Score: *two

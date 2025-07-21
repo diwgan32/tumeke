@@ -252,6 +252,50 @@
       }
     }
   },
+  "RiskComponents": {
+    "asymmetryAngle": {
+      "type": "input",
+      "Base": 0,
+      "Max": 135,
+      "Units": "deg"
+    },
+    "horizontalEnd": {
+      "type": "input",
+      "Base": 0.83,
+      "Max": 5.83333,
+      "Units": [
+        "ft",
+        "sm"
+      ]
+    },
+    "horizontalStart": {
+      "type": "input",
+      "Base": 0.83,
+      "Max": 2.08,
+      "Units": [
+        "ft",
+        "sm"
+      ]
+    },
+    "verticalEnd": {
+      "type": "input",
+      "Base": 0.83,
+      "Max": 5.83333,
+      "Units": [
+        "ft",
+        "sm"
+      ]
+    },
+    "verticalStart": {
+      "type": "input",
+      "Base": 0.83,
+      "Max": 5.83333,
+      "Units": [
+        "ft",
+        "sm"
+      ]
+    }
+  },
   "CouplingStatus": {
     "GOOD": {
       "Number": 0,
@@ -292,5 +336,127 @@
   "Units": {
     "STANDARD": 0,
     "METRIC": 1
+  },
+  "AdditionalInputsScores": {
+    "3": {
+      "0": {
+        "TranslateText": "niosh.score.good",
+        "ShortText": "Good",
+        "Color": "rgba(109, 208, 163, 1.0)"
+      },
+      "1": {
+        "TranslateText": "niosh.score.fair",
+        "ShortText": "Fair",
+        "Color": "rgba(234, 130, 130, 1.0)"
+      },
+      "2": {
+        "TranslateText": "niosh.score.poor",
+        "ShortText": "Poor",
+        "Color": "rgba(184, 15, 10, 1.0)"
+      }
+    }
+  },
+  "AdditionalInputs": {
+    "averageLoad": {
+      "label": "Average Load",
+      "type": "input",
+      "Base": 0.01,
+      "Max": 60,
+      "Units": [
+        "lbs",
+        "kgs"
+      ],
+      "Image": null
+    },
+    "frequency": {
+      "label": "Frequency",
+      "type": "input",
+      "Base": 1,
+      "Max": 15,
+      "Units": "min",
+      "Image": null
+    },
+    "coupling": {
+      "0": {
+        "Text": "Good",
+        "TranslateText": "niosh.score.good",
+        "Warning": null,
+        "TranslateWarning": null
+      },
+      "1": {
+        "Text": "Fair",
+        "TranslateText": "niosh.score.fair",
+        "Warning": null,
+        "TranslateWarning": null
+      },
+      "2": {
+        "Text": "Poor",
+        "TranslateText": "niosh.score.poor",
+        "Warning": "Poor coupling",
+        "TranslateWarning": "niosh.score.poor-coupling"
+      },
+      "label": "Coupling",
+      "type": "select",
+      "Base": 0,
+      "Image": "additionalInputs/Coupling.png",
+      "Score": {
+        "0": {
+          "TranslateText": "niosh.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "1": {
+          "TranslateText": "niosh.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "2": {
+          "TranslateText": "niosh.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      }
+    },
+    "liftingDuration": {
+      "0": {
+        "Text": "Short (1 hour)",
+        "TranslateText": "niosh.score.short",
+        "Warning": null,
+        "TranslateWarning": null
+      },
+      "1": {
+        "Text": "Moderate (1-2 hours)",
+        "TranslateText": "niosh.score.moderate",
+        "Warning": null,
+        "TranslateWarning": null
+      },
+      "2": {
+        "Text": "Long (2-8 hours)",
+        "TranslateText": "niosh.score.long",
+        "Warning": "Long lifting duration",
+        "TranslateWarning": "niosh.score.long-lifting"
+      },
+      "label": "Lifting Duration",
+      "type": "select",
+      "Base": 0,
+      "Image": null,
+      "Score": {
+        "0": {
+          "TranslateText": "niosh.score.good",
+          "ShortText": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        },
+        "1": {
+          "TranslateText": "niosh.score.fair",
+          "ShortText": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        },
+        "2": {
+          "TranslateText": "niosh.score.poor",
+          "ShortText": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      }
+    }
   }
 }

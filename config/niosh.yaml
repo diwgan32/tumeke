@@ -1,32 +1,87 @@
 constants:
   SAMPLE_SIZE_SECONDS: .5
   FM_FREQUENCIES: [0, .2, .5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-  FM_SHORT_DURATION: [1.0, 1.0, .97, .94, .91, .88, .84, .80, .75, .70, .60, .52, .45, .41, .37, .34, .31, .28]
-  FM_MODERATE_DURATION: [.95, .95, .92, .88, .84, .79, .72, .60, .50, .42, .35, .30, .26, .23, .21, 0, 0, 0]
-  FM_LONG_DURATION: [.85, .85, .81, .75, .65, .55, .45, .35, .27, .22, .18, .15, .13, 0, 0, 0, 0, 0]
+  FM_SHORT_DURATION:
+    [
+      1.0,
+      1.0,
+      .97,
+      .94,
+      .91,
+      .88,
+      .84,
+      .80,
+      .75,
+      .70,
+      .60,
+      .52,
+      .45,
+      .41,
+      .37,
+      .34,
+      .31,
+      .28,
+    ]
+  FM_MODERATE_DURATION:
+    [
+      .95,
+      .95,
+      .92,
+      .88,
+      .84,
+      .79,
+      .72,
+      .60,
+      .50,
+      .42,
+      .35,
+      .30,
+      .26,
+      .23,
+      .21,
+      0,
+      0,
+      0,
+    ]
+  FM_LONG_DURATION:
+    [
+      .85,
+      .85,
+      .81,
+      .75,
+      .65,
+      .55,
+      .45,
+      .35,
+      .27,
+      .22,
+      .18,
+      .15,
+      .13,
+      0,
+      0,
+      0,
+      0,
+      0,
+    ]
   FM_SHORT_DURATION_VERTICAL_CUTOFF: 13
   FM_MODERATE_DURATION_VERTICAL_CUTOFF: 10
   FM_LONG_DURATION_VERTICAL_CUTOFF: 8
 
   black: &black
-    Color:
-      rgba(15, 15, 30, 0.9)
+    Color: rgba(15, 15, 30, 0.9)
 
   light_green: &light_green
-    Color:
-      rgba(109, 208, 163, 1.0)
+    Color: rgba(109, 208, 163, 1.0)
 
   green: &green
-    Color:
-      rgba(20, 210, 184, 1.0)
+    Color: rgba(20, 210, 184, 1.0)
 
   orange: &orange
-    Color:
-      rgba(234, 130, 130, 1.0)
+    Color: rgba(234, 130, 130, 1.0)
 
   red: &red
-    Color:
-      rgba(184, 15, 10, 1.0)
+    Color: rgba(184, 15, 10, 1.0)
 
   unsafe: &unsafe
     TranslateText: niosh.score.unsafe
@@ -44,7 +99,6 @@ constants:
     TranslateText: niosh.score.poor
     ShortText: Poor
     <<: *red
-
 
 ComponentValues:
   li:
@@ -115,9 +169,35 @@ ComponentValues:
       <<: *good
       Warning: ~
 
-  
+RiskComponents:
+  asymmetryAngle:
+    type: input
+    Base: 0
+    Max: 135
+    Units: deg
+  horizontalEnd:
+    type: input
+    Base: 0.83
+    Max: 5.83333
+    Units: [ft, sm]
+  horizontalStart:
+    type: input
+    Base: 0.83
+    Max: 2.08
+    Units: [ft, sm]
+  verticalEnd:
+    type: input
+    Base: 0.83
+    Max: 5.83333
+    Units: [ft, sm]
+  verticalStart:
+    type: input
+    Base: 0.83
+    Max: 5.83333
+    Units: [ft, sm]
+
 CouplingStatus:
-  GOOD: 
+  GOOD:
     Number: 0
     Text: Good
   FAIR:
@@ -128,7 +208,7 @@ CouplingStatus:
     Text: Poor
 
 DurationStatus:
-  SHORT: 
+  SHORT:
     Number: 0
     Text: Short (1 hour)
   MODERATE:
@@ -150,3 +230,71 @@ HeightConstantsStandard:
 Units:
   STANDARD: 0
   METRIC: 1
+
+AdditionalInputsScores:
+  3: &three
+    0:
+      <<: *good
+    1:
+      <<: *fair
+    2:
+      <<: *poor
+
+AdditionalInputs:
+  averageLoad:
+    label: Average Load
+    type: input
+    Base: 0.01
+    Max: 60
+    Units: [lbs, kgs]
+    Image: ~
+  frequency:
+    label: Frequency
+    type: input
+    Base: 1
+    Max: 15
+    Units: min
+    Image: ~
+  coupling:
+    0:
+      Text: Good
+      TranslateText: niosh.score.good
+      Warning: ~
+      TranslateWarning: ~
+    1:
+      Text: Fair
+      TranslateText: niosh.score.fair
+      Warning: ~
+      TranslateWarning: ~
+    2:
+      Text: Poor
+      TranslateText: niosh.score.poor
+      Warning: Poor coupling
+      TranslateWarning: niosh.score.poor-coupling
+    label: Coupling
+    type: select
+    Base: 0
+    Image: additionalInputs/Coupling.png
+    Score: *three
+  liftingDuration:
+    0:
+      Text: Short (1 hour)
+      TranslateText: niosh.score.short
+      Warning: ~
+      TranslateWarning: ~
+    1:
+      Text: Moderate (1-2 hours)
+      TranslateText: niosh.score.moderate
+      Warning: ~
+      TranslateWarning: ~
+    2:
+      Text: Long (2-8 hours)
+      TranslateText: niosh.score.long
+      Warning: Long lifting duration
+      TranslateWarning: niosh.score.long-lifting
+    label: Lifting Duration
+    type: select
+    Base: 0
+    Image: ~
+    Score: *three
+
