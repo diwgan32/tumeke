@@ -31,3 +31,7 @@ f.close()
 f = open(f"{dir_path}/config/rosa.json")
 rosa_config = json.load(f)
 f.close()
+
+f = open(f"{dir_path}/config/strings.json")
+strings_config = json.load(f)
+f.close()
