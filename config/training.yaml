@@ -1,0 +1,68 @@
+SeriaNumber: 6
+Name: Training
+AssessmentName: Training
+
+Colors:
+  black: &black
+    rgba(15, 15, 30, 0.9)
+
+  light_green: &light_green
+    rgba(109, 208, 163, 1.0)
+
+  green: &green
+    rgba(241, 196, 15, 1.0)
+
+  orange: &orange
+    rgba(230, 126, 34, 1.0)
+
+  red: &red
+    rgba(184, 15, 10, 1.0)
+
+  dark_red: &dark_red
+    rgba(133, 4, 0, 1.0)
+
+Constants:
+  acceptable: &acceptable
+    Value: Acceptable
+    Color: *light_green
+  low: &low
+    Value: Low
+    Color: *green
+  medium: &medium
+    Value: Medium
+    Color: *orange
+  high: &high
+    Value: High
+    Color: *red
+  vhigh: &vhigh
+    Value: Very High
+    Color: *dark_red
+
+Enum: {}
+
+OverallScoreValue: Score
+
+Metadata: {}
+
+ResultValues:
+  Score:
+    "[0, 30]":
+      Label: Very High
+      Score: *vhigh
+    "[30, 50]":
+      Label: High
+      Score: *high
+    "[50, 70]":
+      Label: Medium
+      Score: *medium
+    "[70, 90]":
+      Label: Low
+      Score: *low
+    "[90, None]":
+      Label: Good
+      Score: *acceptable
+
+RiskComponents: {}
+
+AdditionalInputs: {}
+

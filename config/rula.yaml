@@ -1,556 +1,463 @@
----
-constants:
-  light_green: &light_green
-    Color: rgba(109, 208, 163, 1.0)
-
-  green: &green
-    Color: rgba(241, 196, 15, 1.0)
-
-  orange: &orange
-    Color: rgba(230, 126, 34, 1.0)
-
-  red: &red
-    Color: rgba(184, 15, 10, 1.0)
-
-  acceptable: &acceptable
-    TranslateText: rulareba.score.acceptable
-    ShortText: Acceptable
-    Text: Acceptable
-    <<: *light_green
-  low: &low
-    TranslateText: rulareba.score.low
-    ShortText: Low
-    Text: Low risk of injury
-    <<: *green
-  medium: &medium
-    TranslateText: rulareba.score.medium
-    ShortText: Medium
-    Text: Medium risk of injury
-    <<: *orange
-  high: &high
-    TranslateText: rulareba.score.high
-    ShortText: High
-    Text: High risk of injury
-    <<: *red
+SeriaNumber: 1
+Name: Rula
+AssessmentName: RULA
 
 Colors:
-  acceptable: *light_green
-  low: *green
-  medium: *orange
-  high: *red
+  light_green: &light_green
+    rgba(109, 208, 163, 1.0)
 
-AdditionalInputsScores:
-  2: &two
-    0:
-      <<: *acceptable
-    1:
-      <<: *high
-  3: &three
-    0:
-      <<: *acceptable
-    1:
-      <<: *medium
-    2:
-      <<: *high
-  4: &four
-    0:
-      <<: *acceptable
-    1:
-      <<: *low
-    2:
-      <<: *medium
-    3:
-      <<: *high
+  green: &green
+    rgba(241, 196, 15, 1.0)
 
-BodyPartScores:
+  orange: &orange
+    rgba(230, 126, 34, 1.0)
+
+  red: &red
+    rgba(184, 15, 10, 1.0)
+
+Constants:
+  acceptable: &acceptable
+    Value: Acceptable
+    Color: *light_green
+
+  low: &low
+    Value: Low
+    Color: *green
+
+  medium: &medium
+    Value: Medium
+    Color: *orange
+
+  high: &high
+    Value: High
+    Color: *red
+
+Enum: {}
+
+OverallScoreValue: Overall
+
+Metadata:
+  supportDepth: "number"
+
+ResultValues:
   Overall:
     1:
-      <<: *acceptable
+      Score: *acceptable
     2:
-      <<: *acceptable
+      Score: *acceptable
     3:
-      <<: *low
+      Score: *low
     4:
-      <<: *low
+      Score: *low
     5:
-      <<: *medium
+      Score: *medium
     6:
-      <<: *medium
+      Score: *medium
     7:
-      <<: *high
+      Score: *high
+
   Neck:
     1:
-      <<: *acceptable
+      Score: *acceptable
     2:
-      <<: *low
+      Score: *low
     3:
-      <<: *medium
+      Score: *medium
     4:
-      <<: *medium
+      Score: *medium
     5:
-      <<: *high
+      Score: *high
     6:
-      <<: *high
+      Score: *high
+
   Upper Arm:
     1:
-      <<: *acceptable
+      Score: *acceptable
     2:
-      <<: *low
+      Score: *low
     3:
-      <<: *medium
+      Score: *medium
     4:
-      <<: *medium
+      Score: *medium
     5:
-      <<: *high
+      Score: *high
     6:
-      <<: *high
+      Score: *high
+
   Lower Arm:
     1:
-      <<: *low
+      Score: *low
     2:
-      <<: *medium
+      Score: *medium
     3:
-      <<: *high
+      Score: *high
+
   Trunk:
     1:
-      <<: *acceptable
+      Score: *acceptable
     2:
-      <<: *low
+      Score: *low
     3:
-      <<: *medium
+      Score: *medium
     4:
-      <<: *medium
+      Score: *medium
     5:
-      <<: *high
+      Score: *high
     6:
-      <<: *high
+      Score: *high
+
   Wrist:
     1:
-      <<: *acceptable
+      Score: *acceptable
     2:
-      <<: *low
+      Score: *low
     3:
-      <<: *medium
+      Score: *medium
     4:
-      <<: *high
+      Score: *high
 
-ComponentValues:
+RiskComponents:
   Neck:
     Score:
-      1:
-        Text: 0° - 10° forward
-        TranslateText: rula.components.neck.score.1.text
-        TranslateWarning: rula.components.neck.score.1.warning
-        Warning: ~
-        Image: angleIcons/rulaReba/Neck_0_10_deg@2x.png
-      2:
-        Text: 10° - 20° forward
-        TranslateText: rula.components.neck.score.2.text
-        TranslateWarning: rula.components.neck.score.2.warning
-        Warning: ~
-        Image: angleIcons/rulaReba/Neck_10_20_deg@2x.png
-      3:
-        Text: 20°+ forward
-        TranslateText: rula.components.neck.score.3.text
-        TranslateWarning: rula.components.neck.score.3.warning
-        Warning: Neck bent forward too much
-        Image: angleIcons/rulaReba/Neck_20+_deg@2x.png
-      4:
-        Text: 0°+ backward
-        TranslateText: rula.components.neck.score.4.text
-        TranslateWarning: rula.components.neck.score.4.warning
-        Warning: Neck bent backward
-        Image: angleIcons/rulaReba/Neck_in_extension@2x.png
+      Type: select
       Base: 1
-      label: Angle
-      TranslateLabel: rulareba.neck.score
-      type: select
+      MaxInput: ~
+      Units: ~
+      Label: Angle
+      Image: bodyParts/neck.png
+      Values:
+        1:
+          Label: 0° - 10° forward
+          Image: angleIcons/rulaReba/Neck_0_10_deg@2x.png
+        2:
+          Label: 10° - 20° forward
+          Image: angleIcons/rulaReba/Neck_10_20_deg@2x.png
+        3:
+          Label: 20°+ forward
+          Image: angleIcons/rulaReba/Neck_20+_deg@2x.png
+          Warning: Neck bent forward too much
+        4:
+          Label: 0°+ backward
+          Image: angleIcons/rulaReba/Neck_in_extension@2x.png
+          Warning: Neck bent backward
     SideBend:
-      1:
-        Text: Yes
-        TranslateText: rulareba.yes
-        TranslateWarning: rula.components.neck.sidebend.1.warning
-        Warning: Neck side bending
-      0:
-        Text: No
-        TranslateText: rulareba.no
-        TranslateWarning: rula.components.neck.sidebend.0.warning
-        Warning: ~
+      Type: boolean
       Base: 0
-      label: Side bending
-      TranslateLabel: rulareba.neck.sidebend
-      type: boolean
-      Image: angleIcons/rulaReba/Neck_side_bending@2x.png
+      MaxInput: ~
+      Units: ~
+      Label: Side bending
+      Image: ~
+      Values:
+        1:
+          Label: Yes
+          Image: angleIcons/rulaReba/Neck_side_bending@2x.png
+          Warning: Neck side bending
+        0:
+          Label: No
     Twist:
-      1:
-        Text: Yes
-        TranslateText: rulareba.yes
-        TranslateWarning: rula.components.neck.twist.1.warning
-        Warning: Neck twisted
-      0:
-        Text: No
-        TranslateText: rulareba.no
-        TranslateWarning: rula.components.neck.twist.0.warning
-        Warning:
+      Type: boolean
       Base: 0
-      label: Twisted
-      type: boolean
-      TranslateLabel: rulareba.neck.twist
-      Image: angleIcons/rulaReba/Neck_Twisted@2x.png
-    Image: bodyParts/neck.png
+      MaxInput: ~
+      Units: ~
+      Label: Twisted
+      Image: ~
+      Values:
+        1:
+          Label: Yes
+          Image: angleIcons/rulaReba/Neck_Twisted@2x.png
+          Warning: Neck twisted
+        0:
+          Label: No
+
   Upper Arm:
     Score:
-      1:
-        Text: 20° in front - 20° behind
-        TranslateText: rula.components.upperarm.score.1.text
-        TranslateWarning: rula.components.upperarm.score.1.warning
-        Warning: ~
-        Image: angleIcons/rulaReba/UpperArm_20_20_deg@2x.png
-      2:
-        Text: 20°+ behind OR 20° - 45° in front
-        TranslateText: rula.components.upperarm.score.2.text
-        TranslateWarning: rula.components.upperarm.score.2.warning
-        Warning: ~
-        Image: angleIcons/rulaReba/UpperArm_20_deg_extension@2x.png
-        Image2: angleIcons/rulaReba/UpperArm_20_45_deg@2x.png
-      3:
-        Text: 45° - 90° in front
-        TranslateText: rula.components.upperarm.score.3.text
-        TranslateWarning: rula.components.upperarm.score.3.warning
-        Warning: Upper arm raised high
-        Image: angleIcons/rulaReba/UpperArm_45_90_deg@2x.png
-      4:
-        Text: 90°+ in front
-        TranslateText: rula.components.upperarm.score.4.text
-        TranslateWarning: rula.components.upperarm.score.4.warning
-        Warning: Upper arm raised too high
-        Image: angleIcons/rulaReba/UpperArm_90+_deg@2x.png
+      Type: select
       Base: 1
-      label: Angle
-      TranslateLabel: rulareba.upperarm.score
-      type: select
+      MaxInput: ~
+      Units: ~
+      Label: Angle
+      Image: bodyParts/shoulder.png
+      Values:
+        1:
+          Label: 20° in front - 20° behind
+          Image: angleIcons/rulaReba/UpperArm_20_20_deg@2x.png
+        2:
+          Label: 20°+ behind OR 20° - 45° in front
+          Image: angleIcons/rulaReba/UpperArm_20_deg_extension@2x.png
+          Image2: angleIcons/rulaReba/UpperArm_20_45_deg@2x.png
+        3:
+          Label: 45° - 90° in front
+          Image: angleIcons/rulaReba/UpperArm_45_90_deg@2x.png
+          Warning: Upper arm raised high
+        4:
+          Label: 90°+ in front
+          Image: angleIcons/rulaReba/UpperArm_90+_deg@2x.png
+          Warning: Upper arm raised too high
     Abducted:
-      1:
-        Text: Yes
-        TranslateText: rulareba.yes
-        TranslateWarning: rula.components.upperarm.abducted.1.warning
-        Warning: Shoulder abducted
-
-      0:
-        Text: No
-        TranslateWarning: rula.components.upperarm.abducted.0.warning
-        TranslateText: rulareba.no
-        Warning:
+      Type: boolean
       Base: 0
-      label: Abducted
-      TranslateLabel: rulareba.upperarm.abducted
-      type: boolean
-      Image: angleIcons/rulaReba/UpperArm_abducted@2x.png
+      MaxInput: ~
+      Units: ~
+      Label: Abducted
+      Image: ~
+      Values:
+        1:
+          Label: Yes
+          Image: angleIcons/rulaReba/UpperArm_abducted@2x.png
+          Warning: Shoulder abducted
+        0:
+          Label: No
     ShoulderRaised:
-      1:
-        Text: Yes
-        TranslateText: rulareba.yes
-        TranslateWarning: rula.components.upperarm.shoulder_raised.1.warning
-        Warning:
-
-      0:
-        Text: No
-        TranslateWarning: rula.components.upperarm.shoulder_raised.0.warning
-        TranslateText: rulareba.no
-        Warning:
+      Type: boolean
       Base: 0
-      type: boolean
-      label: Shoulder raised
-      TranslateLabel: rulareba.upperarm.shoulder_raised
-      Image: angleIcons/rulaReba/UpperArm_shoulder_raised@2x.png
-    Image: bodyParts/shoulder.png
+      MaxInput: ~
+      Units: ~
+      Label: Shoulder raised
+      Image: ~
+      Values:
+        1:
+          Label: Yes
+          Image: angleIcons/rulaReba/UpperArm_shoulder_raised@2x.png
+        0:
+          Label: No
+
   Trunk:
     Score:
-      1:
-        Text: 0°
-        TranslateText: rula.components.trunk.score.1.text
-        TranslateWarning: rula.components.trunk.score.1.warning
-        Warning: ~
-        Image: angleIcons/rulaReba/Trunk_0_deg@2x.png
-      2:
-        Text: 0° - 20° forward
-        TranslateText: rula.components.trunk.score.2.text
-        TranslateWarning: rula.components.trunk.score.2.warning
-        Warning:
-        Image: angleIcons/rulaReba/Trunk_0_20_deg@2x.png
-      3:
-        Text: 20° - 60° forward
-        TranslateText: rula.components.trunk.score.3.text
-        TranslateWarning: rula.components.trunk.score.3.warning
-        Warning: Trunk bent forward too much
-        Image: angleIcons/rulaReba/Trunk_20_60_deg@2x.png
-      4:
-        Text: 60°+ forward
-        TranslateText: rula.components.trunk.score.4.text
-        TranslateWarning: rula.components.trunk.score.4.warning
-        Warning: Trunk bent forward too much
-        Image: angleIcons/rulaReba/Trunk_60+_deg@2x.png
+      Type: select
       Base: 1
-      label: Angle
-      TranslateLabel: rulareba.trunk.score
-      type: select
+      MaxInput: ~
+      Units: ~
+      Label: Angle
+      Image: bodyParts/back.png
+      Values:
+        1:
+          Label: 0°
+          Image: angleIcons/rulaReba/Trunk_0_deg@2x.png
+        2:
+          Label: 0° - 20° forward
+          Image: angleIcons/rulaReba/Trunk_0_20_deg@2x.png
+        3:
+          Label: 20° - 60° forward
+          Image: angleIcons/rulaReba/Trunk_20_60_deg@2x.png
+          Warning: Trunk bent forward too much
+        4:
+          Label: 60°+ forward
+          Image: angleIcons/rulaReba/Trunk_60+_deg@2x.png
+          Warning: Trunk bent forward too much
     SideBend:
-      1:
-        Text: Yes
-        TranslateText: rulareba.yes
-        TranslateWarning: rula.components.trunk.sidebend.1.warning
-        Warning: Trunk side bending
-      0:
-        Text: No
-        TranslateWarning: rula.components.trunk.sidebend.0.warning
-        TranslateText: rulareba.no
-        Warning: ~
+      Type: boolean
       Base: 0
-      label: Side bending
-      TranslateLabel: rulareba.trunk.sidebend
-      type: boolean
-      Image: angleIcons/rulaReba/Trunk_side_bending@2x.png
+      MaxInput: ~
+      Units: ~
+      Label: Side bending
+      Image: ~
+      Values:
+        1:
+          Label: Yes
+          Image: angleIcons/rulaReba/Trunk_side_bending@2x.png
+          Warning: Trunk side bending
+        0:
+          Label: No
     Twist:
-      1:
-        Text: Yes
-        TranslateText: rulareba.yes
-        TranslateWarning: rula.components.trunk.twist.1.warning
-        Warning: Trunk twisted
-      0:
-        Text: No
-        TranslateText: rulareba.no
-        TranslateWarning: rula.components.trunk.twist.0.warning
-        Warning: ~
+      Type: boolean
       Base: 0
-      label: Twisted
-      TranslateLabel: rulareba.trunk.twist
-      type: boolean
-      Image: angleIcons/rulaReba/Trunk_Twisted@2x.png
-    Image: bodyParts/back.png
+      MaxInput: ~
+      Units: ~
+      Label: Twisted
+      Image: ~
+      Values:
+        1:
+          Label: Yes
+          Image: angleIcons/rulaReba/Trunk_Twisted@2x.png
+          Warning: Trunk twisted
+        0:
+          Label: No
+
   Lower Arm:
     Score:
-      1:
-        Text: 60° - 100°
-        TranslateText: rula.components.lowerarm.score.1.text
-        TranslateWarning: rula.components.lowerarm.score.1.warning
-        Warning: ~
-        Image: angleIcons/rulaReba/LowerArm_60_100_deg@2x.png
-      2:
-        Text: 0° - 60° OR 100°+
-        TranslateText: rula.components.lowerarm.score.2.text
-        TranslateWarning: rula.components.lowerarm.score.2.warning
-        Warning: ~
-        Image: angleIcons/rulaReba/LowerArm_0_60_deg@2x.png
-        Image2: angleIcons/rulaReba/LowerArm_100+_deg@2x.png
+      Type: select
       Base: 1
-      label: Angle
-      TranslateLabel: rulareba.lowerarm.score
-      type: select
+      MaxInput: ~
+      Units: ~
+      Label: Angle
+      Image: bodyParts/arm.png
+      Values:
+        1:
+          Label: 60° - 100°
+          Image: angleIcons/rulaReba/LowerArm_60_100_deg@2x.png
+        2:
+          Label: 0° - 60° OR 100°+
+          Image: angleIcons/rulaReba/LowerArm_0_60_deg@2x.png
+          Image2: angleIcons/rulaReba/LowerArm_100+_deg@2x.png
     Midline:
-      1:
-        Text: Yes
-        TranslateText: rulareba.yes
-        TranslateWarning: rula.components.lowerarm.midline.1.warning
-        Warning: ~
-      0:
-        Text: No
-        TranslateWarning: rula.components.lowerarm.midline.0.warning
-        TranslateText: rulareba.no
-        Warning: ~
+      Type: boolean
       Base: 0
-      type: boolean
-      TranslateLabel: rulareba.lowerarm.midline
-      label: Elbow bent from side of body
-    Image: bodyParts/arm.png
+      MaxInput: ~
+      Units: ~
+      Label: Elbow bent from side of body
+      Image: ~
+      Values:
+        1:
+          Label: Yes
+        0:
+          Label: No
+
   Wrist:
     Score:
-      1:
-        Text: 0°
-        TranslateText: rula.components.wrist.score.1.text
-        TranslateWarning: rula.components.wrist.score.1.warning
-        Warning: ~
-        Image: angleIcons/rulaReba/Wrist_0_deg@2x.png
-      2:
-        Text: 15° up - 15° down
-        TranslateText: rula.components.wrist.score.2.text
-        TranslateWarning: rula.components.wrist.score.2.warning
-        Warning: Wrist bent
-        Image: angleIcons/rulaReba/Wrist_15_15_Deg@2x.png
-      3:
-        Text: 15°+ up OR 15°+ down
-        TranslateText: rula.components.wrist.score.3.text
-        TranslateWarning: rula.components.wrist.score.3.warning
-        Warning: Wrist far too bent
-        Image: angleIcons/rulaReba/Wrist_15+Up_Deg@2x.png
-        Image2: angleIcons/rulaReba/Wrist_15+Down_Deg@2x.png
+      Type: select
       Base: 1
-      type: select
-      label: Angle
-      TranslateLabel: rulareba.wrist.score
+      MaxInput: ~
+      Units: ~
+      Label: Angle
+      Image: bodyParts/wrist.png
+      Values:
+        1:
+          Label: 0°
+          Image: angleIcons/rulaReba/Wrist_0_deg@2x.png
+        2:
+          Label: 15° up - 15° down
+          Image: angleIcons/rulaReba/Wrist_15_15_Deg@2x.png
+          Warning: Wrist bent
+        3:
+          Label: 15°+ up OR 15°+ down
+          Image: angleIcons/rulaReba/Wrist_15+Up_Deg@2x.png
+          Image2: angleIcons/rulaReba/Wrist_15+Down_Deg@2x.png
+          Warning: Wrist far too bent
     Twist:
-      1:
-        Text: Yes
-        TranslateText: rulareba.yes
-        TranslateWarning: ~
-        Warning: ~
-      0:
-        Text: No
-        TranslateText: rulareba.no
-        TranslateWarning: ~
-        Warning: ~
+      Type: boolean
       Base: 0
-      type: boolean
-      label: Twisted
-      TranslateLabel: rulareba.wrist.twist
-      Image: angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png
-      Image2: angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png
+      MaxInput: ~
+      Units: ~
+      Label: Twisted
+      Image: ~
+      Values:
+        1:
+          Label: Yes
+          Image: angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png
+          Image2: angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png
+        0:
+          Label: No
     Midline:
-      1:
-        Text: Yes
-        TranslateText: rulareba.yes
-        TranslateWarning: ~
-        Warning: ~
-      0:
-        Text: No
-        TranslateText: rulareba.no
-        TranslateWarning: ~
-        Warning: ~
+      Type: boolean
       Base: 0
-      type: boolean
-      label: Wrist bent from midline
-      TranslateLabel: rulareba.wrist.midline
-      Image: angleIcons/rulaReba/Wrist_bent_from_midline@2x.png
-    Image: bodyParts/wrist.png
+      MaxInput: ~
+      Units: ~
+      Label: Wrist bent from midline
+      Image: ~
+      Values:
+        1:
+          Label: Yes
+          Image: angleIcons/rulaReba/Wrist_bent_from_midline@2x.png
+        0:
+          Label: No
+
 AdditionalInputs:
   Force:
     Arm:
-      0:
-        Text: < 1.8 kg
-        Warning: ~
-        TranslateText: ~
-        TranslateWarning: ~
-      1:
-        Text: 1.8 - 10 kg
-        Warning: ~
-        TranslateText: ~
-        TranslateWarning: ~
-      2:
-        Text: \> 10 kg
-        Warning: To much weight for an arm
-        TranslateText: ~
-        TranslateWarning: ~
-      label: Arm Force
-      TranslateLabel: rulareba.force.arm
-      type: select
+      Type: select
       Base: 0
+      MaxInput: ~
+      Units: ~
+      Label: Arm Force
       Image: additionalInputs/ArmForceLoad.png
-      Score: *three
+      Values:
+        0:
+          Label: < 1.8 kg
+          Score: *acceptable
+        1:
+          Label: 1.8 - 10 kg
+          Score: *medium
+        2:
+          Label: "> 10 kg"
+          Warning: To much weight for an arm
+          Score: *high
     Leg:
-      0:
-        Text: < 1.8 kg
-        Warning: ~
-        TranslateText: ~
-        TranslateWarning: ~
-      1:
-        Text: 1.8 - 10 kg
-        Warning: ~
-        TranslateText: ~
-        TranslateWarning: ~
-      2:
-        Text: \> 10 kg
-        Warning: To much weight for a leg
-        TranslateText: ~
-        TranslateWarning: ~
-      label: Leg Force
-      TranslateLabel: rulareba.force.leg
-      type: select
+      Type: select
       Base: 0
+      MaxInput: ~
+      Units: ~
+      Label: Leg Force
       Image: additionalInputs/LegForceLoad.png
-      Score: *three
+      Values:
+        0:
+          Label: < 1.8 kg
+          Score: *acceptable
+        1:
+          Label: 1.8 - 10 kg
+          Score: *medium
+        2:
+          Label: "> 10 kg"
+          Warning: To much weight for a leg
+          Score: *high
     ArmSuddenExertion:
-      1:
-        Text: Yes
-        TranslateText: rulareba.yes
-        TranslateWarning: ~
-        Warning: ~
-      0:
-        Text: No
-        TranslateText: rulareba.no
-        TranslateWarning: ~
-        Warning: ~
+      Type: boolean
       Base: 0
-      type: boolean
-      label: Arm Sudden Exertion
-      TranslateLabel: rulareba.force.armsuddenexertion
+      MaxInput: ~
+      Units: ~
+      Label: Arm Sudden Exertion
       Image: additionalInputs/ArmForceLoad.png
-      Score: *two
+      Values:
+        1:
+          Label: Yes
+          Score: *high
+        0:
+          Label: No
+          Score: *acceptable
     LegSuddenExertion:
-      1:
-        Text: Yes
-        TranslateText: rulareba.yes
-        TranslateWarning: ~
-        Warning: ~
-      0:
-        Text: No
-        TranslateText: rulareba.no
-        TranslateWarning: ~
-        Warning: ~
+      Type: boolean
       Base: 0
-      type: boolean
-      label: Leg Sudden Exertion
-      TranslateLabel: rulareba.force.legsuddenexertion
+      MaxInput: ~
+      Units: ~
+      Label: Leg Sudden Exertion
       Image: additionalInputs/LegForceLoad.png
-      Score: *two
+      Values:
+        1:
+          Label: Yes
+          Score: *high
+        0:
+          Label: No
+          Score: *acceptable
   Misc:
     LegsSupported:
-      1:
-        Text: Yes
-        TranslateText: rulareba.yes
-        TranslateWarning: ~
-        Warning: ~
-      0:
-        Text: No
-        TranslateText: rulareba.no
-        TranslateWarning: ~
-        Warning: ~
+      Type: boolean
       Base: 0
-      type: boolean
-      label: Legs Supported
-      TranslateLabel: rulareba.misc.legssupported
+      MaxInput: ~
+      Units: ~
+      Label: Legs Supported
       Image: additionalInputs/LegMuscleUse.png
-      Score: *two
+      Values:
+        1:
+          Label: Yes
+          Score: *high
+        0:
+          Label: No
+          Score: *acceptable
   Muscle Use:
     Arm:
-      0:
-        Text: Holds still
-        Warning: ~
-        TranslateText: ~
-        TranslateWarning: ~
-      1:
-        Text: Moves 4 times/min
-        Warning: ~
-        TranslateText: ~
-        TranslateWarning: ~
-      label: Arms / Muscle Use
-      TranslateLabel: rulareba.muscleuse.arm
+      Type: boolean
+      Base: 0
+      MaxInput: ~
+      Units: ~
+      Label: Arms / Muscle Use
       Image: additionalInputs/ArmMuscleUse.png
-      type: select
-      Base: 0
-      Score: *two
+      Values:
+        0:
+          Label: Holds still
+          Score: *acceptable
+        1:
+          Label: Moves 4 times/min
+          Score: *high
     Leg:
-      0:
-        Text: Holds still
-        Warning: ~
-        TranslateText: ~
-        TranslateWarning: ~
-      1:
-        Text: Moves 4 times/min
-        Warning: ~
-        TranslateText: ~
-        TranslateWarning: ~
-      label: Legs / Muscle Use
-      TranslateLabel: rulareba.muscleuse.leg
-      Image: additionalInputs/LegMuscleUse.png
-      type: select
+      Type: boolean
       Base: 0
-      Score: *two
+      MaxInput: ~
+      Units: ~
+      Label: Legs / Muscle Use
+      Image: additionalInputs/LegMuscleUse.png
+      Values:
+        0:
+          Label: Holds still
+          Score: *acceptable
+        1:
+          Label: Moves 4 times/min
+          Score: *high

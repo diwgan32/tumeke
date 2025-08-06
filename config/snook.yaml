@@ -1,0 +1,452 @@
+SeriaNumber: 5
+Name: SnookTables
+AssessmentName: Snook
+
+Colors:
+  black: &black
+    rgba(15, 15, 30, 0.9)
+
+  light_green: &light_green
+    rgba(109, 208, 163, 1.0)
+
+  green: &green
+    rgba(20, 210, 184, 1.0)
+
+  orange: &orange
+    rgba(234, 130, 130, 1.0)
+
+  red: &red
+    rgba(184, 15, 10, 1.0)
+
+Constants:
+  unacceptable: &unsafe
+    Value: Unacceptable
+    Color: *red
+  unsafe: &unsafe
+    Value: Unsafe
+    Color: *red
+  acceptable: &acceptable
+    Value: Good
+    Color: *light_green
+  low: &low
+    Value: Fair
+    Color: *orange
+  medium: &medium
+    Value: Poor
+    Color: *red
+
+Enum:
+  CouplingStatus:
+    GOOD: 
+      Value: 0
+      Label: With handles
+    POOR:
+      Value: 1
+      Label: Poor handles
+    WITHOUT:
+      Value: 2
+      Label: Without handles
+
+  TableTypes:
+    LIFT: 
+      Value: 1
+      Label: Lift
+    LOWER:
+      Value: 2
+      Label: Lower
+    PUSH:
+      Value: 3
+      Label: Push
+    PULL:
+      Value: 4
+      Label: Pull
+    CARRY:
+      Value: 5
+      Label: Carry
+    1: 
+      Value: 1
+      Label: Lift
+    2:
+      Value: 2
+      Label: Lower
+    3:
+      Value: 3
+      Label: Push
+    4:
+      Value: 4
+      Label: Pull
+    5:
+      Value: 5
+      Label: Carry
+
+  Units:
+    STANDARD:
+      Value: 0
+      Label: Standard
+    METRIC:
+      Value: 1
+      Label: Metric
+
+OverallScoreValue: mal
+
+Metadata:
+  numLifts: "number"
+  startEnd: "{ [key: string]: number[] }"
+  subjectHeight: "number"
+  tableType: "number"
+
+ResultValues:
+  mal:
+    0:
+      Label: Safe weight to {tableType}
+      Score: *acceptable
+    1:
+      Label: Unsafe weight to {tableType}
+      Score: *medium
+    2:
+      Label: Unsafe {tableType} at all weights
+      Score: *unsafe
+  malSustained:
+    0:
+      Label: Safe weight to {tableType}
+      Score: *acceptable
+    1:
+      Label: Unsafe weight to {tableType}
+      Score: *medium
+    2:
+      Label: Unsafe {tableType} at all weights
+      Score: *unsafe
+  frequencyMultiplier:
+    "[None, None]":
+      Label: Frequency multiplier
+      Score: *acceptable
+  verticalHeightMultiplier:
+    "[None, None]":
+      Label: Vertical height multiplier
+      Score: *acceptable
+  horizontalDistanceMultiplier:
+    "[None, None]":
+      Label: Horizontal distance multiplier
+      Score: *acceptable
+  verticalDistanceMultiplier:
+    "[None, None]":
+      Label: Vertical distance multiplier
+      Score: *acceptable
+  malePercentage:
+    "[None, 75]":
+      Label: Unsafe frequency
+      Score: *unsafe
+    "[75, None]":
+      Label: Safe weight to {tableType}
+      Score: *acceptable
+  malePercentageSustained:
+    "[None, 75]":
+      Label: Unsafe frequency
+      Score: *unsafe
+    "[75, None]":
+      Label: Safe weight to {tableType}
+      Score: *acceptable
+  femalePercentage:
+    "[None, 75]":
+      Label: Unsafe frequency
+      Score: *unsafe
+    "[75, None]":
+      Label: Safe weight to {tableType}
+      Score: *acceptable
+  femalePercentageSustained:
+    "[None, 75]":
+      Label: Unsafe frequency
+      Score: *unsafe
+    "[75, None]":
+      Label: Safe weight to {tableType}
+      Score: *acceptable
+  frequencyMultiplierLiftMale:
+    "[None, 0]": &unsafeMultiplier
+      Label: Unsafe
+      Score: *unsafe
+    "[0, 0.48]": &poorMultiplier
+      Label: Poor
+      Score: *medium
+    "[0.48, 0.74]": &fairMultiplier
+      Label: Fair
+      Score: *low
+    "[0.74, 1]": &goodMultiplier
+      Label: Good
+      Score: *acceptable
+    "[1, None]": &veryGoodMultiplier
+      Label: Good
+      Score: *acceptable
+  frequencyMultiplierLiftFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.6]": *poorMultiplier
+    "[0.6, 0.8]": *fairMultiplier
+    "[0.8, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  verticalHeightMultiplierLiftMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.85]": *poorMultiplier
+    "[0.85, 0.93]": *fairMultiplier
+    "[0.93, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  verticalHeightMultiplierLiftFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.8]": *poorMultiplier
+    "[0.8, 0.9]": *fairMultiplier
+    "[0.9, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  horizontalDistanceMultiplierLiftMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.56]": *poorMultiplier
+    "[0.56, 0.8]": *fairMultiplier
+    "[0.8, 1.04]": *goodMultiplier
+    "[1.04, None]": *veryGoodMultiplier
+  horizontalDistanceMultiplierLiftFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.58]": *poorMultiplier
+    "[0.58, 0.79]": *fairMultiplier
+    "[0.79, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  frequencyMultiplierLowerMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.51]": *poorMultiplier
+    "[0.51, 0.75]": *fairMultiplier
+    "[0.75, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  frequencyMultiplierLowerFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.6]": *poorMultiplier
+    "[0.6, 0.8]": *fairMultiplier
+    "[0.8, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  verticalHeightMultiplierLowerMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.85]": *poorMultiplier
+    "[0.85, 0.93]": *fairMultiplier
+    "[0.93, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  verticalHeightMultiplierLowerFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.8]": *poorMultiplier
+    "[0.8, 0.9]": *fairMultiplier
+    "[0.9, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  horizontalDistanceMultiplierLowerMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.56]": *poorMultiplier
+    "[0.56, 0.8]": *fairMultiplier
+    "[0.8, 1.04]": *goodMultiplier
+    "[1.04, None]": *veryGoodMultiplier
+  horizontalDistanceMultiplierLowerFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.58]": *poorMultiplier
+    "[0.58, 0.79]": *fairMultiplier
+    "[0.79, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  frequencyMultiplierPushMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.63]": *poorMultiplier
+    "[0.63, 0.81]": *fairMultiplier
+    "[0.81, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  frequencyMultiplierPushFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.68]": *poorMultiplier
+    "[0.68, 0.84]": *fairMultiplier
+    "[0.84, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  verticalDistanceMultiplierPushMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.97]": *poorMultiplier
+    "[0.97, 0.99]": *fairMultiplier
+    "[0.99, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  verticalDistanceMultiplierPushFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.91]": *poorMultiplier
+    "[0.91, 0.96]": *fairMultiplier
+    "[0.96, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  horizontalDistanceMultiplierPushMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.76]": *poorMultiplier
+    "[0.76, 0.88]": *fairMultiplier
+    "[0.88, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  horizontalDistanceMultiplierPushFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.71]": *poorMultiplier
+    "[0.71, 0.85]": *fairMultiplier
+    "[0.85, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  frequencyMultiplierPullMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.63]": *poorMultiplier
+    "[0.63, 0.81]": *fairMultiplier
+    "[0.81, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  frequencyMultiplierPullFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.68]": *poorMultiplier
+    "[0.68, 0.84]": *fairMultiplier
+    "[0.84, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  verticalDistanceMultiplierPullMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.77]": *poorMultiplier
+    "[0.77, 0.88]": *fairMultiplier
+    "[0.88, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  verticalDistanceMultiplierPullFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.91]": *poorMultiplier
+    "[0.91, 0.96]": *fairMultiplier
+    "[0.96, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  horizontalDistanceMultiplierPullMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.76]": *poorMultiplier
+    "[0.76, 0.88]": *fairMultiplier
+    "[0.88, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  horizontalDistanceMultiplierPullFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.71]": *poorMultiplier
+    "[0.71, 0.85]": *fairMultiplier
+    "[0.85, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  frequencyMultiplierCarryMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.46]": *poorMultiplier
+    "[0.46, 0.73]": *fairMultiplier
+    "[0.73, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  frequencyMultiplierCarryFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.65]": *poorMultiplier
+    "[0.65, 0.83]": *fairMultiplier
+    "[0.83, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  verticalDistanceMultiplierCarryMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.85]": *poorMultiplier
+    "[0.85, 0.92]": *fairMultiplier
+    "[0.92, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  verticalDistanceMultiplierCarryFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.95]": *poorMultiplier
+    "[0.95, 0.98]": *fairMultiplier
+    "[0.98, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  horizontalDistanceMultiplierCarryMale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.84]": *poorMultiplier
+    "[0.84, 0.92]": *fairMultiplier
+    "[0.92, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+  horizontalDistanceMultiplierCarryFemale:
+    "[None, 0]": *unsafeMultiplier
+    "[0, 0.97]": *poorMultiplier
+    "[0.97, 0.99]": *fairMultiplier
+    "[0.99, 1]": *goodMultiplier
+    "[1, None]": *veryGoodMultiplier
+
+RiskComponents:
+  Main:
+    startHandHeight:
+      Type: input
+      Base: 0.1
+      MaxInput: 6
+      Units: [ft, sm]
+      Label: Start hand height
+      Image: ~
+      Values: ~
+    endHandHeight:
+      Type: input
+      Base: 0.1
+      MaxInput: 6
+      Units: [ft, sm]
+      Label: End hand height
+      Image: ~
+      Values: ~
+    startHandDistance:
+      Type: input
+      Base: 0.1
+      MaxInput: 6
+      Units: [ft, sm]
+      Label: Start hand distance
+      Image: ~
+      Values: ~
+    endHandDistance:
+      Type: input
+      Base: 0.1
+      MaxInput: 6
+      Units: [ft, sm]
+      Label: End hand distance
+      Image: ~
+      Values: ~
+
+AdditionalInputs:
+  Main:
+    female:
+      Type: boolean
+      Base: 0
+      MaxInput: ~
+      Units: ~
+      Label: Male of Female
+      Image: ~
+      Values:
+        0:
+          Label: Male
+        1:
+          Label: Female
+    coupling:
+      Type: select
+      Base: 0
+      MaxInput: ~
+      Units: ~
+      Label: Coupling
+      Image: additionalInputs/Coupling.png
+      Values:
+        0:
+          Label: Good
+          Score: *acceptable
+        1:
+          Label: Fair
+          Score: *low
+        2:
+          Label: Without
+          Warning: Without coupling
+          Score: *medium
+    initialForce:
+      Type: input
+      Base: 1
+      MaxInput: 100
+      Units: [lbs, kgs]
+      Label: Object Weight / Initial force
+      Image: ~
+      Values: ~
+    sustainedForce:
+      Type: input
+      Base: 1
+      MaxInput: 100
+      Units: [lbs, kgs]
+      Label: Sustained force
+      Image: ~
+      Values: ~
+    horizontalDistance:
+      Type: input
+      Base: 1
+      MaxInput: 100
+      Units: [ft, m]
+      Label: Horizontal distance
+      Image: ~
+      Values: ~
+    frequency:
+      Type: input
+      Base: 1
+      MaxInput: 100
+      Units: per hour
+      Label: Frequency
+      Image: additionalInputs/Frequency.png
+      Values: ~

@@ -1,1486 +1,2250 @@
 {
-  "constants": {
-    "light_green": {
-      "Color": "rgba(109, 208, 163, 1.0)"
-    },
-    "green": {
-      "Color": "rgba(241, 196, 15, 1.0)"
-    },
-    "orange": {
-      "Color": "rgba(230, 126, 34, 1.0)"
-    },
-    "red": {
-      "Color": "rgba(184, 15, 10, 1.0)"
-    },
-    "dark_red": {
-      "Color": "rgba(133, 4, 0, 1.0)"
-    },
-    "acceptable": {
-      "TranslateText": "rosa.score.acceptable",
-      "ShortText": "Acceptable",
-      "Text": "Further assessment not immediately required",
-      "Color": "rgba(109, 208, 163, 1.0)"
-    },
-    "low": {
-      "TranslateText": "rosa.score.low",
-      "ShortText": null,
-      "Text": null,
-      "Color": "rgba(241, 196, 15, 1.0)"
-    },
-    "medium": {
-      "TranslateText": "rosa.score.medium",
-      "ShortText": null,
-      "Text": null,
-      "Color": "rgba(230, 126, 34, 1.0)"
-    },
-    "high": {
-      "TranslateText": "rosa.score.high",
-      "ShortText": "High",
-      "Text": "Further assessment required as soon as possible",
-      "Color": "rgba(184, 15, 10, 1.0)"
-    },
-    "vhigh": {
-      "TranslateText": "rosa.score.vhigh",
-      "ShortText": null,
-      "Text": null,
-      "Color": "rgba(133, 4, 0, 1.0)"
-    }
-  },
+  "SeriaNumber": 7,
+  "Name": "Rosa",
+  "AssessmentName": "ROSA",
   "Colors": {
+    "light_green": "rgba(109, 208, 163, 1.0)",
+    "green": "rgba(241, 196, 15, 1.0)",
+    "orange": "rgba(230, 126, 34, 1.0)",
+    "red": "rgba(184, 15, 10, 1.0)",
+    "dark_red": "rgba(133, 4, 0, 1.0)"
+  },
+  "Constants": {
     "acceptable": {
+      "Value": "Acceptable",
       "Color": "rgba(109, 208, 163, 1.0)"
     },
     "low": {
+      "Value": "Low",
       "Color": "rgba(241, 196, 15, 1.0)"
     },
     "medium": {
+      "Value": "Medium",
       "Color": "rgba(230, 126, 34, 1.0)"
     },
     "high": {
+      "Value": "High",
       "Color": "rgba(184, 15, 10, 1.0)"
     },
     "vhigh": {
+      "Value": "Very High",
       "Color": "rgba(133, 4, 0, 1.0)"
     }
   },
-  "EnvironmentScores": {
+  "Enum": {},
+  "OverallScoreValue": "Overall",
+  "Metadata": {
+    "supportDepth": "number"
+  },
+  "ResultValues": {
     "Overall": {
       "1": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "2": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "4": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "5": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "6": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "7": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "8": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "9": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "10": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     },
     "SeatPanHeightAndDepth": {
       "2": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "4": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "5": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "6": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "7": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     },
     "ArmsBackRest": {
       "2": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "4": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "5": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "6": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "7": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "8": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "9": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     },
     "Monitor": {
       "0": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "1": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "2": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "4": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "5": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "6": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "7": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     },
     "Phone": {
       "0": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "1": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "2": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "4": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "5": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "6": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     },
     "Mouse": {
       "0": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "1": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "2": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "4": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "5": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "6": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "7": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     },
     "Keyboard": {
       "0": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "1": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "2": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rosa.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Further assessment not immediately required",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "4": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "5": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "6": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "7": {
-        "TranslateText": "rosa.score.high",
-        "ShortText": "High",
-        "Text": "Further assessment required as soon as possible",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     }
   },
-  "ComponentValues": {
+  "RiskComponents": {
     "SeatPanHeightAndDepth": {
       "ChairHeight": {
-        "1": {
-          "Text": "Knees at 90°",
-          "TranslateText": "rosa.chair.chair-height-knees-at-90",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "2": {
-          "Text": "Knee angle < 90°",
-          "TranslateText": "rosa.chair.chair-height-knees-less-90",
-          "Warning": "Chair is too low",
-          "TranslateWarning": "rosa.chair.chair-height-too-low",
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "2.1": {
-          "Text": "Knee angle > 90°",
-          "TranslateText": "rosa.chair.chair-height-knees-more-90",
-          "Warning": "Chair is too high",
-          "TranslateWarning": "rosa.chair.chair-height-too-high",
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "3": {
-          "Text": "No foot contact on ground",
-          "TranslateText": "rosa.chair.chair-height-foot-no-contact",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "type": "select",
-        "label": "Chair Height",
+        "Type": "select",
         "Base": 1,
-        "TranslateLabel": "rosa.chair.chair-height",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Chair Height",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Knees at 90°",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Knee angle < 90°",
+            "Warning": "Chair is too low",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.1": {
+            "Label": "Knee angle > 90°",
+            "Warning": "Chair is too high",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "No foot contact on ground",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
       },
       "ChairInsufficientSpace": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": "No ability to cross legs",
-          "TranslateWarning": "rosa.chair.insufficient-space-cross-legs",
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Insufficient space under desk",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.chair.insufficient-space",
-        "TranslateDesc": "rosa.chair.insufficient-space-desc",
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Insufficient under desk space",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "No ability to cross legs",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "ChairHeightNoFootGround": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "No foot contact on ground",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.chair.chair-height-no-foot-ground",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "No foot contact on ground",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "ChairHeightNonAdjustable": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": "Chair is not adjustable",
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Chair height non adjustable",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.chair.height-non-adjustable",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Non-adjustable height",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Doesn’t allow to solve problems when shoulders are shrugged or arms are unsupported",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "ChairPanDepth": {
-        "1": {
-          "Text": "Approximately 3 inches of space between knee and edge of seat",
-          "TranslateText": "rosa.chair.pan-depth-normal",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.chair.pan-depth-normal-desc",
-          "TranslateFullDesc": "rosa.chair.pan-depth-normal-full-desc",
-          "TranslateImageDesc": "rosa.chair.pan-depth-normal-image-desc"
-        },
-        "2": {
-          "Text": "Less than 3 inches of space between knee and edge of seat",
-          "TranslateText": "rosa.chair.pan-depth-short",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.chair.pan-depth-short-desc",
-          "TranslateFullDesc": "rosa.chair.pan-depth-short-full-desc",
-          "TranslateImageDesc": "rosa.chair.pan-depth-short-image-desc"
-        },
-        "2.1": {
-          "Text": "More than 3 inches of space between knee and edge of seat",
-          "TranslateText": "rosa.chair.pan-depth-long",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.chair.pan-depth-long-desc",
-          "TranslateFullDesc": "rosa.chair.pan-depth-long-full-desc",
-          "TranslateImageDesc": "rosa.chair.pan-depth-long-image-desc"
-        },
-        "label": "Chair Height",
-        "type": "select",
+        "Type": "select",
         "Base": 1,
-        "TranslateLabel": "rosa.chair.pan-depth",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Pan depth",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Normal seat pan",
+            "Desc": "3’ between knee and edge of seat",
+            "FullDesc": "Approximately 3 inches of space between knee and edge of seat",
+            "ImageDesc": "3 inches",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Short seat pan",
+            "Warning": "Pressure may concentrate on the upper legs and buttocks, leading to discomfort",
+            "Desc": "< 3’ between knee and edge of seat",
+            "FullDesc": "Less than 3 inches of space between knee and edge of seat",
+            "ImageDesc": "<3 inches",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.1": {
+            "Label": "Long seat pan",
+            "Warning": "May lead to increased pressure on the back of the thighs and reduced blood circulation",
+            "Desc": "> 3’ between knee and edge of seat",
+            "FullDesc": "More than 3 inches of space between knee and edge of seat",
+            "ImageDesc": ">3 inches",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
       },
       "ChairPanNonAdjustable": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Chair pan non adjustable",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.chair.pan-non-adjustable",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Non-adjustable pan depth",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "A person may be forced into awkward postures",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       }
     },
     "ArmsBackRest": {
       "ChairArmrests": {
-        "1": {
-          "Text": "Elbows supported in line with shoulders, shoulders relaxed",
-          "TranslateText": "rosa.chair.armrests-elbow-supported",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.chair.armrests-elbow-supported-desc",
-          "TranslateFullDesc": "rosa.chair.armrests-elbow-supported-full-desc",
-          "TranslateImageDesc": null
-        },
-        "2": {
-          "Text": "Shoulders shrugged or arms unsupported",
-          "TranslateText": "rosa.chair.armrests-shoulders-shrugged",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.chair.armrests-shoulders-shrugged-desc",
-          "TranslateFullDesc": "rosa.chair.armrests-shoulders-shrugged-full-desc",
-          "TranslateImageDesc": null
-        },
-        "label": "Armrests",
-        "type": "select",
+        "Type": "select",
         "Base": 1,
-        "TranslateLabel": "rosa.chair.armrests",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Armrests",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Elbows supported inline with shoulders",
+            "Desc": "Shoulders relaxed",
+            "FullDesc": "Elbows are supported and aligned with your shoulders to maintain a neutral posture. Shoulders relaxed",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Armrest is too high",
+            "Desc": "Shoulders shrugged",
+            "FullDesc": "High armrest is causing shoulder elevation and tension. Shoulders shrugged",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
       },
       "ChairArmrestHardDamaged": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Hard/damaged surface",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.chair.armrest-damaged",
-        "TranslateDesc": "rosa.chair.armrest-damaged-desc",
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Hard or damaged surface",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Could lead to discomfort or strain over time",
+            "Desc": "The armrest is hard or has a damaged surface",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "ChairArmrestTooWide": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": "Armrests are positioned too widely",
-          "TranslateWarning": "rosa.chair.armrest-too-wide",
-          "TranslateDesc": "rosa.chair.armrest-too-wide-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Armrests too wide",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.chair.armrest-to-wide",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Armrests too wide",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Armrests are positioned too widely",
+            "Desc": "Armrests are positioned too widely",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "ChairArmrestNonAdjustable": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Armrests non adjustable",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.chair.armrest-non-adjustable",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Armrests non adjustable",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Doesn’t allow to solve problems when shoulders are shrugged or arms are unsupported",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "ChairBackSupport": {
-        "1": {
-          "Text": "Adequate lumbar support",
-          "TranslateText": "rosa.chair.back-support-adequate",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.chair.back-support-adequate-desc",
-          "TranslateFullDesc": "rosa.chair.back-support-adequate-full-desc",
-          "TranslateImageDesc": null
-        },
-        "2": {
-          "Text": "No lumbar support",
-          "TranslateText": "rosa.chair.back-support-no-lumbar-support",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.chair.back-support-no-lumbar-support-desc",
-          "TranslateFullDesc": "rosa.chair.back-support-no-lumbar-support-full-desc",
-          "TranslateImageDesc": null
-        },
-        "2.1": {
-          "Text": "Angled too far back (greated than 110°) or forward (less than 95°)",
-          "TranslateText": "rosa.chair.back-support-angled-too-far",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.chair.back-support-angled-too-far-desc",
-          "TranslateFullDesc": "rosa.chair.back-support-angled-too-far-full-desc",
-          "TranslateImageDesc": null
-        },
-        "2.2": {
-          "Text": "No back support",
-          "TranslateText": "rosa.chair.back-support-no-back-support",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.chair.back-support-no-back-support-desc",
-          "TranslateFullDesc": "rosa.chair.back-support-no-back-support-full-desc",
-          "TranslateImageDesc": null
-        },
-        "label": "Back support",
-        "type": "select",
+        "Type": "select",
         "Base": 1,
-        "TranslateLabel": "rosa.chair.back-support",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Back support",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Adequate lumbar support",
+            "Desc": "Chair reclined between 95°-110°",
+            "FullDesc": "Chair reclined between 95°-110°",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "No lumbar support",
+            "Warning": "No lumbar support or it’s not positioned in small of back",
+            "Desc": "No lumbar support or it’s not positioned in small of back",
+            "FullDesc": "No lumbar support or it’s not positioned in small of back",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.1": {
+            "Label": "Angled too far back or forward",
+            "Warning": "Causes the spine to bear more stress",
+            "Desc": "Greater than 100°",
+            "FullDesc": "Greater than 110° or less than 95°",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.2": {
+            "Label": "No back support",
+            "Desc": "Stool or worker leaning forward",
+            "FullDesc": "Stool or worker leaning forward",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
       },
       "ChairNoBackSupport": {
-        "2": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Chair has no back support",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.chair.back-support-not-found",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "No back support",
+        "Image": null,
+        "Values": {
+          "2": {
+            "Label": "Yes",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "ChairBackSupportSurfaceTooHigh": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Work surface too high (shoulders shrugged)",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.chair.back-support-surface-to-high",
-        "TranslateDesc": "rosa.chair.back-support-surface-to-high-desc",
-        "TranslateFullDesc": "rosa.chair.back-support-surface-to-high-full-desc"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Work surface too high",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Desc": "Shoulders shrugged",
+            "FullDesc": "The work surface is too high, causing shoulder and arm strain",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "ChairBackSupportNonAdjustable": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Back support non adjustable",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.chair.back-support-surface-non-adjustable",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Non-adjustable back",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Increasing strain on the neck, shoulders, and lower back",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       }
     },
     "Monitor": {
       "MonitorDistance": {
-        "1": {
-          "Text": "Arm's length distance (40-75cm) / Screen at eye",
-          "TranslateText": "rosa.computer.monitor-screen-at-eye",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "2": {
-          "Text": "Screen too low (bellow 30°)",
-          "TranslateText": "rosa.computer.monitor-screen-too-low",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "3": {
-          "Text": "Screen too high (neck extension)",
-          "TranslateText": "rosa.computer.monitor-screen-too-high",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Monitor distance",
-        "type": "select",
+        "Type": "select",
         "Base": 1,
-        "TranslateLabel": "rosa.computer.monitor-distance",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Monitor distance",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Screen at eye",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Screen too low (below 30°)",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Screen too high",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
       },
       "MonitorTooFar": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": "Monitor is positioned too far",
-          "TranslateWarning": "rosa.computer.monitor-too-far",
-          "TranslateDesc": "rosa.computer.monitor-too-far-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Monitor too far",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.monitor-too-far",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Screen too far",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Screen too far",
+            "Desc": "Monitor too far from eyes",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "MonitorNeckTwist": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": "Neck twist greater than 30°",
-          "TranslateWarning": "rosa.computer.monitor-twist",
-          "TranslateDesc": "rosa.computer.monitor-twist-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Neck twist greater the 30°",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.monitor-neck-twist",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Neck twist greater than 30°",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Neck twist greater than 30°",
+            "Desc": "Monitor causes neck twist",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "MonitorGlareOnScreen": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Glare on screen",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.monitor-glare-on-screen",
-        "TranslateDesc": "rosa.computer.monitor-glare-on-screen-desc",
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Glare on screen",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Causes significant visual discomfort",
+            "Desc": "The reflection of light on a screen",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "MonitorDocumentsNoHolder": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Documents (no holder)",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.monitor-documents-no-holder",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "No documents holder",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Forces awkward head and neck rotations or bending",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       }
     },
     "Phone": {
       "Phone": {
-        "1": {
-          "Text": "Headset / One hand on phone & neutral neck posture",
-          "TranslateText": "rosa.computer.phone-headset",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "2": {
-          "Text": "To far of reach (outside of 30cm)",
-          "TranslateText": "rosa.computer.phone-too-far",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Phone",
-        "type": "select",
+        "Type": "select",
         "Base": 1,
-        "TranslateLabel": "rosa.computer.phone",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Phone",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Headset or one hand on phone",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Too far of reach (outside of 30cm)",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
       },
       "PhoneExists": {
-        "2": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "The workplace includes phone",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.phone-exists",
-        "TranslateDesc": "rosa.computer.phone-exists-desc",
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "The workplace includes phone",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Desc": "A stationary phone that remains fixed in position for regular use",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "PhoneNeckShoulder": {
-        "2": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Neck and shoulder hold",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.phone-neck-shoulder",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Neck and shouder hold",
+        "Image": null,
+        "Values": {
+          "2": {
+            "Label": "Yes",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "PhoneNoHandsFree": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "No hands-free",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.phone-no-hands-free",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "No hands-free option",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       }
     },
     "Mouse": {
       "Mouse": {
-        "1": {
-          "Text": "Mouse in line with shoulder",
-          "TranslateText": "rosa.computer.mouse-in-line",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "2": {
-          "Text": "Reaching to mouse",
-          "TranslateText": "rosa.computer.mouse-reaching",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
+        "Type": "select",
         "Base": 1,
-        "type": "select",
-        "TranslateLabel": "rosa.computer.mouse",
-        "label": "Mouse",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Mouse",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Mouse in line with shoulder",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Reaching to mouse",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
       },
       "MouseKeyboardDifferentSurfaces": {
-        "2": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Mouse/keyboard in different surfaces",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.mouse-keyboard-different-surfaces",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Mouse/keyboard on different surfaces",
+        "Image": null,
+        "Values": {
+          "2": {
+            "Label": "Yes",
+            "Warning": "Can lead to awkward wrist deviations, uneven shoulder loads, and neck strain",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "MousePinchGripOnMouse": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": "Pinch grip on mouse",
-          "TranslateWarning": "rosa.computer.mouse-pinch-grip",
-          "TranslateDesc": "rosa.computer.mouse-pinch-grip-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Pinch grip on mouse",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.mouse-pinch-grip"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Pinch grip on mouse",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Pinch grip on mouse",
+            "Desc": "Pinch grip on mouse",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "MousePalmrest": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Palmrest in front of mouse",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.mouse-palmrest",
-        "TranslateDesc": null,
-        "TranslateFullDesc": "rosa.computer.mouse-palmrest-full-desc"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Palm rest in front of mouse",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Leads to awkward wrist postures and additional strain",
+            "FullDesc": "The palm rest can cause the wrist to tilt upwards (extension) as you move the mouse",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       }
     },
     "Keyboard": {
       "Keyboard": {
-        "1": {
-          "Text": "Wrists straight, shoulders relaxed",
-          "TranslateText": "rosa.computer.keyboard-wrists-straight",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "2": {
-          "Text": "Wrists extended / Keyboard on positive angle (>15° wrist extension)",
-          "TranslateText": "rosa.computer.keyboard-wrists-extended",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Keyboard",
-        "type": "select",
+        "Type": "select",
         "Base": 1,
-        "TranslateLabel": "rosa.computer.keyboard",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Keyboard",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Wrists straight, shoulders relaxed",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Wrists extended or keyboard on positive angle (>15° wrist extension)",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
       },
       "KeyboardDeviation": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": "High ulnar deviation on wrists",
-          "TranslateWarning": "rosa.computer.keyboard-deviation",
-          "TranslateDesc": "rosa.computer.keyboard-deviation-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Deviation while typing",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.keyboard-deviation",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Deviation while typing",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Deviation while typing",
+            "Desc": "Ulnar deviation while typing",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "KeyboardTooHigh": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Keyboard too high / Shoulders shrugged",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.keyboard-too-high",
-        "TranslateDesc": "rosa.computer.keyboard-too-high-desc",
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Keyboard too high or shoulders shrugged",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Desc": "Shoulders shrugged",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "KeyboardReachingItems": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Reaching to overhead items",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.keyboard-reaching-items",
-        "TranslateDesc": "rosa.computer.keyboard-reaching-items-desc",
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Reaching to overhead items",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Sustained overhead reaching can strain the neck, shoulders, and upper back",
+            "Desc": "The need to reach overhead for items",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       },
       "KeyboardPlatformNonAdjustable": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "general.yes",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "general.no",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": null,
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Platform non adjustable",
-        "type": "boolean",
+        "Type": "boolean",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.keyboard-platform-non-adjustable",
-        "TranslateDesc": "rosa.computer.keyboard-platform-non-adjustable-desc",
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Platform not-adjustable",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Could lead to sustained awkward postures",
+            "Desc": "Keyboard platform cannot be adjusted",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
       }
     },
     "Duration": {
       "ChairDuration": {
-        "0": {
-          "Text": "Worker spends 1-4 hours a day intermittently, or between 30 minutes to 1 hour continuously in the chair",
-          "TranslateText": "rosa.chair.duration-moderate",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.chair.duration-moderate-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "-1": {
-          "Text": "Worker spends less than 1 hour a day in the chair throughout the day, or for less than 30 minutes consecutively",
-          "TranslateText": "rosa.chair.duration-light",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.chair.duration-light-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "1": {
-          "Text": "Worker spends more than 4 hours a day in the chair intermittently, or greater than 1 hour consecutively",
-          "TranslateText": "rosa.chair.duration-heavy",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.chair.duration-heavy-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Chair duration",
-        "type": "select",
+        "Type": "select",
         "Base": 0,
-        "TranslateLabel": "rosa.chair.duration",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Chair duration",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Moderate use",
+            "Desc": "1-4 hours intermittently, or 30 minutes to 1 hour consecutively",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "-1": {
+            "Label": "Light use",
+            "Desc": "< 1 hour of work done per day intermittently, or < 30 minutes consecutively",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Heavy use",
+            "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
       },
       "MonitorDuration": {
-        "0": {
-          "Text": "Use of the monitor between 1-4 hours intermittently, or 30minutes to 1 hour consecutively",
-          "TranslateText": "rosa.computer.monitor-duration-moderate",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.computer.monitor-duration-moderate-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "-1": {
-          "Text": "Use of the monitor less than 1 hour of work done per day intermittently, or less than 30 minutes consecutively",
-          "TranslateText": "rosa.computer.monitor-duration-light",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.computer.monitor-duration-light-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "1": {
-          "Text": "Use of the monitor of greater than 4 hours per day intermittently, or 1 hour consecutively",
-          "TranslateText": "rosa.computer.monitor-duration-heavy",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.computer.monitor-duration-heavy-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Computer duration",
-        "type": "select",
+        "Type": "select",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.monitor-duration",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Computer duration",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Moderate use",
+            "Desc": "1-4 hours intermittently, or 30 minutes to 1 hour consecutively",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "-1": {
+            "Label": "Light use",
+            "Desc": "< 1 hour of work done per day intermittently, or < 30 minutes consecutively",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Heavy use",
+            "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
       },
       "PhoneDuration": {
-        "0": {
-          "Text": "Use of the phone between 1-4 hours intermittently, or 30minutes to 1 hour consecutively",
-          "TranslateText": "rosa.computer.phone-duration-moderate",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.computer.phone-duration-moderate-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "-1": {
-          "Text": "Use of the phone less than 1 hour of work done per day intermittently, or less than 30 minutes consecutively",
-          "TranslateText": "rosa.computer.phone-duration-light",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.computer.phone-duration-light-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "1": {
-          "Text": "Use of the phone of greater than 4 hours per day intermittently, or 1 hour consecutively",
-          "TranslateText": "rosa.computer.phone-duration-heavy",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.computer.phone-duration-heavy-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Phone duration",
-        "type": "select",
+        "Type": "select",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.phone-duration",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Phone duration",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Moderate use",
+            "Desc": "1-4 hours intermittently, or 30 minutes to 1 hour consecutively",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "-1": {
+            "Label": "Light use",
+            "Desc": "< 1 hour of work done per day intermittently, or < 30 minutes consecutively",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Heavy use",
+            "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
       },
       "KeyboardDuration": {
-        "0": {
-          "Text": "Keyboard is used between 1-4 hours intermittently, or 30minutes to 1 hour consecutively",
-          "TranslateText": "rosa.computer.keyboard-duration-moderate",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.computer.keyboard-duration-moderate-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "-1": {
-          "Text": "Keyboard is used for 1 hour or less intermittently",
-          "TranslateText": "rosa.computer.keyboard-duration-light",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.computer.keyboard-duration-light-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "1": {
-          "Text": "Keyboard is used for greater than 4 hours per day intermittently, or 1 hour consecutively",
-          "TranslateText": "rosa.computer.keyboard-duration-heavy",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.computer.keyboard-duration-heavy-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Keyboard duration",
-        "type": "select",
+        "Type": "select",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.keyboard-duration",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Keyboard duration",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Moderate use",
+            "Desc": "1-4 hours intermittently, or 30 minutes to 1 hour consecutively",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "-1": {
+            "Label": "Light use",
+            "Desc": "< 1 hour of work done per day intermittently, or < 30 minutes consecutively",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Heavy use",
+            "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
       },
       "MouseDuration": {
-        "0": {
-          "Text": "Mouse is used between 1-4 hours intermittently, or 30minutes to 1 hour consecutively",
-          "TranslateText": "rosa.computer.mouse-duration-moderate",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.computer.mouse-duration-moderate-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "-1": {
-          "Text": "Mouse is used for 1 hour or less intermittently, or less than 30 minutes consecutively",
-          "TranslateText": "rosa.computer.mouse-duration-light",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.computer.mouse-duration-light-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "1": {
-          "Text": "Mouse is used for greater than 4 hours per day intermittently, or 1 hour consecutively",
-          "TranslateText": "rosa.computer.mouse-duration-heavy",
-          "Warning": null,
-          "TranslateWarning": null,
-          "TranslateDesc": "rosa.computer.mouse-duration-heavy-desc",
-          "TranslateFullDesc": null,
-          "TranslateImageDesc": null
-        },
-        "label": "Mouse duration",
-        "type": "select",
+        "Type": "select",
         "Base": 0,
-        "TranslateLabel": "rosa.computer.mouse-duration",
-        "TranslateDesc": null,
-        "TranslateFullDesc": null
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Mouse duration",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Moderate use",
+            "Desc": "1-4 hours intermittently, or 30 minutes to 1 hour consecutively",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "-1": {
+            "Label": "Light use",
+            "Desc": "< 1 hour of work done per day intermittently, or < 30 minutes consecutively",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Heavy use",
+            "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "AdditionalInputs": {
+    "SeatPanHeightAndDepth": {
+      "ChairHeightNonAdjustable": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Non-adjustable height",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Doesn’t allow to solve problems when shoulders are shrugged or arms are unsupported",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      },
+      "ChairInsufficientSpace": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Insufficient under desk space",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "No ability to cross legs",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      },
+      "ChairHeightNoFootGround": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "No foot contact on ground",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        },
+        "IsOptional": true
+      },
+      "ChairPanDepth": {
+        "Type": "select",
+        "Base": 1,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Pan depth",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Normal seat pan",
+            "Desc": "3’ between knee and edge of seat",
+            "FullDesc": "Approximately 3 inches of space between knee and edge of seat",
+            "ImageDesc": "3 inches",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Short seat pan",
+            "Warning": "Pressure may concentrate on the upper legs and buttocks, leading to discomfort",
+            "Desc": "< 3’ between knee and edge of seat",
+            "FullDesc": "Less than 3 inches of space between knee and edge of seat",
+            "ImageDesc": "<3 inches",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.1": {
+            "Label": "Long seat pan",
+            "Warning": "May lead to increased pressure on the back of the thighs and reduced blood circulation",
+            "Desc": "> 3’ between knee and edge of seat",
+            "FullDesc": "More than 3 inches of space between knee and edge of seat",
+            "ImageDesc": ">3 inches",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      },
+      "ChairPanNonAdjustable": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Non-adjustable pan depth",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "A person may be forced into awkward postures",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      }
+    },
+    "ArmsBackRest": {
+      "ChairArmrests": {
+        "Type": "select",
+        "Base": 1,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Armrests",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Elbows supported inline with shoulders",
+            "Desc": "Shoulders relaxed",
+            "FullDesc": "Elbows are supported and aligned with your shoulders to maintain a neutral posture. Shoulders relaxed",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Armrest is too high",
+            "Desc": "Shoulders shrugged",
+            "FullDesc": "High armrest is causing shoulder elevation and tension. Shoulders shrugged",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        },
+        "IsOptional": true
+      },
+      "ChairArmrestHardDamaged": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Hard or damaged surface",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Could lead to discomfort or strain over time",
+            "Desc": "The armrest is hard or has a damaged surface",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      },
+      "ChairArmrestNonAdjustable": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Armrests non adjustable",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Doesn’t allow to solve problems when shoulders are shrugged or arms are unsupported",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      },
+      "ChairBackSupport": {
+        "Type": "select",
+        "Base": 1,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Back support",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Adequate lumbar support",
+            "Desc": "Chair reclined between 95°-110°",
+            "FullDesc": "Chair reclined between 95°-110°",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "No lumbar support",
+            "Warning": "No lumbar support or it’s not positioned in small of back",
+            "Desc": "No lumbar support or it’s not positioned in small of back",
+            "FullDesc": "No lumbar support or it’s not positioned in small of back",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.1": {
+            "Label": "Angled too far back or forward",
+            "Warning": "Causes the spine to bear more stress",
+            "Desc": "Greater than 100°",
+            "FullDesc": "Greater than 110° or less than 95°",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.2": {
+            "Label": "No back support",
+            "Desc": "Stool or worker leaning forward",
+            "FullDesc": "Stool or worker leaning forward",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      },
+      "ChairBackSupportSurfaceTooHigh": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Work surface too high",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Desc": "Shoulders shrugged",
+            "FullDesc": "The work surface is too high, causing shoulder and arm strain",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        },
+        "IsOptional": true
+      },
+      "ChairBackSupportNonAdjustable": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Non-adjustable back",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Increasing strain on the neck, shoulders, and lower back",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      }
+    },
+    "Monitor": {
+      "MonitorGlareOnScreen": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Glare on screen",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Causes significant visual discomfort",
+            "Desc": "The reflection of light on a screen",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      },
+      "MonitorDocumentsNoHolder": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "No documents holder",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Forces awkward head and neck rotations or bending",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      },
+      "MonitorTooFar": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Screen too far",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Screen too far",
+            "Desc": "Monitor too far from eyes",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        },
+        "IsOptional": true
+      }
+    },
+    "Phone": {
+      "Phone": {
+        "Type": "select",
+        "Base": 1,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Phone",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Headset or one hand on phone",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Too far of reach (outside of 30cm)",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      },
+      "PhoneExists": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "The workplace includes phone",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Desc": "A stationary phone that remains fixed in position for regular use",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      },
+      "PhoneNeckShoulder": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Neck and shouder hold",
+        "Image": null,
+        "Values": {
+          "2": {
+            "Label": "Yes",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      },
+      "PhoneNoHandsFree": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "No hands-free option",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      }
+    },
+    "Mouse": {
+      "MouseKeyboardDifferentSurfaces": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Mouse/keyboard on different surfaces",
+        "Image": null,
+        "Values": {
+          "2": {
+            "Label": "Yes",
+            "Warning": "Can lead to awkward wrist deviations, uneven shoulder loads, and neck strain",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      },
+      "MousePalmrest": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Palm rest in front of mouse",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Leads to awkward wrist postures and additional strain",
+            "FullDesc": "The palm rest can cause the wrist to tilt upwards (extension) as you move the mouse",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      }
+    },
+    "Keyboard": {
+      "KeyboardPlatformNonAdjustable": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Platform not-adjustable",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Could lead to sustained awkward postures",
+            "Desc": "Keyboard platform cannot be adjusted",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      },
+      "KeyboardReachingItems": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Reaching to overhead items",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Warning": "Sustained overhead reaching can strain the neck, shoulders, and upper back",
+            "Desc": "The need to reach overhead for items",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        }
+      },
+      "KeyboardTooHigh": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Keyboard too high or shoulders shrugged",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Desc": "Shoulders shrugged",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          }
+        },
+        "IsOptional": true
+      }
+    },
+    "Duration": {
+      "ChairDuration": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Chair duration",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Moderate use",
+            "Desc": "1-4 hours intermittently, or 30 minutes to 1 hour consecutively",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "-1": {
+            "Label": "Light use",
+            "Desc": "< 1 hour of work done per day intermittently, or < 30 minutes consecutively",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Heavy use",
+            "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "MonitorDuration": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Computer duration",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Moderate use",
+            "Desc": "1-4 hours intermittently, or 30 minutes to 1 hour consecutively",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "-1": {
+            "Label": "Light use",
+            "Desc": "< 1 hour of work done per day intermittently, or < 30 minutes consecutively",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Heavy use",
+            "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "PhoneDuration": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Phone duration",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Moderate use",
+            "Desc": "1-4 hours intermittently, or 30 minutes to 1 hour consecutively",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "-1": {
+            "Label": "Light use",
+            "Desc": "< 1 hour of work done per day intermittently, or < 30 minutes consecutively",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Heavy use",
+            "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "MouseDuration": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Mouse duration",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Moderate use",
+            "Desc": "1-4 hours intermittently, or 30 minutes to 1 hour consecutively",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "-1": {
+            "Label": "Light use",
+            "Desc": "< 1 hour of work done per day intermittently, or < 30 minutes consecutively",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Heavy use",
+            "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "KeyboardDuration": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Keyboard duration",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Moderate use",
+            "Desc": "1-4 hours intermittently, or 30 minutes to 1 hour consecutively",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "-1": {
+            "Label": "Light use",
+            "Desc": "< 1 hour of work done per day intermittently, or < 30 minutes consecutively",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Heavy use",
+            "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
       }
     }
   }

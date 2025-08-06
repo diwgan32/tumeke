@@ -1,0 +1,1516 @@
+{
+  "SeriaNumber": 5,
+  "Name": "SnookTables",
+  "AssessmentName": "Snook",
+  "Colors": {
+    "black": "rgba(15, 15, 30, 0.9)",
+    "light_green": "rgba(109, 208, 163, 1.0)",
+    "green": "rgba(20, 210, 184, 1.0)",
+    "orange": "rgba(234, 130, 130, 1.0)",
+    "red": "rgba(184, 15, 10, 1.0)"
+  },
+  "Constants": {
+    "unacceptable": {
+      "Value": "Unacceptable",
+      "Color": "rgba(184, 15, 10, 1.0)"
+    },
+    "unsafe": {
+      "Value": "Unsafe",
+      "Color": "rgba(184, 15, 10, 1.0)"
+    },
+    "acceptable": {
+      "Value": "Good",
+      "Color": "rgba(109, 208, 163, 1.0)"
+    },
+    "low": {
+      "Value": "Fair",
+      "Color": "rgba(234, 130, 130, 1.0)"
+    },
+    "medium": {
+      "Value": "Poor",
+      "Color": "rgba(184, 15, 10, 1.0)"
+    }
+  },
+  "Enum": {
+    "CouplingStatus": {
+      "GOOD": {
+        "Value": 0,
+        "Label": "With handles"
+      },
+      "POOR": {
+        "Value": 1,
+        "Label": "Poor handles"
+      },
+      "WITHOUT": {
+        "Value": 2,
+        "Label": "Without handles"
+      }
+    },
+    "TableTypes": {
+      "LIFT": {
+        "Value": 1,
+        "Label": "Lift"
+      },
+      "LOWER": {
+        "Value": 2,
+        "Label": "Lower"
+      },
+      "PUSH": {
+        "Value": 3,
+        "Label": "Push"
+      },
+      "PULL": {
+        "Value": 4,
+        "Label": "Pull"
+      },
+      "CARRY": {
+        "Value": 5,
+        "Label": "Carry"
+      },
+      "1": {
+        "Value": 1,
+        "Label": "Lift"
+      },
+      "2": {
+        "Value": 2,
+        "Label": "Lower"
+      },
+      "3": {
+        "Value": 3,
+        "Label": "Push"
+      },
+      "4": {
+        "Value": 4,
+        "Label": "Pull"
+      },
+      "5": {
+        "Value": 5,
+        "Label": "Carry"
+      }
+    },
+    "Units": {
+      "STANDARD": {
+        "Value": 0,
+        "Label": "Standard"
+      },
+      "METRIC": {
+        "Value": 1,
+        "Label": "Metric"
+      }
+    }
+  },
+  "OverallScoreValue": "mal",
+  "Metadata": {
+    "numLifts": "number",
+    "startEnd": "{ [key: string]: number[] }",
+    "subjectHeight": "number",
+    "tableType": "number"
+  },
+  "ResultValues": {
+    "mal": {
+      "0": {
+        "Label": "Safe weight to {tableType}",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "1": {
+        "Label": "Unsafe weight to {tableType}",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "2": {
+        "Label": "Unsafe {tableType} at all weights",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      }
+    },
+    "malSustained": {
+      "0": {
+        "Label": "Safe weight to {tableType}",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "1": {
+        "Label": "Unsafe weight to {tableType}",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "2": {
+        "Label": "Unsafe {tableType} at all weights",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      }
+    },
+    "frequencyMultiplier": {
+      "[None, None]": {
+        "Label": "Frequency multiplier",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "verticalHeightMultiplier": {
+      "[None, None]": {
+        "Label": "Vertical height multiplier",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "horizontalDistanceMultiplier": {
+      "[None, None]": {
+        "Label": "Horizontal distance multiplier",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "verticalDistanceMultiplier": {
+      "[None, None]": {
+        "Label": "Vertical distance multiplier",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "malePercentage": {
+      "[None, 75]": {
+        "Label": "Unsafe frequency",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[75, None]": {
+        "Label": "Safe weight to {tableType}",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "malePercentageSustained": {
+      "[None, 75]": {
+        "Label": "Unsafe frequency",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[75, None]": {
+        "Label": "Safe weight to {tableType}",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "femalePercentage": {
+      "[None, 75]": {
+        "Label": "Unsafe frequency",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[75, None]": {
+        "Label": "Safe weight to {tableType}",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "femalePercentageSustained": {
+      "[None, 75]": {
+        "Label": "Unsafe frequency",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[75, None]": {
+        "Label": "Safe weight to {tableType}",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "frequencyMultiplierLiftMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.48]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.48, 0.74]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.74, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "frequencyMultiplierLiftFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.6]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.6, 0.8]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.8, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "verticalHeightMultiplierLiftMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.85]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.85, 0.93]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.93, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "verticalHeightMultiplierLiftFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.8]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.8, 0.9]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.9, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "horizontalDistanceMultiplierLiftMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.56]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.56, 0.8]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.8, 1.04]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1.04, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "horizontalDistanceMultiplierLiftFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.58]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.58, 0.79]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.79, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "frequencyMultiplierLowerMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.51]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.51, 0.75]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.75, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "frequencyMultiplierLowerFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.6]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.6, 0.8]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.8, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "verticalHeightMultiplierLowerMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.85]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.85, 0.93]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.93, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "verticalHeightMultiplierLowerFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.8]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.8, 0.9]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.9, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "horizontalDistanceMultiplierLowerMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.56]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.56, 0.8]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.8, 1.04]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1.04, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "horizontalDistanceMultiplierLowerFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.58]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.58, 0.79]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.79, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "frequencyMultiplierPushMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.63]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.63, 0.81]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.81, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "frequencyMultiplierPushFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.68]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.68, 0.84]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.84, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "verticalDistanceMultiplierPushMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.97]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.97, 0.99]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.99, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "verticalDistanceMultiplierPushFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.91]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.91, 0.96]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.96, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "horizontalDistanceMultiplierPushMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.76]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.76, 0.88]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.88, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "horizontalDistanceMultiplierPushFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.71]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.71, 0.85]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.85, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "frequencyMultiplierPullMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.63]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.63, 0.81]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.81, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "frequencyMultiplierPullFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.68]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.68, 0.84]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.84, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "verticalDistanceMultiplierPullMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.77]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.77, 0.88]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.88, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "verticalDistanceMultiplierPullFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.91]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.91, 0.96]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.96, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "horizontalDistanceMultiplierPullMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.76]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.76, 0.88]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.88, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "horizontalDistanceMultiplierPullFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.71]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.71, 0.85]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.85, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "frequencyMultiplierCarryMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.46]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.46, 0.73]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.73, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "frequencyMultiplierCarryFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.65]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.65, 0.83]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.83, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "verticalDistanceMultiplierCarryMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.85]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.85, 0.92]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.92, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "verticalDistanceMultiplierCarryFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.95]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.95, 0.98]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.98, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "horizontalDistanceMultiplierCarryMale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.84]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.84, 0.92]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.92, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "horizontalDistanceMultiplierCarryFemale": {
+      "[None, 0]": {
+        "Label": "Unsafe",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0, 0.97]": {
+        "Label": "Poor",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[0.97, 0.99]": {
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
+      },
+      "[0.99, 1]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[1, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    }
+  },
+  "RiskComponents": {
+    "Main": {
+      "startHandHeight": {
+        "Type": "input",
+        "Base": 0.1,
+        "MaxInput": 6,
+        "Units": [
+          "ft",
+          "sm"
+        ],
+        "Label": "Start hand height",
+        "Image": null,
+        "Values": null
+      },
+      "endHandHeight": {
+        "Type": "input",
+        "Base": 0.1,
+        "MaxInput": 6,
+        "Units": [
+          "ft",
+          "sm"
+        ],
+        "Label": "End hand height",
+        "Image": null,
+        "Values": null
+      },
+      "startHandDistance": {
+        "Type": "input",
+        "Base": 0.1,
+        "MaxInput": 6,
+        "Units": [
+          "ft",
+          "sm"
+        ],
+        "Label": "Start hand distance",
+        "Image": null,
+        "Values": null
+      },
+      "endHandDistance": {
+        "Type": "input",
+        "Base": 0.1,
+        "MaxInput": 6,
+        "Units": [
+          "ft",
+          "sm"
+        ],
+        "Label": "End hand distance",
+        "Image": null,
+        "Values": null
+      }
+    }
+  },
+  "AdditionalInputs": {
+    "Main": {
+      "female": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Male of Female",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Male"
+          },
+          "1": {
+            "Label": "Female"
+          }
+        }
+      },
+      "coupling": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Coupling",
+        "Image": "additionalInputs/Coupling.png",
+        "Values": {
+          "0": {
+            "Label": "Good",
+            "Score": {
+              "Value": "Good",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Fair",
+            "Score": {
+              "Value": "Fair",
+              "Color": "rgba(234, 130, 130, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Without",
+            "Warning": "Without coupling",
+            "Score": {
+              "Value": "Poor",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "initialForce": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
+        "Label": "Object Weight / Initial force",
+        "Image": null,
+        "Values": null
+      },
+      "sustainedForce": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
+        "Label": "Sustained force",
+        "Image": null,
+        "Values": null
+      },
+      "horizontalDistance": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Horizontal distance",
+        "Image": null,
+        "Values": null
+      },
+      "frequency": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": "per hour",
+        "Label": "Frequency",
+        "Image": "additionalInputs/Frequency.png",
+        "Values": null
+      }
+    }
+  }
+}

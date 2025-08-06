@@ -1,461 +1,538 @@
 {
-  "constants": {
-    "SAMPLE_SIZE_SECONDS": 0.5,
-    "FM_FREQUENCIES": [
-      0,
-      0.2,
-      0.5,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15
-    ],
-    "FM_SHORT_DURATION": [
-      1,
-      1,
-      0.97,
-      0.94,
-      0.91,
-      0.88,
-      0.84,
-      0.8,
-      0.75,
-      0.7,
-      0.6,
-      0.52,
-      0.45,
-      0.41,
-      0.37,
-      0.34,
-      0.31,
-      0.28
-    ],
-    "FM_MODERATE_DURATION": [
-      0.95,
-      0.95,
-      0.92,
-      0.88,
-      0.84,
-      0.79,
-      0.72,
-      0.6,
-      0.5,
-      0.42,
-      0.35,
-      0.3,
-      0.26,
-      0.23,
-      0.21,
-      0,
-      0,
-      0
-    ],
-    "FM_LONG_DURATION": [
-      0.85,
-      0.85,
-      0.81,
-      0.75,
-      0.65,
-      0.55,
-      0.45,
-      0.35,
-      0.27,
-      0.22,
-      0.18,
-      0.15,
-      0.13,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "FM_SHORT_DURATION_VERTICAL_CUTOFF": 13,
-    "FM_MODERATE_DURATION_VERTICAL_CUTOFF": 10,
-    "FM_LONG_DURATION_VERTICAL_CUTOFF": 8,
-    "black": {
-      "Color": "rgba(15, 15, 30, 0.9)"
+  "SeriaNumber": 3,
+  "Name": "Niosh",
+  "AssessmentName": "NIOSH",
+  "Colors": {
+    "black": "rgba(15, 15, 30, 0.9)",
+    "light_green": "rgba(109, 208, 163, 1.0)",
+    "green": "rgba(20, 210, 184, 1.0)",
+    "orange": "rgba(234, 130, 130, 1.0)",
+    "red": "rgba(184, 15, 10, 1.0)"
+  },
+  "Constants": {
+    "SAMPLE_SIZE_SECONDS": {
+      "Value": 0.5
     },
-    "light_green": {
-      "Color": "rgba(109, 208, 163, 1.0)"
+    "FM_FREQUENCIES": {
+      "Value": [
+        0,
+        0.2,
+        0.5,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
     },
-    "green": {
-      "Color": "rgba(20, 210, 184, 1.0)"
+    "FM_SHORT_DURATION": {
+      "Value": [
+        1,
+        1,
+        0.97,
+        0.94,
+        0.91,
+        0.88,
+        0.84,
+        0.8,
+        0.75,
+        0.7,
+        0.6,
+        0.52,
+        0.45,
+        0.41,
+        0.37,
+        0.34,
+        0.31,
+        0.28
+      ]
     },
-    "orange": {
-      "Color": "rgba(234, 130, 130, 1.0)"
+    "FM_MODERATE_DURATION": {
+      "Value": [
+        0.95,
+        0.95,
+        0.92,
+        0.88,
+        0.84,
+        0.79,
+        0.72,
+        0.6,
+        0.5,
+        0.42,
+        0.35,
+        0.3,
+        0.26,
+        0.23,
+        0.21,
+        0,
+        0,
+        0
+      ]
     },
-    "red": {
-      "Color": "rgba(184, 15, 10, 1.0)"
+    "FM_LONG_DURATION": {
+      "Value": [
+        0.85,
+        0.85,
+        0.81,
+        0.75,
+        0.65,
+        0.55,
+        0.45,
+        0.35,
+        0.27,
+        0.22,
+        0.18,
+        0.15,
+        0.13,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "FM_SHORT_DURATION_VERTICAL_CUTOFF": {
+      "Value": 13
+    },
+    "FM_MODERATE_DURATION_VERTICAL_CUTOFF": {
+      "Value": 10
+    },
+    "FM_LONG_DURATION_VERTICAL_CUTOFF": {
+      "Value": 8
     },
     "unsafe": {
-      "TranslateText": "niosh.score.unsafe",
-      "ShortText": "Unsafe",
+      "Value": "Unsafe",
       "Color": "rgba(184, 15, 10, 1.0)"
     },
     "acceptable": {
-      "TranslateText": "niosh.score.good",
-      "ShortText": "Good",
+      "Value": "Good",
       "Color": "rgba(109, 208, 163, 1.0)"
     },
     "low": {
-      "TranslateText": "niosh.score.fair",
-      "ShortText": "Fair",
+      "Value": "Fair",
       "Color": "rgba(234, 130, 130, 1.0)"
     },
     "medium": {
-      "TranslateText": "niosh.score.poor",
-      "ShortText": "Poor",
+      "Value": "Poor",
       "Color": "rgba(184, 15, 10, 1.0)"
     }
   },
-  "ComponentValues": {
+  "Enum": {
+    "CouplingStatus": {
+      "GOOD": {
+        "Value": 0,
+        "Label": "Good"
+      },
+      "FAIR": {
+        "Value": 1,
+        "Label": "Fair"
+      },
+      "POOR": {
+        "Value": 2,
+        "Label": "Poor"
+      }
+    },
+    "DurationStatus": {
+      "SHORT": {
+        "Value": 0,
+        "Label": "Short (1 hour)"
+      },
+      "MODERATE": {
+        "Value": 1,
+        "Label": "Moderate (1 - 2 hours)"
+      },
+      "LONG": {
+        "Value": 2,
+        "Label": "Long (2 - 8 hours)"
+      }
+    },
+    "HeightConstantsStandard": {
+      "LESS_FOUR": {
+        "Value": 0,
+        "Label": "< 4"
+      },
+      "FOUR_TO_FOUR_HALF": {
+        "Value": 1,
+        "Label": "4 - 4.5"
+      },
+      "FOUR_HALF_TO_FIVE": {
+        "Value": 2,
+        "Label": "4.5 - 5"
+      },
+      "FIVE_TO_FIVE_HALF": {
+        "Value": 3,
+        "Label": "5 - 5.5"
+      },
+      "FIVE_HALF_TO_SIX": {
+        "Value": 4,
+        "Label": "5.5 - 6"
+      },
+      "SIX_TO_SIX_HALF": {
+        "Value": 5,
+        "Label": "6 - 6.5"
+      },
+      "SIX_HALF_PLUS": {
+        "Value": 6,
+        "Label": "> 6.5"
+      }
+    },
+    "Units": {
+      "STANDARD": {
+        "Value": 0,
+        "Label": "Standard"
+      },
+      "METRIC": {
+        "Value": 1,
+        "Label": "Metric"
+      }
+    }
+  },
+  "OverallScoreValue": "li",
+  "Metadata": {
+    "numLifts": "number",
+    "subjectHeight": "number",
+    "startEnd": "{ [key: string]: number[] }"
+  },
+  "ResultValues": {
     "li": {
       "[None, 0]": {
-        "Text": "Unsafe lift at all weights",
-        "TranslateText": "niosh.score.unsafe",
-        "ShortText": "Unsafe",
-        "Color": "rgba(184, 15, 10, 1.0)",
-        "Warning": null
+        "Label": "Unsafe lift at all weights",
+        "Score": {
+          "Value": "Unsafe",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "[0, 1]": {
-        "Text": "Safe weight to lift",
-        "TranslateText": "niosh.score.good",
-        "ShortText": "Good",
-        "Color": "rgba(109, 208, 163, 1.0)",
-        "Warning": null
+        "Label": "Safe weight to lift",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "[1, 3]": {
-        "Text": "Medium risk",
-        "TranslateText": "niosh.score.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)",
-        "Warning": "Object heavy"
+        "Label": "Medium risk",
+        "Warning": "Object heavy",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
       },
       "[3, None]": {
-        "Text": "High risk",
-        "TranslateText": "niosh.score.poor",
-        "ShortText": "Poor",
-        "Color": "rgba(184, 15, 10, 1.0)",
-        "Warning": "Object far too heavy"
+        "Label": "High risk",
+        "Warning": "Object far too heavy",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     },
     "hm": {
       "[0, .4]": {
-        "TranslateText": "niosh.score.poor",
-        "ShortText": "Poor",
-        "Color": "rgba(184, 15, 10, 1.0)",
-        "Warning": "Object too far away horizontally"
+        "Label": "Poor",
+        "Warning": "Object too far away horizontally",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "[.4, .6]": {
-        "TranslateText": "niosh.score.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)",
-        "Warning": "Object too far away horizontally"
+        "Label": "Fair",
+        "Warning": "Object too far away horizontally",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
       },
       "[.6, None]": {
-        "TranslateText": "niosh.score.good",
-        "ShortText": "Good",
-        "Color": "rgba(109, 208, 163, 1.0)",
-        "Warning": null
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       }
     },
     "vm": {
       "[0, .8]": {
-        "TranslateText": "niosh.score.poor",
-        "ShortText": "Poor",
-        "Color": "rgba(184, 15, 10, 1.0)",
-        "Warning": "Object begins too far away vertically"
+        "Label": "Poor",
+        "Warning": "Object begins too far away vertically",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "[.8, .9]": {
-        "TranslateText": "niosh.score.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)",
-        "Warning": null
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
       },
       "[.9, None]": {
-        "TranslateText": "niosh.score.good",
-        "ShortText": "Good",
-        "Color": "rgba(109, 208, 163, 1.0)",
-        "Warning": null
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       }
     },
     "dm": {
       "[0, .9]": {
-        "TranslateText": "niosh.score.poor",
-        "ShortText": "Poor",
-        "Color": "rgba(184, 15, 10, 1.0)",
-        "Warning": "Object travels too far"
+        "Label": "Poor",
+        "Warning": "Object travels too far",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "[.9, .95]": {
-        "TranslateText": "niosh.score.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)",
-        "Warning": null
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
       },
       "[.95, None]": {
-        "TranslateText": "niosh.score.good",
-        "ShortText": "Good",
-        "Color": "rgba(109, 208, 163, 1.0)",
-        "Warning": null
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       }
     },
     "am": {
       "[0, .7]": {
-        "TranslateText": "niosh.score.poor",
-        "ShortText": "Poor",
-        "Color": "rgba(184, 15, 10, 1.0)",
-        "Warning": "Person twists too much"
+        "Label": "Poor",
+        "Warning": "Person twists too much",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "[.7, .9]": {
-        "TranslateText": "niosh.score.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)",
-        "Warning": null
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
       },
       "[.9, None]": {
-        "TranslateText": "niosh.score.good",
-        "ShortText": "Good",
-        "Color": "rgba(109, 208, 163, 1.0)",
-        "Warning": null
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       }
     },
     "fm": {
       "[0, .45]": {
-        "TranslateText": "niosh.score.poor",
-        "ShortText": "Poor",
-        "Color": "rgba(184, 15, 10, 1.0)",
-        "Warning": "Person twists too much"
+        "Label": "Poor",
+        "Warning": "Intervals too short",
+        "Score": {
+          "Value": "Poor",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "[.45, .8]": {
-        "TranslateText": "niosh.score.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)",
-        "Warning": null
+        "Label": "Fair",
+        "Score": {
+          "Value": "Fair",
+          "Color": "rgba(234, 130, 130, 1.0)"
+        }
       },
       "[.8, None]": {
-        "TranslateText": "niosh.score.good",
-        "ShortText": "Good",
-        "Color": "rgba(109, 208, 163, 1.0)",
-        "Warning": null
+        "Label": "Good",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "rwl": {
+      "[-1000, 10000]": {
+        "Label": "Recommended Weight Limit",
+        "Score": {
+          "Value": "Good",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       }
     }
   },
   "RiskComponents": {
-    "asymmetryAngle": {
-      "type": "input",
-      "Base": 0,
-      "Max": 135,
-      "Units": "deg"
-    },
-    "horizontalEnd": {
-      "type": "input",
-      "Base": 0.83,
-      "Max": 5.83333,
-      "Units": [
-        "ft",
-        "sm"
-      ]
-    },
-    "horizontalStart": {
-      "type": "input",
-      "Base": 0.83,
-      "Max": 2.08,
-      "Units": [
-        "ft",
-        "sm"
-      ]
-    },
-    "verticalEnd": {
-      "type": "input",
-      "Base": 0.83,
-      "Max": 5.83333,
-      "Units": [
-        "ft",
-        "sm"
-      ]
-    },
-    "verticalStart": {
-      "type": "input",
-      "Base": 0.83,
-      "Max": 5.83333,
-      "Units": [
-        "ft",
-        "sm"
-      ]
-    }
-  },
-  "CouplingStatus": {
-    "GOOD": {
-      "Number": 0,
-      "Text": "Good"
-    },
-    "FAIR": {
-      "Number": 1,
-      "Text": "Fair"
-    },
-    "POOR": {
-      "Number": 2,
-      "Text": "Poor"
-    }
-  },
-  "DurationStatus": {
-    "SHORT": {
-      "Number": 0,
-      "Text": "Short (1 hour)"
-    },
-    "MODERATE": {
-      "Number": 1,
-      "Text": "Moderate (1 - 2 hours)"
-    },
-    "LONG": {
-      "Number": 2,
-      "Text": "Long (2 - 8 hours)"
-    }
-  },
-  "HeightConstantsStandard": {
-    "LESS_FOUR": 0,
-    "FOUR_TO_FOUR_HALF": 1,
-    "FOUR_HALF_TO_FIVE": 2,
-    "FIVE_TO_FIVE_HALF": 3,
-    "FIVE_HALF_TO_SIX": 4,
-    "SIX_TO_SIX_HALF": 5,
-    "SIX_HALF_PLUS": 6
-  },
-  "Units": {
-    "STANDARD": 0,
-    "METRIC": 1
-  },
-  "AdditionalInputsScores": {
-    "3": {
-      "0": {
-        "TranslateText": "niosh.score.good",
-        "ShortText": "Good",
-        "Color": "rgba(109, 208, 163, 1.0)"
+    "0": {
+      "asymmetryAngle": {
+        "Type": "input",
+        "Base": 0,
+        "MaxInput": 135,
+        "Units": "deg",
+        "Label": "Asymmetry Angle",
+        "Image": "bodyParts/asymmetryAngle.png",
+        "Values": null
       },
-      "1": {
-        "TranslateText": "niosh.score.fair",
-        "ShortText": "Fair",
-        "Color": "rgba(234, 130, 130, 1.0)"
+      "horizontalEnd": {
+        "Type": "input",
+        "Base": 0.83,
+        "MaxInput": 5.83333,
+        "Units": [
+          "ft",
+          "sm"
+        ],
+        "Label": "Horizontal End",
+        "Image": "bodyParts/horizontalEnd.png",
+        "Values": null
       },
-      "2": {
-        "TranslateText": "niosh.score.poor",
-        "ShortText": "Poor",
-        "Color": "rgba(184, 15, 10, 1.0)"
+      "horizontalStart": {
+        "Type": "input",
+        "Base": 0.83,
+        "MaxInput": 2.08,
+        "Units": [
+          "ft",
+          "sm"
+        ],
+        "Label": "Horizontal Start",
+        "Image": "bodyParts/horizontalStart.png",
+        "Values": null
+      },
+      "verticalEnd": {
+        "Type": "input",
+        "Base": 0.83,
+        "MaxInput": 5.83333,
+        "Units": [
+          "ft",
+          "sm"
+        ],
+        "Label": "Vertical End",
+        "Image": "bodyParts/verticalEnd.png",
+        "Values": null
+      },
+      "verticalStart": {
+        "Type": "input",
+        "Base": 0.83,
+        "MaxInput": 5.83333,
+        "Units": [
+          "ft",
+          "sm"
+        ],
+        "Label": "Vertical Start",
+        "Image": "bodyParts/verticalStart.png",
+        "Values": null
       }
     }
   },
   "AdditionalInputs": {
-    "averageLoad": {
-      "label": "Average Load",
-      "type": "input",
-      "Base": 0.01,
-      "Max": 60,
-      "Units": [
-        "lbs",
-        "kgs"
-      ],
-      "Image": null
-    },
-    "frequency": {
-      "label": "Frequency",
-      "type": "input",
-      "Base": 1,
-      "Max": 15,
-      "Units": "min",
-      "Image": null
-    },
-    "coupling": {
-      "0": {
-        "Text": "Good",
-        "TranslateText": "niosh.score.good",
-        "Warning": null,
-        "TranslateWarning": null
+    "Main": {
+      "averageLoad": {
+        "Type": "input",
+        "Base": 0.01,
+        "MaxInput": 60,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
+        "Label": "Average Load",
+        "Image": "additionalInputs/AverageLoad.png",
+        "Values": null
       },
-      "1": {
-        "Text": "Fair",
-        "TranslateText": "niosh.score.fair",
-        "Warning": null,
-        "TranslateWarning": null
+      "frequency": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 15,
+        "Units": "min",
+        "Label": "Frequency",
+        "Image": "additionalInputs/Frequency.png",
+        "Values": null
       },
-      "2": {
-        "Text": "Poor",
-        "TranslateText": "niosh.score.poor",
-        "Warning": "Poor coupling",
-        "TranslateWarning": "niosh.score.poor-coupling"
-      },
-      "label": "Coupling",
-      "type": "select",
-      "Base": 0,
-      "Image": "additionalInputs/Coupling.png",
-      "Score": {
-        "0": {
-          "TranslateText": "niosh.score.good",
-          "ShortText": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        },
-        "1": {
-          "TranslateText": "niosh.score.fair",
-          "ShortText": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        },
-        "2": {
-          "TranslateText": "niosh.score.poor",
-          "ShortText": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "coupling": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Coupling",
+        "Image": "additionalInputs/Coupling.png",
+        "Values": {
+          "0": {
+            "Label": "Good",
+            "Score": {
+              "Value": "Good",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Fair",
+            "Score": {
+              "Value": "Fair",
+              "Color": "rgba(234, 130, 130, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Poor",
+            "Warning": "Poor coupling",
+            "Score": {
+              "Value": "Poor",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
         }
-      }
-    },
-    "liftingDuration": {
-      "0": {
-        "Text": "Short (1 hour)",
-        "TranslateText": "niosh.score.short",
-        "Warning": null,
-        "TranslateWarning": null
       },
-      "1": {
-        "Text": "Moderate (1-2 hours)",
-        "TranslateText": "niosh.score.moderate",
-        "Warning": null,
-        "TranslateWarning": null
-      },
-      "2": {
-        "Text": "Long (2-8 hours)",
-        "TranslateText": "niosh.score.long",
-        "Warning": "Long lifting duration",
-        "TranslateWarning": "niosh.score.long-lifting"
-      },
-      "label": "Lifting Duration",
-      "type": "select",
-      "Base": 0,
-      "Image": null,
-      "Score": {
-        "0": {
-          "TranslateText": "niosh.score.good",
-          "ShortText": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        },
-        "1": {
-          "TranslateText": "niosh.score.fair",
-          "ShortText": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        },
-        "2": {
-          "TranslateText": "niosh.score.poor",
-          "ShortText": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "liftingDuration": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Lifting Duration",
+        "Image": "additionalInputs/LiftingDuration.png",
+        "Values": {
+          "0": {
+            "Label": "Short (1 hour)",
+            "Score": {
+              "Value": "Good",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Moderate (1-2 hours)",
+            "Score": {
+              "Value": "Fair",
+              "Color": "rgba(234, 130, 130, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Long (2-8 hours)",
+            "Warning": "Long lifting duration",
+            "Score": {
+              "Value": "Poor",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
         }
+      },
+      "loadConstant": {
+        "Type": "input",
+        "Base": 51,
+        "MaxInput": 1000,
+        "Units": null,
+        "Label": "Load Constant",
+        "Image": null,
+        "Values": null
+      },
+      "shortRest": {
+        "Type": "input",
+        "Base": -1,
+        "MaxInput": 100,
+        "Units": null,
+        "Label": "Short rest",
+        "Image": null,
+        "Values": null,
+        "IsOptional": true
       }
     }
   }

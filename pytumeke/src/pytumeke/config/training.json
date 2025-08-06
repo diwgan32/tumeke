@@ -1,0 +1,79 @@
+{
+  "SeriaNumber": 6,
+  "Name": "Training",
+  "AssessmentName": "Training",
+  "Colors": {
+    "black": "rgba(15, 15, 30, 0.9)",
+    "light_green": "rgba(109, 208, 163, 1.0)",
+    "green": "rgba(241, 196, 15, 1.0)",
+    "orange": "rgba(230, 126, 34, 1.0)",
+    "red": "rgba(184, 15, 10, 1.0)",
+    "dark_red": "rgba(133, 4, 0, 1.0)"
+  },
+  "Constants": {
+    "acceptable": {
+      "Value": "Acceptable",
+      "Color": "rgba(109, 208, 163, 1.0)"
+    },
+    "low": {
+      "Value": "Low",
+      "Color": "rgba(241, 196, 15, 1.0)"
+    },
+    "medium": {
+      "Value": "Medium",
+      "Color": "rgba(230, 126, 34, 1.0)"
+    },
+    "high": {
+      "Value": "High",
+      "Color": "rgba(184, 15, 10, 1.0)"
+    },
+    "vhigh": {
+      "Value": "Very High",
+      "Color": "rgba(133, 4, 0, 1.0)"
+    }
+  },
+  "Enum": {},
+  "OverallScoreValue": "Score",
+  "Metadata": {},
+  "ResultValues": {
+    "Score": {
+      "[0, 30]": {
+        "Label": "Very High",
+        "Score": {
+          "Value": "Very High",
+          "Color": "rgba(133, 4, 0, 1.0)"
+        }
+      },
+      "[30, 50]": {
+        "Label": "High",
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[50, 70]": {
+        "Label": "Medium",
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
+      },
+      "[70, 90]": {
+        "Label": "Low",
+        "Score": {
+          "Value": "Low",
+          "Color": "rgba(241, 196, 15, 1.0)"
+        }
+      },
+      "[90, None]": {
+        "Label": "Good",
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    }
+  },
+  "RiskComponents": {},
+  "AdditionalInputs": {}
+}

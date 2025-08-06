@@ -1,300 +1,379 @@
-constants:
-  SAMPLE_SIZE_SECONDS: .5
-  FM_FREQUENCIES: [0, .2, .5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-  FM_SHORT_DURATION:
-    [
-      1.0,
-      1.0,
-      .97,
-      .94,
-      .91,
-      .88,
-      .84,
-      .80,
-      .75,
-      .70,
-      .60,
-      .52,
-      .45,
-      .41,
-      .37,
-      .34,
-      .31,
-      .28,
-    ]
-  FM_MODERATE_DURATION:
-    [
-      .95,
-      .95,
-      .92,
-      .88,
-      .84,
-      .79,
-      .72,
-      .60,
-      .50,
-      .42,
-      .35,
-      .30,
-      .26,
-      .23,
-      .21,
-      0,
-      0,
-      0,
-    ]
-  FM_LONG_DURATION:
-    [
-      .85,
-      .85,
-      .81,
-      .75,
-      .65,
-      .55,
-      .45,
-      .35,
-      .27,
-      .22,
-      .18,
-      .15,
-      .13,
-      0,
-      0,
-      0,
-      0,
-      0,
-    ]
-  FM_SHORT_DURATION_VERTICAL_CUTOFF: 13
-  FM_MODERATE_DURATION_VERTICAL_CUTOFF: 10
-  FM_LONG_DURATION_VERTICAL_CUTOFF: 8
+SeriaNumber: 3
+Name: Niosh
+AssessmentName: NIOSH
 
+Colors:
   black: &black
-    Color: rgba(15, 15, 30, 0.9)
+    rgba(15, 15, 30, 0.9)
 
   light_green: &light_green
-    Color: rgba(109, 208, 163, 1.0)
+    rgba(109, 208, 163, 1.0)
 
   green: &green
-    Color: rgba(20, 210, 184, 1.0)
+    rgba(20, 210, 184, 1.0)
 
   orange: &orange
-    Color: rgba(234, 130, 130, 1.0)
+    rgba(234, 130, 130, 1.0)
 
   red: &red
-    Color: rgba(184, 15, 10, 1.0)
+    rgba(184, 15, 10, 1.0)
+
+Constants:
+  SAMPLE_SIZE_SECONDS:
+    Value: .5
+
+  FM_FREQUENCIES:
+    Value: [0, .2, .5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+  FM_SHORT_DURATION:
+    Value:
+      [
+        1.0,
+        1.0,
+        .97,
+        .94,
+        .91,
+        .88,
+        .84,
+        .80,
+        .75,
+        .70,
+        .60,
+        .52,
+        .45,
+        .41,
+        .37,
+        .34,
+        .31,
+        .28,
+      ]
+
+  FM_MODERATE_DURATION:
+    Value:
+      [
+        .95,
+        .95,
+        .92,
+        .88,
+        .84,
+        .79,
+        .72,
+        .60,
+        .50,
+        .42,
+        .35,
+        .30,
+        .26,
+        .23,
+        .21,
+        0,
+        0,
+        0,
+      ]
+
+  FM_LONG_DURATION:
+    Value:
+      [
+        .85,
+        .85,
+        .81,
+        .75,
+        .65,
+        .55,
+        .45,
+        .35,
+        .27,
+        .22,
+        .18,
+        .15,
+        .13,
+        0,
+        0,
+        0,
+        0,
+        0,
+      ]
+
+  FM_SHORT_DURATION_VERTICAL_CUTOFF:
+    Value: 13
+
+  FM_MODERATE_DURATION_VERTICAL_CUTOFF:
+    Value: 10
+
+  FM_LONG_DURATION_VERTICAL_CUTOFF:
+    Value: 8
 
   unsafe: &unsafe
-    TranslateText: niosh.score.unsafe
-    ShortText: Unsafe
-    <<: *red
-  acceptable: &good
-    TranslateText: niosh.score.good
-    ShortText: Good
-    <<: *light_green
-  low: &fair
-    TranslateText: niosh.score.fair
-    ShortText: Fair
-    <<: *orange
-  medium: &poor
-    TranslateText: niosh.score.poor
-    ShortText: Poor
-    <<: *red
+    Value: Unsafe
+    Color: *red
 
-ComponentValues:
+  acceptable: &acceptable
+    Value: Good
+    Color: *light_green
+
+  low: &low
+    Value: Fair
+    Color: *orange
+
+  medium: &medium
+    Value: Poor
+    Color: *red
+
+Enum:
+  CouplingStatus:
+    GOOD:
+      Value: 0
+      Label: Good
+    FAIR:
+      Value: 1
+      Label: Fair
+    POOR:
+      Value: 2
+      Label: Poor
+
+  DurationStatus:
+    SHORT:
+      Value: 0
+      Label: Short (1 hour)
+    MODERATE:
+      Value: 1
+      Label: Moderate (1 - 2 hours)
+    LONG:
+      Value: 2
+      Label: Long (2 - 8 hours)
+
+  HeightConstantsStandard:
+    LESS_FOUR:
+      Value: 0
+      Label: "< 4"
+    FOUR_TO_FOUR_HALF:
+      Value: 1
+      Label: "4 - 4.5"
+    FOUR_HALF_TO_FIVE:
+      Value: 2
+      Label: "4.5 - 5"
+    FIVE_TO_FIVE_HALF:
+      Value: 3
+      Label: "5 - 5.5"
+    FIVE_HALF_TO_SIX:
+      Value: 4
+      Label: "5.5 - 6"
+    SIX_TO_SIX_HALF:
+      Value: 5
+      Label: "6 - 6.5"
+    SIX_HALF_PLUS:
+      Value: 6
+      Label: "> 6.5"
+
+  Units:
+    STANDARD:
+      Value: 0
+      Label: Standard
+    METRIC:
+      Value: 1
+      Label: Metric
+
+OverallScoreValue: li
+
+Metadata:
+  numLifts: "number"
+  subjectHeight: "number"
+  startEnd: "{ [key: string]: number[] }"
+
+ResultValues:
   li:
     "[None, 0]":
-      Text: Unsafe lift at all weights
-      <<: *unsafe
-      Warning: ~
+      Label: Unsafe lift at all weights
+      Score: *unsafe
     "[0, 1]":
-      Text: Safe weight to lift
-      <<: *good
-      Warning: ~
+      Label: Safe weight to lift
+      Score: *acceptable
     "[1, 3]":
-      Text: Medium risk
-      <<: *fair
+      Label: Medium risk
       Warning: Object heavy
+      Score: *low
     "[3, None]":
-      Text: High risk
-      <<: *poor
+      Label: High risk
       Warning: Object far too heavy
+      Score: *medium
+  
   hm:
     "[0, .4]":
-      <<: *poor
+      Label: Poor
       Warning: Object too far away horizontally
+      Score: *medium
     "[.4, .6]":
-      <<: *fair
+      Label: Fair
       Warning: Object too far away horizontally
+      Score: *low
     "[.6, None]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
+  
   vm:
     "[0, .8]":
-      <<: *poor
+      Label: Poor
       Warning: Object begins too far away vertically
+      Score: *medium
     "[.8, .9]":
-      <<: *fair
-      Warning: ~
+      Label: Fair
+      Score: *low
     "[.9, None]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
+  
   dm:
     "[0, .9]":
-      <<: *poor
+      Label: Poor
       Warning: Object travels too far
+      Score: *medium
     "[.9, .95]":
-      <<: *fair
-      Warning: ~
+      Label: Fair
+      Score: *low
     "[.95, None]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
+  
   am:
     "[0, .7]":
-      <<: *poor
+      Label: Poor
       Warning: Person twists too much
+      Score: *medium
     "[.7, .9]":
-      <<: *fair
-      Warning: ~
+      Label: Fair
+      Score: *low
     "[.9, None]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
+  
   fm:
     "[0, .45]":
-      <<: *poor
-      Warning: Person twists too much
+      Label: Poor
+      Warning: Intervals too short
+      Score: *medium
     "[.45, .8]":
-      <<: *fair
-      Warning: ~
+      Label: Fair
+      Score: *low
     "[.8, None]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
+  
+  rwl:
+    "[-1000, 10000]":
+      Label: Recommended Weight Limit
+      Score: *acceptable
 
 RiskComponents:
-  asymmetryAngle:
-    type: input
-    Base: 0
-    Max: 135
-    Units: deg
-  horizontalEnd:
-    type: input
-    Base: 0.83
-    Max: 5.83333
-    Units: [ft, sm]
-  horizontalStart:
-    type: input
-    Base: 0.83
-    Max: 2.08
-    Units: [ft, sm]
-  verticalEnd:
-    type: input
-    Base: 0.83
-    Max: 5.83333
-    Units: [ft, sm]
-  verticalStart:
-    type: input
-    Base: 0.83
-    Max: 5.83333
-    Units: [ft, sm]
-
-CouplingStatus:
-  GOOD:
-    Number: 0
-    Text: Good
-  FAIR:
-    Number: 1
-    Text: Fair
-  POOR:
-    Number: 2
-    Text: Poor
-
-DurationStatus:
-  SHORT:
-    Number: 0
-    Text: Short (1 hour)
-  MODERATE:
-    Number: 1
-    Text: Moderate (1 - 2 hours)
-  LONG:
-    Number: 2
-    Text: Long (2 - 8 hours)
-
-HeightConstantsStandard:
-  LESS_FOUR: 0
-  FOUR_TO_FOUR_HALF: 1
-  FOUR_HALF_TO_FIVE: 2
-  FIVE_TO_FIVE_HALF: 3
-  FIVE_HALF_TO_SIX: 4
-  SIX_TO_SIX_HALF: 5
-  SIX_HALF_PLUS: 6
-
-Units:
-  STANDARD: 0
-  METRIC: 1
-
-AdditionalInputsScores:
-  3: &three
-    0:
-      <<: *good
-    1:
-      <<: *fair
-    2:
-      <<: *poor
+  0:
+    asymmetryAngle:
+      Type: input
+      Base: 0
+      MaxInput: 135
+      Units: deg
+      Label: Asymmetry Angle
+      Image: bodyParts/asymmetryAngle.png
+      Values: ~
+    horizontalEnd:
+      Type: input
+      Base: 0.83
+      MaxInput: 5.83333
+      Units: [ft, sm]
+      Label: Horizontal End
+      Image: bodyParts/horizontalEnd.png
+      Values: ~
+    horizontalStart:
+      Type: input
+      Base: 0.83
+      MaxInput: 2.08
+      Units: [ft, sm]
+      Label: Horizontal Start
+      Image: bodyParts/horizontalStart.png
+      Values: ~
+    verticalEnd:
+      Type: input
+      Base: 0.83
+      MaxInput: 5.83333
+      Units: [ft, sm]
+      Label: Vertical End
+      Image: bodyParts/verticalEnd.png
+      Values: ~
+    verticalStart:
+      Type: input
+      Base: 0.83
+      MaxInput: 5.83333
+      Units: [ft, sm]
+      Label: Vertical Start
+      Image: bodyParts/verticalStart.png
+      Values: ~
 
 AdditionalInputs:
-  averageLoad:
-    label: Average Load
-    type: input
-    Base: 0.01
-    Max: 60
-    Units: [lbs, kgs]
-    Image: ~
-  frequency:
-    label: Frequency
-    type: input
-    Base: 1
-    Max: 15
-    Units: min
-    Image: ~
-  coupling:
-    0:
-      Text: Good
-      TranslateText: niosh.score.good
-      Warning: ~
-      TranslateWarning: ~
-    1:
-      Text: Fair
-      TranslateText: niosh.score.fair
-      Warning: ~
-      TranslateWarning: ~
-    2:
-      Text: Poor
-      TranslateText: niosh.score.poor
-      Warning: Poor coupling
-      TranslateWarning: niosh.score.poor-coupling
-    label: Coupling
-    type: select
-    Base: 0
-    Image: additionalInputs/Coupling.png
-    Score: *three
-  liftingDuration:
-    0:
-      Text: Short (1 hour)
-      TranslateText: niosh.score.short
-      Warning: ~
-      TranslateWarning: ~
-    1:
-      Text: Moderate (1-2 hours)
-      TranslateText: niosh.score.moderate
-      Warning: ~
-      TranslateWarning: ~
-    2:
-      Text: Long (2-8 hours)
-      TranslateText: niosh.score.long
-      Warning: Long lifting duration
-      TranslateWarning: niosh.score.long-lifting
-    label: Lifting Duration
-    type: select
-    Base: 0
-    Image: ~
-    Score: *three
-
+  Main:
+    averageLoad:
+      Type: input
+      Base: 0.01
+      MaxInput: 60
+      Units: [lbs, kgs]
+      Label: Average Load
+      Image: additionalInputs/AverageLoad.png
+      Values: ~
+    frequency:
+      Type: input
+      Base: 1
+      MaxInput: 15
+      Units: min
+      Label: Frequency
+      Image: additionalInputs/Frequency.png
+      Values: ~
+    coupling:
+      Type: select
+      Base: 0
+      MaxInput: ~
+      Units: ~
+      Label: Coupling
+      Image: additionalInputs/Coupling.png
+      Values:
+        0:
+          Label: Good
+          Score: *acceptable
+        1:
+          Label: Fair
+          Score: *low
+        2:
+          Label: Poor
+          Warning: Poor coupling
+          Score: *medium
+    liftingDuration:
+      Type: select
+      Base: 0
+      MaxInput: ~
+      Units: ~
+      Label: Lifting Duration
+      Image: additionalInputs/LiftingDuration.png
+      Values:
+        0:
+          Label: Short (1 hour)
+          Score: *acceptable
+        1:
+          Label: Moderate (1-2 hours)
+          Score: *low
+        2:
+          Label: Long (2-8 hours)
+          Warning: Long lifting duration
+          Score: *medium
+    loadConstant:
+      Type: input
+      Base: 51
+      MaxInput: 1000
+      Units: ~
+      Label: Load Constant
+      Image: ~
+      Values: ~
+    shortRest:
+      Type: input
+      Base: -1
+      MaxInput: 100
+      Units: ~
+      Label: Short rest
+      Image: ~
+      Values: ~
+      IsOptional: True

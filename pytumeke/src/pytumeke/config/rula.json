@@ -1,922 +1,728 @@
 {
-  "constants": {
-    "light_green": {
-      "Color": "rgba(109, 208, 163, 1.0)"
-    },
-    "green": {
-      "Color": "rgba(241, 196, 15, 1.0)"
-    },
-    "orange": {
-      "Color": "rgba(230, 126, 34, 1.0)"
-    },
-    "red": {
-      "Color": "rgba(184, 15, 10, 1.0)"
-    },
-    "acceptable": {
-      "TranslateText": "rulareba.score.acceptable",
-      "ShortText": "Acceptable",
-      "Text": "Acceptable",
-      "Color": "rgba(109, 208, 163, 1.0)"
-    },
-    "low": {
-      "TranslateText": "rulareba.score.low",
-      "ShortText": "Low",
-      "Text": "Low risk of injury",
-      "Color": "rgba(241, 196, 15, 1.0)"
-    },
-    "medium": {
-      "TranslateText": "rulareba.score.medium",
-      "ShortText": "Medium",
-      "Text": "Medium risk of injury",
-      "Color": "rgba(230, 126, 34, 1.0)"
-    },
-    "high": {
-      "TranslateText": "rulareba.score.high",
-      "ShortText": "High",
-      "Text": "High risk of injury",
-      "Color": "rgba(184, 15, 10, 1.0)"
-    }
-  },
+  "SeriaNumber": 1,
+  "Name": "Rula",
+  "AssessmentName": "RULA",
   "Colors": {
+    "light_green": "rgba(109, 208, 163, 1.0)",
+    "green": "rgba(241, 196, 15, 1.0)",
+    "orange": "rgba(230, 126, 34, 1.0)",
+    "red": "rgba(184, 15, 10, 1.0)"
+  },
+  "Constants": {
     "acceptable": {
+      "Value": "Acceptable",
       "Color": "rgba(109, 208, 163, 1.0)"
     },
     "low": {
+      "Value": "Low",
       "Color": "rgba(241, 196, 15, 1.0)"
     },
     "medium": {
+      "Value": "Medium",
       "Color": "rgba(230, 126, 34, 1.0)"
     },
     "high": {
+      "Value": "High",
       "Color": "rgba(184, 15, 10, 1.0)"
     }
   },
-  "AdditionalInputsScores": {
-    "2": {
-      "0": {
-        "TranslateText": "rulareba.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
-      },
-      "1": {
-        "TranslateText": "rulareba.score.high",
-        "ShortText": "High",
-        "Text": "High risk of injury",
-        "Color": "rgba(184, 15, 10, 1.0)"
-      }
-    },
-    "3": {
-      "0": {
-        "TranslateText": "rulareba.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
-      },
-      "1": {
-        "TranslateText": "rulareba.score.medium",
-        "ShortText": "Medium",
-        "Text": "Medium risk of injury",
-        "Color": "rgba(230, 126, 34, 1.0)"
-      },
-      "2": {
-        "TranslateText": "rulareba.score.high",
-        "ShortText": "High",
-        "Text": "High risk of injury",
-        "Color": "rgba(184, 15, 10, 1.0)"
-      }
-    },
-    "4": {
-      "0": {
-        "TranslateText": "rulareba.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
-      },
-      "1": {
-        "TranslateText": "rulareba.score.low",
-        "ShortText": "Low",
-        "Text": "Low risk of injury",
-        "Color": "rgba(241, 196, 15, 1.0)"
-      },
-      "2": {
-        "TranslateText": "rulareba.score.medium",
-        "ShortText": "Medium",
-        "Text": "Medium risk of injury",
-        "Color": "rgba(230, 126, 34, 1.0)"
-      },
-      "3": {
-        "TranslateText": "rulareba.score.high",
-        "ShortText": "High",
-        "Text": "High risk of injury",
-        "Color": "rgba(184, 15, 10, 1.0)"
-      }
-    }
+  "Enum": {},
+  "OverallScoreValue": "Overall",
+  "Metadata": {
+    "supportDepth": "number"
   },
-  "BodyPartScores": {
+  "ResultValues": {
     "Overall": {
       "1": {
-        "TranslateText": "rulareba.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "2": {
-        "TranslateText": "rulareba.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rulareba.score.low",
-        "ShortText": "Low",
-        "Text": "Low risk of injury",
-        "Color": "rgba(241, 196, 15, 1.0)"
+        "Score": {
+          "Value": "Low",
+          "Color": "rgba(241, 196, 15, 1.0)"
+        }
       },
       "4": {
-        "TranslateText": "rulareba.score.low",
-        "ShortText": "Low",
-        "Text": "Low risk of injury",
-        "Color": "rgba(241, 196, 15, 1.0)"
+        "Score": {
+          "Value": "Low",
+          "Color": "rgba(241, 196, 15, 1.0)"
+        }
       },
       "5": {
-        "TranslateText": "rulareba.score.medium",
-        "ShortText": "Medium",
-        "Text": "Medium risk of injury",
-        "Color": "rgba(230, 126, 34, 1.0)"
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
       },
       "6": {
-        "TranslateText": "rulareba.score.medium",
-        "ShortText": "Medium",
-        "Text": "Medium risk of injury",
-        "Color": "rgba(230, 126, 34, 1.0)"
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
       },
       "7": {
-        "TranslateText": "rulareba.score.high",
-        "ShortText": "High",
-        "Text": "High risk of injury",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     },
     "Neck": {
       "1": {
-        "TranslateText": "rulareba.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "2": {
-        "TranslateText": "rulareba.score.low",
-        "ShortText": "Low",
-        "Text": "Low risk of injury",
-        "Color": "rgba(241, 196, 15, 1.0)"
+        "Score": {
+          "Value": "Low",
+          "Color": "rgba(241, 196, 15, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rulareba.score.medium",
-        "ShortText": "Medium",
-        "Text": "Medium risk of injury",
-        "Color": "rgba(230, 126, 34, 1.0)"
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
       },
       "4": {
-        "TranslateText": "rulareba.score.medium",
-        "ShortText": "Medium",
-        "Text": "Medium risk of injury",
-        "Color": "rgba(230, 126, 34, 1.0)"
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
       },
       "5": {
-        "TranslateText": "rulareba.score.high",
-        "ShortText": "High",
-        "Text": "High risk of injury",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "6": {
-        "TranslateText": "rulareba.score.high",
-        "ShortText": "High",
-        "Text": "High risk of injury",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     },
     "Upper Arm": {
       "1": {
-        "TranslateText": "rulareba.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "2": {
-        "TranslateText": "rulareba.score.low",
-        "ShortText": "Low",
-        "Text": "Low risk of injury",
-        "Color": "rgba(241, 196, 15, 1.0)"
+        "Score": {
+          "Value": "Low",
+          "Color": "rgba(241, 196, 15, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rulareba.score.medium",
-        "ShortText": "Medium",
-        "Text": "Medium risk of injury",
-        "Color": "rgba(230, 126, 34, 1.0)"
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
       },
       "4": {
-        "TranslateText": "rulareba.score.medium",
-        "ShortText": "Medium",
-        "Text": "Medium risk of injury",
-        "Color": "rgba(230, 126, 34, 1.0)"
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
       },
       "5": {
-        "TranslateText": "rulareba.score.high",
-        "ShortText": "High",
-        "Text": "High risk of injury",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "6": {
-        "TranslateText": "rulareba.score.high",
-        "ShortText": "High",
-        "Text": "High risk of injury",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     },
     "Lower Arm": {
       "1": {
-        "TranslateText": "rulareba.score.low",
-        "ShortText": "Low",
-        "Text": "Low risk of injury",
-        "Color": "rgba(241, 196, 15, 1.0)"
+        "Score": {
+          "Value": "Low",
+          "Color": "rgba(241, 196, 15, 1.0)"
+        }
       },
       "2": {
-        "TranslateText": "rulareba.score.medium",
-        "ShortText": "Medium",
-        "Text": "Medium risk of injury",
-        "Color": "rgba(230, 126, 34, 1.0)"
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rulareba.score.high",
-        "ShortText": "High",
-        "Text": "High risk of injury",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     },
     "Trunk": {
       "1": {
-        "TranslateText": "rulareba.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "2": {
-        "TranslateText": "rulareba.score.low",
-        "ShortText": "Low",
-        "Text": "Low risk of injury",
-        "Color": "rgba(241, 196, 15, 1.0)"
+        "Score": {
+          "Value": "Low",
+          "Color": "rgba(241, 196, 15, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rulareba.score.medium",
-        "ShortText": "Medium",
-        "Text": "Medium risk of injury",
-        "Color": "rgba(230, 126, 34, 1.0)"
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
       },
       "4": {
-        "TranslateText": "rulareba.score.medium",
-        "ShortText": "Medium",
-        "Text": "Medium risk of injury",
-        "Color": "rgba(230, 126, 34, 1.0)"
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
       },
       "5": {
-        "TranslateText": "rulareba.score.high",
-        "ShortText": "High",
-        "Text": "High risk of injury",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       },
       "6": {
-        "TranslateText": "rulareba.score.high",
-        "ShortText": "High",
-        "Text": "High risk of injury",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     },
     "Wrist": {
       "1": {
-        "TranslateText": "rulareba.score.acceptable",
-        "ShortText": "Acceptable",
-        "Text": "Acceptable",
-        "Color": "rgba(109, 208, 163, 1.0)"
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
       },
       "2": {
-        "TranslateText": "rulareba.score.low",
-        "ShortText": "Low",
-        "Text": "Low risk of injury",
-        "Color": "rgba(241, 196, 15, 1.0)"
+        "Score": {
+          "Value": "Low",
+          "Color": "rgba(241, 196, 15, 1.0)"
+        }
       },
       "3": {
-        "TranslateText": "rulareba.score.medium",
-        "ShortText": "Medium",
-        "Text": "Medium risk of injury",
-        "Color": "rgba(230, 126, 34, 1.0)"
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
       },
       "4": {
-        "TranslateText": "rulareba.score.high",
-        "ShortText": "High",
-        "Text": "High risk of injury",
-        "Color": "rgba(184, 15, 10, 1.0)"
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
       }
     }
   },
-  "ComponentValues": {
+  "RiskComponents": {
     "Neck": {
       "Score": {
-        "1": {
-          "Text": "0° - 10° forward",
-          "TranslateText": "rula.components.neck.score.1.text",
-          "TranslateWarning": "rula.components.neck.score.1.warning",
-          "Warning": null,
-          "Image": "angleIcons/rulaReba/Neck_0_10_deg@2x.png"
-        },
-        "2": {
-          "Text": "10° - 20° forward",
-          "TranslateText": "rula.components.neck.score.2.text",
-          "TranslateWarning": "rula.components.neck.score.2.warning",
-          "Warning": null,
-          "Image": "angleIcons/rulaReba/Neck_10_20_deg@2x.png"
-        },
-        "3": {
-          "Text": "20°+ forward",
-          "TranslateText": "rula.components.neck.score.3.text",
-          "TranslateWarning": "rula.components.neck.score.3.warning",
-          "Warning": "Neck bent forward too much",
-          "Image": "angleIcons/rulaReba/Neck_20+_deg@2x.png"
-        },
-        "4": {
-          "Text": "0°+ backward",
-          "TranslateText": "rula.components.neck.score.4.text",
-          "TranslateWarning": "rula.components.neck.score.4.warning",
-          "Warning": "Neck bent backward",
-          "Image": "angleIcons/rulaReba/Neck_in_extension@2x.png"
-        },
+        "Type": "select",
         "Base": 1,
-        "label": "Angle",
-        "TranslateLabel": "rulareba.neck.score",
-        "type": "select"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Angle",
+        "Image": "bodyParts/neck.png",
+        "Values": {
+          "1": {
+            "Label": "0° - 10° forward",
+            "Image": "angleIcons/rulaReba/Neck_0_10_deg@2x.png"
+          },
+          "2": {
+            "Label": "10° - 20° forward",
+            "Image": "angleIcons/rulaReba/Neck_10_20_deg@2x.png"
+          },
+          "3": {
+            "Label": "20°+ forward",
+            "Image": "angleIcons/rulaReba/Neck_20+_deg@2x.png",
+            "Warning": "Neck bent forward too much"
+          },
+          "4": {
+            "Label": "0°+ backward",
+            "Image": "angleIcons/rulaReba/Neck_in_extension@2x.png",
+            "Warning": "Neck bent backward"
+          }
+        }
       },
       "SideBend": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "rulareba.yes",
-          "TranslateWarning": "rula.components.neck.sidebend.1.warning",
-          "Warning": "Neck side bending"
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "rulareba.no",
-          "TranslateWarning": "rula.components.neck.sidebend.0.warning",
-          "Warning": null
-        },
+        "Type": "boolean",
         "Base": 0,
-        "label": "Side bending",
-        "TranslateLabel": "rulareba.neck.sidebend",
-        "type": "boolean",
-        "Image": "angleIcons/rulaReba/Neck_side_bending@2x.png"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Side bending",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Image": "angleIcons/rulaReba/Neck_side_bending@2x.png",
+            "Warning": "Neck side bending"
+          },
+          "0": {
+            "Label": "No"
+          }
+        }
       },
       "Twist": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "rulareba.yes",
-          "TranslateWarning": "rula.components.neck.twist.1.warning",
-          "Warning": "Neck twisted"
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "rulareba.no",
-          "TranslateWarning": "rula.components.neck.twist.0.warning",
-          "Warning": null
-        },
+        "Type": "boolean",
         "Base": 0,
-        "label": "Twisted",
-        "type": "boolean",
-        "TranslateLabel": "rulareba.neck.twist",
-        "Image": "angleIcons/rulaReba/Neck_Twisted@2x.png"
-      },
-      "Image": "bodyParts/neck.png"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Twisted",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Image": "angleIcons/rulaReba/Neck_Twisted@2x.png",
+            "Warning": "Neck twisted"
+          },
+          "0": {
+            "Label": "No"
+          }
+        }
+      }
     },
     "Upper Arm": {
       "Score": {
-        "1": {
-          "Text": "20° in front - 20° behind",
-          "TranslateText": "rula.components.upperarm.score.1.text",
-          "TranslateWarning": "rula.components.upperarm.score.1.warning",
-          "Warning": null,
-          "Image": "angleIcons/rulaReba/UpperArm_20_20_deg@2x.png"
-        },
-        "2": {
-          "Text": "20°+ behind OR 20° - 45° in front",
-          "TranslateText": "rula.components.upperarm.score.2.text",
-          "TranslateWarning": "rula.components.upperarm.score.2.warning",
-          "Warning": null,
-          "Image": "angleIcons/rulaReba/UpperArm_20_deg_extension@2x.png",
-          "Image2": "angleIcons/rulaReba/UpperArm_20_45_deg@2x.png"
-        },
-        "3": {
-          "Text": "45° - 90° in front",
-          "TranslateText": "rula.components.upperarm.score.3.text",
-          "TranslateWarning": "rula.components.upperarm.score.3.warning",
-          "Warning": "Upper arm raised high",
-          "Image": "angleIcons/rulaReba/UpperArm_45_90_deg@2x.png"
-        },
-        "4": {
-          "Text": "90°+ in front",
-          "TranslateText": "rula.components.upperarm.score.4.text",
-          "TranslateWarning": "rula.components.upperarm.score.4.warning",
-          "Warning": "Upper arm raised too high",
-          "Image": "angleIcons/rulaReba/UpperArm_90+_deg@2x.png"
-        },
+        "Type": "select",
         "Base": 1,
-        "label": "Angle",
-        "TranslateLabel": "rulareba.upperarm.score",
-        "type": "select"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Angle",
+        "Image": "bodyParts/shoulder.png",
+        "Values": {
+          "1": {
+            "Label": "20° in front - 20° behind",
+            "Image": "angleIcons/rulaReba/UpperArm_20_20_deg@2x.png"
+          },
+          "2": {
+            "Label": "20°+ behind OR 20° - 45° in front",
+            "Image": "angleIcons/rulaReba/UpperArm_20_deg_extension@2x.png",
+            "Image2": "angleIcons/rulaReba/UpperArm_20_45_deg@2x.png"
+          },
+          "3": {
+            "Label": "45° - 90° in front",
+            "Image": "angleIcons/rulaReba/UpperArm_45_90_deg@2x.png",
+            "Warning": "Upper arm raised high"
+          },
+          "4": {
+            "Label": "90°+ in front",
+            "Image": "angleIcons/rulaReba/UpperArm_90+_deg@2x.png",
+            "Warning": "Upper arm raised too high"
+          }
+        }
       },
       "Abducted": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "rulareba.yes",
-          "TranslateWarning": "rula.components.upperarm.abducted.1.warning",
-          "Warning": "Shoulder abducted"
-        },
-        "0": {
-          "Text": "No",
-          "TranslateWarning": "rula.components.upperarm.abducted.0.warning",
-          "TranslateText": "rulareba.no",
-          "Warning": null
-        },
+        "Type": "boolean",
         "Base": 0,
-        "label": "Abducted",
-        "TranslateLabel": "rulareba.upperarm.abducted",
-        "type": "boolean",
-        "Image": "angleIcons/rulaReba/UpperArm_abducted@2x.png"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Abducted",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Image": "angleIcons/rulaReba/UpperArm_abducted@2x.png",
+            "Warning": "Shoulder abducted"
+          },
+          "0": {
+            "Label": "No"
+          }
+        }
       },
       "ShoulderRaised": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "rulareba.yes",
-          "TranslateWarning": "rula.components.upperarm.shoulder_raised.1.warning",
-          "Warning": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateWarning": "rula.components.upperarm.shoulder_raised.0.warning",
-          "TranslateText": "rulareba.no",
-          "Warning": null
-        },
+        "Type": "boolean",
         "Base": 0,
-        "type": "boolean",
-        "label": "Shoulder raised",
-        "TranslateLabel": "rulareba.upperarm.shoulder_raised",
-        "Image": "angleIcons/rulaReba/UpperArm_shoulder_raised@2x.png"
-      },
-      "Image": "bodyParts/shoulder.png"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Shoulder raised",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Image": "angleIcons/rulaReba/UpperArm_shoulder_raised@2x.png"
+          },
+          "0": {
+            "Label": "No"
+          }
+        }
+      }
     },
     "Trunk": {
       "Score": {
-        "1": {
-          "Text": "0°",
-          "TranslateText": "rula.components.trunk.score.1.text",
-          "TranslateWarning": "rula.components.trunk.score.1.warning",
-          "Warning": null,
-          "Image": "angleIcons/rulaReba/Trunk_0_deg@2x.png"
-        },
-        "2": {
-          "Text": "0° - 20° forward",
-          "TranslateText": "rula.components.trunk.score.2.text",
-          "TranslateWarning": "rula.components.trunk.score.2.warning",
-          "Warning": null,
-          "Image": "angleIcons/rulaReba/Trunk_0_20_deg@2x.png"
-        },
-        "3": {
-          "Text": "20° - 60° forward",
-          "TranslateText": "rula.components.trunk.score.3.text",
-          "TranslateWarning": "rula.components.trunk.score.3.warning",
-          "Warning": "Trunk bent forward too much",
-          "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png"
-        },
-        "4": {
-          "Text": "60°+ forward",
-          "TranslateText": "rula.components.trunk.score.4.text",
-          "TranslateWarning": "rula.components.trunk.score.4.warning",
-          "Warning": "Trunk bent forward too much",
-          "Image": "angleIcons/rulaReba/Trunk_60+_deg@2x.png"
-        },
+        "Type": "select",
         "Base": 1,
-        "label": "Angle",
-        "TranslateLabel": "rulareba.trunk.score",
-        "type": "select"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Angle",
+        "Image": "bodyParts/back.png",
+        "Values": {
+          "1": {
+            "Label": "0°",
+            "Image": "angleIcons/rulaReba/Trunk_0_deg@2x.png"
+          },
+          "2": {
+            "Label": "0° - 20° forward",
+            "Image": "angleIcons/rulaReba/Trunk_0_20_deg@2x.png"
+          },
+          "3": {
+            "Label": "20° - 60° forward",
+            "Image": "angleIcons/rulaReba/Trunk_20_60_deg@2x.png",
+            "Warning": "Trunk bent forward too much"
+          },
+          "4": {
+            "Label": "60°+ forward",
+            "Image": "angleIcons/rulaReba/Trunk_60+_deg@2x.png",
+            "Warning": "Trunk bent forward too much"
+          }
+        }
       },
       "SideBend": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "rulareba.yes",
-          "TranslateWarning": "rula.components.trunk.sidebend.1.warning",
-          "Warning": "Trunk side bending"
-        },
-        "0": {
-          "Text": "No",
-          "TranslateWarning": "rula.components.trunk.sidebend.0.warning",
-          "TranslateText": "rulareba.no",
-          "Warning": null
-        },
+        "Type": "boolean",
         "Base": 0,
-        "label": "Side bending",
-        "TranslateLabel": "rulareba.trunk.sidebend",
-        "type": "boolean",
-        "Image": "angleIcons/rulaReba/Trunk_side_bending@2x.png"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Side bending",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Image": "angleIcons/rulaReba/Trunk_side_bending@2x.png",
+            "Warning": "Trunk side bending"
+          },
+          "0": {
+            "Label": "No"
+          }
+        }
       },
       "Twist": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "rulareba.yes",
-          "TranslateWarning": "rula.components.trunk.twist.1.warning",
-          "Warning": "Trunk twisted"
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "rulareba.no",
-          "TranslateWarning": "rula.components.trunk.twist.0.warning",
-          "Warning": null
-        },
+        "Type": "boolean",
         "Base": 0,
-        "label": "Twisted",
-        "TranslateLabel": "rulareba.trunk.twist",
-        "type": "boolean",
-        "Image": "angleIcons/rulaReba/Trunk_Twisted@2x.png"
-      },
-      "Image": "bodyParts/back.png"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Twisted",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Image": "angleIcons/rulaReba/Trunk_Twisted@2x.png",
+            "Warning": "Trunk twisted"
+          },
+          "0": {
+            "Label": "No"
+          }
+        }
+      }
     },
     "Lower Arm": {
       "Score": {
-        "1": {
-          "Text": "60° - 100°",
-          "TranslateText": "rula.components.lowerarm.score.1.text",
-          "TranslateWarning": "rula.components.lowerarm.score.1.warning",
-          "Warning": null,
-          "Image": "angleIcons/rulaReba/LowerArm_60_100_deg@2x.png"
-        },
-        "2": {
-          "Text": "0° - 60° OR 100°+",
-          "TranslateText": "rula.components.lowerarm.score.2.text",
-          "TranslateWarning": "rula.components.lowerarm.score.2.warning",
-          "Warning": null,
-          "Image": "angleIcons/rulaReba/LowerArm_0_60_deg@2x.png",
-          "Image2": "angleIcons/rulaReba/LowerArm_100+_deg@2x.png"
-        },
+        "Type": "select",
         "Base": 1,
-        "label": "Angle",
-        "TranslateLabel": "rulareba.lowerarm.score",
-        "type": "select"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Angle",
+        "Image": "bodyParts/arm.png",
+        "Values": {
+          "1": {
+            "Label": "60° - 100°",
+            "Image": "angleIcons/rulaReba/LowerArm_60_100_deg@2x.png"
+          },
+          "2": {
+            "Label": "0° - 60° OR 100°+",
+            "Image": "angleIcons/rulaReba/LowerArm_0_60_deg@2x.png",
+            "Image2": "angleIcons/rulaReba/LowerArm_100+_deg@2x.png"
+          }
+        }
       },
       "Midline": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "rulareba.yes",
-          "TranslateWarning": "rula.components.lowerarm.midline.1.warning",
-          "Warning": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateWarning": "rula.components.lowerarm.midline.0.warning",
-          "TranslateText": "rulareba.no",
-          "Warning": null
-        },
+        "Type": "boolean",
         "Base": 0,
-        "type": "boolean",
-        "TranslateLabel": "rulareba.lowerarm.midline",
-        "label": "Elbow bent from side of body"
-      },
-      "Image": "bodyParts/arm.png"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Elbow bent from side of body",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes"
+          },
+          "0": {
+            "Label": "No"
+          }
+        }
+      }
     },
     "Wrist": {
       "Score": {
-        "1": {
-          "Text": "0°",
-          "TranslateText": "rula.components.wrist.score.1.text",
-          "TranslateWarning": "rula.components.wrist.score.1.warning",
-          "Warning": null,
-          "Image": "angleIcons/rulaReba/Wrist_0_deg@2x.png"
-        },
-        "2": {
-          "Text": "15° up - 15° down",
-          "TranslateText": "rula.components.wrist.score.2.text",
-          "TranslateWarning": "rula.components.wrist.score.2.warning",
-          "Warning": "Wrist bent",
-          "Image": "angleIcons/rulaReba/Wrist_15_15_Deg@2x.png"
-        },
-        "3": {
-          "Text": "15°+ up OR 15°+ down",
-          "TranslateText": "rula.components.wrist.score.3.text",
-          "TranslateWarning": "rula.components.wrist.score.3.warning",
-          "Warning": "Wrist far too bent",
-          "Image": "angleIcons/rulaReba/Wrist_15+Up_Deg@2x.png",
-          "Image2": "angleIcons/rulaReba/Wrist_15+Down_Deg@2x.png"
-        },
+        "Type": "select",
         "Base": 1,
-        "type": "select",
-        "label": "Angle",
-        "TranslateLabel": "rulareba.wrist.score"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Angle",
+        "Image": "bodyParts/wrist.png",
+        "Values": {
+          "1": {
+            "Label": "0°",
+            "Image": "angleIcons/rulaReba/Wrist_0_deg@2x.png"
+          },
+          "2": {
+            "Label": "15° up - 15° down",
+            "Image": "angleIcons/rulaReba/Wrist_15_15_Deg@2x.png",
+            "Warning": "Wrist bent"
+          },
+          "3": {
+            "Label": "15°+ up OR 15°+ down",
+            "Image": "angleIcons/rulaReba/Wrist_15+Up_Deg@2x.png",
+            "Image2": "angleIcons/rulaReba/Wrist_15+Down_Deg@2x.png",
+            "Warning": "Wrist far too bent"
+          }
+        }
       },
       "Twist": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "rulareba.yes",
-          "TranslateWarning": null,
-          "Warning": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "rulareba.no",
-          "TranslateWarning": null,
-          "Warning": null
-        },
+        "Type": "boolean",
         "Base": 0,
-        "type": "boolean",
-        "label": "Twisted",
-        "TranslateLabel": "rulareba.wrist.twist",
-        "Image": "angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png",
-        "Image2": "angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Twisted",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Image": "angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png",
+            "Image2": "angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png"
+          },
+          "0": {
+            "Label": "No"
+          }
+        }
       },
       "Midline": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "rulareba.yes",
-          "TranslateWarning": null,
-          "Warning": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "rulareba.no",
-          "TranslateWarning": null,
-          "Warning": null
-        },
+        "Type": "boolean",
         "Base": 0,
-        "type": "boolean",
-        "label": "Wrist bent from midline",
-        "TranslateLabel": "rulareba.wrist.midline",
-        "Image": "angleIcons/rulaReba/Wrist_bent_from_midline@2x.png"
-      },
-      "Image": "bodyParts/wrist.png"
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Wrist bent from midline",
+        "Image": null,
+        "Values": {
+          "1": {
+            "Label": "Yes",
+            "Image": "angleIcons/rulaReba/Wrist_bent_from_midline@2x.png"
+          },
+          "0": {
+            "Label": "No"
+          }
+        }
+      }
     }
   },
   "AdditionalInputs": {
     "Force": {
       "Arm": {
-        "0": {
-          "Text": "< 1.8 kg",
-          "Warning": null,
-          "TranslateText": null,
-          "TranslateWarning": null
-        },
-        "1": {
-          "Text": "1.8 - 10 kg",
-          "Warning": null,
-          "TranslateText": null,
-          "TranslateWarning": null
-        },
-        "2": {
-          "Text": "\\> 10 kg",
-          "Warning": "To much weight for an arm",
-          "TranslateText": null,
-          "TranslateWarning": null
-        },
-        "label": "Arm Force",
-        "TranslateLabel": "rulareba.force.arm",
-        "type": "select",
+        "Type": "select",
         "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Arm Force",
         "Image": "additionalInputs/ArmForceLoad.png",
-        "Score": {
+        "Values": {
           "0": {
-            "TranslateText": "rulareba.score.acceptable",
-            "ShortText": "Acceptable",
-            "Text": "Acceptable",
-            "Color": "rgba(109, 208, 163, 1.0)"
+            "Label": "< 1.8 kg",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
           },
           "1": {
-            "TranslateText": "rulareba.score.medium",
-            "ShortText": "Medium",
-            "Text": "Medium risk of injury",
-            "Color": "rgba(230, 126, 34, 1.0)"
+            "Label": "1.8 - 10 kg",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
           },
           "2": {
-            "TranslateText": "rulareba.score.high",
-            "ShortText": "High",
-            "Text": "High risk of injury",
-            "Color": "rgba(184, 15, 10, 1.0)"
+            "Label": "> 10 kg",
+            "Warning": "To much weight for an arm",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
           }
         }
       },
       "Leg": {
-        "0": {
-          "Text": "< 1.8 kg",
-          "Warning": null,
-          "TranslateText": null,
-          "TranslateWarning": null
-        },
-        "1": {
-          "Text": "1.8 - 10 kg",
-          "Warning": null,
-          "TranslateText": null,
-          "TranslateWarning": null
-        },
-        "2": {
-          "Text": "\\> 10 kg",
-          "Warning": "To much weight for a leg",
-          "TranslateText": null,
-          "TranslateWarning": null
-        },
-        "label": "Leg Force",
-        "TranslateLabel": "rulareba.force.leg",
-        "type": "select",
+        "Type": "select",
         "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Leg Force",
         "Image": "additionalInputs/LegForceLoad.png",
-        "Score": {
+        "Values": {
           "0": {
-            "TranslateText": "rulareba.score.acceptable",
-            "ShortText": "Acceptable",
-            "Text": "Acceptable",
-            "Color": "rgba(109, 208, 163, 1.0)"
+            "Label": "< 1.8 kg",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
           },
           "1": {
-            "TranslateText": "rulareba.score.medium",
-            "ShortText": "Medium",
-            "Text": "Medium risk of injury",
-            "Color": "rgba(230, 126, 34, 1.0)"
+            "Label": "1.8 - 10 kg",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
           },
           "2": {
-            "TranslateText": "rulareba.score.high",
-            "ShortText": "High",
-            "Text": "High risk of injury",
-            "Color": "rgba(184, 15, 10, 1.0)"
+            "Label": "> 10 kg",
+            "Warning": "To much weight for a leg",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
           }
         }
       },
       "ArmSuddenExertion": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "rulareba.yes",
-          "TranslateWarning": null,
-          "Warning": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "rulareba.no",
-          "TranslateWarning": null,
-          "Warning": null
-        },
+        "Type": "boolean",
         "Base": 0,
-        "type": "boolean",
-        "label": "Arm Sudden Exertion",
-        "TranslateLabel": "rulareba.force.armsuddenexertion",
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Arm Sudden Exertion",
         "Image": "additionalInputs/ArmForceLoad.png",
-        "Score": {
-          "0": {
-            "TranslateText": "rulareba.score.acceptable",
-            "ShortText": "Acceptable",
-            "Text": "Acceptable",
-            "Color": "rgba(109, 208, 163, 1.0)"
-          },
+        "Values": {
           "1": {
-            "TranslateText": "rulareba.score.high",
-            "ShortText": "High",
-            "Text": "High risk of injury",
-            "Color": "rgba(184, 15, 10, 1.0)"
+            "Label": "Yes",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
           }
         }
       },
       "LegSuddenExertion": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "rulareba.yes",
-          "TranslateWarning": null,
-          "Warning": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "rulareba.no",
-          "TranslateWarning": null,
-          "Warning": null
-        },
+        "Type": "boolean",
         "Base": 0,
-        "type": "boolean",
-        "label": "Leg Sudden Exertion",
-        "TranslateLabel": "rulareba.force.legsuddenexertion",
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Leg Sudden Exertion",
         "Image": "additionalInputs/LegForceLoad.png",
-        "Score": {
-          "0": {
-            "TranslateText": "rulareba.score.acceptable",
-            "ShortText": "Acceptable",
-            "Text": "Acceptable",
-            "Color": "rgba(109, 208, 163, 1.0)"
-          },
+        "Values": {
           "1": {
-            "TranslateText": "rulareba.score.high",
-            "ShortText": "High",
-            "Text": "High risk of injury",
-            "Color": "rgba(184, 15, 10, 1.0)"
+            "Label": "Yes",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
           }
         }
       }
     },
     "Misc": {
       "LegsSupported": {
-        "1": {
-          "Text": "Yes",
-          "TranslateText": "rulareba.yes",
-          "TranslateWarning": null,
-          "Warning": null
-        },
-        "0": {
-          "Text": "No",
-          "TranslateText": "rulareba.no",
-          "TranslateWarning": null,
-          "Warning": null
-        },
+        "Type": "boolean",
         "Base": 0,
-        "type": "boolean",
-        "label": "Legs Supported",
-        "TranslateLabel": "rulareba.misc.legssupported",
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Legs Supported",
         "Image": "additionalInputs/LegMuscleUse.png",
-        "Score": {
-          "0": {
-            "TranslateText": "rulareba.score.acceptable",
-            "ShortText": "Acceptable",
-            "Text": "Acceptable",
-            "Color": "rgba(109, 208, 163, 1.0)"
-          },
+        "Values": {
           "1": {
-            "TranslateText": "rulareba.score.high",
-            "ShortText": "High",
-            "Text": "High risk of injury",
-            "Color": "rgba(184, 15, 10, 1.0)"
+            "Label": "Yes",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "0": {
+            "Label": "No",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
           }
         }
       }
     },
     "Muscle Use": {
       "Arm": {
-        "0": {
-          "Text": "Holds still",
-          "Warning": null,
-          "TranslateText": null,
-          "TranslateWarning": null
-        },
-        "1": {
-          "Text": "Moves 4 times/min",
-          "Warning": null,
-          "TranslateText": null,
-          "TranslateWarning": null
-        },
-        "label": "Arms / Muscle Use",
-        "TranslateLabel": "rulareba.muscleuse.arm",
-        "Image": "additionalInputs/ArmMuscleUse.png",
-        "type": "select",
+        "Type": "boolean",
         "Base": 0,
-        "Score": {
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Arms / Muscle Use",
+        "Image": "additionalInputs/ArmMuscleUse.png",
+        "Values": {
           "0": {
-            "TranslateText": "rulareba.score.acceptable",
-            "ShortText": "Acceptable",
-            "Text": "Acceptable",
-            "Color": "rgba(109, 208, 163, 1.0)"
+            "Label": "Holds still",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
           },
           "1": {
-            "TranslateText": "rulareba.score.high",
-            "ShortText": "High",
-            "Text": "High risk of injury",
-            "Color": "rgba(184, 15, 10, 1.0)"
+            "Label": "Moves 4 times/min",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
           }
         }
       },
       "Leg": {
-        "0": {
-          "Text": "Holds still",
-          "Warning": null,
-          "TranslateText": null,
-          "TranslateWarning": null
-        },
-        "1": {
-          "Text": "Moves 4 times/min",
-          "Warning": null,
-          "TranslateText": null,
-          "TranslateWarning": null
-        },
-        "label": "Legs / Muscle Use",
-        "TranslateLabel": "rulareba.muscleuse.leg",
-        "Image": "additionalInputs/LegMuscleUse.png",
-        "type": "select",
+        "Type": "boolean",
         "Base": 0,
-        "Score": {
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Legs / Muscle Use",
+        "Image": "additionalInputs/LegMuscleUse.png",
+        "Values": {
           "0": {
-            "TranslateText": "rulareba.score.acceptable",
-            "ShortText": "Acceptable",
-            "Text": "Acceptable",
-            "Color": "rgba(109, 208, 163, 1.0)"
+            "Label": "Holds still",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
           },
           "1": {
-            "TranslateText": "rulareba.score.high",
-            "ShortText": "High",
-            "Text": "High risk of injury",
-            "Color": "rgba(184, 15, 10, 1.0)"
+            "Label": "Moves 4 times/min",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
           }
         }
       }

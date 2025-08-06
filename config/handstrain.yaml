@@ -1,358 +1,396 @@
-constants:
+SeriaNumber: 4
+Name: HandStrain
+AssessmentName: HandStrain
+
+Colors:
   black: &black
-    Color: rgba(15, 15, 30, 0.9)
+    rgba(15, 15, 30, 0.9)
 
   light_green: &light_green
-    Color: rgba(109, 208, 163, 1.0)
+    rgba(109, 208, 163, 1.0)
 
   green: &green
-    Color: rgba(20, 210, 184, 1.0)
+   rgba(20, 210, 184, 1.0)
 
   orange: &orange
-    Color: rgba(234, 130, 130, 1.0)
+    rgba(234, 130, 130, 1.0)
 
   red: &red
-    Color: rgba(184, 15, 10, 1.0)
+    rgba(184, 15, 10, 1.0)
 
+Constants:
   unsafe: &unsafe
-    TranslateText: handstrain.risk.unacceptable
-    ShortText: Unsafe
-    <<: *black
-  acceptable: &good
-    TranslateText: handstrain.risk.good
-    ShortText: Good
-    <<: *light_green
-  low: &fair
-    TranslateText: handstrain.risk.fair
-    ShortText: Fair
-    <<: *orange
-  medium: &poor
-    TranslateText: handstrain.risk.poor
-    ShortText: Poor
-    <<: *red
+    Value: Unsafe
+    Color: *red
 
-AdditionalInputsScores:
-  5: &five
-    1:
-      <<: *good
-    3:
-      <<: *fair
-    5:
-      <<: *fair
-    7:
-      <<: *poor
-    9:
-      <<: *poor
+  acceptable: &acceptable
+    Value: Good
+    Color: *light_green
+
+  low: &low
+    Value: Fair
+    Color: *orange
+
+  medium: &medium
+    Value: Poor
+    Color: *red
+
+Enum:
+  Multipliers:
+    durationPerExertionLeft:
+      Value: dml
+      Label: Duration multiplier (left)
+    durationPerExertionRight:
+      Value: dmr
+      Label: Duration multiplier (right)
+    flexionAngleLeft:
+      Value: pml
+      Label: Posture multiplier (left)
+    flexionAngleRight:
+      Value: pml
+      Label: Posture multiplier (right)
+    extensionAngleLeft:
+      Value: pml
+      Label: Posture multiplier (left)
+    extensionAngleRight:
+      Value: pmr
+      Label: Posture multiplier (right)
+    effortsLeft:
+      Value: eml
+      Label: Effort multiplier (left)
+    effortsRight:
+      Value: emr
+      Label: Effort multiplier (right)
+
+OverallScoreValue: OverallScore
+
+Metadata: {}
 
 ResultValues:
   OverallScore:
     "[0, 10]":
-      Text: Safe job for upper extremity
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
     "[10, None]":
-      Text: Unsafe job for upper extremity
-      <<: *poor
+      Label: Poor
       Warning: Job needs to be redesigned
+      Score: *medium
 
   resultLeft:
     "[0, 10]":
-      Text: Safe job for upper extremity
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
     "[10, None]":
-      Text: Unsafe job for upper extremity
-      <<: *poor
+      Label: Poor
       Warning: Job needs to be redesigned
+      Score: *medium
 
   resultRight:
     "[0, 10]":
-      Text: Safe job for upper extremity
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
     "[10, None]":
-      Text: Unsafe job for upper extremity
-      <<: *poor
+      Label: Poor
       Warning: Job needs to be redesigned
+      Score: *medium
 
   im:
     "[0, 5]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
     "[5, 15]":
-      <<: *fair
+      Label: Fair
       Warning: Job has high level of intensity
+      Score: *low
     "[15, None]":
-      <<: *poor
+      Label: Poor
       Warning: Job has very high level of intensity
+      Score: *medium
 
   eml:
     "[0, 5]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
     "[5, 10]":
-      <<: *fair
+      Label: Fair
       Warning: High level of repetition on left hand
+      Score: *low
     "[10, None]":
-      <<: *poor
+      Label: Poor
       Warning: Very high level of repetition on left hand
+      Score: *medium
 
   pml:
     "[0, 1.5]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
     "[1.5, 2]":
-      <<: *fair
+      Label: Fair
       Warning: Lefthand posture OK
+      Score: *low
     "[2, None]":
-      <<: *poor
+      Label: Poor
       Warning: Lefthand posture bad
+      Score: *medium
 
   dml:
     "[0, 7.5]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
     "[7.5, 15]":
-      <<: *fair
+      Label: Fair
       Warning: Each repetition has high duration on left hand
+      Score: *low
     "[15, None]":
-      <<: *poor
+      Label: Poor
       Warning: Each repetition has very high duration on left hand
+      Score: *medium
 
   wm:
     "[0, .5]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
     "[.5, 1]":
-      <<: *fair
+      Label: Fair
       Warning: Job should be done for shorter period
+      Score: *low
     "[1, None]":
-      <<: *poor
+      Label: Poor
       Warning: Job should be done for shorter period
+      Score: *medium
 
   emr:
     "[0, 5]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
     "[5, 10]":
-      <<: *fair
+      Label: Fair
       Warning: High level of repetition on left hand
+      Score: *low
     "[10, None]":
-      <<: *poor
+      Label: Poor
       Warning: Very high level of repetition on left hand
+      Score: *medium
 
   pmr:
     "[0, 1.5]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
     "[1.5, 2]":
-      <<: *fair
+      Label: Fair
       Warning: Righthand posture OK
+      Score: *low
     "[2, None]":
-      <<: *poor
+      Label: Poor
       Warning: Righthand posture bad
+      Score: *medium
 
   dmr:
     "[0, 7.5]":
-      <<: *good
-      Warning: ~
+      Label: Good
+      Score: *acceptable
     "[7.5, 15]":
-      <<: *fair
+      Label: Fair
       Warning: Each repetition has high duration on left hand
+      Score: *low
     "[15, None]":
-      <<: *poor
+      Label: Poor
       Warning: Each repetition has very high duration on left hand
+      Score: *medium
 
-ComponentValues:
-  durationPerExertionLeft:
-    "[0, 10]":
-      <<: *good
-      Warning: ~
-    "[10, 20]":
-      <<: *fair
-      Text: Duration per exertion (left)
-      Warning: Each repetition has high duration on left hand
-    "[20, None]":
-      <<: *poor
-      Text: Duration per exertion (left)
-      Warning: Each repetition has very high duration on left hand
-    Base: .5
-    Max: 50
-    Multiplier: "dml"
-    label: Duration per exertion (left)
-    ShortLabel: duration (l)
-    Units: sec./exertion
-    type: input
-  durationPerExertionRight:
-    "[0, 10]":
-      <<: *good
-      Warning: ~
-    "[10, 20]":
-      <<: *fair
-      Text: Duration per exertion (right)
-      Warning: Each repetition has high duration on right hand
-    "[20, None]":
-      <<: *poor
-      Text: Duration per exertion (right)
-      Warning: Each repetition has very high duration on right hand
-    Base: .5
-    Max: 50
-    Multiplier: "dmr"
-    label: Duration per exertion (right)
-    ShortLabel: duration (r)
-    Units: sec./exertion
-    type: input
-  flexionAngleLeft:
-    "[0, 10]":
-      <<: *good
-      Warning: ~
-    "[10, 20]":
-      <<: *fair
-      Text: Wrist posture angle (left)
-      Warning: Left wrist repeatedly flexing/extending
-    "[20, None]":
-      <<: *poor
-      Text: Wrist posture angle (left)
-      Warning: Left wrist repeatedly flexing/extending at a high level
-    Base: 0
-    Max: 50
-    Multiplier: "pml"
-    label: Flexion Wrist angle (left)
-    ShortLabel: posture (l)
-    Units: degrees
-    type: input
-  flexionAngleRight:
-    "[0, 10]":
-      <<: *good
-      Warning: ~
-    "[10, 20]":
-      <<: *fair
-      Text: Wrist posture angle (right)
-      Warning: Right wrist repeatedly flexing/extending
-    "[20, None]":
-      <<: *poor
-      Text: Wrist posture angle (right)
-      Warning: Right wrist repeatedly flexing/extending at a high level
-    Base: 0
-    Max: 50
-    Multiplier: "pmr"
-    label: Flexion Wrist angle (right)
-    ShortLabel: posture (r)
-    Units: degrees
-    type: input
-  extensionAngleLeft:
-    "[0, 10]":
-      <<: *good
-      Warning: ~
-    "[10, 20]":
-      <<: *fair
-      Text: Wrist posture angle (left)
-      Warning: Left wrist repeatedly flexing/extending
-    "[20, None]":
-      <<: *poor
-      Text: Wrist posture angle (left)
-      Warning: Left wrist repeatedly flexing/extending at a high level
-    Base: 0
-    Max: 50
-    Multiplier: "pml"
-    label: Extension Wrist angle (left)
-    ShortLabel: posture (l)
-    Units: degrees
-    type: input
-  extensionAngleRight:
-    "[0, 10]":
-      <<: *good
-      Warning: ~
-    "[10, 20]":
-      <<: *fair
-      Text: Wrist posture angle (right)
-      Warning: Right wrist repeatedly flexing/extending
-    "[20, None]":
-      <<: *poor
-      Text: Wrist posture angle (right)
-      Warning: Right wrist repeatedly flexing/extending at a high level
-    Base: 0
-    Max: 50
-    Multiplier: "pmr"
-    label: Extension Wrist angle (right)
-    ShortLabel: posture (r)
-    Units: degrees
-    type: input
-  effortsLeft:
-    "[0, 10]":
-      <<: *good
-      Warning: ~
-    "[10, 20]":
-      <<: *fair
-      Text: Efforts per hand (left)
-      Warning: Left wrist exerting force frequently
-    "[20, None]":
-      <<: *poor
-      Text: Efforts per hand (left)
-      Warning: Left wrist exerting force highly frequently
-    Base: 5
-    Max: 50
-    Multiplier: "eml"
-    label: Efforts per hand (left)
-    ShortLabel: efforts (l)
-    Units: efforts/min
-    type: input
-  effortsRight:
-    "[0, 10]":
-      <<: *good
-      Warning: ~
-    "[10, 20]":
-      <<: *fair
-      Text: Efforts per hand (right)
-      Warning: Right wrist exerting force frequently
-    "[20, None]":
-      <<: *poor
-      Text: Efforts per hand (right)
-      Warning: Right wrist exerting force highly frequently
-    Base: 5
-    Max: 50
-    Multiplier: "emr"
-    label: Efforts per hand (right)
-    ShortLabel: efforts (r)
-    Units: efforts/min
-    type: input
+RiskComponents:
+  Main:
+    durationPerExertionLeft:
+      Type: input
+      Base: .5
+      MaxInput: 50
+      Units: sec./exertion
+      Label: Duration per exertion (left)
+      Image: ~
+      Values:
+        "[0, 10]":
+          Label: Good
+          Score: *acceptable
+        "[10, 20]":
+          Label: Fair
+          Warning: Duration per exertion (left)
+          Score: *low
+        "[20, None]":
+          Label: Poor
+          Warning: Each repetition has very high duration on left hand
+          Score: *medium
+    durationPerExertionRight:
+      Type: input
+      Base: .5
+      MaxInput: 50
+      Units: sec./exertion
+      Label: Duration per exertion (right)
+      Image: ~
+      Values:
+        "[0, 10]":
+          Label: Good
+          Score: *acceptable
+        "[10, 20]":
+          Label: Fair
+          Warning: Each repetition has high duration on right hand
+          Score: *low
+        "[20, None]":
+          Label: Poor
+          Warning: Each repetition has very high duration on right hand
+          Score: *medium
+    flexionAngleLeft:
+      Type: input
+      Base: 0
+      MaxInput: 50
+      Units: degrees
+      Label: Wrist posture angle (left)
+      Image: ~
+      Values:
+        "[0, 10]":
+          Label: Good
+          Score: *acceptable
+        "[10, 20]":
+          Label: Fair
+          Warning: Wrist posture angle (left)
+          Score: *low
+        "[20, None]":
+          Label: Poor
+          Warning: Left wrist repeatedly flexing/extending at a high level
+          Score: *medium
+    flexionAngleRight:
+      Type: input
+      Base: 0
+      MaxInput: 50
+      Units: degrees
+      Label: Wrist posture angle (right)
+      Image: ~
+      Values:
+        "[0, 10]":
+          Label: Good
+          Score: *acceptable
+        "[10, 20]":
+          Label: Fair
+          Warning: Right wrist repeatedly flexing/extending
+          Score: *low
+        "[20, None]":
+          Label: Poor
+          Warning: Right wrist repeatedly flexing/extending at a high level
+          Score: *medium
+    extensionAngleLeft:
+      Type: input
+      Base: 0
+      MaxInput: 50
+      Units: degrees
+      Label: Extension Wrist angle (left)
+      Image: ~
+      Values:
+        "[0, 10]":
+          Label: Good
+          Score: *acceptable
+        "[10, 20]":
+          Label: Fair
+          Warning: Left wrist repeatedly flexing/extending
+          Score: *low
+        "[20, None]":
+          Label: Poor
+          Warning: Left wrist repeatedly flexing/extending at a high level
+          Score: *medium
+    extensionAngleRight:
+      Type: input
+      Base: 0
+      MaxInput: 50
+      Units: degrees
+      Label: Extension Wrist angle (right)
+      Image: ~
+      Values:
+        "[0, 10]":
+          Label: Good
+          Score: *acceptable
+        "[10, 20]":
+          Label: Fair
+          Warning: Right wrist repeatedly flexing/extending
+          Score: *low
+        "[20, None]":
+          Label: Poor
+          Warning: Right wrist repeatedly flexing/extending at a high level
+          Score: *medium
+    effortsLeft:
+      Type: input
+      Base: 5
+      MaxInput: 50
+      Units: efforts/min
+      Label: Efforts per hand (left)
+      Image: ~
+      Values:
+        "[0, 10]":
+          Label: Good
+          Score: *acceptable
+        "[10, 20]":
+          Label: Fair
+          Warning: Left wrist exerting force frequently
+          Score: *low
+        "[20, None]":
+          Label: Poor
+          Warning: Left wrist exerting force highly frequently
+          Score: *medium
+    effortsRight:
+      Type: input
+      Base: 5
+      MaxInput: 50
+      Units: efforts/min
+      Label: Efforts per hand (right)
+      Image: ~
+      Values:
+        "[0, 10]":
+          Label: Good
+          Score: *acceptable
+        "[10, 20]":
+          Label: Fair
+          Warning: Right wrist exerting force frequently
+          Score: *low
+        "[20, None]":
+          Label: Poor
+          Warning: Right wrist exerting force highly frequently
+          Score: *medium
 
 AdditionalInputs:
-  borgScale:
-    1:
-      Text: Light
-      TranslateText: handstrain.risk.light
-      Warning: ~
-      TranslateWarning: ~
-    3:
-      Text: Somewhat hard
-      TranslateText: handstrain.risk.somewhat-hard
-      Warning: ~
-      TranslateWarning: ~
-    5:
-      Text: Hard
-      TranslateText: handstrain.risk.hard
-      Warning: Hard
-      TranslateWarning: handstrain.risk.hard
-    7:
-      Text: Very hard
-      TranslateText: handstrain.risk.very-hard
-      Warning: Extreme physical effort
-      TranslateWarning: handstrain.risk.extreme-effort
-    9:
-      Text: Maximal
-      TranslateText: handstrain.risk.maximal
-      Warning: Maximal exertion
-      TranslateWarning: handstrain.risk.maximal-exertion
-    label: Borg scale
-    type: select
-    Base: 1
-    Image: ~
-    Score: *five
-  taskDuration:
-    Base: 1
-    type: input
-    label: Task duration
-    Max: 10
-    Units: hrs
-    Image: ~
+  Main:
+    borgScale:
+      Type: select
+      Base: 1
+      MaxInput: ~
+      Units: ~
+      Label: Borg scale
+      Image: ~
+      Values:
+        1:
+          Label: "1-2 \n(Light)"
+          Image: borgIcons/Lvl1-2_@2x.png
+          Score: *acceptable
+        3:
+          Label: "3-4 \n(Somewhat hard)"
+          Image: borgIcons/Lvl3-4_@2x.png
+          Score: *low
+        5:
+          Label: "5-6 \n(Hard)"
+          Warning: Hard exertion
+          Image: borgIcons/Lvl5-6_2x.png
+          Score: *low
+        7:
+          Label: "7-8 \n(Very hard)"
+          Warning: Very hard exertion
+          Image: borgIcons/Lvl7-8_2x.png
+          Score: *medium
+        9:
+          Label: "9-10 \n(Maximal)"
+          Warning: Maxmal exertion
+          Image: borgIcons/Lvl9-10_2x.png
+          Score: *medium
+    taskDuration:
+      Type: input
+      Base: 1
+      MaxInput: 10
+      Units: hrs
+      Label: Task duration
+      Image: ~
+      Values: ~
