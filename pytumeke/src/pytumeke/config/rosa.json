@@ -1662,54 +1662,6 @@
           }
         }
       },
-      "ChairBackSupport": {
-        "Type": "select",
-        "Base": 1,
-        "MaxInput": null,
-        "Units": null,
-        "Label": "Back support",
-        "Image": null,
-        "Values": {
-          "1": {
-            "Label": "Adequate lumbar support",
-            "Desc": "Chair reclined between 95°-110°",
-            "FullDesc": "Chair reclined between 95°-110°",
-            "Score": {
-              "Value": "Acceptable",
-              "Color": "rgba(109, 208, 163, 1.0)"
-            }
-          },
-          "2": {
-            "Label": "No lumbar support",
-            "Warning": "No lumbar support or it’s not positioned in small of back",
-            "Desc": "No lumbar support or it’s not positioned in small of back",
-            "FullDesc": "No lumbar support or it’s not positioned in small of back",
-            "Score": {
-              "Value": "Medium",
-              "Color": "rgba(230, 126, 34, 1.0)"
-            }
-          },
-          "2.1": {
-            "Label": "Angled too far back or forward",
-            "Warning": "Causes the spine to bear more stress",
-            "Desc": "Greater than 100°",
-            "FullDesc": "Greater than 110° or less than 95°",
-            "Score": {
-              "Value": "Medium",
-              "Color": "rgba(230, 126, 34, 1.0)"
-            }
-          },
-          "2.2": {
-            "Label": "No back support",
-            "Desc": "Stool or worker leaning forward",
-            "FullDesc": "Stool or worker leaning forward",
-            "Score": {
-              "Value": "Medium",
-              "Color": "rgba(230, 126, 34, 1.0)"
-            }
-          }
-        }
-      },
       "ChairBackSupportSurfaceTooHigh": {
         "Type": "boolean",
         "Base": 0,

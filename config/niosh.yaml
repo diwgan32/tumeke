@@ -142,37 +142,6 @@ Enum:
       Value: 2
       Label: Long (2 - 8 hours)
 
-  HeightConstantsStandard:
-    LESS_FOUR:
-      Value: 0
-      Label: "< 4"
-    FOUR_TO_FOUR_HALF:
-      Value: 1
-      Label: "4 - 4.5"
-    FOUR_HALF_TO_FIVE:
-      Value: 2
-      Label: "4.5 - 5"
-    FIVE_TO_FIVE_HALF:
-      Value: 3
-      Label: "5 - 5.5"
-    FIVE_HALF_TO_SIX:
-      Value: 4
-      Label: "5.5 - 6"
-    SIX_TO_SIX_HALF:
-      Value: 5
-      Label: "6 - 6.5"
-    SIX_HALF_PLUS:
-      Value: 6
-      Label: "> 6.5"
-
-  Units:
-    STANDARD:
-      Value: 0
-      Label: Standard
-    METRIC:
-      Value: 1
-      Label: Metric
-
 OverallScoreValue: li
 
 Metadata:
@@ -277,7 +246,7 @@ RiskComponents:
       Type: input
       Base: 0.83
       MaxInput: 5.83333
-      Units: [ft, sm]
+      Units: [ft, m]
       Label: Horizontal End
       Image: bodyParts/horizontalEnd.png
       Values: ~
@@ -285,7 +254,7 @@ RiskComponents:
       Type: input
       Base: 0.83
       MaxInput: 2.08
-      Units: [ft, sm]
+      Units: [ft, m]
       Label: Horizontal Start
       Image: bodyParts/horizontalStart.png
       Values: ~
@@ -293,7 +262,7 @@ RiskComponents:
       Type: input
       Base: 0.83
       MaxInput: 5.83333
-      Units: [ft, sm]
+      Units: [ft, m]
       Label: Vertical End
       Image: bodyParts/verticalEnd.png
       Values: ~
@@ -301,7 +270,7 @@ RiskComponents:
       Type: input
       Base: 0.83
       MaxInput: 5.83333
-      Units: [ft, sm]
+      Units: [ft, m]
       Label: Vertical Start
       Image: bodyParts/verticalStart.png
       Values: ~

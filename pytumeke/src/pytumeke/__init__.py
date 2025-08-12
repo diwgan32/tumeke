@@ -20,6 +20,10 @@ f = open(f"{dir_path}/config/handstrain.json")
 handstrain_config = json.load(f)
 f.close()
 
+f = open(f"{dir_path}/config/training.json")
+training_config = json.load(f)
+f.close()
+
 f = open(f"{dir_path}/config/snook.json")
 snook_config = json.load(f)
 f.close()

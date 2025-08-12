@@ -44,7 +44,7 @@ Hip:
   "[15, 25]":
     type: gradient
     <<: *green_to_orange
-  "[25, 45]":
+  "[25, 40]":
     type: solid
     <<: *orange
   "[45, 55]":
@@ -70,7 +70,7 @@ Left elbow:
   "[95, 105]":
     type: gradient
     <<: *green_to_orange
-  "[105, None]":
+  "[55, None]":
     type: solid
     <<: *orange
 
@@ -90,7 +90,7 @@ Right elbow:
   "[95, 105]":
     type: gradient
     <<: *green_to_orange
-  "[105, None]":
+  "[55, None]":
     type: solid
     <<: *orange
 
@@ -161,39 +161,39 @@ Left wrist:
   default:
     type: solid
     <<: *green
-  "[None, -15]":
+  "[None, -35]":
     type: solid
     <<: *red
-  "[-15, -10]":
+  "[-35, -30]":
     type: gradient
     <<: *red_to_green
-  "[-10, 10]":
+  "[-30, 30]":
     type: solid
     <<: *green
-  "[10, 15]":
+  "[30, 35]":
     type: gradient
     <<: *green_to_red
-  "[15, None]":
+  "[35, None]":
     type: solid
     <<: *red
 
-Right wrist:
+Left wrist:
   default:
     type: solid
     <<: *green
-  "[None, -15]":
+  "[None, -35]":
     type: solid
     <<: *red
-  "[-15, -10]":
+  "[-35, -30]":
     type: gradient
     <<: *red_to_green
-  "[-10, 10]":
+  "[-30, 30]":
     type: solid
     <<: *green
-  "[10, 15]":
+  "[30, 35]":
     type: gradient
     <<: *green_to_red
-  "[15, None]":
+  "[35, None]":
     type: solid
     <<: *red
 

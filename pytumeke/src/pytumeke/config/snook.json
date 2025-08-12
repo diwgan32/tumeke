@@ -87,16 +87,6 @@
         "Value": 5,
         "Label": "Carry"
       }
-    },
-    "Units": {
-      "STANDARD": {
-        "Value": 0,
-        "Label": "Standard"
-      },
-      "METRIC": {
-        "Value": 1,
-        "Label": "Metric"
-      }
     }
   },
   "OverallScoreValue": "mal",

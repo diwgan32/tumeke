@@ -1,12 +1,114 @@
 {
   "rula": {
     "results": {
-      "Overall": {},
-      "Neck": {},
-      "Upper Arm": {},
-      "Lower Arm": {},
-      "Trunk": {},
-      "Wrist": {}
+      "Overall": {
+        "1": {
+          "label": "general.acceptable"
+        },
+        "2": {
+          "label": "general.acceptable"
+        },
+        "3": {
+          "label": "general.low"
+        },
+        "4": {
+          "label": "general.low"
+        },
+        "5": {
+          "label": "general.medium"
+        },
+        "6": {
+          "label": "general.medium"
+        },
+        "7": {
+          "label": "general.high"
+        }
+      },
+      "Neck": {
+        "1": {
+          "label": "general.acceptable"
+        },
+        "2": {
+          "label": "general.low"
+        },
+        "3": {
+          "label": "general.medium"
+        },
+        "4": {
+          "label": "general.medium"
+        },
+        "5": {
+          "label": "general.high"
+        },
+        "6": {
+          "label": "general.high"
+        }
+      },
+      "Upper Arm": {
+        "1": {
+          "label": "general.acceptable"
+        },
+        "2": {
+          "label": "general.low"
+        },
+        "3": {
+          "label": "general.medium"
+        },
+        "4": {
+          "label": "general.medium"
+        },
+        "5": {
+          "label": "general.high"
+        },
+        "6": {
+          "label": "general.high"
+        }
+      },
+      "Lower Arm": {
+        "1": {
+          "label": "general.low"
+        },
+        "2": {
+          "label": "general.medium"
+        },
+        "3": {
+          "label": "general.high"
+        }
+      },
+      "Trunk": {
+        "1": {
+          "label": "general.acceptable"
+        },
+        "2": {
+          "label": "general.low"
+        },
+        "3": {
+          "label": "general.medium"
+        },
+        "4": {
+          "label": "general.medium"
+        },
+        "5": {
+          "label": "general.high"
+        },
+        "6": {
+          "label": "general.high"
+        }
+      },
+      "Wrist": {
+        "1": {
+          "label": "general.acceptable"
+        },
+        "2": {
+          "label": "general.low"
+        },
+        "3": {
+          "label": "general.medium"
+        },
+        "4": {
+          "label": "general.high"
+        }
+      }
     },
     "componentNames": {
       "Force": {
@@ -40,13 +142,25 @@
           "label": "assessments.rula.components.force.arm.label",
           "values": {
             "0": {
-              "label": "assessments.rula.components.force.arm.value-0.label"
+              "label": "assessments.rula.components.force.arm.value-0.label",
+              "unitsLabel": {
+                "0": "assessments.rula.components.force.arm.value-0.label-0",
+                "1": "assessments.rula.components.force.arm.value-0.label"
+              }
             },
             "1": {
-              "label": "assessments.rula.components.force.arm.value-1.label"
+              "label": "assessments.rula.components.force.arm.value-1.label",
+              "unitsLabel": {
+                "0": "assessments.rula.components.force.arm.value-1.label-0",
+                "1": "assessments.rula.components.force.arm.value-1.label"
+              }
             },
             "2": {
               "label": "assessments.rula.components.force.arm.value-2.label",
+              "unitsLabel": {
+                "0": "assessments.rula.components.force.arm.value-2.label-0",
+                "1": "assessments.rula.components.force.arm.value-2.label"
+              },
               "warning": "assessments.rula.components.force.arm.value-2.warning"
             }
           }
@@ -55,13 +169,25 @@
           "label": "assessments.rula.components.force.leg.label",
           "values": {
             "0": {
-              "label": "assessments.rula.components.force.arm.value-0.label"
+              "label": "assessments.rula.components.force.arm.value-0.label",
+              "unitsLabel": {
+                "0": "assessments.rula.components.force.arm.value-0.label-0",
+                "1": "assessments.rula.components.force.arm.value-0.label"
+              }
             },
             "1": {
-              "label": "assessments.rula.components.force.arm.value-1.label"
+              "label": "assessments.rula.components.force.arm.value-1.label",
+              "unitsLabel": {
+                "0": "assessments.rula.components.force.arm.value-1.label-0",
+                "1": "assessments.rula.components.force.arm.value-1.label"
+              }
             },
             "2": {
               "label": "assessments.rula.components.force.arm.value-2.label",
+              "unitsLabel": {
+                "0": "assessments.rula.components.force.arm.value-2.label-0",
+                "1": "assessments.rula.components.force.arm.value-2.label"
+              },
               "warning": "assessments.rula.components.force.leg.value-2.warning"
             }
           }
@@ -328,13 +454,149 @@
   },
   "reba": {
     "results": {
-      "Overall": {},
-      "Neck": {},
-      "Upper Arm": {},
-      "Lower Arm": {},
-      "Trunk": {},
-      "Leg": {},
-      "Wrist": {}
+      "Overall": {
+        "1": {
+          "label": "general.acceptable"
+        },
+        "2": {
+          "label": "general.low"
+        },
+        "3": {
+          "label": "general.low"
+        },
+        "4": {
+          "label": "general.medium"
+        },
+        "5": {
+          "label": "general.medium"
+        },
+        "6": {
+          "label": "general.medium"
+        },
+        "7": {
+          "label": "general.medium"
+        },
+        "8": {
+          "label": "general.high"
+        },
+        "9": {
+          "label": "general.high"
+        },
+        "10": {
+          "label": "general.high"
+        },
+        "11": {
+          "label": "general.very-high"
+        },
+        "12": {
+          "label": "general.very-high"
+        },
+        "13": {
+          "label": "general.very-high"
+        },
+        "14": {
+          "label": "general.very-high"
+        },
+        "15": {
+          "label": "general.very-high"
+        },
+        "16": {
+          "label": "general.very-high"
+        }
+      },
+      "Neck": {
+        "1": {
+          "label": "general.acceptable"
+        },
+        "2": {
+          "label": "general.low"
+        },
+        "3": {
+          "label": "general.medium"
+        },
+        "4": {
+          "label": "general.medium"
+        },
+        "5": {
+          "label": "general.high"
+        },
+        "6": {
+          "label": "general.high"
+        }
+      },
+      "Upper Arm": {
+        "1": {
+          "label": "general.acceptable"
+        },
+        "2": {
+          "label": "general.low"
+        },
+        "3": {
+          "label": "general.medium"
+        },
+        "4": {
+          "label": "general.medium"
+        },
+        "5": {
+          "label": "general.high"
+        },
+        "6": {
+          "label": "general.high"
+        }
+      },
+      "Lower Arm": {
+        "1": {
+          "label": "general.acceptable"
+        },
+        "2": {
+          "label": "general.medium"
+        }
+      },
+      "Trunk": {
+        "1": {
+          "label": "general.acceptable"
+        },
+        "2": {
+          "label": "general.low"
+        },
+        "3": {
+          "label": "general.medium"
+        },
+        "4": {
+          "label": "general.medium"
+        },
+        "5": {
+          "label": "general.high"
+        },
+        "6": {
+          "label": "general.high"
+        }
+      },
+      "Leg": {
+        "1": {
+          "label": "general.acceptable"
+        },
+        "2": {
+          "label": "general.low"
+        },
+        "3": {
+          "label": "general.medium"
+        },
+        "4": {
+          "label": "general.high"
+        }
+      },
+      "Wrist": {
+        "1": {
+          "label": "general.acceptable"
+        },
+        "2": {
+          "label": "general.medium"
+        },
+        "3": {
+          "label": "general.high"
+        }
+      }
     },
     "componentNames": {
       "Force": {
@@ -368,13 +630,25 @@
           "label": "assessments.reba.components.force.load.label",
           "values": {
             "0": {
-              "label": "assessments.reba.components.force.load.value-0.label"
+              "label": "assessments.reba.components.force.load.value-0.label",
+              "unitsLabel": {
+                "0": "assessments.reba.components.force.load.value-0.label-0",
+                "1": "assessments.reba.components.force.load.value-0.label"
+              }
             },
             "1": {
-              "label": "assessments.reba.components.force.load.value-1.label"
+              "label": "assessments.reba.components.force.load.value-1.label",
+              "unitsLabel": {
+                "0": "assessments.reba.components.force.load.value-1.label-0",
+                "1": "assessments.reba.components.force.load.value-1.label"
+              }
             },
             "2": {
               "label": "assessments.rula.components.force.arm.value-2.label",
+              "unitsLabel": {
+                "0": "assessments.rula.components.force.arm.value-2.label-0",
+                "1": "assessments.rula.components.force.arm.value-2.label"
+              },
               "warning": "assessments.reba.components.force.load.value-2.warning"
             }
           }
@@ -1966,33 +2240,6 @@
             }
           }
         },
-        "ChairBackSupport": {
-          "label": "assessments.rosa.components.armsbackrest.chairbacksupport.label",
-          "values": {
-            "1": {
-              "label": "assessments.rosa.components.armsbackrest.chairbacksupport.value-1.label",
-              "desc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-1.desc",
-              "fullDesc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-1.desc"
-            },
-            "2": {
-              "label": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2.label",
-              "warning": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2.warning",
-              "desc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2.warning",
-              "fullDesc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2.warning"
-            },
-            "2.1": {
-              "label": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_1.label",
-              "warning": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_1.warning",
-              "desc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_1.desc",
-              "fullDesc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_1.fulldesc"
-            },
-            "2.2": {
-              "label": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_2.label",
-              "desc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_2.desc",
-              "fullDesc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_2.desc"
-            }
-          }
-        },
         "ChairBackSupportSurfaceTooHigh": {
           "label": "assessments.rosa.components.armsbackrest.chairbacksupportsurfacetoohigh.label",
           "values": {
@@ -2028,6 +2275,33 @@
               "label": "general.yes",
               "warning": "assessments.rosa.components.armsbackrest.chairarmresttoowide.value-1.warning",
               "desc": "assessments.rosa.components.armsbackrest.chairarmresttoowide.value-1.warning"
+            }
+          }
+        },
+        "ChairBackSupport": {
+          "label": "assessments.rosa.components.armsbackrest.chairbacksupport.label",
+          "values": {
+            "1": {
+              "label": "assessments.rosa.components.armsbackrest.chairbacksupport.value-1.label",
+              "desc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-1.desc",
+              "fullDesc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-1.desc"
+            },
+            "2": {
+              "label": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2.label",
+              "warning": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2.warning",
+              "desc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2.warning",
+              "fullDesc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2.warning"
+            },
+            "2.1": {
+              "label": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_1.label",
+              "warning": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_1.warning",
+              "desc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_1.desc",
+              "fullDesc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_1.fulldesc"
+            },
+            "2.2": {
+              "label": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_2.label",
+              "desc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_2.desc",
+              "fullDesc": "assessments.rosa.components.armsbackrest.chairbacksupport.value-2_2.desc"
             }
           }
         },

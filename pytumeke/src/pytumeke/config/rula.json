@@ -28,48 +28,53 @@
   },
   "Enum": {},
   "OverallScoreValue": "Overall",
-  "Metadata": {
-    "supportDepth": "number"
-  },
+  "Metadata": {},
   "ResultValues": {
     "Overall": {
       "1": {
+        "Label": "Acceptable",
         "Score": {
           "Value": "Acceptable",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
       "2": {
+        "Label": "Acceptable",
         "Score": {
           "Value": "Acceptable",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
       "3": {
+        "Label": "Low",
         "Score": {
           "Value": "Low",
           "Color": "rgba(241, 196, 15, 1.0)"
         }
       },
       "4": {
+        "Label": "Low",
         "Score": {
           "Value": "Low",
           "Color": "rgba(241, 196, 15, 1.0)"
         }
       },
       "5": {
+        "Label": "Medium",
         "Score": {
           "Value": "Medium",
           "Color": "rgba(230, 126, 34, 1.0)"
         }
       },
       "6": {
+        "Label": "Medium",
         "Score": {
           "Value": "Medium",
           "Color": "rgba(230, 126, 34, 1.0)"
         }
       },
       "7": {
+        "Label": "High",
         "Score": {
           "Value": "High",
           "Color": "rgba(184, 15, 10, 1.0)"
@@ -78,36 +83,42 @@
     },
     "Neck": {
       "1": {
+        "Label": "Acceptable",
         "Score": {
           "Value": "Acceptable",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
       "2": {
+        "Label": "Low",
         "Score": {
           "Value": "Low",
           "Color": "rgba(241, 196, 15, 1.0)"
         }
       },
       "3": {
+        "Label": "Medium",
         "Score": {
           "Value": "Medium",
           "Color": "rgba(230, 126, 34, 1.0)"
         }
       },
       "4": {
+        "Label": "Medium",
         "Score": {
           "Value": "Medium",
           "Color": "rgba(230, 126, 34, 1.0)"
         }
       },
       "5": {
+        "Label": "High",
         "Score": {
           "Value": "High",
           "Color": "rgba(184, 15, 10, 1.0)"
         }
       },
       "6": {
+        "Label": "High",
         "Score": {
           "Value": "High",
           "Color": "rgba(184, 15, 10, 1.0)"
@@ -116,36 +127,42 @@
     },
     "Upper Arm": {
       "1": {
+        "Label": "Acceptable",
         "Score": {
           "Value": "Acceptable",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
       "2": {
+        "Label": "Low",
         "Score": {
           "Value": "Low",
           "Color": "rgba(241, 196, 15, 1.0)"
         }
       },
       "3": {
+        "Label": "Medium",
         "Score": {
           "Value": "Medium",
           "Color": "rgba(230, 126, 34, 1.0)"
         }
       },
       "4": {
+        "Label": "Medium",
         "Score": {
           "Value": "Medium",
           "Color": "rgba(230, 126, 34, 1.0)"
         }
       },
       "5": {
+        "Label": "High",
         "Score": {
           "Value": "High",
           "Color": "rgba(184, 15, 10, 1.0)"
         }
       },
       "6": {
+        "Label": "High",
         "Score": {
           "Value": "High",
           "Color": "rgba(184, 15, 10, 1.0)"
@@ -154,18 +171,21 @@
     },
     "Lower Arm": {
       "1": {
+        "Label": "Low",
         "Score": {
           "Value": "Low",
           "Color": "rgba(241, 196, 15, 1.0)"
         }
       },
       "2": {
+        "Label": "Medium",
         "Score": {
           "Value": "Medium",
           "Color": "rgba(230, 126, 34, 1.0)"
         }
       },
       "3": {
+        "Label": "High",
         "Score": {
           "Value": "High",
           "Color": "rgba(184, 15, 10, 1.0)"
@@ -174,36 +194,42 @@
     },
     "Trunk": {
       "1": {
+        "Label": "Acceptable",
         "Score": {
           "Value": "Acceptable",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
       "2": {
+        "Label": "Low",
         "Score": {
           "Value": "Low",
           "Color": "rgba(241, 196, 15, 1.0)"
         }
       },
       "3": {
+        "Label": "Medium",
         "Score": {
           "Value": "Medium",
           "Color": "rgba(230, 126, 34, 1.0)"
         }
       },
       "4": {
+        "Label": "Medium",
         "Score": {
           "Value": "Medium",
           "Color": "rgba(230, 126, 34, 1.0)"
         }
       },
       "5": {
+        "Label": "High",
         "Score": {
           "Value": "High",
           "Color": "rgba(184, 15, 10, 1.0)"
         }
       },
       "6": {
+        "Label": "High",
         "Score": {
           "Value": "High",
           "Color": "rgba(184, 15, 10, 1.0)"
@@ -212,24 +238,28 @@
     },
     "Wrist": {
       "1": {
+        "Label": "Acceptable",
         "Score": {
           "Value": "Acceptable",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
       "2": {
+        "Label": "Low",
         "Score": {
           "Value": "Low",
           "Color": "rgba(241, 196, 15, 1.0)"
         }
       },
       "3": {
+        "Label": "Medium",
         "Score": {
           "Value": "Medium",
           "Color": "rgba(230, 126, 34, 1.0)"
         }
       },
       "4": {
+        "Label": "High",
         "Score": {
           "Value": "High",
           "Color": "rgba(184, 15, 10, 1.0)"
@@ -542,7 +572,10 @@
         "Type": "select",
         "Base": 0,
         "MaxInput": null,
-        "Units": null,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
         "Label": "Arm Force",
         "Image": "additionalInputs/ArmForceLoad.png",
         "Values": {
@@ -554,7 +587,7 @@
             }
           },
           "1": {
-            "Label": "1.8 - 10 kg",
+            "Label": "1.8 kg - 10 kg",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -574,7 +607,10 @@
         "Type": "select",
         "Base": 0,
         "MaxInput": null,
-        "Units": null,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
         "Label": "Leg Force",
         "Image": "additionalInputs/LegForceLoad.png",
         "Values": {
@@ -586,7 +622,7 @@
             }
           },
           "1": {
-            "Label": "1.8 - 10 kg",
+            "Label": "1.8 kg - 10 kg",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"

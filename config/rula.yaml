@@ -36,84 +36,115 @@ Enum: {}
 
 OverallScoreValue: Overall
 
-Metadata:
-  supportDepth: "number"
+Metadata: {}
 
 ResultValues:
   Overall:
     1:
+      Label: Acceptable
       Score: *acceptable
     2:
+      Label: Acceptable
       Score: *acceptable
     3:
+      Label: Low
       Score: *low
     4:
+      Label: Low
       Score: *low
     5:
+      Label: Medium
       Score: *medium
     6:
+      Label: Medium
       Score: *medium
     7:
+      Label: High
       Score: *high
 
   Neck:
     1:
+      Label: Acceptable
       Score: *acceptable
     2:
+      Label: Low
       Score: *low
     3:
+      Label: Medium
       Score: *medium
     4:
+      Label: Medium
       Score: *medium
     5:
+      Label: High
       Score: *high
     6:
+      Label: High
       Score: *high
 
   Upper Arm:
     1:
+      Label: Acceptable
       Score: *acceptable
     2:
+      Label: Low
       Score: *low
     3:
+      Label: Medium
       Score: *medium
     4:
+      Label: Medium
       Score: *medium
     5:
+      Label: High
       Score: *high
     6:
+      Label: High
       Score: *high
 
   Lower Arm:
     1:
+      Label: Low
       Score: *low
     2:
+      Label: Medium
       Score: *medium
     3:
+      Label: High
       Score: *high
 
   Trunk:
     1:
+      Label: Acceptable
       Score: *acceptable
     2:
+      Label: Low
       Score: *low
     3:
+      Label: Medium
       Score: *medium
     4:
+      Label: Medium
       Score: *medium
     5:
+      Label: High
       Score: *high
     6:
+      Label: High
       Score: *high
 
   Wrist:
     1:
+      Label: Acceptable
       Score: *acceptable
     2:
+      Label: Low
       Score: *low
     3:
+      Label: Medium
       Score: *medium
     4:
+      Label: High
       Score: *high
 
 RiskComponents:
@@ -357,7 +388,7 @@ AdditionalInputs:
       Type: select
       Base: 0
       MaxInput: ~
-      Units: ~
+      Units: [lbs, kgs]
       Label: Arm Force
       Image: additionalInputs/ArmForceLoad.png
       Values:
@@ -365,7 +396,7 @@ AdditionalInputs:
           Label: < 1.8 kg
           Score: *acceptable
         1:
-          Label: 1.8 - 10 kg
+          Label: 1.8 kg - 10 kg
           Score: *medium
         2:
           Label: "> 10 kg"
@@ -375,7 +406,7 @@ AdditionalInputs:
       Type: select
       Base: 0
       MaxInput: ~
-      Units: ~
+      Units: [lbs, kgs]
       Label: Leg Force
       Image: additionalInputs/LegForceLoad.png
       Values:
@@ -383,7 +414,7 @@ AdditionalInputs:
           Label: < 1.8 kg
           Score: *acceptable
         1:
-          Label: 1.8 - 10 kg
+          Label: 1.8 kg - 10 kg
           Score: *medium
         2:
           Label: "> 10 kg"

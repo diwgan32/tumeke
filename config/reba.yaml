@@ -48,102 +48,145 @@ Metadata: {}
 ResultValues:
   Overall:
     1:
+      Label: Acceptable
       Score: *acceptable
     2:
+      Label: Low
       Score: *low
     3:
+      Label: Low
       Score: *low
     4:
+      Label: Medium
       Score: *medium
     5:
+      Label: Medium
       Score: *medium
     6:
+      Label: Medium
       Score: *medium
     7:
+      Label: Medium
       Score: *medium
     8:
+      Label: High
       Score: *high
     9:
+      Label: High
       Score: *high
     10:
+      Label: High
       Score: *high
     11:
+      Label: Very High
       Score: *vhigh
     12:
+      Label: Very High
       Score: *vhigh
     13:
+      Label: Very High
       Score: *vhigh
     14:
+      Label: Very High
       Score: *vhigh
     15:
+      Label: Very High
       Score: *vhigh
     16:
+      Label: Very High
       Score: *vhigh
 
   Neck:
     1:
+      Label: Acceptable
       Score: *acceptable
     2:
+      Label: Low
       Score: *low
     3:
+      Label: Medium
       Score: *medium
     4:
+      Label: Medium
       Score: *medium
     5:
+      Label: High
       Score: *high
     6:
+      Label: High
       Score: *high
 
   Upper Arm:
     1:
+      Label: Acceptable
       Score: *acceptable
     2:
+      Label: Low
       Score: *low
     3:
+      Label: Medium
       Score: *medium
     4:
+      Label: Medium
       Score: *medium
     5:
+      Label: High
       Score: *high
     6:
+      Label: High
       Score: *high
 
   Lower Arm:
     1:
+      Label: Acceptable
       Score: *acceptable
     2:
+      Label: Medium
       Score: *medium
 
   Trunk:
     1:
+      Label: Acceptable
       Score: *acceptable
     2:
+      Label: Low
       Score: *low
     3:
+      Label: Medium
       Score: *medium
     4:
+      Label: Medium
       Score: *medium
     5:
+      Label: High
       Score: *high
     6:
+      Label: High
       Score: *high
 
   Leg:
     1:
+      Label: Acceptable
       Score: *acceptable
     2:
+      Label: Low
       Score: *low
     3:
+      Label: Medium
       Score: *medium
     4:
+      Label: High
       Score: *high
 
   Wrist:
     1:
+      Label: Acceptable
       Score: *acceptable
     2:
+      Label: Medium
       Score: *medium
     3:
+      Label: High
       Score: *high
 
 RiskComponents:
@@ -388,7 +431,7 @@ AdditionalInputs:
       Type: select
       Base: 0
       MaxInput: ~
-      Units: ~
+      Units: [lbs, kgs]
       Label: Force/Load
       Image: additionalInputs/ForceLoad.png
       Values:
@@ -396,7 +439,7 @@ AdditionalInputs:
           Label: < 5 kg
           Score: *acceptable
         1:
-          Label: 5 - 10 kg
+          Label: 5 kg - 10 kg
           Score: *medium
         2:
           Label: "> 10 kg"
