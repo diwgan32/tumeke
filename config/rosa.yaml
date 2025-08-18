@@ -35,6 +35,83 @@ Constants:
     Value: Very High
     Color: *dark_red
 
+  Problems:
+    Value:
+      "ChairHeight": "chair-height"
+      "ChairHeight-1": "chair-height-knees-at-90"
+      "ChairHeight-2": "chair-height-knees-less-90"
+      "ChairHeight-2.1": "chair-height-knees-more-90"
+      "ChairHeight-3": "chair-height-foot-no-contact"
+      "ChairInsufficientSpace": "insufficient-space"
+      "ChairHeightNoFootGround": "chair-height-no-foot-ground"
+      "ChairHeightNonAdjustable": "height-non-adjustable"
+      "ChairPanDepth": "pan-depth"
+      "ChairPanDepth-1": "pan-depth-normal"
+      "ChairPanDepth-2": "pan-depth-short"
+      "ChairPanDepth-2.1": "pan-depth-long"
+      "ChairPanNonAdjustable": "pan-non-adjustable"
+      "ChairArmrests": "armrests"
+      "ChairArmrests-1": "armrests-elbow-supported"
+      "ChairArmrests-2": "armrests-shoulders-shrugged"
+      "ChairArmrestHardDamaged": "armrest-damaged"
+      "ChairArmrestTooWide": "armrest-to-wide"
+      "ChairArmrestNonAdjustable": "armrest-non-adjustable"
+      "ChairBackSupport": "back-support"
+      "ChairBackSupport-1": "back-support-adequate"
+      "ChairBackSupport-2": "back-support-no-lumbar-support"
+      "ChairBackSupport-2.1": "back-support-angled-too-far"
+      "ChairBackSupport-2.2": "back-support-no-back-support"
+      "ChairNoBackSupport": "back-support-not-found'"
+      "ChairBackSupportSurfaceTooHigh": "back-support-surface-to-high"
+      "ChairBackSupportNonAdjustable": "back-support-surface-non-adjustable"
+      "MonitorDistance": "monitor-distance"
+      "MonitorDistance-1": "monitor-screen-at-eye"
+      "MonitorDistance-2": "monitor-screen-too-low"
+      "MonitorDistance-3": "monitor-screen-too-high"
+      "MonitorTooFar": "monitor-too-far"
+      "MonitorNeckTwist": "monitor-neck-twist"
+      "MonitorGlareOnScreen": "monitor-glare-on-screen"
+      "MonitorDocumentsNoHolder": "monitor-documents-no-holder"
+      "Phone": "phone"
+      "Phone-1": "phone-headset"
+      "Phone-2": "phone-too-far"
+      "PhoneExists": "phone-exists"
+      "PhoneNeckShoulder": "phone-neck-shoulder"
+      "PhoneNoHandsFree": "phone-no-hands-free"
+      "Mouse": "mouse"
+      "Mouse-1": "mouse-in-line"
+      "Mouse-2": "mouse-reaching"
+      "MouseKeyboardDifferentSurfaces": "mouse-keyboard-different-surfaces"
+      "MousePinchGripOnMouse": "mouse-pinch-grip"
+      "MousePalmrest": "mouse-palmrest"
+      "Keyboard": "keyboard"
+      "Keyboard-1": "keyboard-wrists-straight"
+      "Keyboard-2": "keyboard-wrists-extended"
+      "KeyboardDeviation": "keyboard-deviation"
+      "KeyboardTooHigh": "keyboard-too-high"
+      "KeyboardReachingItems": "keyboard-reaching-items"
+      "KeyboardPlatformNonAdjustable": "keyboard-platform-non-adjustable"
+      "ChairDuration": "duration"
+      "ChairDuration-1": "duration-moderate"
+      "ChairDuration-0": "duration-heavy"
+      "ChairDuration--1": "duration-light"
+      "MonitorDuration": "monitor-duration"
+      "MonitorDuration-1": "monitor-duration-moderate"
+      "MonitorDuration-0": "monitor-duration-heavy"
+      "MonitorDuration--1": "monitor-duration-light"
+      "PhoneDuration": "phone-duration"
+      "PhoneDuration-1": "phone-duration-moderate"
+      "PhoneDuration-0": "phone-duration-heavy"
+      "PhoneDuration--1": "phone-duration-light"
+      "KeyboardDuration": "keyboard-duration"
+      "KeyboardDuration-1": "keyboard-duration-moderate"
+      "KeyboardDuration-0": "keyboard-duration-heavy"
+      "KeyboardDuration--1": "keyboard-duration-light"
+      "MouseDuration": "mouse-duration"
+      "MouseDuration-1": "mouse-duration-moderate"
+      "MouseDuration-0": "mouse-duration-heavy"
+      "MouseDuration--1": "mouse-duration-light"
+
 Enum: {}
 
 OverallScoreValue: Overall
@@ -170,6 +247,7 @@ RiskComponents:
       Units: ~
       Label: Chair Height
       Image: ~
+      Solution: Adjust chair’s height
       Values:
         1:
           Label: Knees at 90°
@@ -177,13 +255,16 @@ RiskComponents:
         2:
           Label: Knee angle < 90°
           Warning: Chair is too low
+          Solution: Raise the chair
           Score: *medium
         2.1:
           Label: Knee angle > 90°
           Warning: Chair is too high
+          Solution: Lower the chair
           Score: *medium
         3:
           Label: No foot contact on ground
+          Solution: Lower the chair
           Score: *high
     ChairInsufficientSpace: &ChairInsufficientSpace
       Type: boolean
@@ -192,10 +273,12 @@ RiskComponents:
       Units: ~
       Label: Insufficient under desk space
       Image: ~
+      Solution: Adjust chair’s height
       Values:
         1:
           Label: Yes
           Warning: No ability to cross legs
+          Solution: Choose a suitable table
           Score: *medium
         0:
           Label: No
@@ -206,10 +289,12 @@ RiskComponents:
       MaxInput: ~
       Units: ~
       Label: No foot contact on ground
+      Solution: Adjust chair’s height
       Image: ~
       Values:
         1:
           Label: Yes
+          Solution: Lower the chair
           Score: *medium
         0:
           Label: No
@@ -221,10 +306,12 @@ RiskComponents:
       Units: ~
       Label: Non-adjustable height
       Image: ~
+      Solution: Change the chair
       Values:
         1:
           Label: Yes
           Warning: Doesn’t allow to solve problems when shoulders are shrugged or arms are unsupported
+          Solution: Choose a chair with adjustable height
           Score: *medium
         0:
           Label: No
@@ -236,6 +323,7 @@ RiskComponents:
       Units: ~
       Label: Pan depth
       Image: ~
+      Solution: Adjust chair’s pan
       Values:
         1:
           Label: Normal seat pan
@@ -249,6 +337,7 @@ RiskComponents:
           Desc: < 3’ between knee and edge of seat
           FullDesc: Less than 3 inches of space between knee and edge of seat
           ImageDesc: <3 inches
+          Solution: Make the pan longer
           Score: *medium
         2.1:
           Label: Long seat pan
@@ -256,6 +345,7 @@ RiskComponents:
           Desc: "> 3’ between knee and edge of seat"
           FullDesc: More than 3 inches of space between knee and edge of seat
           ImageDesc: ">3 inches"
+          Solution: Make the pan shorter
           Score: *medium
     ChairPanNonAdjustable: &ChairPanNonAdjustable
       Type: boolean
@@ -264,10 +354,12 @@ RiskComponents:
       Units: ~
       Label: Non-adjustable pan depth
       Image: ~
+      Solution: Change the chair
       Values:
         1:
           Label: Yes
           Warning: A person may be forced into awkward postures
+          Solution: Choose a chair with adjustable pan
           Score: *medium
         0:
           Label: No
@@ -280,6 +372,7 @@ RiskComponents:
       Units: ~
       Label: Armrests
       Image: ~
+      Solution: Adjust chair’s armrests
       Values:
         1:
           Label: Elbows supported inline with shoulders
@@ -290,6 +383,7 @@ RiskComponents:
           Label: Armrest is too high
           Desc: Shoulders shrugged
           FullDesc: High armrest is causing shoulder elevation and tension. Shoulders shrugged
+          Solution: Lower the armrests
           Score: *medium
     ChairArmrestHardDamaged: &ChairArmrestHardDamaged
       Type: boolean
@@ -298,11 +392,13 @@ RiskComponents:
       Units: ~
       Label: Hard or damaged surface
       Image: ~
+      Solution: Fix the armrests
       Values:
         1:
           Label: Yes
           Warning: Could lead to discomfort or strain over time
           Desc: The armrest is hard or has a damaged surface
+          Solution: Replace hard or damaged armrests, or replace the chair
           Score: *medium
         0:
           Label: No
@@ -314,11 +410,13 @@ RiskComponents:
       Units: ~
       Label: Armrests too wide
       Image: ~
+      Solution: Adjust chair’s armrests
       Values:
         1:
           Label: Yes
           Warning: Armrests are positioned too widely
           Desc: Armrests are positioned too widely
+          Solution: Reduce the width between the armrests
           Score: *medium
         0:
           Label: No
@@ -330,10 +428,12 @@ RiskComponents:
       Units: ~
       Label: Armrests non adjustable
       Image: ~
+      Solution: Change the chair
       Values:
         1:
           Label: Yes
           Warning: Doesn’t allow to solve problems when shoulders are shrugged or arms are unsupported
+          Solution: Choose a chair with adjustable armrests
           Score: *medium
         0:
           Label: No
@@ -345,6 +445,7 @@ RiskComponents:
       Units: ~
       Label: Back support
       Image: ~
+      Solution: Adjust chair’s back
       Values:
         1:
           Label: Adequate lumbar support
@@ -356,17 +457,20 @@ RiskComponents:
           Warning: No lumbar support or it’s not positioned in small of back
           Desc: No lumbar support or it’s not positioned in small of back
           FullDesc: No lumbar support or it’s not positioned in small of back
+          Solution: Add lumbar support
           Score: *medium
         2.1:
           Label: Angled too far back or forward
           Warning: Causes the spine to bear more stress
           Desc: Greater than 100°
           FullDesc: Greater than 110° or less than 95°
+          Solution: Reduce the angle of the chair back
           Score: *medium
         2.2:
           Label: No back support
           Desc: Stool or worker leaning forward
           FullDesc: Stool or worker leaning forward
+          Solution: Reduce the angle of the chair back or change the chair
           Score: *medium
     ChairNoBackSupport:
       Type: boolean
@@ -375,9 +479,11 @@ RiskComponents:
       Units: ~
       Label: No back support
       Image: ~
+      Solution: Adjust chair’s back
       Values:
         2:
           Label: Yes
+          Solution: Reduce the angle of the chair back or change the chair
           Score: *high
         0:
           Label: No
@@ -389,11 +495,13 @@ RiskComponents:
       Units: ~
       Label: Work surface too high
       Image: ~
+      Solution: Adjust the work surface
       Values:
         1:
           Label: Yes
           Desc: Shoulders shrugged
           FullDesc: The work surface is too high, causing shoulder and arm strain
+          Solution: Lower the work surface
           Score: *medium
         0:
           Label: No
@@ -405,10 +513,12 @@ RiskComponents:
       Units: ~
       Label: Non-adjustable back
       Image: ~
+      Solution: Change the chair
       Values:
         1:
           Label: Yes
           Warning: Increasing strain on the neck, shoulders, and lower back
+          Solution: Choose a chair with adjustable back support
           Score: *medium
         0:
           Label: No
@@ -421,15 +531,18 @@ RiskComponents:
       Units: ~
       Label: Monitor distance
       Image: ~
+      Solution: Adjust monitor
       Values:
         1:
           Label: Screen at eye
           Score: *acceptable
         2:
           Label: Screen too low (below 30°)
+          Solution: Raise your monitor to eye level"
           Score: *medium
         3:
           Label: Screen too high
+          Solution: Lower your monitor to eye level
           Score: *high
     MonitorTooFar: &MonitorTooFar
       Type: boolean
@@ -438,11 +551,13 @@ RiskComponents:
       Units: ~
       Label: Screen too far
       Image: ~
+      Solution: Adjust monitor
       Values:
         1:
           Label: Yes
           Warning: Screen too far
           Desc: Monitor too far from eyes
+          Solution: Move the monitor closer
           Score: *medium
         0:
           Label: No
@@ -454,11 +569,13 @@ RiskComponents:
       Units: ~
       Label: Neck twist greater than 30°
       Image: ~
+      Solution: Adjust monitor
       Values:
         1:
           Label: Yes
           Warning: Neck twist greater than 30°
           Desc: Monitor causes neck twist
+          Solution: Move the monitor horizontally to avoid turning your neck
           Score: *medium
         0:
           Label: No
@@ -470,11 +587,13 @@ RiskComponents:
       Units: ~
       Label: Glare on screen
       Image: ~
+      Solution: Adjust monitor
       Values:
         1:
           Label: Yes
           Warning: Causes significant visual discomfort
           Desc: The reflection of light on a screen
+          Solution: Keep your monitor away from direct sunlight
           Score: *medium
         0:
           Label: No
@@ -486,10 +605,12 @@ RiskComponents:
       Units: ~
       Label: No documents holder
       Image: ~
+      Solution: Organize documents
       Values:
         1:
           Label: Yes
           Warning: Forces awkward head and neck rotations or bending
+          Solution: Place the documents in the holder
           Score: *medium
         0:
           Label: No
@@ -502,12 +623,14 @@ RiskComponents:
       Units: ~
       Label: Phone
       Image: ~
+      Solution: Adjust phone
       Values:
         1:
           Label: Headset or one hand on phone
           Score: *acceptable
         2:
           Label: Too far of reach (outside of 30cm)
+          Solution: Move the phone closer to your hand
           Score: *medium
     PhoneExists: &PhoneExists
       Type: boolean
@@ -531,9 +654,11 @@ RiskComponents:
       Units: ~
       Label: Neck and shouder hold
       Image: ~
+      Solution: Adjust phone
       Values:
         2:
           Label: Yes
+          Solution: Get a hands-free or hold your phone in your hand while talking
           Score: *high
         0:
           Label: No
@@ -545,9 +670,11 @@ RiskComponents:
       Units: ~
       Label: No hands-free option
       Image: ~
+      Solution: Adjust phone
       Values:
         1:
           Label: Yes
+          Solution: Get a hands-free
           Score: *medium
         0:
           Label: No
@@ -560,12 +687,14 @@ RiskComponents:
       Units: ~
       Label: Mouse
       Image: ~
+      Solution: Adjust mouse
       Values:
         1:
           Label: Mouse in line with shoulder
           Score: *acceptable
         2:
           Label: Reaching to mouse
+          Solution: Move your mouse closer
           Score: *medium
     MouseKeyboardDifferentSurfaces: &MouseKeyboardDifferentSurfaces
       Type: boolean
@@ -574,10 +703,12 @@ RiskComponents:
       Units: ~
       Label: Mouse/keyboard on different surfaces
       Image: ~
+      Solution: Adjust mouse and keyboard
       Values:
         2:
           Label: Yes
           Warning: Can lead to awkward wrist deviations, uneven shoulder loads, and neck strain
+          Solution: Place the mouse and keyboard on the same surface
           Score: *high
         0:
           Label: No
@@ -589,11 +720,13 @@ RiskComponents:
       Units: ~
       Label: Pinch grip on mouse
       Image: ~
+      Solution: Adjust mouse
       Values:
         1:
           Label: Yes
           Warning: Pinch grip on mouse
           Desc: Pinch grip on mouse
+          Solution: Take a larger mouse so that it fits comfortably in your hand
           Score: *medium
         0:
           Label: No
@@ -605,11 +738,13 @@ RiskComponents:
       Units: ~
       Label: Palm rest in front of mouse
       Image: ~
+      Solution: Adjust mouse
       Values:
         1:
           Label: Yes
           Warning: Leads to awkward wrist postures and additional strain
           FullDesc: The palm rest can cause the wrist to tilt upwards (extension) as you move the mouse
+          Solution: Remove the palmest in front of the mouse
           Score: *medium
         0:
           Label: No
@@ -622,12 +757,14 @@ RiskComponents:
       Units: ~
       Label: Keyboard
       Image: ~
+      Solution: Adjust keyboard
       Values:
         1:
           Label: Wrists straight, shoulders relaxed
           Score: *acceptable
         2:
           Label: Wrists extended or keyboard on positive angle (>15° wrist extension)
+          Solution: Lower the keyboard (fold the legs)
           Score: *medium
     KeyboardDeviation:
       Type: boolean
@@ -636,11 +773,13 @@ RiskComponents:
       Units: ~
       Label: Deviation while typing
       Image: ~
+      Solution: Adjust keyboard
       Values:
         1:
           Label: Yes
           Warning: Deviation while typing
           Desc: Ulnar deviation while typing
+          Solution: Use a wider keyboard
           Score: *medium
         0:
           Label: No
@@ -652,10 +791,12 @@ RiskComponents:
       Units: ~
       Label: Keyboard too high or shoulders shrugged
       Image: ~
+      Solution: Adjust keyboard
       Values:
         1:
           Label: Yes
           Desc: Shoulders shrugged
+          Solution: Lower the keyboard
           Score: *medium
         0:
           Label: No
@@ -667,11 +808,13 @@ RiskComponents:
       Units: ~
       Label: Reaching to overhead items
       Image: ~
+      Solution: Organize items on the desc
       Values:
         1:
           Label: Yes
           Warning: Sustained overhead reaching can strain the neck, shoulders, and upper back
           Desc: The need to reach overhead for items
+          Solution: Lower the objects above the desc onto the desc
           Score: *medium
         0:
           Label: No
@@ -683,11 +826,13 @@ RiskComponents:
       Units: ~
       Label: Platform not-adjustable
       Image: ~
+      Solution: Change the desk
       Values:
         1:
           Label: Yes
           Warning: Could lead to sustained awkward postures
           Desc: Keyboard platform cannot be adjusted
+          Solution: Change the desk to fit the keyboard and mouse
           Score: *medium
         0:
           Label: No
@@ -700,6 +845,7 @@ RiskComponents:
       Units: ~
       Label: Chair duration
       Image: ~
+      Solution: Reduce your time in the chair
       Values:
         0:
           Label: Moderate use
@@ -712,6 +858,7 @@ RiskComponents:
         1:
           Label: Heavy use
           Desc: "> 4 hours intermittently / 1 hour or more consecutively"
+          Solution: Up to 4 hours a day and up to 1 hour consecutively
           Score: *high
     MonitorDuration: &MonitorDuration
       Type: select
@@ -720,6 +867,7 @@ RiskComponents:
       Units: ~
       Label: Computer duration
       Image: ~
+      Solution: Reduce your screen time
       Values:
         0:
           Label: Moderate use
@@ -732,6 +880,7 @@ RiskComponents:
         1:
           Label: Heavy use
           Desc: "> 4 hours intermittently / 1 hour or more consecutively"
+          Solution: Up to 4 hours a day and up to 1 hour consecutively
           Score: *high
     PhoneDuration: &PhoneDuration
       Type: select
@@ -740,6 +889,7 @@ RiskComponents:
       Units: ~
       Label: Phone duration
       Image: ~
+      Solution: Reduce your time on the phone
       Values:
         0:
           Label: Moderate use
@@ -752,6 +902,7 @@ RiskComponents:
         1:
           Label: Heavy use
           Desc: "> 4 hours intermittently / 1 hour or more consecutively"
+          Solution: Up to 4 hours a day and up to 1 hour consecutively
           Score: *high
     KeyboardDuration: &KeyboardDuration
       Type: select
@@ -760,6 +911,7 @@ RiskComponents:
       Units: ~
       Label: Keyboard duration
       Image: ~
+      Solution: Reduce your keyboard time
       Values:
         0:
           Label: Moderate use
@@ -772,6 +924,7 @@ RiskComponents:
         1:
           Label: Heavy use
           Desc: "> 4 hours intermittently / 1 hour or more consecutively"
+          Solution: Up to 4 hours a day and up to 1 hour consecutively
           Score: *high
     MouseDuration: &MouseDuration
       Type: select
@@ -780,6 +933,7 @@ RiskComponents:
       Units: ~
       Label: Mouse duration
       Image: ~
+      Solution: Reduce your mouse time
       Values:
         0:
           Label: Moderate use
@@ -792,6 +946,7 @@ RiskComponents:
         1:
           Label: Heavy use
           Desc: "> 4 hours intermittently / 1 hour or more consecutively"
+          Solution: Up to 4 hours a day and up to 1 hour consecutively
           Score: *high
 
 AdditionalInputs:

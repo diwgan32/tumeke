@@ -1362,7 +1362,7 @@
         "MaxInput": 6,
         "Units": [
           "ft",
-          "sm"
+          "m"
         ],
         "Label": "Start hand height",
         "Image": null,
@@ -1374,7 +1374,7 @@
         "MaxInput": 6,
         "Units": [
           "ft",
-          "sm"
+          "m"
         ],
         "Label": "End hand height",
         "Image": null,
@@ -1386,7 +1386,7 @@
         "MaxInput": 6,
         "Units": [
           "ft",
-          "sm"
+          "m"
         ],
         "Label": "Start hand distance",
         "Image": null,
@@ -1398,7 +1398,7 @@
         "MaxInput": 6,
         "Units": [
           "ft",
-          "sm"
+          "m"
         ],
         "Label": "End hand distance",
         "Image": null,

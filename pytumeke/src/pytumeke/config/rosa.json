@@ -29,6 +29,84 @@
     "vhigh": {
       "Value": "Very High",
       "Color": "rgba(133, 4, 0, 1.0)"
+    },
+    "Problems": {
+      "Value": {
+        "ChairHeight": "chair-height",
+        "ChairHeight-1": "chair-height-knees-at-90",
+        "ChairHeight-2": "chair-height-knees-less-90",
+        "ChairHeight-2.1": "chair-height-knees-more-90",
+        "ChairHeight-3": "chair-height-foot-no-contact",
+        "ChairInsufficientSpace": "insufficient-space",
+        "ChairHeightNoFootGround": "chair-height-no-foot-ground",
+        "ChairHeightNonAdjustable": "height-non-adjustable",
+        "ChairPanDepth": "pan-depth",
+        "ChairPanDepth-1": "pan-depth-normal",
+        "ChairPanDepth-2": "pan-depth-short",
+        "ChairPanDepth-2.1": "pan-depth-long",
+        "ChairPanNonAdjustable": "pan-non-adjustable",
+        "ChairArmrests": "armrests",
+        "ChairArmrests-1": "armrests-elbow-supported",
+        "ChairArmrests-2": "armrests-shoulders-shrugged",
+        "ChairArmrestHardDamaged": "armrest-damaged",
+        "ChairArmrestTooWide": "armrest-to-wide",
+        "ChairArmrestNonAdjustable": "armrest-non-adjustable",
+        "ChairBackSupport": "back-support",
+        "ChairBackSupport-1": "back-support-adequate",
+        "ChairBackSupport-2": "back-support-no-lumbar-support",
+        "ChairBackSupport-2.1": "back-support-angled-too-far",
+        "ChairBackSupport-2.2": "back-support-no-back-support",
+        "ChairNoBackSupport": "back-support-not-found'",
+        "ChairBackSupportSurfaceTooHigh": "back-support-surface-to-high",
+        "ChairBackSupportNonAdjustable": "back-support-surface-non-adjustable",
+        "MonitorDistance": "monitor-distance",
+        "MonitorDistance-1": "monitor-screen-at-eye",
+        "MonitorDistance-2": "monitor-screen-too-low",
+        "MonitorDistance-3": "monitor-screen-too-high",
+        "MonitorTooFar": "monitor-too-far",
+        "MonitorNeckTwist": "monitor-neck-twist",
+        "MonitorGlareOnScreen": "monitor-glare-on-screen",
+        "MonitorDocumentsNoHolder": "monitor-documents-no-holder",
+        "Phone": "phone",
+        "Phone-1": "phone-headset",
+        "Phone-2": "phone-too-far",
+        "PhoneExists": "phone-exists",
+        "PhoneNeckShoulder": "phone-neck-shoulder",
+        "PhoneNoHandsFree": "phone-no-hands-free",
+        "Mouse": "mouse",
+        "Mouse-1": "mouse-in-line",
+        "Mouse-2": "mouse-reaching",
+        "MouseKeyboardDifferentSurfaces": "mouse-keyboard-different-surfaces",
+        "MousePinchGripOnMouse": "mouse-pinch-grip",
+        "MousePalmrest": "mouse-palmrest",
+        "Keyboard": "keyboard",
+        "Keyboard-1": "keyboard-wrists-straight",
+        "Keyboard-2": "keyboard-wrists-extended",
+        "KeyboardDeviation": "keyboard-deviation",
+        "KeyboardTooHigh": "keyboard-too-high",
+        "KeyboardReachingItems": "keyboard-reaching-items",
+        "KeyboardPlatformNonAdjustable": "keyboard-platform-non-adjustable",
+        "ChairDuration": "duration",
+        "ChairDuration-1": "duration-moderate",
+        "ChairDuration-0": "duration-heavy",
+        "ChairDuration--1": "duration-light",
+        "MonitorDuration": "monitor-duration",
+        "MonitorDuration-1": "monitor-duration-moderate",
+        "MonitorDuration-0": "monitor-duration-heavy",
+        "MonitorDuration--1": "monitor-duration-light",
+        "PhoneDuration": "phone-duration",
+        "PhoneDuration-1": "phone-duration-moderate",
+        "PhoneDuration-0": "phone-duration-heavy",
+        "PhoneDuration--1": "phone-duration-light",
+        "KeyboardDuration": "keyboard-duration",
+        "KeyboardDuration-1": "keyboard-duration-moderate",
+        "KeyboardDuration-0": "keyboard-duration-heavy",
+        "KeyboardDuration--1": "keyboard-duration-light",
+        "MouseDuration": "mouse-duration",
+        "MouseDuration-1": "mouse-duration-moderate",
+        "MouseDuration-0": "mouse-duration-heavy",
+        "MouseDuration--1": "mouse-duration-light"
+      }
     }
   },
   "Enum": {},
@@ -391,6 +469,7 @@
         "Units": null,
         "Label": "Chair Height",
         "Image": null,
+        "Solution": "Adjust chair’s height",
         "Values": {
           "1": {
             "Label": "Knees at 90°",
@@ -402,6 +481,7 @@
           "2": {
             "Label": "Knee angle < 90°",
             "Warning": "Chair is too low",
+            "Solution": "Raise the chair",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -410,6 +490,7 @@
           "2.1": {
             "Label": "Knee angle > 90°",
             "Warning": "Chair is too high",
+            "Solution": "Lower the chair",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -417,6 +498,7 @@
           },
           "3": {
             "Label": "No foot contact on ground",
+            "Solution": "Lower the chair",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -431,10 +513,12 @@
         "Units": null,
         "Label": "Insufficient under desk space",
         "Image": null,
+        "Solution": "Adjust chair’s height",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "No ability to cross legs",
+            "Solution": "Choose a suitable table",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -455,10 +539,12 @@
         "MaxInput": null,
         "Units": null,
         "Label": "No foot contact on ground",
+        "Solution": "Adjust chair’s height",
         "Image": null,
         "Values": {
           "1": {
             "Label": "Yes",
+            "Solution": "Lower the chair",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -480,10 +566,12 @@
         "Units": null,
         "Label": "Non-adjustable height",
         "Image": null,
+        "Solution": "Change the chair",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Doesn’t allow to solve problems when shoulders are shrugged or arms are unsupported",
+            "Solution": "Choose a chair with adjustable height",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -505,6 +593,7 @@
         "Units": null,
         "Label": "Pan depth",
         "Image": null,
+        "Solution": "Adjust chair’s pan",
         "Values": {
           "1": {
             "Label": "Normal seat pan",
@@ -522,6 +611,7 @@
             "Desc": "< 3’ between knee and edge of seat",
             "FullDesc": "Less than 3 inches of space between knee and edge of seat",
             "ImageDesc": "<3 inches",
+            "Solution": "Make the pan longer",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -533,6 +623,7 @@
             "Desc": "> 3’ between knee and edge of seat",
             "FullDesc": "More than 3 inches of space between knee and edge of seat",
             "ImageDesc": ">3 inches",
+            "Solution": "Make the pan shorter",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -547,10 +638,12 @@
         "Units": null,
         "Label": "Non-adjustable pan depth",
         "Image": null,
+        "Solution": "Change the chair",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "A person may be forced into awkward postures",
+            "Solution": "Choose a chair with adjustable pan",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -574,6 +667,7 @@
         "Units": null,
         "Label": "Armrests",
         "Image": null,
+        "Solution": "Adjust chair’s armrests",
         "Values": {
           "1": {
             "Label": "Elbows supported inline with shoulders",
@@ -588,6 +682,7 @@
             "Label": "Armrest is too high",
             "Desc": "Shoulders shrugged",
             "FullDesc": "High armrest is causing shoulder elevation and tension. Shoulders shrugged",
+            "Solution": "Lower the armrests",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -602,11 +697,13 @@
         "Units": null,
         "Label": "Hard or damaged surface",
         "Image": null,
+        "Solution": "Fix the armrests",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Could lead to discomfort or strain over time",
             "Desc": "The armrest is hard or has a damaged surface",
+            "Solution": "Replace hard or damaged armrests, or replace the chair",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -628,11 +725,13 @@
         "Units": null,
         "Label": "Armrests too wide",
         "Image": null,
+        "Solution": "Adjust chair’s armrests",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Armrests are positioned too widely",
             "Desc": "Armrests are positioned too widely",
+            "Solution": "Reduce the width between the armrests",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -654,10 +753,12 @@
         "Units": null,
         "Label": "Armrests non adjustable",
         "Image": null,
+        "Solution": "Change the chair",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Doesn’t allow to solve problems when shoulders are shrugged or arms are unsupported",
+            "Solution": "Choose a chair with adjustable armrests",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -679,6 +780,7 @@
         "Units": null,
         "Label": "Back support",
         "Image": null,
+        "Solution": "Adjust chair’s back",
         "Values": {
           "1": {
             "Label": "Adequate lumbar support",
@@ -694,6 +796,7 @@
             "Warning": "No lumbar support or it’s not positioned in small of back",
             "Desc": "No lumbar support or it’s not positioned in small of back",
             "FullDesc": "No lumbar support or it’s not positioned in small of back",
+            "Solution": "Add lumbar support",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -704,6 +807,7 @@
             "Warning": "Causes the spine to bear more stress",
             "Desc": "Greater than 100°",
             "FullDesc": "Greater than 110° or less than 95°",
+            "Solution": "Reduce the angle of the chair back",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -713,6 +817,7 @@
             "Label": "No back support",
             "Desc": "Stool or worker leaning forward",
             "FullDesc": "Stool or worker leaning forward",
+            "Solution": "Reduce the angle of the chair back or change the chair",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -727,9 +832,11 @@
         "Units": null,
         "Label": "No back support",
         "Image": null,
+        "Solution": "Adjust chair’s back",
         "Values": {
           "2": {
             "Label": "Yes",
+            "Solution": "Reduce the angle of the chair back or change the chair",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -751,11 +858,13 @@
         "Units": null,
         "Label": "Work surface too high",
         "Image": null,
+        "Solution": "Adjust the work surface",
         "Values": {
           "1": {
             "Label": "Yes",
             "Desc": "Shoulders shrugged",
             "FullDesc": "The work surface is too high, causing shoulder and arm strain",
+            "Solution": "Lower the work surface",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -777,10 +886,12 @@
         "Units": null,
         "Label": "Non-adjustable back",
         "Image": null,
+        "Solution": "Change the chair",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Increasing strain on the neck, shoulders, and lower back",
+            "Solution": "Choose a chair with adjustable back support",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -804,6 +915,7 @@
         "Units": null,
         "Label": "Monitor distance",
         "Image": null,
+        "Solution": "Adjust monitor",
         "Values": {
           "1": {
             "Label": "Screen at eye",
@@ -814,6 +926,7 @@
           },
           "2": {
             "Label": "Screen too low (below 30°)",
+            "Solution": "Raise your monitor to eye level\"",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -821,6 +934,7 @@
           },
           "3": {
             "Label": "Screen too high",
+            "Solution": "Lower your monitor to eye level",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -835,11 +949,13 @@
         "Units": null,
         "Label": "Screen too far",
         "Image": null,
+        "Solution": "Adjust monitor",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Screen too far",
             "Desc": "Monitor too far from eyes",
+            "Solution": "Move the monitor closer",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -861,11 +977,13 @@
         "Units": null,
         "Label": "Neck twist greater than 30°",
         "Image": null,
+        "Solution": "Adjust monitor",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Neck twist greater than 30°",
             "Desc": "Monitor causes neck twist",
+            "Solution": "Move the monitor horizontally to avoid turning your neck",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -887,11 +1005,13 @@
         "Units": null,
         "Label": "Glare on screen",
         "Image": null,
+        "Solution": "Adjust monitor",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Causes significant visual discomfort",
             "Desc": "The reflection of light on a screen",
+            "Solution": "Keep your monitor away from direct sunlight",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -913,10 +1033,12 @@
         "Units": null,
         "Label": "No documents holder",
         "Image": null,
+        "Solution": "Organize documents",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Forces awkward head and neck rotations or bending",
+            "Solution": "Place the documents in the holder",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -940,6 +1062,7 @@
         "Units": null,
         "Label": "Phone",
         "Image": null,
+        "Solution": "Adjust phone",
         "Values": {
           "1": {
             "Label": "Headset or one hand on phone",
@@ -950,6 +1073,7 @@
           },
           "2": {
             "Label": "Too far of reach (outside of 30cm)",
+            "Solution": "Move the phone closer to your hand",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -989,9 +1113,11 @@
         "Units": null,
         "Label": "Neck and shouder hold",
         "Image": null,
+        "Solution": "Adjust phone",
         "Values": {
           "2": {
             "Label": "Yes",
+            "Solution": "Get a hands-free or hold your phone in your hand while talking",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -1013,9 +1139,11 @@
         "Units": null,
         "Label": "No hands-free option",
         "Image": null,
+        "Solution": "Adjust phone",
         "Values": {
           "1": {
             "Label": "Yes",
+            "Solution": "Get a hands-free",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1039,6 +1167,7 @@
         "Units": null,
         "Label": "Mouse",
         "Image": null,
+        "Solution": "Adjust mouse",
         "Values": {
           "1": {
             "Label": "Mouse in line with shoulder",
@@ -1049,6 +1178,7 @@
           },
           "2": {
             "Label": "Reaching to mouse",
+            "Solution": "Move your mouse closer",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1063,10 +1193,12 @@
         "Units": null,
         "Label": "Mouse/keyboard on different surfaces",
         "Image": null,
+        "Solution": "Adjust mouse and keyboard",
         "Values": {
           "2": {
             "Label": "Yes",
             "Warning": "Can lead to awkward wrist deviations, uneven shoulder loads, and neck strain",
+            "Solution": "Place the mouse and keyboard on the same surface",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -1088,11 +1220,13 @@
         "Units": null,
         "Label": "Pinch grip on mouse",
         "Image": null,
+        "Solution": "Adjust mouse",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Pinch grip on mouse",
             "Desc": "Pinch grip on mouse",
+            "Solution": "Take a larger mouse so that it fits comfortably in your hand",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1114,11 +1248,13 @@
         "Units": null,
         "Label": "Palm rest in front of mouse",
         "Image": null,
+        "Solution": "Adjust mouse",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Leads to awkward wrist postures and additional strain",
             "FullDesc": "The palm rest can cause the wrist to tilt upwards (extension) as you move the mouse",
+            "Solution": "Remove the palmest in front of the mouse",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1142,6 +1278,7 @@
         "Units": null,
         "Label": "Keyboard",
         "Image": null,
+        "Solution": "Adjust keyboard",
         "Values": {
           "1": {
             "Label": "Wrists straight, shoulders relaxed",
@@ -1152,6 +1289,7 @@
           },
           "2": {
             "Label": "Wrists extended or keyboard on positive angle (>15° wrist extension)",
+            "Solution": "Lower the keyboard (fold the legs)",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1166,11 +1304,13 @@
         "Units": null,
         "Label": "Deviation while typing",
         "Image": null,
+        "Solution": "Adjust keyboard",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Deviation while typing",
             "Desc": "Ulnar deviation while typing",
+            "Solution": "Use a wider keyboard",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1192,10 +1332,12 @@
         "Units": null,
         "Label": "Keyboard too high or shoulders shrugged",
         "Image": null,
+        "Solution": "Adjust keyboard",
         "Values": {
           "1": {
             "Label": "Yes",
             "Desc": "Shoulders shrugged",
+            "Solution": "Lower the keyboard",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1217,11 +1359,13 @@
         "Units": null,
         "Label": "Reaching to overhead items",
         "Image": null,
+        "Solution": "Organize items on the desc",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Sustained overhead reaching can strain the neck, shoulders, and upper back",
             "Desc": "The need to reach overhead for items",
+            "Solution": "Lower the objects above the desc onto the desc",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1243,11 +1387,13 @@
         "Units": null,
         "Label": "Platform not-adjustable",
         "Image": null,
+        "Solution": "Change the desk",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Could lead to sustained awkward postures",
             "Desc": "Keyboard platform cannot be adjusted",
+            "Solution": "Change the desk to fit the keyboard and mouse",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1271,6 +1417,7 @@
         "Units": null,
         "Label": "Chair duration",
         "Image": null,
+        "Solution": "Reduce your time in the chair",
         "Values": {
           "0": {
             "Label": "Moderate use",
@@ -1291,6 +1438,7 @@
           "1": {
             "Label": "Heavy use",
             "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Solution": "Up to 4 hours a day and up to 1 hour consecutively",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -1305,6 +1453,7 @@
         "Units": null,
         "Label": "Computer duration",
         "Image": null,
+        "Solution": "Reduce your screen time",
         "Values": {
           "0": {
             "Label": "Moderate use",
@@ -1325,6 +1474,7 @@
           "1": {
             "Label": "Heavy use",
             "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Solution": "Up to 4 hours a day and up to 1 hour consecutively",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -1339,6 +1489,7 @@
         "Units": null,
         "Label": "Phone duration",
         "Image": null,
+        "Solution": "Reduce your time on the phone",
         "Values": {
           "0": {
             "Label": "Moderate use",
@@ -1359,6 +1510,7 @@
           "1": {
             "Label": "Heavy use",
             "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Solution": "Up to 4 hours a day and up to 1 hour consecutively",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -1373,6 +1525,7 @@
         "Units": null,
         "Label": "Keyboard duration",
         "Image": null,
+        "Solution": "Reduce your keyboard time",
         "Values": {
           "0": {
             "Label": "Moderate use",
@@ -1393,6 +1546,7 @@
           "1": {
             "Label": "Heavy use",
             "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Solution": "Up to 4 hours a day and up to 1 hour consecutively",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -1407,6 +1561,7 @@
         "Units": null,
         "Label": "Mouse duration",
         "Image": null,
+        "Solution": "Reduce your mouse time",
         "Values": {
           "0": {
             "Label": "Moderate use",
@@ -1427,6 +1582,7 @@
           "1": {
             "Label": "Heavy use",
             "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Solution": "Up to 4 hours a day and up to 1 hour consecutively",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -1445,10 +1601,12 @@
         "Units": null,
         "Label": "Non-adjustable height",
         "Image": null,
+        "Solution": "Change the chair",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Doesn’t allow to solve problems when shoulders are shrugged or arms are unsupported",
+            "Solution": "Choose a chair with adjustable height",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1470,10 +1628,12 @@
         "Units": null,
         "Label": "Insufficient under desk space",
         "Image": null,
+        "Solution": "Adjust chair’s height",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "No ability to cross legs",
+            "Solution": "Choose a suitable table",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1494,10 +1654,12 @@
         "MaxInput": null,
         "Units": null,
         "Label": "No foot contact on ground",
+        "Solution": "Adjust chair’s height",
         "Image": null,
         "Values": {
           "1": {
             "Label": "Yes",
+            "Solution": "Lower the chair",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1520,6 +1682,7 @@
         "Units": null,
         "Label": "Pan depth",
         "Image": null,
+        "Solution": "Adjust chair’s pan",
         "Values": {
           "1": {
             "Label": "Normal seat pan",
@@ -1537,6 +1700,7 @@
             "Desc": "< 3’ between knee and edge of seat",
             "FullDesc": "Less than 3 inches of space between knee and edge of seat",
             "ImageDesc": "<3 inches",
+            "Solution": "Make the pan longer",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1548,6 +1712,7 @@
             "Desc": "> 3’ between knee and edge of seat",
             "FullDesc": "More than 3 inches of space between knee and edge of seat",
             "ImageDesc": ">3 inches",
+            "Solution": "Make the pan shorter",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1562,10 +1727,12 @@
         "Units": null,
         "Label": "Non-adjustable pan depth",
         "Image": null,
+        "Solution": "Change the chair",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "A person may be forced into awkward postures",
+            "Solution": "Choose a chair with adjustable pan",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1589,6 +1756,7 @@
         "Units": null,
         "Label": "Armrests",
         "Image": null,
+        "Solution": "Adjust chair’s armrests",
         "Values": {
           "1": {
             "Label": "Elbows supported inline with shoulders",
@@ -1603,6 +1771,7 @@
             "Label": "Armrest is too high",
             "Desc": "Shoulders shrugged",
             "FullDesc": "High armrest is causing shoulder elevation and tension. Shoulders shrugged",
+            "Solution": "Lower the armrests",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1618,11 +1787,13 @@
         "Units": null,
         "Label": "Hard or damaged surface",
         "Image": null,
+        "Solution": "Fix the armrests",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Could lead to discomfort or strain over time",
             "Desc": "The armrest is hard or has a damaged surface",
+            "Solution": "Replace hard or damaged armrests, or replace the chair",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1644,10 +1815,12 @@
         "Units": null,
         "Label": "Armrests non adjustable",
         "Image": null,
+        "Solution": "Change the chair",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Doesn’t allow to solve problems when shoulders are shrugged or arms are unsupported",
+            "Solution": "Choose a chair with adjustable armrests",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1669,11 +1842,13 @@
         "Units": null,
         "Label": "Work surface too high",
         "Image": null,
+        "Solution": "Adjust the work surface",
         "Values": {
           "1": {
             "Label": "Yes",
             "Desc": "Shoulders shrugged",
             "FullDesc": "The work surface is too high, causing shoulder and arm strain",
+            "Solution": "Lower the work surface",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1696,10 +1871,12 @@
         "Units": null,
         "Label": "Non-adjustable back",
         "Image": null,
+        "Solution": "Change the chair",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Increasing strain on the neck, shoulders, and lower back",
+            "Solution": "Choose a chair with adjustable back support",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1723,11 +1900,13 @@
         "Units": null,
         "Label": "Glare on screen",
         "Image": null,
+        "Solution": "Adjust monitor",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Causes significant visual discomfort",
             "Desc": "The reflection of light on a screen",
+            "Solution": "Keep your monitor away from direct sunlight",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1749,10 +1928,12 @@
         "Units": null,
         "Label": "No documents holder",
         "Image": null,
+        "Solution": "Organize documents",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Forces awkward head and neck rotations or bending",
+            "Solution": "Place the documents in the holder",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1774,11 +1955,13 @@
         "Units": null,
         "Label": "Screen too far",
         "Image": null,
+        "Solution": "Adjust monitor",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Screen too far",
             "Desc": "Monitor too far from eyes",
+            "Solution": "Move the monitor closer",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1803,6 +1986,7 @@
         "Units": null,
         "Label": "Phone",
         "Image": null,
+        "Solution": "Adjust phone",
         "Values": {
           "1": {
             "Label": "Headset or one hand on phone",
@@ -1813,6 +1997,7 @@
           },
           "2": {
             "Label": "Too far of reach (outside of 30cm)",
+            "Solution": "Move the phone closer to your hand",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1852,9 +2037,11 @@
         "Units": null,
         "Label": "Neck and shouder hold",
         "Image": null,
+        "Solution": "Adjust phone",
         "Values": {
           "2": {
             "Label": "Yes",
+            "Solution": "Get a hands-free or hold your phone in your hand while talking",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -1876,9 +2063,11 @@
         "Units": null,
         "Label": "No hands-free option",
         "Image": null,
+        "Solution": "Adjust phone",
         "Values": {
           "1": {
             "Label": "Yes",
+            "Solution": "Get a hands-free",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1902,10 +2091,12 @@
         "Units": null,
         "Label": "Mouse/keyboard on different surfaces",
         "Image": null,
+        "Solution": "Adjust mouse and keyboard",
         "Values": {
           "2": {
             "Label": "Yes",
             "Warning": "Can lead to awkward wrist deviations, uneven shoulder loads, and neck strain",
+            "Solution": "Place the mouse and keyboard on the same surface",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -1927,11 +2118,13 @@
         "Units": null,
         "Label": "Palm rest in front of mouse",
         "Image": null,
+        "Solution": "Adjust mouse",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Leads to awkward wrist postures and additional strain",
             "FullDesc": "The palm rest can cause the wrist to tilt upwards (extension) as you move the mouse",
+            "Solution": "Remove the palmest in front of the mouse",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1955,11 +2148,13 @@
         "Units": null,
         "Label": "Platform not-adjustable",
         "Image": null,
+        "Solution": "Change the desk",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Could lead to sustained awkward postures",
             "Desc": "Keyboard platform cannot be adjusted",
+            "Solution": "Change the desk to fit the keyboard and mouse",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -1981,11 +2176,13 @@
         "Units": null,
         "Label": "Reaching to overhead items",
         "Image": null,
+        "Solution": "Organize items on the desc",
         "Values": {
           "1": {
             "Label": "Yes",
             "Warning": "Sustained overhead reaching can strain the neck, shoulders, and upper back",
             "Desc": "The need to reach overhead for items",
+            "Solution": "Lower the objects above the desc onto the desc",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -2007,10 +2204,12 @@
         "Units": null,
         "Label": "Keyboard too high or shoulders shrugged",
         "Image": null,
+        "Solution": "Adjust keyboard",
         "Values": {
           "1": {
             "Label": "Yes",
             "Desc": "Shoulders shrugged",
+            "Solution": "Lower the keyboard",
             "Score": {
               "Value": "Medium",
               "Color": "rgba(230, 126, 34, 1.0)"
@@ -2035,6 +2234,7 @@
         "Units": null,
         "Label": "Chair duration",
         "Image": null,
+        "Solution": "Reduce your time in the chair",
         "Values": {
           "0": {
             "Label": "Moderate use",
@@ -2055,6 +2255,7 @@
           "1": {
             "Label": "Heavy use",
             "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Solution": "Up to 4 hours a day and up to 1 hour consecutively",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -2069,6 +2270,7 @@
         "Units": null,
         "Label": "Computer duration",
         "Image": null,
+        "Solution": "Reduce your screen time",
         "Values": {
           "0": {
             "Label": "Moderate use",
@@ -2089,6 +2291,7 @@
           "1": {
             "Label": "Heavy use",
             "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Solution": "Up to 4 hours a day and up to 1 hour consecutively",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -2103,6 +2306,7 @@
         "Units": null,
         "Label": "Phone duration",
         "Image": null,
+        "Solution": "Reduce your time on the phone",
         "Values": {
           "0": {
             "Label": "Moderate use",
@@ -2123,6 +2327,7 @@
           "1": {
             "Label": "Heavy use",
             "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Solution": "Up to 4 hours a day and up to 1 hour consecutively",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -2137,6 +2342,7 @@
         "Units": null,
         "Label": "Mouse duration",
         "Image": null,
+        "Solution": "Reduce your mouse time",
         "Values": {
           "0": {
             "Label": "Moderate use",
@@ -2157,6 +2363,7 @@
           "1": {
             "Label": "Heavy use",
             "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Solution": "Up to 4 hours a day and up to 1 hour consecutively",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"
@@ -2171,6 +2378,7 @@
         "Units": null,
         "Label": "Keyboard duration",
         "Image": null,
+        "Solution": "Reduce your keyboard time",
         "Values": {
           "0": {
             "Label": "Moderate use",
@@ -2191,6 +2399,7 @@
           "1": {
             "Label": "Heavy use",
             "Desc": "> 4 hours intermittently / 1 hour or more consecutively",
+            "Solution": "Up to 4 hours a day and up to 1 hour consecutively",
             "Score": {
               "Value": "High",
               "Color": "rgba(184, 15, 10, 1.0)"

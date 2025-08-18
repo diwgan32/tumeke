@@ -349,7 +349,7 @@ RiskComponents:
       Type: input
       Base: 0.1
       MaxInput: 6
-      Units: [ft, sm]
+      Units: [ft, m]
       Label: Start hand height
       Image: ~
       Values: ~
@@ -357,7 +357,7 @@ RiskComponents:
       Type: input
       Base: 0.1
       MaxInput: 6
-      Units: [ft, sm]
+      Units: [ft, m]
       Label: End hand height
       Image: ~
       Values: ~
@@ -365,7 +365,7 @@ RiskComponents:
       Type: input
       Base: 0.1
       MaxInput: 6
-      Units: [ft, sm]
+      Units: [ft, m]
       Label: Start hand distance
       Image: ~
       Values: ~
@@ -373,7 +373,7 @@ RiskComponents:
       Type: input
       Base: 0.1
       MaxInput: 6
-      Units: [ft, sm]
+      Units: [ft, m]
       Label: End hand distance
       Image: ~
       Values: ~
