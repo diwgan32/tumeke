@@ -46,27 +46,7 @@
         "Label": "Without handles"
       }
     },
-    "TableTypes": {
-      "LIFT": {
-        "Value": 1,
-        "Label": "Lift"
-      },
-      "LOWER": {
-        "Value": 2,
-        "Label": "Lower"
-      },
-      "PUSH": {
-        "Value": 3,
-        "Label": "Push"
-      },
-      "PULL": {
-        "Value": 4,
-        "Label": "Pull"
-      },
-      "CARRY": {
-        "Value": 5,
-        "Label": "Carry"
-      },
+    "InputId": {
       "1": {
         "Value": 1,
         "Label": "Lift"
@@ -94,26 +74,26 @@
     "numLifts": "number",
     "startEnd": "{ [key: string]: number[] }",
     "subjectHeight": "number",
-    "tableType": "number"
+    "inputId": "number"
   },
   "ResultValues": {
     "mal": {
       "0": {
-        "Label": "Safe weight to {tableType}",
+        "Label": "Safe weight to {inputId}",
         "Score": {
           "Value": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
       "1": {
-        "Label": "Unsafe weight to {tableType}",
+        "Label": "Unsafe weight to {inputId}",
         "Score": {
           "Value": "Poor",
           "Color": "rgba(184, 15, 10, 1.0)"
         }
       },
       "2": {
-        "Label": "Unsafe {tableType} at all weights",
+        "Label": "Unsafe {inputId} at all weights",
         "Score": {
           "Value": "Unsafe",
           "Color": "rgba(184, 15, 10, 1.0)"
@@ -122,21 +102,21 @@
     },
     "malSustained": {
       "0": {
-        "Label": "Safe weight to {tableType}",
+        "Label": "Safe weight to {inputId}",
         "Score": {
           "Value": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"
         }
       },
       "1": {
-        "Label": "Unsafe weight to {tableType}",
+        "Label": "Unsafe weight to {inputId}",
         "Score": {
           "Value": "Poor",
           "Color": "rgba(184, 15, 10, 1.0)"
         }
       },
       "2": {
-        "Label": "Unsafe {tableType} at all weights",
+        "Label": "Unsafe {inputId} at all weights",
         "Score": {
           "Value": "Unsafe",
           "Color": "rgba(184, 15, 10, 1.0)"
@@ -188,7 +168,7 @@
         }
       },
       "[75, None]": {
-        "Label": "Safe weight to {tableType}",
+        "Label": "Safe weight to {inputId}",
         "Score": {
           "Value": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"
@@ -204,7 +184,7 @@
         }
       },
       "[75, None]": {
-        "Label": "Safe weight to {tableType}",
+        "Label": "Safe weight to {inputId}",
         "Score": {
           "Value": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"
@@ -220,7 +200,7 @@
         }
       },
       "[75, None]": {
-        "Label": "Safe weight to {tableType}",
+        "Label": "Safe weight to {inputId}",
         "Score": {
           "Value": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"
@@ -236,7 +216,7 @@
         }
       },
       "[75, None]": {
-        "Label": "Safe weight to {tableType}",
+        "Label": "Safe weight to {inputId}",
         "Score": {
           "Value": "Good",
           "Color": "rgba(109, 208, 163, 1.0)"
@@ -1355,7 +1335,7 @@
     }
   },
   "RiskComponents": {
-    "Main": {
+    "Lift": {
       "startHandHeight": {
         "Type": "input",
         "Base": 0.1,
@@ -1364,7 +1344,8 @@
           "ft",
           "m"
         ],
-        "Label": "Start hand height",
+        "Label": "Start vertical hand height",
+        "Desc": "Average vertical distance of both hands above the floor at the start of lift/lower",
         "Image": null,
         "Values": null
       },
@@ -1376,11 +1357,12 @@
           "ft",
           "m"
         ],
-        "Label": "End hand height",
+        "Label": "End vertical hand height",
+        "Desc": "Average vertical distance of both hands above the floor at the end of lift/lower",
         "Image": null,
         "Values": null
       },
-      "startHandDistance": {
+      "startHorizontalReach": {
         "Type": "input",
         "Base": 0.1,
         "MaxInput": 6,
@@ -1388,11 +1370,12 @@
           "ft",
           "m"
         ],
-        "Label": "Start hand distance",
+        "Label": "Start horizontal reach",
+        "Desc": "Horizonral distance between the midpoint of the hands and the midpoint between the inner ankle bones at the start of lift/lower",
         "Image": null,
         "Values": null
       },
-      "endHandDistance": {
+      "endHorizontalReach": {
         "Type": "input",
         "Base": 0.1,
         "MaxInput": 6,
@@ -1400,14 +1383,114 @@
           "ft",
           "m"
         ],
-        "Label": "End hand distance",
+        "Label": "End horizontal reach",
+        "Desc": "Horizonral distance between the midpoint of the hands and the midpoint between the inner ankle bones at the end of lift/lower",
+        "Image": null,
+        "Values": null
+      }
+    },
+    "Lower": {
+      "startHandHeight": {
+        "Type": "input",
+        "Base": 0.1,
+        "MaxInput": 6,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Start vertical hand height",
+        "Desc": "Average vertical distance of both hands above the floor at the start of lift/lower",
+        "Image": null,
+        "Values": null
+      },
+      "endHandHeight": {
+        "Type": "input",
+        "Base": 0.1,
+        "MaxInput": 6,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "End vertical hand height",
+        "Desc": "Average vertical distance of both hands above the floor at the end of lift/lower",
+        "Image": null,
+        "Values": null
+      },
+      "startHorizontalReach": {
+        "Type": "input",
+        "Base": 0.1,
+        "MaxInput": 6,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Start horizontal reach",
+        "Desc": "Horizonral distance between the midpoint of the hands and the midpoint between the inner ankle bones at the start of lift/lower",
+        "Image": null,
+        "Values": null
+      },
+      "endHorizontalReach": {
+        "Type": "input",
+        "Base": 0.1,
+        "MaxInput": 6,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "End horizontal reach",
+        "Desc": "Horizonral distance between the midpoint of the hands and the midpoint between the inner ankle bones at the end of lift/lower",
+        "Image": null,
+        "Values": null
+      }
+    },
+    "Push": {
+      "verticalHandHeight": {
+        "Type": "input",
+        "Base": 0.1,
+        "MaxInput": 6,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Vertical Hand Height",
+        "Desc": "Average vertical distance of both hands above the floor during task",
+        "Image": null,
+        "Values": null
+      }
+    },
+    "Pull": {
+      "verticalHandHeight": {
+        "Type": "input",
+        "Base": 0.1,
+        "MaxInput": 6,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Vertical Hand Height",
+        "Desc": "Average vertical distance of both hands above the floor during task",
+        "Image": null,
+        "Values": null
+      }
+    },
+    "Carry": {
+      "verticalHandHeight": {
+        "Type": "input",
+        "Base": 0.1,
+        "MaxInput": 6,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Vertical Hand Height",
+        "Desc": "Average vertical distance of both hands above the floor during task",
         "Image": null,
         "Values": null
       }
     }
   },
   "AdditionalInputs": {
-    "Main": {
+    "Lift": {
       "female": {
         "Type": "boolean",
         "Base": 0,
@@ -1456,6 +1539,116 @@
           }
         }
       },
+      "objectWeight": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
+        "Label": "Object Weight",
+        "Image": null,
+        "Values": null
+      },
+      "frequency": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": "per hour",
+        "Label": "Frequency",
+        "Image": "additionalInputs/Frequency.png",
+        "Values": null
+      }
+    },
+    "Lower": {
+      "female": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Male of Female",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Male"
+          },
+          "1": {
+            "Label": "Female"
+          }
+        }
+      },
+      "coupling": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Coupling",
+        "Image": "additionalInputs/Coupling.png",
+        "Values": {
+          "0": {
+            "Label": "Good",
+            "Score": {
+              "Value": "Good",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Fair",
+            "Score": {
+              "Value": "Fair",
+              "Color": "rgba(234, 130, 130, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Without",
+            "Warning": "Without coupling",
+            "Score": {
+              "Value": "Poor",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "objectWeight": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
+        "Label": "Object Weight",
+        "Image": null,
+        "Values": null
+      },
+      "frequency": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": "per hour",
+        "Label": "Frequency",
+        "Image": "additionalInputs/Frequency.png",
+        "Values": null
+      }
+    },
+    "Push": {
+      "female": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Male of Female",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Male"
+          },
+          "1": {
+            "Label": "Female"
+          }
+        }
+      },
       "initialForce": {
         "Type": "input",
         "Base": 1,
@@ -1464,7 +1657,7 @@
           "lbs",
           "kgs"
         ],
-        "Label": "Object Weight / Initial force",
+        "Label": "Initial force",
         "Image": null,
         "Values": null
       },
@@ -1477,6 +1670,120 @@
           "kgs"
         ],
         "Label": "Sustained force",
+        "Image": null,
+        "Values": null
+      },
+      "horizontalDistance": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Horizontal distance",
+        "Image": null,
+        "Values": null
+      },
+      "frequency": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": "per hour",
+        "Label": "Frequency",
+        "Image": "additionalInputs/Frequency.png",
+        "Values": null
+      }
+    },
+    "Pull": {
+      "female": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Male of Female",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Male"
+          },
+          "1": {
+            "Label": "Female"
+          }
+        }
+      },
+      "initialForce": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
+        "Label": "Initial force",
+        "Image": null,
+        "Values": null
+      },
+      "sustainedForce": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
+        "Label": "Sustained force",
+        "Image": null,
+        "Values": null
+      },
+      "horizontalDistance": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Horizontal distance",
+        "Image": null,
+        "Values": null
+      },
+      "frequency": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": "per hour",
+        "Label": "Frequency",
+        "Image": "additionalInputs/Frequency.png",
+        "Values": null
+      }
+    },
+    "Carry": {
+      "female": {
+        "Type": "boolean",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Male of Female",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Male"
+          },
+          "1": {
+            "Label": "Female"
+          }
+        }
+      },
+      "objectWeight": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
+        "Label": "Object Weight",
         "Image": null,
         "Values": null
       },

@@ -1378,19 +1378,19 @@
         "0": {
           "label": "assessments.snook.results.mal.value-0.label",
           "params": {
-            "tableType": "TableTypes"
+            "inputId": "InputId"
           }
         },
         "1": {
           "label": "assessments.snook.results.mal.value-1.label",
           "params": {
-            "tableType": "TableTypes"
+            "inputId": "InputId"
           }
         },
         "2": {
           "label": "assessments.snook.results.mal.value-2.label",
           "params": {
-            "tableType": "TableTypes"
+            "inputId": "InputId"
           }
         }
       },
@@ -1398,19 +1398,19 @@
         "0": {
           "label": "assessments.snook.results.mal.value-0.label",
           "params": {
-            "tableType": "TableTypes"
+            "inputId": "InputId"
           }
         },
         "1": {
           "label": "assessments.snook.results.mal.value-1.label",
           "params": {
-            "tableType": "TableTypes"
+            "inputId": "InputId"
           }
         },
         "2": {
           "label": "assessments.snook.results.mal.value-2.label",
           "params": {
-            "tableType": "TableTypes"
+            "inputId": "InputId"
           }
         }
       },
@@ -1441,7 +1441,7 @@
         "[75, None]": {
           "label": "assessments.snook.results.mal.value-0.label",
           "params": {
-            "tableType": "TableTypes"
+            "inputId": "InputId"
           }
         }
       },
@@ -1452,7 +1452,7 @@
         "[75, None]": {
           "label": "assessments.snook.results.mal.value-0.label",
           "params": {
-            "tableType": "TableTypes"
+            "inputId": "InputId"
           }
         }
       },
@@ -1463,7 +1463,7 @@
         "[75, None]": {
           "label": "assessments.snook.results.mal.value-0.label",
           "params": {
-            "tableType": "TableTypes"
+            "inputId": "InputId"
           }
         }
       },
@@ -1474,7 +1474,7 @@
         "[75, None]": {
           "label": "assessments.snook.results.mal.value-0.label",
           "params": {
-            "tableType": "TableTypes"
+            "inputId": "InputId"
           }
         }
       },
@@ -1990,20 +1990,32 @@
       }
     },
     "componentNames": {
-      "Main": {
-        "label": "assessments.niosh.component.main.label"
+      "Lift": {
+        "label": "assessments.snook.component.lift.label"
+      },
+      "Lower": {
+        "label": "assessments.snook.component.lower.label"
+      },
+      "Push": {
+        "label": "assessments.snook.component.push.label"
+      },
+      "Pull": {
+        "label": "assessments.snook.component.pull.label"
+      },
+      "Carry": {
+        "label": "assessments.snook.component.carry.label"
       }
     },
     "components": {
-      "Main": {
+      "Lift": {
         "female": {
-          "label": "assessments.snook.components.main.female.label",
+          "label": "assessments.snook.components.lift.female.label",
           "values": {
             "0": {
-              "label": "assessments.snook.components.main.female.value-0.label"
+              "label": "assessments.snook.components.lift.female.value-0.label"
             },
             "1": {
-              "label": "assessments.snook.components.main.female.value-1.label"
+              "label": "assessments.snook.components.lift.female.value-1.label"
             }
           }
         },
@@ -2017,34 +2029,160 @@
               "label": "general.fair"
             },
             "2": {
-              "label": "assessments.snook.components.main.coupling.value-2.label",
-              "warning": "assessments.snook.components.main.coupling.value-2.warning"
+              "label": "assessments.snook.components.lift.coupling.value-2.label",
+              "warning": "assessments.snook.components.lift.coupling.value-2.warning"
             }
           }
         },
-        "initialForce": {
-          "label": "assessments.snook.components.main.initialforce.label"
-        },
-        "sustainedForce": {
-          "label": "assessments.snook.components.main.sustainedforce.label"
-        },
-        "horizontalDistance": {
-          "label": "assessments.snook.components.main.horizontaldistance.label"
+        "objectWeight": {
+          "label": "assessments.snook.components.lift.objectweight.label"
         },
         "frequency": {
           "label": "assessments.niosh.components.main.frequency.label"
         },
         "startHandHeight": {
-          "label": "assessments.snook.components.main.starthandheight.label"
+          "label": "assessments.snook.components.lift.starthandheight.label",
+          "desc": "assessments.snook.components.lift.starthandheight.desc"
         },
         "endHandHeight": {
-          "label": "assessments.snook.components.main.endhandheight.label"
+          "label": "assessments.snook.components.lift.endhandheight.label",
+          "desc": "assessments.snook.components.lift.endhandheight.desc"
         },
-        "startHandDistance": {
-          "label": "assessments.snook.components.main.starthanddistance.label"
+        "startHorizontalReach": {
+          "label": "assessments.snook.components.lift.starthorizontalreach.label",
+          "desc": "assessments.snook.components.lift.starthorizontalreach.desc"
         },
-        "endHandDistance": {
-          "label": "assessments.snook.components.main.endhanddistance.label"
+        "endHorizontalReach": {
+          "label": "assessments.snook.components.lift.endhorizontalreach.label",
+          "desc": "assessments.snook.components.lift.endhorizontalreach.desc"
+        }
+      },
+      "Lower": {
+        "female": {
+          "label": "assessments.snook.components.lift.female.label",
+          "values": {
+            "0": {
+              "label": "assessments.snook.components.lift.female.value-0.label"
+            },
+            "1": {
+              "label": "assessments.snook.components.lift.female.value-1.label"
+            }
+          }
+        },
+        "coupling": {
+          "label": "assessments.niosh.components.main.coupling.label",
+          "values": {
+            "0": {
+              "label": "general.good"
+            },
+            "1": {
+              "label": "general.fair"
+            },
+            "2": {
+              "label": "assessments.snook.components.lift.coupling.value-2.label",
+              "warning": "assessments.snook.components.lift.coupling.value-2.warning"
+            }
+          }
+        },
+        "objectWeight": {
+          "label": "assessments.snook.components.lift.objectweight.label"
+        },
+        "frequency": {
+          "label": "assessments.niosh.components.main.frequency.label"
+        },
+        "startHandHeight": {
+          "label": "assessments.snook.components.lift.starthandheight.desc"
+        },
+        "endHandHeight": {
+          "label": "assessments.snook.components.lift.endhandheight.desc"
+        },
+        "startHorizontalReach": {
+          "label": "assessments.snook.components.lift.starthorizontalreach.desc"
+        },
+        "endHorizontalReach": {
+          "label": "assessments.snook.components.lift.endhorizontalreach.desc"
+        }
+      },
+      "Push": {
+        "female": {
+          "label": "assessments.snook.components.lift.female.label",
+          "values": {
+            "0": {
+              "label": "assessments.snook.components.lift.female.value-0.label"
+            },
+            "1": {
+              "label": "assessments.snook.components.lift.female.value-1.label"
+            }
+          }
+        },
+        "initialForce": {
+          "label": "assessments.snook.components.push.initialforce.label"
+        },
+        "sustainedForce": {
+          "label": "assessments.snook.components.push.sustainedforce.label"
+        },
+        "horizontalDistance": {
+          "label": "assessments.snook.components.push.horizontaldistance.label"
+        },
+        "frequency": {
+          "label": "assessments.niosh.components.main.frequency.label"
+        },
+        "verticalHandHeight": {
+          "label": "assessments.snook.components.push.verticalhandheight.label",
+          "desc": "assessments.snook.components.push.verticalhandheight.desc"
+        }
+      },
+      "Pull": {
+        "female": {
+          "label": "assessments.snook.components.lift.female.label",
+          "values": {
+            "0": {
+              "label": "assessments.snook.components.lift.female.value-0.label"
+            },
+            "1": {
+              "label": "assessments.snook.components.lift.female.value-1.label"
+            }
+          }
+        },
+        "initialForce": {
+          "label": "assessments.snook.components.push.initialforce.label"
+        },
+        "sustainedForce": {
+          "label": "assessments.snook.components.push.sustainedforce.label"
+        },
+        "horizontalDistance": {
+          "label": "assessments.snook.components.push.horizontaldistance.label"
+        },
+        "frequency": {
+          "label": "assessments.niosh.components.main.frequency.label"
+        },
+        "verticalHandHeight": {
+          "label": "assessments.snook.components.push.verticalhandheight.desc"
+        }
+      },
+      "Carry": {
+        "female": {
+          "label": "assessments.snook.components.lift.female.label",
+          "values": {
+            "0": {
+              "label": "assessments.snook.components.lift.female.value-0.label"
+            },
+            "1": {
+              "label": "assessments.snook.components.lift.female.value-1.label"
+            }
+          }
+        },
+        "objectWeight": {
+          "label": "assessments.snook.components.lift.objectweight.label"
+        },
+        "horizontalDistance": {
+          "label": "assessments.snook.components.push.horizontaldistance.label"
+        },
+        "frequency": {
+          "label": "assessments.niosh.components.main.frequency.label"
+        },
+        "verticalHandHeight": {
+          "label": "assessments.snook.components.push.verticalhandheight.desc"
         }
       }
     }

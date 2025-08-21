@@ -47,22 +47,7 @@ Enum:
       Value: 2
       Label: Without handles
 
-  TableTypes:
-    LIFT: 
-      Value: 1
-      Label: Lift
-    LOWER:
-      Value: 2
-      Label: Lower
-    PUSH:
-      Value: 3
-      Label: Push
-    PULL:
-      Value: 4
-      Label: Pull
-    CARRY:
-      Value: 5
-      Label: Carry
+  InputId:
     1: 
       Value: 1
       Label: Lift
@@ -85,28 +70,28 @@ Metadata:
   numLifts: "number"
   startEnd: "{ [key: string]: number[] }"
   subjectHeight: "number"
-  tableType: "number"
+  inputId: "number"
 
 ResultValues:
   mal:
     0:
-      Label: Safe weight to {tableType}
+      Label: Safe weight to {inputId}
       Score: *acceptable
     1:
-      Label: Unsafe weight to {tableType}
+      Label: Unsafe weight to {inputId}
       Score: *medium
     2:
-      Label: Unsafe {tableType} at all weights
+      Label: Unsafe {inputId} at all weights
       Score: *unsafe
   malSustained:
     0:
-      Label: Safe weight to {tableType}
+      Label: Safe weight to {inputId}
       Score: *acceptable
     1:
-      Label: Unsafe weight to {tableType}
+      Label: Unsafe weight to {inputId}
       Score: *medium
     2:
-      Label: Unsafe {tableType} at all weights
+      Label: Unsafe {inputId} at all weights
       Score: *unsafe
   frequencyMultiplier:
     "[None, None]":
@@ -129,28 +114,28 @@ ResultValues:
       Label: Unsafe frequency
       Score: *unsafe
     "[75, None]":
-      Label: Safe weight to {tableType}
+      Label: Safe weight to {inputId}
       Score: *acceptable
   malePercentageSustained:
     "[None, 75]":
       Label: Unsafe frequency
       Score: *unsafe
     "[75, None]":
-      Label: Safe weight to {tableType}
+      Label: Safe weight to {inputId}
       Score: *acceptable
   femalePercentage:
     "[None, 75]":
       Label: Unsafe frequency
       Score: *unsafe
     "[75, None]":
-      Label: Safe weight to {tableType}
+      Label: Safe weight to {inputId}
       Score: *acceptable
   femalePercentageSustained:
     "[None, 75]":
       Label: Unsafe frequency
       Score: *unsafe
     "[75, None]":
-      Label: Safe weight to {tableType}
+      Label: Safe weight to {inputId}
       Score: *acceptable
   frequencyMultiplierLiftMale:
     "[None, 0]": &unsafeMultiplier
@@ -344,43 +329,66 @@ ResultValues:
     "[1, None]": *veryGoodMultiplier
 
 RiskComponents:
-  Main:
-    startHandHeight:
+  Lift:
+    startHandHeight: &startHandHeight
       Type: input
       Base: 0.1
       MaxInput: 6
       Units: [ft, m]
-      Label: Start hand height
+      Label: Start vertical hand height
+      Desc: Average vertical distance of both hands above the floor at the start of lift/lower
       Image: ~
       Values: ~
-    endHandHeight:
+    endHandHeight: &endHandHeight
       Type: input
       Base: 0.1
       MaxInput: 6
       Units: [ft, m]
-      Label: End hand height
+      Label: End vertical hand height
+      Desc: Average vertical distance of both hands above the floor at the end of lift/lower
       Image: ~
       Values: ~
-    startHandDistance:
+    startHorizontalReach: &startHorizontalReach
       Type: input
       Base: 0.1
       MaxInput: 6
       Units: [ft, m]
-      Label: Start hand distance
+      Label: Start horizontal reach
+      Desc: Horizonral distance between the midpoint of the hands and the midpoint between the inner ankle bones at the start of lift/lower
       Image: ~
       Values: ~
-    endHandDistance:
+    endHorizontalReach: &endHorizontalReach
       Type: input
       Base: 0.1
       MaxInput: 6
       Units: [ft, m]
-      Label: End hand distance
+      Label: End horizontal reach
+      Desc: Horizonral distance between the midpoint of the hands and the midpoint between the inner ankle bones at the end of lift/lower
       Image: ~
       Values: ~
+  Lower:
+    startHandHeight: *startHandHeight
+    endHandHeight: *endHandHeight
+    startHorizontalReach: *startHorizontalReach
+    endHorizontalReach: *endHorizontalReach
+  Push:
+    verticalHandHeight: &verticalHandHeight
+      Type: input
+      Base: 0.1
+      MaxInput: 6
+      Units: [ft, m]
+      Label: Vertical Hand Height
+      Desc: Average vertical distance of both hands above the floor during task
+      Image: ~
+      Values: ~
+  Pull:
+    verticalHandHeight: *verticalHandHeight
+  Carry:
+    verticalHandHeight: *verticalHandHeight
 
 AdditionalInputs:
-  Main:
-    female:
+  Lift:
+    female: &female
       Type: boolean
       Base: 0
       MaxInput: ~
@@ -392,7 +400,7 @@ AdditionalInputs:
           Label: Male
         1:
           Label: Female
-    coupling:
+    coupling: &coupling
       Type: select
       Base: 0
       MaxInput: ~
@@ -410,31 +418,15 @@ AdditionalInputs:
           Label: Without
           Warning: Without coupling
           Score: *medium
-    initialForce:
+    objectWeight: &objectWeight
       Type: input
       Base: 1
       MaxInput: 100
       Units: [lbs, kgs]
-      Label: Object Weight / Initial force
+      Label: Object Weight
       Image: ~
       Values: ~
-    sustainedForce:
-      Type: input
-      Base: 1
-      MaxInput: 100
-      Units: [lbs, kgs]
-      Label: Sustained force
-      Image: ~
-      Values: ~
-    horizontalDistance:
-      Type: input
-      Base: 1
-      MaxInput: 100
-      Units: [ft, m]
-      Label: Horizontal distance
-      Image: ~
-      Values: ~
-    frequency:
+    frequency: &frequency
       Type: input
       Base: 1
       MaxInput: 100
@@ -442,3 +434,46 @@ AdditionalInputs:
       Label: Frequency
       Image: additionalInputs/Frequency.png
       Values: ~
+  Lower:
+    female: *female
+    coupling: *coupling
+    objectWeight: *objectWeight
+    frequency: *frequency
+  Push:
+    female: *female
+    initialForce: &initialForce
+      Type: input
+      Base: 1
+      MaxInput: 100
+      Units: [lbs, kgs]
+      Label: Initial force
+      Image: ~
+      Values: ~
+    sustainedForce: &sustainedForce
+      Type: input
+      Base: 1
+      MaxInput: 100
+      Units: [lbs, kgs]
+      Label: Sustained force
+      Image: ~
+      Values: ~
+    horizontalDistance: &horizontalDistance
+      Type: input
+      Base: 1
+      MaxInput: 100
+      Units: [ft, m]
+      Label: Horizontal distance
+      Image: ~
+      Values: ~
+    frequency: *frequency
+  Pull:
+    female: *female
+    initialForce: *initialForce
+    sustainedForce: *sustainedForce
+    horizontalDistance: *horizontalDistance
+    frequency: *frequency
+  Carry:
+    female: *female
+    objectWeight: *objectWeight
+    horizontalDistance: *horizontalDistance
+    frequency: *frequency
