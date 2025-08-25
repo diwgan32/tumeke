@@ -1492,7 +1492,7 @@
   "AdditionalInputs": {
     "Lift": {
       "female": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1563,7 +1563,7 @@
     },
     "Lower": {
       "female": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1634,7 +1634,7 @@
     },
     "Push": {
       "female": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1697,7 +1697,7 @@
     },
     "Pull": {
       "female": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1760,7 +1760,7 @@
     },
     "Carry": {
       "female": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,

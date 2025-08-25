@@ -270,7 +270,7 @@
   "RiskComponents": {
     "Neck": {
       "Score": {
-        "Type": "select",
+        "Type": "imageSelect",
         "Base": 1,
         "MaxInput": null,
         "Units": null,
@@ -298,7 +298,7 @@
         }
       },
       "SideBend": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -316,7 +316,7 @@
         }
       },
       "Twist": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -336,7 +336,7 @@
     },
     "Upper Arm": {
       "Score": {
-        "Type": "select",
+        "Type": "imageSelect",
         "Base": 1,
         "MaxInput": null,
         "Units": null,
@@ -365,7 +365,7 @@
         }
       },
       "Abducted": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -383,7 +383,7 @@
         }
       },
       "ShoulderRaised": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -402,7 +402,7 @@
     },
     "Trunk": {
       "Score": {
-        "Type": "select",
+        "Type": "imageSelect",
         "Base": 1,
         "MaxInput": null,
         "Units": null,
@@ -430,7 +430,7 @@
         }
       },
       "SideBend": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -448,7 +448,7 @@
         }
       },
       "Twist": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -468,7 +468,7 @@
     },
     "Lower Arm": {
       "Score": {
-        "Type": "select",
+        "Type": "imageSelect",
         "Base": 1,
         "MaxInput": null,
         "Units": null,
@@ -487,7 +487,7 @@
         }
       },
       "Midline": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -505,7 +505,7 @@
     },
     "Wrist": {
       "Score": {
-        "Type": "select",
+        "Type": "imageSelect",
         "Base": 1,
         "MaxInput": null,
         "Units": null,
@@ -530,7 +530,7 @@
         }
       },
       "Twist": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -548,7 +548,7 @@
         }
       },
       "Midline": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -639,7 +639,7 @@
         }
       },
       "ArmSuddenExertion": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -663,12 +663,13 @@
         }
       },
       "LegSuddenExertion": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
         "Label": "Leg Sudden Exertion",
         "Image": "additionalInputs/LegForceLoad.png",
+        "TooltipText": "Legs are usually the most affected by sudden exertion",
         "Values": {
           "1": {
             "Label": "Yes",
@@ -689,7 +690,7 @@
     },
     "Misc": {
       "LegsSupported": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -715,7 +716,7 @@
     },
     "Muscle Use": {
       "Arm": {
-        "Type": "boolean",
+        "Type": "select",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -739,7 +740,7 @@
         }
       },
       "Leg": {
-        "Type": "boolean",
+        "Type": "select",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -760,6 +761,109 @@
               "Color": "rgba(184, 15, 10, 1.0)"
             }
           }
+        }
+      }
+    }
+  },
+  "Form": {
+    "RiskComponents": {
+      "Groups": {
+        "0": {
+          "Label": "Force"
+        },
+        "1": {
+          "Label": "Muscle"
+        },
+        "2": {
+          "Label": "Score"
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "Arm",
+          "Component": "Force",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "ArmSuddenExertion",
+          "Component": "Force",
+          "Group": "0"
+        },
+        "2": {
+          "Input": "Leg",
+          "Component": "Force",
+          "Group": "0"
+        },
+        "3": {
+          "Input": "LegSuddenExertion",
+          "Component": "Force",
+          "Group": "0"
+        },
+        "4": {
+          "Input": "Arm",
+          "Component": "Muscle Use",
+          "Group": "1"
+        },
+        "5": {
+          "Input": "Leg",
+          "Component": "Muscle Use",
+          "Group": "1"
+        },
+        "6": {
+          "Input": "LegsSupported",
+          "Component": "Misc",
+          "Group": "2"
+        }
+      }
+    },
+    "AdditionalInputs": {
+      "Groups": {
+        "0": {
+          "Label": "Force"
+        },
+        "1": {
+          "Label": "Muscle"
+        },
+        "2": {
+          "Label": "Score",
+          "parent": "1"
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "Arm",
+          "Component": "Force",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "ArmSuddenExertion",
+          "Component": "Force",
+          "Group": "0"
+        },
+        "2": {
+          "Input": "Leg",
+          "Component": "Force",
+          "Group": "0"
+        },
+        "3": {
+          "Input": "LegSuddenExertion",
+          "Component": "Force",
+          "Group": "0"
+        },
+        "4": {
+          "Input": "Arm",
+          "Component": "Muscle Use",
+          "Group": "1"
+        },
+        "5": {
+          "Input": "Leg",
+          "Component": "Muscle Use",
+          "Group": "1"
+        },
+        "6": {
+          "Input": "LegsSupported",
+          "Component": "Misc",
+          "Group": "2"
         }
       }
     }

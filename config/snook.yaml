@@ -389,7 +389,7 @@ RiskComponents:
 AdditionalInputs:
   Lift:
     female: &female
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~

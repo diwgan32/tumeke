@@ -150,7 +150,7 @@ ResultValues:
 RiskComponents:
   Neck:
     Score:
-      Type: select
+      Type: imageSelect
       Base: 1
       MaxInput: ~
       Units: ~
@@ -172,7 +172,7 @@ RiskComponents:
           Image: angleIcons/rulaReba/Neck_in_extension@2x.png
           Warning: Neck bent backward
     SideBend:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -186,7 +186,7 @@ RiskComponents:
         0:
           Label: No
     Twist:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -202,7 +202,7 @@ RiskComponents:
 
   Upper Arm:
     Score:
-      Type: select
+      Type: imageSelect
       Base: 1
       MaxInput: ~
       Units: ~
@@ -225,7 +225,7 @@ RiskComponents:
           Image: angleIcons/rulaReba/UpperArm_90+_deg@2x.png
           Warning: Upper arm raised too high
     Abducted:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -239,7 +239,7 @@ RiskComponents:
         0:
           Label: No
     ShoulderRaised:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -254,7 +254,7 @@ RiskComponents:
 
   Trunk:
     Score:
-      Type: select
+      Type: imageSelect
       Base: 1
       MaxInput: ~
       Units: ~
@@ -276,7 +276,7 @@ RiskComponents:
           Image: angleIcons/rulaReba/Trunk_60+_deg@2x.png
           Warning: Trunk bent forward too much
     SideBend:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -290,7 +290,7 @@ RiskComponents:
         0:
           Label: No
     Twist:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -306,7 +306,7 @@ RiskComponents:
 
   Lower Arm:
     Score:
-      Type: select
+      Type: imageSelect
       Base: 1
       MaxInput: ~
       Units: ~
@@ -321,7 +321,7 @@ RiskComponents:
           Image: angleIcons/rulaReba/LowerArm_0_60_deg@2x.png
           Image2: angleIcons/rulaReba/LowerArm_100+_deg@2x.png
     Midline:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -335,7 +335,7 @@ RiskComponents:
 
   Wrist:
     Score:
-      Type: select
+      Type: imageSelect
       Base: 1
       MaxInput: ~
       Units: ~
@@ -355,7 +355,7 @@ RiskComponents:
           Image2: angleIcons/rulaReba/Wrist_15+Down_Deg@2x.png
           Warning: Wrist far too bent
     Twist:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -369,7 +369,7 @@ RiskComponents:
         0:
           Label: No
     Midline:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -421,7 +421,7 @@ AdditionalInputs:
           Warning: To much weight for a leg
           Score: *high
     ArmSuddenExertion:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -435,12 +435,13 @@ AdditionalInputs:
           Label: No
           Score: *acceptable
     LegSuddenExertion:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
       Label: Leg Sudden Exertion
       Image: additionalInputs/LegForceLoad.png
+      TooltipText: Legs are usually the most affected by sudden exertion
       Values:
         1:
           Label: Yes
@@ -450,7 +451,7 @@ AdditionalInputs:
           Score: *acceptable
   Misc:
     LegsSupported:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -465,7 +466,7 @@ AdditionalInputs:
           Score: *acceptable
   Muscle Use:
     Arm:
-      Type: boolean
+      Type: select
       Base: 0
       MaxInput: ~
       Units: ~
@@ -479,7 +480,7 @@ AdditionalInputs:
           Label: Moves 4 times/min
           Score: *high
     Leg:
-      Type: boolean
+      Type: select
       Base: 0
       MaxInput: ~
       Units: ~
@@ -492,3 +493,80 @@ AdditionalInputs:
         1:
           Label: Moves 4 times/min
           Score: *high
+Form:
+  RiskComponents:
+    Groups:
+      0:
+        Label: Force
+      1:
+        Label: Muscle
+      2:
+        Label: Score
+    Items:
+      0:
+        Input: Arm
+        Component: Force
+        Group: "0"
+      1:
+        Input: ArmSuddenExertion
+        Component: Force
+        Group: "0"
+      2:
+        Input: Leg
+        Component: Force
+        Group: "0"
+      3:
+        Input: LegSuddenExertion
+        Component: Force
+        Group: "0"
+      4:
+        Input: Arm
+        Component: Muscle Use
+        Group: "1"
+      5:
+        Input: Leg
+        Component: Muscle Use
+        Group: "1"
+      6:
+        Input: LegsSupported
+        Component: Misc
+        Group: "2"
+  AdditionalInputs:
+    Groups:
+      0:
+        Label: Force
+      1:
+        Label: Muscle
+      2:
+        Label: Score
+        parent: "1"
+    Items:
+      0:
+        Input: Arm
+        Component: Force
+        Group: "0"
+      1:
+        Input: ArmSuddenExertion
+        Component: Force
+        Group: "0"
+      2:
+        Input: Leg
+        Component: Force
+        Group: "0"
+      3:
+        Input: LegSuddenExertion
+        Component: Force
+        Group: "0"
+      4:
+        Input: Arm
+        Component: Muscle Use
+        Group: "1"
+      5:
+        Input: Leg
+        Component: Muscle Use
+        Group: "1"
+      6:
+        Input: LegsSupported
+        Component: Misc
+        Group: "2"
+      

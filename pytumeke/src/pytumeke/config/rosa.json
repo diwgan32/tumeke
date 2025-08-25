@@ -507,7 +507,7 @@
         }
       },
       "ChairInsufficientSpace": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -534,7 +534,7 @@
         }
       },
       "ChairHeightNoFootGround": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -560,7 +560,7 @@
         }
       },
       "ChairHeightNonAdjustable": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -632,7 +632,7 @@
         }
       },
       "ChairPanNonAdjustable": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -691,7 +691,7 @@
         }
       },
       "ChairArmrestHardDamaged": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -719,7 +719,7 @@
         }
       },
       "ChairArmrestTooWide": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -747,7 +747,7 @@
         }
       },
       "ChairArmrestNonAdjustable": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -826,7 +826,7 @@
         }
       },
       "ChairNoBackSupport": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -852,7 +852,7 @@
         }
       },
       "ChairBackSupportSurfaceTooHigh": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -880,7 +880,7 @@
         }
       },
       "ChairBackSupportNonAdjustable": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -943,7 +943,7 @@
         }
       },
       "MonitorTooFar": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -971,7 +971,7 @@
         }
       },
       "MonitorNeckTwist": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -999,7 +999,7 @@
         }
       },
       "MonitorGlareOnScreen": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1027,7 +1027,7 @@
         }
       },
       "MonitorDocumentsNoHolder": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1082,7 +1082,7 @@
         }
       },
       "PhoneExists": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1107,7 +1107,7 @@
         }
       },
       "PhoneNeckShoulder": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1133,7 +1133,7 @@
         }
       },
       "PhoneNoHandsFree": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1187,7 +1187,7 @@
         }
       },
       "MouseKeyboardDifferentSurfaces": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1214,7 +1214,7 @@
         }
       },
       "MousePinchGripOnMouse": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1242,7 +1242,7 @@
         }
       },
       "MousePalmrest": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1298,7 +1298,7 @@
         }
       },
       "KeyboardDeviation": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1326,7 +1326,7 @@
         }
       },
       "KeyboardTooHigh": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1353,7 +1353,7 @@
         }
       },
       "KeyboardReachingItems": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1381,7 +1381,7 @@
         }
       },
       "KeyboardPlatformNonAdjustable": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1595,7 +1595,7 @@
   "AdditionalInputs": {
     "SeatPanHeightAndDepth": {
       "ChairHeightNonAdjustable": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1622,7 +1622,7 @@
         }
       },
       "ChairInsufficientSpace": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1649,7 +1649,7 @@
         }
       },
       "ChairHeightNoFootGround": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1721,7 +1721,7 @@
         }
       },
       "ChairPanNonAdjustable": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1781,7 +1781,7 @@
         "IsOptional": true
       },
       "ChairArmrestHardDamaged": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1809,7 +1809,7 @@
         }
       },
       "ChairArmrestNonAdjustable": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1836,7 +1836,7 @@
         }
       },
       "ChairBackSupportSurfaceTooHigh": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1865,7 +1865,7 @@
         "IsOptional": true
       },
       "ChairBackSupportNonAdjustable": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1894,7 +1894,7 @@
     },
     "Monitor": {
       "MonitorGlareOnScreen": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1922,7 +1922,7 @@
         }
       },
       "MonitorDocumentsNoHolder": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -1949,7 +1949,7 @@
         }
       },
       "MonitorTooFar": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -2006,7 +2006,7 @@
         }
       },
       "PhoneExists": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -2031,7 +2031,7 @@
         }
       },
       "PhoneNeckShoulder": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -2057,7 +2057,7 @@
         }
       },
       "PhoneNoHandsFree": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -2085,7 +2085,7 @@
     },
     "Mouse": {
       "MouseKeyboardDifferentSurfaces": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -2112,7 +2112,7 @@
         }
       },
       "MousePalmrest": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -2142,7 +2142,7 @@
     },
     "Keyboard": {
       "KeyboardPlatformNonAdjustable": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -2170,7 +2170,7 @@
         }
       },
       "KeyboardReachingItems": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -2198,7 +2198,7 @@
         }
       },
       "KeyboardTooHigh": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,

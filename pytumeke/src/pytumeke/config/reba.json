@@ -354,7 +354,7 @@
   "RiskComponents": {
     "Neck": {
       "Score": {
-        "Type": "select",
+        "Type": "imageSelect",
         "Base": 1,
         "MaxInput": null,
         "Units": null,
@@ -374,7 +374,7 @@
         }
       },
       "SideBend": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -392,7 +392,7 @@
         }
       },
       "Twist": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -412,7 +412,7 @@
     },
     "Upper Arm": {
       "Score": {
-        "Type": "select",
+        "Type": "imageSelect",
         "Base": 1,
         "MaxInput": null,
         "Units": null,
@@ -442,7 +442,7 @@
         }
       },
       "Abducted": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -460,7 +460,7 @@
         }
       },
       "ShoulderRaised": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -480,7 +480,7 @@
     },
     "Trunk": {
       "Score": {
-        "Type": "select",
+        "Type": "imageSelect",
         "Base": 1,
         "MaxInput": null,
         "Units": null,
@@ -508,7 +508,7 @@
         }
       },
       "SideBend": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -526,7 +526,7 @@
         }
       },
       "Twist": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -546,7 +546,7 @@
     },
     "Lower Arm": {
       "Score": {
-        "Type": "select",
+        "Type": "imageSelect",
         "Base": 1,
         "MaxInput": null,
         "Units": null,
@@ -568,7 +568,7 @@
     },
     "Wrist": {
       "Score": {
-        "Type": "select",
+        "Type": "imageSelect",
         "Base": 1,
         "MaxInput": null,
         "Units": null,
@@ -588,7 +588,7 @@
         }
       },
       "Twist": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -608,7 +608,7 @@
     },
     "Leg": {
       "Score": {
-        "Type": "select",
+        "Type": "imageSelect",
         "Base": 1,
         "MaxInput": null,
         "Units": null,
@@ -631,7 +631,7 @@
         }
       },
       "UnstableFooting": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -687,7 +687,7 @@
         }
       },
       "ForceBuildup": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -753,7 +753,7 @@
         }
       },
       "BodyPartHeldStatic": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -777,7 +777,7 @@
         }
       },
       "RepeatedSmallActions": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -801,7 +801,7 @@
         }
       },
       "RapidPostureChange": {
-        "Type": "boolean",
+        "Type": "checkbox",
         "Base": 0,
         "MaxInput": null,
         "Units": null,
@@ -850,73 +850,73 @@
       },
       "Items": {
         "0": {
-          "Input": "Neck",
-          "Component": "Score",
+          "Component": "Neck",
+          "Input": "Score",
           "Group": "0"
         },
         "1": {
-          "Input": "Neck",
-          "Component": "SideBend",
+          "Component": "Neck",
+          "Input": "SideBend",
           "Group": "0"
         },
         "2": {
-          "Input": "Neck",
-          "Component": "Twist",
+          "Component": "Neck",
+          "Input": "Twist",
           "Group": "0"
         },
         "3": {
-          "Input": "Upper Arm",
-          "Component": "Score",
+          "Component": "Upper Arm",
+          "Input": "Score",
           "Group": "1"
         },
         "4": {
-          "Input": "Upper Arm",
-          "Component": "Abducted",
+          "Component": "Upper Arm",
+          "Input": "Abducted",
           "Group": "1"
         },
         "5": {
-          "Input": "Upper Arm",
-          "Component": "ShoulderRaised",
+          "Component": "Upper Arm",
+          "Input": "ShoulderRaised",
           "Group": "1"
         },
         "6": {
-          "Input": "Trunk",
-          "Component": "Score",
+          "Component": "Trunk",
+          "Input": "Score",
           "Group": "2"
         },
         "7": {
-          "Input": "Trunk",
-          "Component": "SideBend",
+          "Component": "Trunk",
+          "Input": "SideBend",
           "Group": "2"
         },
         "8": {
-          "Input": "Trunk",
-          "Component": "Twist",
+          "Component": "Trunk",
+          "Input": "Twist",
           "Group": "2"
         },
         "9": {
-          "Input": "Lower Arm",
-          "Component": "Score",
+          "Component": "Lower Arm",
+          "Input": "Score",
           "Group": "3"
         },
         "10": {
-          "Input": "Wrist",
-          "Component": "Score",
+          "Component": "Wrist",
+          "Input": "Score",
           "Group": "4"
         },
         "11": {
-          "Input": "Wrist",
-          "Component": "Twist",
+          "Component": "Wrist",
+          "Input": "Twist",
           "Group": "4"
         },
         "12": {
-          "Input": "Leg",
-          "Component": "Score",
+          "Component": "Leg",
+          "Input": "Score",
           "Group": "5"
         },
         "13": {
-          "Input": "Leg",
-          "Component": "UnstableFooting",
+          "Component": "Leg",
+          "Input": "UnstableFooting",
           "Group": "5"
         }
       }
@@ -930,34 +930,34 @@
       },
       "Items": {
         "0": {
-          "Input": "Force",
-          "Component": "Load",
+          "Component": "Force",
+          "Input": "Load",
           "Group": "0"
         },
         "1": {
-          "Input": "Force",
-          "Component": "ForceBuildup",
+          "Component": "Force",
+          "Input": "ForceBuildup",
           "Group": "0"
         },
         "2": {
-          "Input": "Misc",
-          "Component": "CouplingScore",
+          "Component": "Misc",
+          "Input": "CouplingScore",
           "Group": "0"
         },
         "3": {
-          "Input": "Misc",
-          "Component": "BodyPartHeldStatic",
+          "Component": "Misc",
+          "Input": "BodyPartHeldStatic",
           "Label": "Activity Score",
           "Group": "0"
         },
         "4": {
-          "Input": "Misc",
-          "Component": "RepeatedSmallActions",
+          "Component": "Misc",
+          "Input": "RepeatedSmallActions",
           "Group": "0"
         },
         "5": {
-          "Input": "Misc",
-          "Component": "RapidPostureChange",
+          "Component": "Misc",
+          "Input": "RapidPostureChange",
           "Group": "0"
         }
       }

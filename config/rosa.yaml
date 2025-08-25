@@ -267,7 +267,7 @@ RiskComponents:
           Solution: Lower the chair
           Score: *high
     ChairInsufficientSpace: &ChairInsufficientSpace
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -284,7 +284,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     ChairHeightNoFootGround: &ChairHeightNoFootGround
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -300,7 +300,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     ChairHeightNonAdjustable: &ChairHeightNonAdjustable
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -348,7 +348,7 @@ RiskComponents:
           Solution: Make the pan shorter
           Score: *medium
     ChairPanNonAdjustable: &ChairPanNonAdjustable
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -386,7 +386,7 @@ RiskComponents:
           Solution: Lower the armrests
           Score: *medium
     ChairArmrestHardDamaged: &ChairArmrestHardDamaged
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -404,7 +404,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     ChairArmrestTooWide:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -422,7 +422,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     ChairArmrestNonAdjustable: &ChairArmrestNonAdjustable
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -473,7 +473,7 @@ RiskComponents:
           Solution: Reduce the angle of the chair back or change the chair
           Score: *medium
     ChairNoBackSupport:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -489,7 +489,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     ChairBackSupportSurfaceTooHigh: &ChairBackSupportSurfaceTooHigh
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -507,7 +507,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     ChairBackSupportNonAdjustable: &ChairBackSupportNonAdjustable
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -545,7 +545,7 @@ RiskComponents:
           Solution: Lower your monitor to eye level
           Score: *high
     MonitorTooFar: &MonitorTooFar
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -563,7 +563,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     MonitorNeckTwist:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -581,7 +581,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     MonitorGlareOnScreen: &MonitorGlareOnScreen
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -599,7 +599,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     MonitorDocumentsNoHolder: &MonitorDocumentsNoHolder
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -633,7 +633,7 @@ RiskComponents:
           Solution: Move the phone closer to your hand
           Score: *medium
     PhoneExists: &PhoneExists
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -648,7 +648,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     PhoneNeckShoulder: &PhoneNeckShoulder
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -664,7 +664,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     PhoneNoHandsFree: &PhoneNoHandsFree
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -697,7 +697,7 @@ RiskComponents:
           Solution: Move your mouse closer
           Score: *medium
     MouseKeyboardDifferentSurfaces: &MouseKeyboardDifferentSurfaces
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -714,7 +714,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     MousePinchGripOnMouse:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -732,7 +732,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     MousePalmrest: &MousePalmrest
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -767,7 +767,7 @@ RiskComponents:
           Solution: Lower the keyboard (fold the legs)
           Score: *medium
     KeyboardDeviation:
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -785,7 +785,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     KeyboardTooHigh: &KeyboardTooHigh
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -802,7 +802,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     KeyboardReachingItems: &KeyboardReachingItems
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
@@ -820,7 +820,7 @@ RiskComponents:
           Label: No
           Score: *acceptable
     KeyboardPlatformNonAdjustable: &KeyboardPlatformNonAdjustable
-      Type: boolean
+      Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
