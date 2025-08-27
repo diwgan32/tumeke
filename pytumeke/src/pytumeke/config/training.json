@@ -74,6 +74,18 @@
       }
     }
   },
-  "RiskComponents": {},
+  "RiskComponents": {
+    "Main": {
+      "Score": {
+        "Type": "input",
+        "Base": 0,
+        "MaxInput": 100,
+        "Label": "Score",
+        "Units": null,
+        "Image": null,
+        "Values": null
+      }
+    }
+  },
   "AdditionalInputs": {}
 }

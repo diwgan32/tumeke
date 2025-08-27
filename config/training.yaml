@@ -62,7 +62,16 @@ ResultValues:
       Label: Good
       Score: *acceptable
 
-RiskComponents: {}
+RiskComponents:
+  Main:
+    Score:
+      Type: input
+      Base: 0
+      MaxInput: 100
+      Label: Score
+      Units: ~
+      Image: ~
+      Values: ~
 
 AdditionalInputs: {}
 
