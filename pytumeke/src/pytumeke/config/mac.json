@@ -1,0 +1,1405 @@
+{
+  "SeriaNumber": 9,
+  "Name": "Mac",
+  "AssessmentName": "MAC",
+  "Colors": {
+    "black": "rgba(15, 15, 30, 0.9)",
+    "light_green": "rgba(109, 208, 163, 1.0)",
+    "green": "rgba(241, 196, 15, 1.0)",
+    "orange": "rgba(230, 126, 34, 1.0)",
+    "red": "rgba(184, 15, 10, 1.0)",
+    "dark_red": "rgba(133, 4, 0, 1.0)"
+  },
+  "Constants": {
+    "unacceptable": {
+      "Value": "Unacceptable",
+      "Color": "rgba(133, 4, 0, 1.0)"
+    },
+    "acceptable": {
+      "Value": "Acceptable",
+      "Color": "rgba(109, 208, 163, 1.0)"
+    },
+    "low": {
+      "Value": "Low",
+      "Color": "rgba(241, 196, 15, 1.0)"
+    },
+    "medium": {
+      "Value": "Medium",
+      "Color": "rgba(230, 126, 34, 1.0)"
+    },
+    "high": {
+      "Value": "High",
+      "Color": "rgba(184, 15, 10, 1.0)"
+    },
+    "vhigh": {
+      "Value": "Very High",
+      "Color": "rgba(133, 4, 0, 1.0)"
+    }
+  },
+  "Enum": {
+    "InputId": {
+      "1": {
+        "Value": 1,
+        "Label": "Lift"
+      },
+      "2": {
+        "Value": 2,
+        "Label": "Carry"
+      },
+      "3": {
+        "Value": 3,
+        "Label": "Team"
+      }
+    }
+  },
+  "OverallScoreValue": "OverallScore",
+  "Metadata": {
+    "startEnd": "{ [key: string]: number[] }",
+    "inputId": "number"
+  },
+  "ResultValues": {
+    "OverallScore": {
+      "[None, None]": {
+        "Label": "Overall score",
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      }
+    },
+    "LiftScore": {
+      "[None, 0]": {
+        "Label": "Unacceptable",
+        "Score": {
+          "Value": "Unacceptable",
+          "Color": "rgba(133, 4, 0, 1.0)"
+        }
+      },
+      "[0, 5]": {
+        "Label": "Acceptable",
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[5, 10]": {
+        "Label": "Medium risk",
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
+      },
+      "[10, 15]": {
+        "Label": "High risk",
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[15, None]": {
+        "Label": "Unacceptable",
+        "Score": {
+          "Value": "Unacceptable",
+          "Color": "rgba(133, 4, 0, 1.0)"
+        }
+      }
+    },
+    "CarryScore": {
+      "[None, 0]": {
+        "Label": "Unacceptable",
+        "Score": {
+          "Value": "Unacceptable",
+          "Color": "rgba(133, 4, 0, 1.0)"
+        }
+      },
+      "[0, 5]": {
+        "Label": "Acceptable",
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[5, 10]": {
+        "Label": "Medium risk",
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
+      },
+      "[10, 15]": {
+        "Label": "High risk",
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[15, None]": {
+        "Label": "Unacceptable",
+        "Score": {
+          "Value": "Unacceptable",
+          "Color": "rgba(133, 4, 0, 1.0)"
+        }
+      }
+    },
+    "TeamScore": {
+      "[None, 0]": {
+        "Label": "Unacceptable",
+        "Score": {
+          "Value": "Unacceptable",
+          "Color": "rgba(133, 4, 0, 1.0)"
+        }
+      },
+      "[0, 5]": {
+        "Label": "Acceptable",
+        "Score": {
+          "Value": "Acceptable",
+          "Color": "rgba(109, 208, 163, 1.0)"
+        }
+      },
+      "[5, 10]": {
+        "Label": "Medium risk",
+        "Score": {
+          "Value": "Medium",
+          "Color": "rgba(230, 126, 34, 1.0)"
+        }
+      },
+      "[10, 15]": {
+        "Label": "High risk",
+        "Score": {
+          "Value": "High",
+          "Color": "rgba(184, 15, 10, 1.0)"
+        }
+      },
+      "[15, None]": {
+        "Label": "Unacceptable",
+        "Score": {
+          "Value": "Unacceptable",
+          "Color": "rgba(133, 4, 0, 1.0)"
+        }
+      }
+    }
+  },
+  "RiskComponents": {
+    "Lift": {
+      "HandDistance": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Hand distance from the lower back",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Upper arms vertical and torso upright",
+            "Desc": "Hands close to the low back",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Upper arms angled away from torso",
+            "Desc": "Hands at moderate distance from the low back",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "3.1": {
+            "Label": "Torso bent forward",
+            "Desc": "Hands at moderate distance from the low back",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "6": {
+            "Label": "Torso upright. Arms fully outstretched",
+            "Desc": "Hands far from the low back",
+            "Warning": "Very high risk",
+            "Score": {
+              "Value": "Very High",
+              "Color": "rgba(133, 4, 0, 1.0)"
+            }
+          },
+          "6.1": {
+            "Label": "Upper arms angled away from torso and torso bent forward",
+            "Desc": "Hands far from the low back",
+            "Warning": "Very high risk",
+            "Score": {
+              "Value": "Very High",
+              "Color": "rgba(133, 4, 0, 1.0)"
+            }
+          }
+        }
+      },
+      "VerticalLiftZones": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Vertical lift zones",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Hands between knee and elbow height",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Hands between knee and floor level",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1.1": {
+            "Label": "Hands between elbow height and head height",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Hands at floor level or below",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "3.1": {
+            "Label": "Hands at head height or above",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "TorsoTwisting": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": "angle",
+        "Label": "Torso twisting and sideways bending",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Little or no torso twisting or sideways bending",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Torso twisted",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Torso bent sideways",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Torso both twisted and bent sideways",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      }
+    },
+    "Carry": {
+      "HandDistance": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Hand distance from the lower back",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Upper arms vertical and torso upright",
+            "Desc": "Hands close to the low back",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Upper arms angled away from torso",
+            "Desc": "Hands at moderate distance from the low back",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "3.1": {
+            "Label": "Torso bent forward",
+            "Desc": "Hands at moderate distance from the low back",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "6": {
+            "Label": "Torso upright. Arms fully outstretched",
+            "Desc": "Hands far from the low back",
+            "Warning": "Very high risk",
+            "Score": {
+              "Value": "Very High",
+              "Color": "rgba(133, 4, 0, 1.0)"
+            }
+          },
+          "6.1": {
+            "Label": "Upper arms angled away from torso and torso bent forward",
+            "Desc": "Hands far from the low back",
+            "Warning": "Very high risk",
+            "Score": {
+              "Value": "Very High",
+              "Color": "rgba(133, 4, 0, 1.0)"
+            }
+          }
+        }
+      },
+      "VerticalLiftZones": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Vertical lift zones",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Hands between knee and elbow height",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Hands between knee and floor level",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1.1": {
+            "Label": "Hands between elbow height and head height",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Hands at floor level or below",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "3.1": {
+            "Label": "Hands at head height or above",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "TorsoTwisting": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": "angle",
+        "Label": "Torso twisting and sideways bending",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Little or no torso twisting or sideways bending",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Torso twisted",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Torso bent sideways",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Torso both twisted and bent sideways",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      }
+    },
+    "Team": {
+      "HandDistance": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Hand distance from the lower back",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Upper arms vertical AND torso upright",
+            "Desc": "Hands close to the low back",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Upper arms angled away from torso OR torso bent forward",
+            "Desc": "Hands at moderate distance from the low back",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "6": {
+            "Label": "Upper arms angled away from torso AND torso bent forward",
+            "Desc": "Hands far from the low back",
+            "Warning": "Very high risk",
+            "Score": {
+              "Value": "Very High",
+              "Color": "rgba(133, 4, 0, 1.0)"
+            }
+          }
+        }
+      },
+      "VerticalLiftZones": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Vertical lift zones",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Hands between knee and elbow height",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Hands below knee and/or above elbow height",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Hands at floor level or below or head height and above",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "TorsoTwisting": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": "angle",
+        "Label": "Torso twisting and sideways bending",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Little or no torso twisting or sideways bending",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Torsos either twisted or bent sideways",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Torsos both twisted and bent sideways",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "AdditionalInputs": {
+    "Lift": {
+      "LoadWeight": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
+        "Label": "Object Weight",
+        "Image": null,
+        "Values": null
+      },
+      "Frequency": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": "per hour",
+        "Label": "Frequency",
+        "Image": "additionalInputs/Frequency.png",
+        "Values": null
+      },
+      "PosturalConstraints": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Postural constraints",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "No postural constraints",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Restricted posture",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Severely restricted",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "GripOnLoad": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Grip on load",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Good grip",
+            "Desc": "Fit-for-purpose handles/ handholds matched to the size and weight of the load",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "0.1": {
+            "Label": "Cylindrical handles or items the whole hand can wrap round comfortably",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Handles or handholds too small or lack finger clearance or only the fingers support the load",
+            "Warning": "Reasonable grip",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1.1": {
+            "Label": "No handles or handholds but can be held underneath, or has strap or loop handles",
+            "Warning": "Reasonable grip",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "No handles or handhold areas",
+            "Warning": "Poor grip",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.1": {
+            "Label": "Palm, pinch or fingertip grip or force used to keep items together",
+            "Warning": "Poor grip",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.2": {
+            "Label": "Rough, slippery or with pressure points",
+            "Warning": "Poor grip",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.3": {
+            "Label": "Irregular, bulky or non-rigid",
+            "Warning": "Poor grip",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      },
+      "FloorSurface": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Floor surface",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Non-slip, dry, clean, firm, level and undamaged",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Mostly dry and clean (damp or some debris), or reasonably",
+            "Warning": "Reasonable floor surface",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Slippery (greasy, oily, wet, icy) or much debris or soft or unstable or severe damage",
+            "Warning": "Poor floor surface",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      },
+      "EnvironmentalFactors": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Environmental factors",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "No factors",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "One factor",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Two or more factors",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      }
+    },
+    "Carry": {
+      "LoadWeight": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
+        "Label": "Object Weight",
+        "Image": null,
+        "Values": null
+      },
+      "Frequency": {
+        "Type": "input",
+        "Base": 1,
+        "MaxInput": 100,
+        "Units": "per hour",
+        "Label": "Frequency",
+        "Image": "additionalInputs/Frequency.png",
+        "Values": null
+      },
+      "AsymmetricalTorso": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Asymmetrical torso or load",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Load and hands symmetrical in front of the torso",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Torso symmetrical but load is carried to one side",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1.1": {
+            "Label": "Load not symmetrical",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Two-handed carrying to the side",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      },
+      "PosturalConstraints": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Postural constraints",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "No postural constraints",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Restricted posture",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Severely restricted",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "GripOnLoad": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Grip on load",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Good grip",
+            "Desc": "Fit-for-purpose handles/ handholds matched to the size and weight of the load",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "0.1": {
+            "Label": "Cylindrical handles or items the whole hand can wrap round comfortably",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Handles or handholds too small or lack finger clearance or only the fingers support the load",
+            "Warning": "Reasonable grip",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "1.1": {
+            "Label": "No handles or handholds but can be held underneath, or has strap or loop handles",
+            "Warning": "Reasonable grip",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "No handles or handhold areas",
+            "Warning": "Poor grip",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.1": {
+            "Label": "Palm, pinch or fingertip grip or force used to keep items together",
+            "Warning": "Poor grip",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.2": {
+            "Label": "Rough, slippery or with pressure points",
+            "Warning": "Poor grip",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "2.3": {
+            "Label": "Irregular, bulky or non-rigid",
+            "Warning": "Poor grip",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      },
+      "FloorSurface": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Floor surface",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Non-slip, dry, clean, firm, level and undamaged",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Mostly dry and clean (damp or some debris), or reasonably",
+            "Warning": "Reasonable floor surface",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Slippery (greasy, oily, wet, icy) or much debris or soft or unstable or severe damage",
+            "Warning": "Poor floor surface",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "CarryDistance": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Carry distance",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Between 2 m and 4 m",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Between 4 m and 10 m",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Over 10 m",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      },
+      "Obstacles": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Obstacles on route",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "No obstacles and carry route flat or slopes gently",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "One type of obstacle or steep slope",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Ladders or at least two types of obstacle",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "EnvironmentalFactors": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Environmental factors",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "No factors",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "One factor",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Two or more factors",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      }
+    },
+    "Team": {
+      "LoadWeight": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
+        "Label": "Load weight",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "2 people < 35 kg, 3 people < 55 kg, 4 people < 75 kg",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "4": {
+            "Label": "2 people 35–65 kg, 3 people 55–95 kg, 4 people 75–130 kg",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "6": {
+            "Label": "2 people 65–85 kg, 3 people 95–130 kg, 4 people 130–170 kg",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          },
+          "10": {
+            "Label": "Ladders or at least two types of obstacle",
+            "Warning": "Very high risk",
+            "Score": {
+              "Value": "Very High",
+              "Color": "rgba(133, 4, 0, 1.0)"
+            }
+          }
+        }
+      },
+      "PosturalConstraints": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Postural constraints",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "No postural constraints",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Restricted posture",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Severely restricted",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "GripOnLoad": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Grip on load",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Good grip",
+            "Desc": "Fit-for-purpose handles/ handholds matched to the size and weight of the load",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "0.1": {
+            "Label": "Cylindrical handles or items the whole hand can wrap round comfortably",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Handles or handholds too small or lack finger clearance or only the fingers support the load",
+            "Warning": "Reasonable grip",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "2.1": {
+            "Label": "No handles or handholds but can be held underneath, or has strap or loop handles",
+            "Warning": "Reasonable grip",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "4": {
+            "Label": "No handles or handhold areas",
+            "Warning": "Poor grip",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "4.1": {
+            "Label": "Palm, pinch or fingertip grip or force used to keep items together",
+            "Warning": "Poor grip",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "4.2": {
+            "Label": "Rough, slippery or with pressure points",
+            "Warning": "Poor grip",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "4.3": {
+            "Label": "Irregular, bulky or non-rigid",
+            "Warning": "Poor grip",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      },
+      "FloorSurface": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Floor surface",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Non-slip, dry, clean, firm, level and undamaged",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Mostly dry and clean (damp or some debris), or reasonably",
+            "Warning": "Reasonable floor surface",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Slippery (greasy, oily, wet, icy) or much debris or soft or unstable or severe damage",
+            "Warning": "Poor floor surface",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "CarryDistance": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Carry distance",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Between 2 m and 4 m",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Between 4 m and 10 m",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Over 10 m",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      },
+      "Obstacles": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Obstacles on route",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "No obstacles and carry route flat or slopes gently",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "One type of obstacle or steep slope",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Ladders or at least two types of obstacle",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "Communication": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Communication, co-ordination and control",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Good communication, co-ordination and control",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Reasonable communication, co-ordination and control",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Poor communication co-ordination and control",
+            "Warning": "High risk",
+            "Score": {
+              "Value": "High",
+              "Color": "rgba(184, 15, 10, 1.0)"
+            }
+          }
+        }
+      },
+      "EnvironmentalFactors": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": null,
+        "Label": "Environmental factors",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "No factors",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "One factor",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "2": {
+            "Label": "Two or more factors",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      }
+    }
+  }
+}
