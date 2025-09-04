@@ -37,39 +37,41 @@
   "Metadata": {},
   "ResultValues": {
     "Score": {
-      "[0, 30]": {
-        "Label": "Very High",
-        "Score": {
-          "Value": "Very High",
-          "Color": "rgba(133, 4, 0, 1.0)"
-        }
-      },
-      "[30, 50]": {
-        "Label": "High",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[50, 70]": {
-        "Label": "Medium",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "[70, 90]": {
-        "Label": "Low",
-        "Score": {
-          "Value": "Low",
-          "Color": "rgba(241, 196, 15, 1.0)"
-        }
-      },
-      "[90, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[0, 30]": {
+          "Label": "Very High",
+          "Score": {
+            "Value": "Very High",
+            "Color": "rgba(133, 4, 0, 1.0)"
+          }
+        },
+        "[30, 50]": {
+          "Label": "High",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[50, 70]": {
+          "Label": "Medium",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "[70, 90]": {
+          "Label": "Low",
+          "Score": {
+            "Value": "Low",
+            "Color": "rgba(241, 196, 15, 1.0)"
+          }
+        },
+        "[90, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     }

@@ -31,238 +31,256 @@
   "Metadata": {},
   "ResultValues": {
     "Overall": {
-      "1": {
-        "Label": "Acceptable",
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "2": {
-        "Label": "Acceptable",
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "3": {
-        "Label": "Low",
-        "Score": {
-          "Value": "Low",
-          "Color": "rgba(241, 196, 15, 1.0)"
-        }
-      },
-      "4": {
-        "Label": "Low",
-        "Score": {
-          "Value": "Low",
-          "Color": "rgba(241, 196, 15, 1.0)"
-        }
-      },
-      "5": {
-        "Label": "Medium",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "6": {
-        "Label": "Medium",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "7": {
-        "Label": "High",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Overall Score",
+      "Values": {
+        "1": {
+          "Label": "Acceptable",
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "2": {
+          "Label": "Acceptable",
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "3": {
+          "Label": "Low",
+          "Score": {
+            "Value": "Low",
+            "Color": "rgba(241, 196, 15, 1.0)"
+          }
+        },
+        "4": {
+          "Label": "Low",
+          "Score": {
+            "Value": "Low",
+            "Color": "rgba(241, 196, 15, 1.0)"
+          }
+        },
+        "5": {
+          "Label": "Medium",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "6": {
+          "Label": "Medium",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "7": {
+          "Label": "High",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "Neck": {
-      "1": {
-        "Label": "Acceptable",
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "2": {
-        "Label": "Low",
-        "Score": {
-          "Value": "Low",
-          "Color": "rgba(241, 196, 15, 1.0)"
-        }
-      },
-      "3": {
-        "Label": "Medium",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "4": {
-        "Label": "Medium",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "5": {
-        "Label": "High",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "6": {
-        "Label": "High",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Neck",
+      "Values": {
+        "1": {
+          "Label": "Acceptable",
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "2": {
+          "Label": "Low",
+          "Score": {
+            "Value": "Low",
+            "Color": "rgba(241, 196, 15, 1.0)"
+          }
+        },
+        "3": {
+          "Label": "Medium",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "4": {
+          "Label": "Medium",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "5": {
+          "Label": "High",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "6": {
+          "Label": "High",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "Upper Arm": {
-      "1": {
-        "Label": "Acceptable",
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "2": {
-        "Label": "Low",
-        "Score": {
-          "Value": "Low",
-          "Color": "rgba(241, 196, 15, 1.0)"
-        }
-      },
-      "3": {
-        "Label": "Medium",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "4": {
-        "Label": "Medium",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "5": {
-        "Label": "High",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "6": {
-        "Label": "High",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Upper Arm",
+      "Values": {
+        "1": {
+          "Label": "Acceptable",
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "2": {
+          "Label": "Low",
+          "Score": {
+            "Value": "Low",
+            "Color": "rgba(241, 196, 15, 1.0)"
+          }
+        },
+        "3": {
+          "Label": "Medium",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "4": {
+          "Label": "Medium",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "5": {
+          "Label": "High",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "6": {
+          "Label": "High",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "Lower Arm": {
-      "1": {
-        "Label": "Low",
-        "Score": {
-          "Value": "Low",
-          "Color": "rgba(241, 196, 15, 1.0)"
-        }
-      },
-      "2": {
-        "Label": "Medium",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "3": {
-        "Label": "High",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Lower Arm",
+      "Values": {
+        "1": {
+          "Label": "Low",
+          "Score": {
+            "Value": "Low",
+            "Color": "rgba(241, 196, 15, 1.0)"
+          }
+        },
+        "2": {
+          "Label": "Medium",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "3": {
+          "Label": "High",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "Trunk": {
-      "1": {
-        "Label": "Acceptable",
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "2": {
-        "Label": "Low",
-        "Score": {
-          "Value": "Low",
-          "Color": "rgba(241, 196, 15, 1.0)"
-        }
-      },
-      "3": {
-        "Label": "Medium",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "4": {
-        "Label": "Medium",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "5": {
-        "Label": "High",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "6": {
-        "Label": "High",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Trunk",
+      "Values": {
+        "1": {
+          "Label": "Acceptable",
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "2": {
+          "Label": "Low",
+          "Score": {
+            "Value": "Low",
+            "Color": "rgba(241, 196, 15, 1.0)"
+          }
+        },
+        "3": {
+          "Label": "Medium",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "4": {
+          "Label": "Medium",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "5": {
+          "Label": "High",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "6": {
+          "Label": "High",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "Wrist": {
-      "1": {
-        "Label": "Acceptable",
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "2": {
-        "Label": "Low",
-        "Score": {
-          "Value": "Low",
-          "Color": "rgba(241, 196, 15, 1.0)"
-        }
-      },
-      "3": {
-        "Label": "Medium",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "4": {
-        "Label": "High",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Wrist",
+      "Values": {
+        "1": {
+          "Label": "Acceptable",
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "2": {
+          "Label": "Low",
+          "Score": {
+            "Value": "Low",
+            "Color": "rgba(241, 196, 15, 1.0)"
+          }
+        },
+        "3": {
+          "Label": "Medium",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "4": {
+          "Label": "High",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     }
@@ -769,101 +787,184 @@
     "RiskComponents": {
       "Groups": {
         "0": {
-          "Label": "Force"
+          "Label": "Neck"
         },
         "1": {
-          "Label": "Muscle"
+          "Label": "Upper Arm"
         },
         "2": {
-          "Label": "Score"
+          "Label": "Trunk"
+        },
+        "3": {
+          "Label": "Lower Arm"
+        },
+        "4": {
+          "Label": "Wrist"
         }
       },
       "Items": {
         "0": {
-          "Input": "Arm",
-          "Component": "Force",
+          "Input": "Neck",
+          "Component": "Score",
           "Group": "0"
         },
         "1": {
-          "Input": "ArmSuddenExertion",
-          "Component": "Force",
+          "Input": "Neck",
+          "Component": "SideBend",
           "Group": "0"
         },
         "2": {
-          "Input": "Leg",
-          "Component": "Force",
+          "Input": "Neck",
+          "Component": "Twist",
           "Group": "0"
         },
         "3": {
-          "Input": "LegSuddenExertion",
-          "Component": "Force",
-          "Group": "0"
+          "Input": "Upper Arm",
+          "Component": "Score",
+          "Group": "1"
         },
         "4": {
-          "Input": "Arm",
-          "Component": "Muscle Use",
+          "Input": "Upper Arm",
+          "Component": "Abducted",
           "Group": "1"
         },
         "5": {
-          "Input": "Leg",
-          "Component": "Muscle Use",
+          "Input": "Upper Arm",
+          "Component": "ShoulderRaised",
           "Group": "1"
         },
         "6": {
-          "Input": "LegsSupported",
-          "Component": "Misc",
+          "Input": "Trunk",
+          "Component": "Score",
           "Group": "2"
+        },
+        "7": {
+          "Input": "Trunk",
+          "Component": "SideBend",
+          "Group": "2"
+        },
+        "8": {
+          "Input": "Trunk",
+          "Component": "Twist",
+          "Group": "2"
+        },
+        "9": {
+          "Input": "Lower Arm",
+          "Component": "Score",
+          "Group": "3"
+        },
+        "10": {
+          "Input": "Wrist",
+          "Component": "Score",
+          "Group": "4"
+        },
+        "11": {
+          "Input": "Wrist",
+          "Component": "Twist",
+          "Group": "4"
         }
       }
     },
     "AdditionalInputs": {
       "Groups": {
         "0": {
-          "Label": "Force"
+          "Label": "Forces Involved"
         },
         "1": {
-          "Label": "Muscle"
-        },
-        "2": {
-          "Label": "Score",
-          "parent": "1"
+          "Label": "Muscle Use"
         }
       },
       "Items": {
         "0": {
-          "Input": "Arm",
-          "Component": "Force",
+          "Component": "Arm",
+          "Input": "Force",
           "Group": "0"
         },
         "1": {
-          "Input": "ArmSuddenExertion",
-          "Component": "Force",
+          "Component": "ArmSuddenExertion",
+          "Input": "Force",
           "Group": "0"
         },
         "2": {
-          "Input": "Leg",
-          "Component": "Force",
+          "Component": "Leg",
+          "Input": "Force",
           "Group": "0"
         },
         "3": {
-          "Input": "LegSuddenExertion",
-          "Component": "Force",
+          "Component": "LegSuddenExertion",
+          "Input": "Force",
           "Group": "0"
         },
         "4": {
-          "Input": "Arm",
-          "Component": "Muscle Use",
+          "Component": "Arm",
+          "Input": "Muscle Use",
           "Group": "1"
         },
         "5": {
-          "Input": "Leg",
-          "Component": "Muscle Use",
+          "Component": "Leg",
+          "Input": "Muscle Use",
           "Group": "1"
         },
         "6": {
-          "Input": "LegsSupported",
-          "Component": "Misc",
-          "Group": "2"
+          "Component": "LegsSupported",
+          "Input": "Misc",
+          "Group": "1"
+        }
+      }
+    },
+    "Postures": {
+      "Groups": {
+        "0": {
+          "Label": "Body parts",
+          "Type": "progress"
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "",
+          "Component": "Trunk",
+          "Image": "bodyParts/back.png",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "",
+          "Component": "Neck",
+          "Image": "bodyParts/neck.png",
+          "Group": "0"
+        },
+        "2": {
+          "Input": "",
+          "Component": "Lower Arm",
+          "Image": "bodyParts/arm.png",
+          "Group": "0"
+        },
+        "3": {
+          "Input": "",
+          "Component": "Upper Arm",
+          "Image": "bodyParts/shoulder.png",
+          "Group": "0"
+        },
+        "4": {
+          "Input": "",
+          "Component": "Wrist",
+          "Image": "bodyParts/wrist.png",
+          "Group": "0"
+        }
+      }
+    },
+    "Results": {
+      "Groups": {
+        "0": {
+          "Label": null,
+          "Type": "riskscore"
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "",
+          "Component": "Overall",
+          "Group": "0",
+          "Label": "MSD risk score"
         }
       }
     }

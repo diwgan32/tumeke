@@ -67,253 +67,286 @@
   "Metadata": {},
   "ResultValues": {
     "OverallScore": {
-      "[0, 10]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[10, None]": {
-        "Label": "Poor",
-        "Warning": "Job needs to be redesigned",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Overall Score",
+      "Values": {
+        "[0, 10]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[10, None]": {
+          "Label": "Poor",
+          "Warning": "Job needs to be redesigned",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "resultLeft": {
-      "[0, 10]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[10, None]": {
-        "Label": "Poor",
-        "Warning": "Job needs to be redesigned",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Result Left",
+      "Values": {
+        "[0, 10]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[10, None]": {
+          "Label": "Poor",
+          "Warning": "Job needs to be redesigned",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "resultRight": {
-      "[0, 10]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[10, None]": {
-        "Label": "Poor",
-        "Warning": "Job needs to be redesigned",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Result Right",
+      "Values": {
+        "[0, 10]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[10, None]": {
+          "Label": "Poor",
+          "Warning": "Job needs to be redesigned",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "im": {
-      "[0, 5]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[5, 15]": {
-        "Label": "Fair",
-        "Warning": "Job has high level of intensity",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[15, None]": {
-        "Label": "Poor",
-        "Warning": "Job has very high level of intensity",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Intensity",
+      "Values": {
+        "[0, 5]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[5, 15]": {
+          "Label": "Fair",
+          "Warning": "Job has high level of intensity",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[15, None]": {
+          "Label": "Poor",
+          "Warning": "Job has very high level of intensity",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "eml": {
-      "[0, 5]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[5, 10]": {
-        "Label": "Fair",
-        "Warning": "High level of repetition on left hand",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[10, None]": {
-        "Label": "Poor",
-        "Warning": "Very high level of repetition on left hand",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Efforts per minute (left)",
+      "Values": {
+        "[0, 5]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[5, 10]": {
+          "Label": "Fair",
+          "Warning": "High level of repetition on left hand",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[10, None]": {
+          "Label": "Poor",
+          "Warning": "Very high level of repetition on left hand",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "pml": {
-      "[0, 1.5]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1.5, 2]": {
-        "Label": "Fair",
-        "Warning": "Lefthand posture OK",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[2, None]": {
-        "Label": "Poor",
-        "Warning": "Lefthand posture bad",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Hand posture (left)",
+      "Values": {
+        "[0, 1.5]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1.5, 2]": {
+          "Label": "Fair",
+          "Warning": "Lefthand posture OK",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[2, None]": {
+          "Label": "Poor",
+          "Warning": "Lefthand posture bad",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "dml": {
-      "[0, 7.5]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[7.5, 15]": {
-        "Label": "Fair",
-        "Warning": "Each repetition has high duration on left hand",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[15, None]": {
-        "Label": "Poor",
-        "Warning": "Each repetition has very high duration on left hand",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Duration per repetition (left)",
+      "Values": {
+        "[0, 7.5]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[7.5, 15]": {
+          "Label": "Fair",
+          "Warning": "Each repetition has high duration on left hand",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[15, None]": {
+          "Label": "Poor",
+          "Warning": "Each repetition has very high duration on left hand",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "wm": {
-      "[0, .5]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[.5, 1]": {
-        "Label": "Fair",
-        "Warning": "Job should be done for shorter period",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Poor",
-        "Warning": "Job should be done for shorter period",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Workday multiplier",
+      "Values": {
+        "[0, .5]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[.5, 1]": {
+          "Label": "Fair",
+          "Warning": "Job should be done for shorter period",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Poor",
+          "Warning": "Job should be done for shorter period",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "emr": {
-      "[0, 5]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[5, 10]": {
-        "Label": "Fair",
-        "Warning": "High level of repetition on left hand",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[10, None]": {
-        "Label": "Poor",
-        "Warning": "Very high level of repetition on left hand",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Efforts per minute (right)",
+      "Values": {
+        "[0, 5]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[5, 10]": {
+          "Label": "Fair",
+          "Warning": "High level of repetition on left hand",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[10, None]": {
+          "Label": "Poor",
+          "Warning": "Very high level of repetition on left hand",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "pmr": {
-      "[0, 1.5]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1.5, 2]": {
-        "Label": "Fair",
-        "Warning": "Righthand posture OK",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[2, None]": {
-        "Label": "Poor",
-        "Warning": "Righthand posture bad",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Hand posture (right)",
+      "Values": {
+        "[0, 1.5]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1.5, 2]": {
+          "Label": "Fair",
+          "Warning": "Righthand posture OK",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[2, None]": {
+          "Label": "Poor",
+          "Warning": "Righthand posture bad",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "dmr": {
-      "[0, 7.5]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[7.5, 15]": {
-        "Label": "Fair",
-        "Warning": "Each repetition has high duration on left hand",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[15, None]": {
-        "Label": "Poor",
-        "Warning": "Each repetition has very high duration on left hand",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Duration per repetition (right)",
+      "Values": {
+        "[0, 7.5]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[7.5, 15]": {
+          "Label": "Fair",
+          "Warning": "Each repetition has high duration on left hand",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[15, None]": {
+          "Label": "Poor",
+          "Warning": "Each repetition has very high duration on left hand",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     }
@@ -589,7 +622,7 @@
   "AdditionalInputs": {
     "Main": {
       "borgScale": {
-        "Type": "select",
+        "Type": "imageSelect",
         "Base": 1,
         "MaxInput": null,
         "Units": null,
@@ -649,6 +682,166 @@
         "Label": "Task duration",
         "Image": null,
         "Values": null
+      }
+    }
+  },
+  "Form": {
+    "RiskComponents": {
+      "Groups": {
+        "0": {
+          "Label": "Left hand"
+        },
+        "1": {
+          "Label": "Right hand"
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "Main",
+          "Component": "durationPerExertionLeft",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "Main",
+          "Component": "flexionAngleLeft",
+          "Group": "0"
+        },
+        "2": {
+          "Input": "Main",
+          "Component": "extensionAngleLeft",
+          "Group": "0"
+        },
+        "3": {
+          "Input": "Main",
+          "Component": "effortsLeft",
+          "Group": "0"
+        },
+        "4": {
+          "Input": "Main",
+          "Component": "durationPerExertionRight",
+          "Group": "1"
+        },
+        "5": {
+          "Input": "Main",
+          "Component": "flexionAngleRight",
+          "Group": "1"
+        },
+        "6": {
+          "Input": "Main",
+          "Component": "extensionAngleRight",
+          "Group": "1"
+        },
+        "7": {
+          "Input": "Main",
+          "Component": "effortsRight",
+          "Group": "1"
+        }
+      }
+    },
+    "AdditionalInputs": {
+      "Groups": {
+        "0": {
+          "Label": "Perceived Exertion"
+        },
+        "1": {
+          "Label": null
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "Main",
+          "Component": "borgScale",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "Main",
+          "Component": "taskDuration",
+          "Group": "1"
+        }
+      }
+    },
+    "Postures": {
+      "Groups": {
+        "0": {
+          "Label": "Left hand",
+          "Type": "block"
+        },
+        "1": {
+          "Label": "Right hand",
+          "Type": "block"
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "",
+          "Component": "eml",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "",
+          "Component": "pml",
+          "Group": "0"
+        },
+        "2": {
+          "Input": "",
+          "Component": "dml",
+          "Group": "0"
+        },
+        "3": {
+          "Input": "",
+          "Component": "im",
+          "Group": "0"
+        },
+        "4": {
+          "Input": "",
+          "Component": "emr",
+          "Group": "1"
+        },
+        "5": {
+          "Input": "",
+          "Component": "pmr",
+          "Group": "1"
+        },
+        "6": {
+          "Input": "",
+          "Component": "dmr",
+          "Group": "1"
+        },
+        "7": {
+          "Input": "",
+          "Component": "im",
+          "Group": "1"
+        }
+      }
+    },
+    "Results": {
+      "Groups": {
+        "0": {
+          "Label": null,
+          "Type": "riskscore"
+        },
+        "1": {
+          "Label": null,
+          "Type": "score"
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "",
+          "Component": "OverallScore",
+          "Group": "0",
+          "Label": "MSD risk score"
+        },
+        "1": {
+          "Input": "",
+          "Component": "resultLeft",
+          "Group": "1"
+        },
+        "2": {
+          "Input": "",
+          "Component": "resultRight",
+          "Group": "1"
+        }
       }
     }
   }

@@ -1,0 +1,133 @@
+SeriaNumber: {SerialNumber}
+Name: {Name}
+AssessmentName: {AssessmentName}
+
+Colors:
+  black: &black
+    rgba(15, 15, 30, 0.9)
+  light_green: &light_green
+    rgba(109, 208, 163, 1.0)
+  green: &green
+    rgba(241, 196, 15, 1.0)
+  orange: &orange
+    rgba(230, 126, 34, 1.0)
+  red: &red
+    rgba(184, 15, 10, 1.0)
+  dark_red: &dark_red
+    rgba(133, 4, 0, 1.0)
+
+Constants:
+  acceptable: &acceptable
+    Value: Acceptable
+    Color: *light_green
+  low: &low
+    Value: Low
+    Color: *green
+  medium: &medium
+    Value: Medium
+    Color: *orange
+  high: &high
+    Value: High
+    Color: *red
+  vhigh: &vhigh
+    Value: Very High
+    Color: *dark_red
+
+Enum:
+  DurationStatus:
+    SHORT:
+      Value: 0
+      Label: Short (1 hour)
+    MODERATE:
+      Value: 1
+      Label: Moderate (1 - 2 hours)
+    LONG:
+      Value: 2
+      Label: Long (2 - 8 hours)
+
+OverallScoreValue: OverallScore
+
+Metadata:
+  subjectHeight: "number"
+
+ResultValues:
+  OverallScore:
+    Label: Overall Score
+    Values:
+      "[0, 30]":
+        Label: Very High
+        Score: *vhigh
+      "[30, 50]":
+        Label: High
+        Score: *high
+      "[50, 70]":
+        Label: Medium
+        Score: *medium
+      "[70, 90]":
+        Label: Low
+        Score: *low
+      "[90, None]":
+        Label: Good
+        Score: *acceptable
+
+RiskComponents:
+  Main:
+    Duration:
+      Type: select
+      Base: 0
+      MaxInput: ~
+      Units: deg
+      Label: Duration
+      Image: ~
+      Values:
+        0:
+          Label: Short 
+        1:
+          Label: Moderate
+          Warning: Medium risk
+        2:
+          Label: Long
+          Warning: High risk
+    SideBend:
+      Type: checkbox
+      Base: 0
+      MaxInput: ~
+      Units: ~
+      Label: Side bending
+      Image: ~
+      Values:
+        1:
+          Label: Yes
+          Warning: Medium risk
+        0:
+          Label: No
+
+AdditionalInputs:
+  Main:
+    Weight:
+      Type: input
+      Base: .5
+      MaxInput: 50
+      Units: [lbs, kgs]
+      Label: Weight
+      Image: ~
+      Values: ~
+    Distance:
+      Type: select
+      Base: 1
+      MaxInput: ~
+      Units: [ft, m]
+      Label: Distance
+      Image: ~
+      Values:
+        1:
+          Label: Light distance
+          Score: *acceptable
+        3:
+          Label: Medium distance
+          Warning: Medium risk
+          Score: *medium
+        5:
+          Label: Heavy distance
+          Warning: High risk
+          Score: *high

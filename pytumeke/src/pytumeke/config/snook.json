@@ -78,1258 +78,1401 @@
   },
   "ResultValues": {
     "mal": {
-      "0": {
-        "Label": "Safe weight to {inputId}",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "1": {
-        "Label": "Unsafe weight to {inputId}",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "2": {
-        "Label": "Unsafe {inputId} at all weights",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Acceptable Load",
+      "Units": [
+        "lbs",
+        "kgs"
+      ],
+      "MinValue": 0.01,
+      "Values": {
+        "0": {
+          "Label": "Safe weight to {inputId}",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "1": {
+          "Label": "Unsafe weight to {inputId}",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "2": {
+          "Label": "Unsafe {inputId} at all weights",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "malSustained": {
-      "0": {
-        "Label": "Safe weight to {inputId}",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Acceptable Load (Sustained)",
+      "Units": [
+        "lbs",
+        "kgs"
+      ],
+      "MinValue": 0.01,
+      "Values": {
+        "0": {
+          "Label": "Safe weight to {inputId}",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "1": {
+          "Label": "Unsafe weight to {inputId}",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "2": {
+          "Label": "Unsafe {inputId} at all weights",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
-      },
-      "1": {
-        "Label": "Unsafe weight to {inputId}",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "2": {
-        "Label": "Unsafe {inputId} at all weights",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      }
+    },
+    "currentLoad": {
+      "Label": "Current Load",
+      "Units": [
+        "lbs",
+        "kgs"
+      ],
+      "MinValue": 0.01,
+      "Values": {
+        "0": {
+          "Label": "Safe weight to {inputId}",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "1": {
+          "Label": "Unsafe weight to {inputId}",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "2": {
+          "Label": "Unsafe {inputId} at all weights",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "frequencyMultiplier": {
-      "[None, None]": {
-        "Label": "Frequency multiplier",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Frequency",
+      "Values": {
+        "[None, None]": {
+          "Label": "Frequency multiplier",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "verticalHeightMultiplier": {
-      "[None, None]": {
-        "Label": "Vertical height multiplier",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Vertical hand distance",
+      "Values": {
+        "[None, None]": {
+          "Label": "Vertical height multiplier",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "horizontalDistanceMultiplier": {
-      "[None, None]": {
-        "Label": "Horizontal distance multiplier",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Horizontal distance",
+      "Values": {
+        "[None, None]": {
+          "Label": "Horizontal distance multiplier",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "verticalDistanceMultiplier": {
-      "[None, None]": {
-        "Label": "Vertical distance multiplier",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Vertical hand distance",
+      "Values": {
+        "[None, None]": {
+          "Label": "Vertical distance multiplier",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "malePercentage": {
-      "[None, 75]": {
-        "Label": "Unsafe frequency",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[75, None]": {
-        "Label": "Safe weight to {inputId}",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Male Percentage",
+      "Units": "percent",
+      "MaxValue": 90,
+      "MinValue": 0.01,
+      "Values": {
+        "[None, 75]": {
+          "Label": "Unsafe to {inputId}",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[75, None]": {
+          "Label": "Safe weight to {inputId}",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "malePercentageSustained": {
-      "[None, 75]": {
-        "Label": "Unsafe frequency",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[75, None]": {
-        "Label": "Safe weight to {inputId}",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Male Percentage (Sustained)",
+      "Units": "percent",
+      "MaxValue": 90,
+      "MinValue": 0.01,
+      "Values": {
+        "[None, 75]": {
+          "Label": "Unsafe to {inputId}",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[75, None]": {
+          "Label": "Safe weight to {inputId}",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "femalePercentage": {
-      "[None, 75]": {
-        "Label": "Unsafe frequency",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[75, None]": {
-        "Label": "Safe weight to {inputId}",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Female Percentage",
+      "Units": "percent",
+      "MaxValue": 90,
+      "MinValue": 0.01,
+      "Values": {
+        "[None, 75]": {
+          "Label": "Unsafe to {inputId}",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[75, None]": {
+          "Label": "Safe weight to {inputId}",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "femalePercentageSustained": {
-      "[None, 75]": {
-        "Label": "Unsafe frequency",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[75, None]": {
-        "Label": "Safe weight to {inputId}",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Female Percentage (Sustained)",
+      "Units": "percent",
+      "MaxValue": 90,
+      "MinValue": 0.01,
+      "Values": {
+        "[None, 75]": {
+          "Label": "Unsafe to {inputId}",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[75, None]": {
+          "Label": "Safe weight to {inputId}",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "frequencyMultiplierLiftMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.48]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.48, 0.74]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.74, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.48]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.48, 0.74]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.74, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "frequencyMultiplierLiftFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.6]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.6, 0.8]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.8, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.6]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.6, 0.8]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.8, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "verticalHeightMultiplierLiftMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.85]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.85, 0.93]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.93, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.85]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.85, 0.93]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.93, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "verticalHeightMultiplierLiftFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.8]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.8, 0.9]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.9, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.8]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.8, 0.9]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.9, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "horizontalDistanceMultiplierLiftMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.56]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.56, 0.8]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.8, 1.04]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1.04, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.56]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.56, 0.8]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.8, 1.04]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1.04, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "horizontalDistanceMultiplierLiftFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.58]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.58, 0.79]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.79, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.58]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.58, 0.79]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.79, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "frequencyMultiplierLowerMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.51]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.51, 0.75]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.75, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.51]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.51, 0.75]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.75, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "frequencyMultiplierLowerFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.6]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.6, 0.8]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.8, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.6]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.6, 0.8]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.8, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "verticalHeightMultiplierLowerMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.85]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.85, 0.93]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.93, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.85]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.85, 0.93]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.93, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "verticalHeightMultiplierLowerFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.8]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.8, 0.9]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.9, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.8]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.8, 0.9]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.9, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "horizontalDistanceMultiplierLowerMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.56]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.56, 0.8]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.8, 1.04]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1.04, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.56]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.56, 0.8]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.8, 1.04]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1.04, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "horizontalDistanceMultiplierLowerFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.58]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.58, 0.79]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.79, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.58]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.58, 0.79]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.79, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "frequencyMultiplierPushMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.63]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.63, 0.81]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.81, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.63]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.63, 0.81]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.81, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "frequencyMultiplierPushFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.68]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.68, 0.84]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.84, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.68]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.68, 0.84]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.84, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "verticalDistanceMultiplierPushMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.97]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.97, 0.99]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.99, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.97]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.97, 0.99]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.99, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "verticalDistanceMultiplierPushFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.91]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.91, 0.96]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.96, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.91]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.91, 0.96]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.96, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "horizontalDistanceMultiplierPushMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.76]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.76, 0.88]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.88, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.76]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.76, 0.88]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.88, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "horizontalDistanceMultiplierPushFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.71]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.71, 0.85]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.85, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.71]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.71, 0.85]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.85, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "frequencyMultiplierPullMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.63]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.63, 0.81]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.81, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.63]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.63, 0.81]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.81, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "frequencyMultiplierPullFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.68]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.68, 0.84]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.84, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.68]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.68, 0.84]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.84, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "verticalDistanceMultiplierPullMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.77]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.77, 0.88]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.88, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.77]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.77, 0.88]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.88, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "verticalDistanceMultiplierPullFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.91]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.91, 0.96]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.96, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.91]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.91, 0.96]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.96, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "horizontalDistanceMultiplierPullMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.76]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.76, 0.88]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.88, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.76]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.76, 0.88]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.88, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "horizontalDistanceMultiplierPullFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.71]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.71, 0.85]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.85, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.71]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.71, 0.85]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.85, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "frequencyMultiplierCarryMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.46]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.46, 0.73]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.73, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.46]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.46, 0.73]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.73, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "frequencyMultiplierCarryFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.65]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.65, 0.83]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.83, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.65]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.65, 0.83]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.83, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "verticalDistanceMultiplierCarryMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.85]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.85, 0.92]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.92, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.85]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.85, 0.92]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.92, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "verticalDistanceMultiplierCarryFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.95]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.95, 0.98]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.98, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.95]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.95, 0.98]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.98, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "horizontalDistanceMultiplierCarryMale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.84]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.84, 0.92]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.92, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.84]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.84, 0.92]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.92, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "horizontalDistanceMultiplierCarryFemale": {
-      "[None, 0]": {
-        "Label": "Unsafe",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 0.97]": {
-        "Label": "Poor",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0.97, 0.99]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[0.99, 1]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 0.97]": {
+          "Label": "Poor",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0.97, 0.99]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[0.99, 1]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     }
@@ -1807,6 +1950,418 @@
         "Label": "Frequency",
         "Image": "additionalInputs/Frequency.png",
         "Values": null
+      }
+    }
+  },
+  "Form": {
+    "RiskComponents": {
+      "Groups": {
+        "0": {
+          "Label": null,
+          "Inline": false
+        }
+      },
+      "Items": {
+        "1": {
+          "Component": "startHandHeight",
+          "Input": "Lift",
+          "Group": "0"
+        },
+        "2": {
+          "Component": "endHandHeight",
+          "Input": "Lift",
+          "Group": "0"
+        },
+        "3": {
+          "Component": "startHorizontalReach",
+          "Input": "Lift",
+          "Group": "0"
+        },
+        "4": {
+          "Component": "endHorizontalReach",
+          "Input": "Lift",
+          "Group": "0"
+        },
+        "5": {
+          "Component": "startHandHeight",
+          "Input": "Lower",
+          "Group": "0"
+        },
+        "6": {
+          "Component": "endHandHeight",
+          "Input": "Lower",
+          "Group": "0"
+        },
+        "7": {
+          "Component": "startHorizontalReach",
+          "Input": "Lower",
+          "Group": "0"
+        },
+        "8": {
+          "Component": "endHorizontalReach",
+          "Input": "Lower",
+          "Group": "0"
+        },
+        "9": {
+          "Component": "verticalHandHeight",
+          "Input": "Push",
+          "Group": "0"
+        },
+        "10": {
+          "Component": "verticalHandHeight",
+          "Input": "Pull",
+          "Group": "0"
+        },
+        "11": {
+          "Component": "verticalHandHeight",
+          "Input": "Carry",
+          "Group": "0"
+        }
+      }
+    },
+    "AdditionalInputs": {
+      "Groups": {
+        "0": {
+          "Label": null,
+          "Inline": false
+        }
+      },
+      "Items": {
+        "0": {
+          "Component": "female",
+          "Input": "Lift",
+          "Group": "0"
+        },
+        "1": {
+          "Component": "coupling",
+          "Input": "Lift",
+          "Group": "0"
+        },
+        "2": {
+          "Component": "objectWeight",
+          "Input": "Lift",
+          "Group": "0"
+        },
+        "3": {
+          "Component": "frequency",
+          "Input": "Lift",
+          "Group": "0"
+        },
+        "4": {
+          "Component": "female",
+          "Input": "Lower",
+          "Group": "0"
+        },
+        "5": {
+          "Component": "coupling",
+          "Input": "Lower",
+          "Group": "0"
+        },
+        "6": {
+          "Component": "objectWeight",
+          "Input": "Lower",
+          "Group": "0"
+        },
+        "7": {
+          "Component": "frequency",
+          "Input": "Lower",
+          "Group": "0"
+        },
+        "8": {
+          "Component": "female",
+          "Input": "Push",
+          "Group": "0"
+        },
+        "9": {
+          "Component": "initialForce",
+          "Input": "Push",
+          "Group": "0"
+        },
+        "10": {
+          "Component": "sustainedForce",
+          "Input": "Push",
+          "Group": "0"
+        },
+        "11": {
+          "Component": "horizontalDistance",
+          "Input": "Push",
+          "Group": "0"
+        },
+        "12": {
+          "Component": "frequency",
+          "Input": "Push",
+          "Group": "0"
+        },
+        "13": {
+          "Component": "female",
+          "Input": "Pull",
+          "Group": "0"
+        },
+        "14": {
+          "Component": "initialForce",
+          "Input": "Pull",
+          "Group": "0"
+        },
+        "15": {
+          "Component": "sustainedForce",
+          "Input": "Pull",
+          "Group": "0"
+        },
+        "16": {
+          "Component": "horizontalDistance",
+          "Input": "Pull",
+          "Group": "0"
+        },
+        "17": {
+          "Component": "frequency",
+          "Input": "Pull",
+          "Group": "0"
+        },
+        "18": {
+          "Component": "female",
+          "Input": "Carry",
+          "Group": "0"
+        },
+        "19": {
+          "Component": "objectWeight",
+          "Input": "Carry",
+          "Group": "0"
+        },
+        "20": {
+          "Component": "horizontalDistance",
+          "Input": "Carry",
+          "Group": "0"
+        },
+        "21": {
+          "Component": "frequency",
+          "Input": "Carry",
+          "Group": "0"
+        }
+      }
+    },
+    "Postures": {
+      "Groups": {
+        "0": {
+          "Label": "Posture risk",
+          "Type": "block"
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "Lift",
+          "Component": "verticalHeightMultiplier",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "Lift",
+          "Component": "horizontalDistanceMultiplier",
+          "Group": "0"
+        },
+        "2": {
+          "Input": "Lift",
+          "Component": "frequencyMultiplier",
+          "Group": "0"
+        },
+        "3": {
+          "Input": "Lower",
+          "Component": "verticalHeightMultiplier",
+          "Group": "0"
+        },
+        "4": {
+          "Input": "Lower",
+          "Component": "horizontalDistanceMultiplier",
+          "Group": "0"
+        },
+        "5": {
+          "Input": "Lower",
+          "Component": "frequencyMultiplier",
+          "Group": "0"
+        },
+        "6": {
+          "Input": "Push",
+          "Component": "verticalDistanceMultiplier",
+          "Group": "0"
+        },
+        "7": {
+          "Input": "Push",
+          "Component": "horizontalDistanceMultiplier",
+          "Group": "0"
+        },
+        "8": {
+          "Input": "Push",
+          "Component": "frequencyMultiplier",
+          "Group": "0"
+        },
+        "9": {
+          "Input": "Pull",
+          "Component": "verticalDistanceMultiplier",
+          "Group": "0"
+        },
+        "10": {
+          "Input": "Pull",
+          "Component": "horizontalDistanceMultiplier",
+          "Group": "0"
+        },
+        "11": {
+          "Input": "Pull",
+          "Component": "frequencyMultiplier",
+          "Group": "0"
+        },
+        "12": {
+          "Input": "Carry",
+          "Component": "verticalDistanceMultiplier",
+          "Group": "0"
+        },
+        "13": {
+          "Input": "Carry",
+          "Component": "horizontalDistanceMultiplier",
+          "Group": "0"
+        },
+        "14": {
+          "Input": "Carry",
+          "Component": "frequencyMultiplier",
+          "Group": "0"
+        }
+      }
+    },
+    "Results": {
+      "Groups": {
+        "0": {
+          "Label": null,
+          "Type": "score"
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "Lift",
+          "Component": "mal",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "Lift",
+          "Component": "currentLoad",
+          "Group": "0"
+        },
+        "2": {
+          "Input": "Lift",
+          "Component": "femalePercentage",
+          "Group": "0"
+        },
+        "3": {
+          "Input": "Lift",
+          "Component": "malePercentage",
+          "Group": "0"
+        },
+        "4": {
+          "Input": "Lower",
+          "Component": "mal",
+          "Group": "0"
+        },
+        "5": {
+          "Input": "Lower",
+          "Component": "currentLoad",
+          "Group": "0"
+        },
+        "6": {
+          "Input": "Lower",
+          "Component": "femalePercentage",
+          "Group": "0"
+        },
+        "7": {
+          "Input": "Lower",
+          "Component": "malePercentage",
+          "Group": "0"
+        },
+        "8": {
+          "Input": "Push",
+          "Component": "mal",
+          "Group": "0"
+        },
+        "9": {
+          "Input": "Push",
+          "Component": "currentLoad",
+          "Group": "0"
+        },
+        "10": {
+          "Input": "Push",
+          "Component": "femalePercentage",
+          "Group": "0"
+        },
+        "11": {
+          "Input": "Push",
+          "Component": "malePercentage",
+          "Group": "0"
+        },
+        "12": {
+          "Input": "Push",
+          "Component": "malSustained",
+          "Group": "0"
+        },
+        "13": {
+          "Input": "Push",
+          "Component": "femalePercentageSustained",
+          "Group": "0"
+        },
+        "14": {
+          "Input": "Push",
+          "Component": "malePercentageSustained",
+          "Group": "0"
+        },
+        "15": {
+          "Input": "Pull",
+          "Component": "mal",
+          "Group": "0"
+        },
+        "16": {
+          "Input": "Pull",
+          "Component": "currentLoad",
+          "Group": "0"
+        },
+        "17": {
+          "Input": "Pull",
+          "Component": "femalePercentage",
+          "Group": "0"
+        },
+        "18": {
+          "Input": "Pull",
+          "Component": "malePercentage",
+          "Group": "0"
+        },
+        "19": {
+          "Input": "Pull",
+          "Component": "malSustained",
+          "Group": "0"
+        },
+        "20": {
+          "Input": "Pull",
+          "Component": "femalePercentageSustained",
+          "Group": "0"
+        },
+        "21": {
+          "Input": "Pull",
+          "Component": "malePercentageSustained",
+          "Group": "0"
+        },
+        "22": {
+          "Input": "Carry",
+          "Component": "mal",
+          "Group": "0"
+        },
+        "23": {
+          "Input": "Carry",
+          "Component": "currentLoad",
+          "Group": "0"
+        },
+        "24": {
+          "Input": "Carry",
+          "Component": "femalePercentage",
+          "Group": "0"
+        },
+        "25": {
+          "Input": "Carry",
+          "Component": "malePercentage",
+          "Group": "0"
+        }
       }
     }
   }

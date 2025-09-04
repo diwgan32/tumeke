@@ -47,147 +47,161 @@ Metadata: {}
 
 ResultValues:
   Overall:
-    1:
-      Label: Acceptable
-      Score: *acceptable
-    2:
-      Label: Low
-      Score: *low
-    3:
-      Label: Low
-      Score: *low
-    4:
-      Label: Medium
-      Score: *medium
-    5:
-      Label: Medium
-      Score: *medium
-    6:
-      Label: Medium
-      Score: *medium
-    7:
-      Label: Medium
-      Score: *medium
-    8:
-      Label: High
-      Score: *high
-    9:
-      Label: High
-      Score: *high
-    10:
-      Label: High
-      Score: *high
-    11:
-      Label: Very High
-      Score: *vhigh
-    12:
-      Label: Very High
-      Score: *vhigh
-    13:
-      Label: Very High
-      Score: *vhigh
-    14:
-      Label: Very High
-      Score: *vhigh
-    15:
-      Label: Very High
-      Score: *vhigh
-    16:
-      Label: Very High
-      Score: *vhigh
+    Label: Overall Score
+    Values:
+      1:
+        Label: Acceptable
+        Score: *acceptable
+      2:
+        Label: Low
+        Score: *low
+      3:
+        Label: Low
+        Score: *low
+      4:
+        Label: Medium
+        Score: *medium
+      5:
+        Label: Medium
+        Score: *medium
+      6:
+        Label: Medium
+        Score: *medium
+      7:
+        Label: Medium
+        Score: *medium
+      8:
+        Label: High
+        Score: *high
+      9:
+        Label: High
+        Score: *high
+      10:
+        Label: High
+        Score: *high
+      11:
+        Label: Very High
+        Score: *vhigh
+      12:
+        Label: Very High
+        Score: *vhigh
+      13:
+        Label: Very High
+        Score: *vhigh
+      14:
+        Label: Very High
+        Score: *vhigh
+      15:
+        Label: Very High
+        Score: *vhigh
+      16:
+        Label: Very High
+        Score: *vhigh
 
   Neck:
-    1:
-      Label: Acceptable
-      Score: *acceptable
-    2:
-      Label: Low
-      Score: *low
-    3:
-      Label: Medium
-      Score: *medium
-    4:
-      Label: Medium
-      Score: *medium
-    5:
-      Label: High
-      Score: *high
-    6:
-      Label: High
-      Score: *high
+    Label: Neck
+    Values:
+      1:
+        Label: Acceptable
+        Score: *acceptable
+      2:
+        Label: Low
+        Score: *low
+      3:
+        Label: Medium
+        Score: *medium
+      4:
+        Label: Medium
+        Score: *medium
+      5:
+        Label: High
+        Score: *high
+      6:
+        Label: High
+        Score: *high
 
   Upper Arm:
-    1:
-      Label: Acceptable
-      Score: *acceptable
-    2:
-      Label: Low
-      Score: *low
-    3:
-      Label: Medium
-      Score: *medium
-    4:
-      Label: Medium
-      Score: *medium
-    5:
-      Label: High
-      Score: *high
-    6:
-      Label: High
-      Score: *high
+    Label: Upper Arm
+    Values:
+      1:
+        Label: Acceptable
+        Score: *acceptable
+      2:
+        Label: Low
+        Score: *low
+      3:
+        Label: Medium
+        Score: *medium
+      4:
+        Label: Medium
+        Score: *medium
+      5:
+        Label: High
+        Score: *high
+      6:
+        Label: High
+        Score: *high
 
   Lower Arm:
-    1:
-      Label: Acceptable
-      Score: *acceptable
-    2:
-      Label: Medium
-      Score: *medium
+    Label: Lower Arm
+    Values:
+      1:
+        Label: Acceptable
+        Score: *acceptable
+      2:
+        Label: Medium
+        Score: *medium
 
   Trunk:
-    1:
-      Label: Acceptable
-      Score: *acceptable
-    2:
-      Label: Low
-      Score: *low
-    3:
-      Label: Medium
-      Score: *medium
-    4:
-      Label: Medium
-      Score: *medium
-    5:
-      Label: High
-      Score: *high
-    6:
-      Label: High
-      Score: *high
+    Label: Trunk
+    Values:
+      1:
+        Label: Acceptable
+        Score: *acceptable
+      2:
+        Label: Low
+        Score: *low
+      3:
+        Label: Medium
+        Score: *medium
+      4:
+        Label: Medium
+        Score: *medium
+      5:
+        Label: High
+        Score: *high
+      6:
+        Label: High
+        Score: *high
 
   Leg:
-    1:
-      Label: Acceptable
-      Score: *acceptable
-    2:
-      Label: Low
-      Score: *low
-    3:
-      Label: Medium
-      Score: *medium
-    4:
-      Label: High
-      Score: *high
+    Label: Leg
+    Values:
+      1:
+        Label: Acceptable
+        Score: *acceptable
+      2:
+        Label: Low
+        Score: *low
+      3:
+        Label: Medium
+        Score: *medium
+      4:
+        Label: High
+        Score: *high
 
   Wrist:
-    1:
-      Label: Acceptable
-      Score: *acceptable
-    2:
-      Label: Medium
-      Score: *medium
-    3:
-      Label: High
-      Score: *high
+    Label: Wrist
+    Values:
+      1:
+        Label: Acceptable
+        Score: *acceptable
+      2:
+        Label: Medium
+        Score: *medium
+      3:
+        Label: High
+        Score: *high
 
 RiskComponents:
   Neck:
@@ -450,7 +464,7 @@ AdditionalInputs:
       Base: 0
       MaxInput: ~
       Units: ~
-      Label: Force/Load
+      Label: Shock force, rapid buildup of force, or sudden exertion is required
       Image: additionalInputs/ShockForce.png
       Values:
         1:
@@ -543,90 +557,141 @@ Form:
         Label: Leg
     Items:
       0:
-        Component: Neck
-        Input: Score
+        Input: Neck
+        Component: Score
         Group: "0"
       1:
-        Component: Neck
-        Input: SideBend
+        Input: Neck
+        Component: SideBend
         Group: "0"
       2:
-        Component: Neck
-        Input: Twist
+        Input: Neck
+        Component: Twist
         Group: "0"
       3:
-        Component: Upper Arm
-        Input: Score
+        Input: Upper Arm
+        Component: Score
         Group: "1"
       4:
-        Component: Upper Arm
-        Input: Abducted
+        Input: Upper Arm
+        Component: Abducted
         Group: "1"
       5:
-        Component: Upper Arm
-        Input: ShoulderRaised
+        Input: Upper Arm
+        Component: ShoulderRaised
         Group: "1"
       6:
-        Component: Trunk
-        Input: Score
+        Input: Trunk
+        Component: Score
         Group: "2"
       7:
-        Component: Trunk
-        Input: SideBend
+        Input: Trunk
+        Component: SideBend
         Group: "2"
       8:
-        Component: Trunk
-        Input: Twist
+        Input: Trunk
+        Component: Twist
         Group: "2"
       9:
-        Component: Lower Arm
-        Input: Score
+        Input: Lower Arm
+        Component: Score
         Group: "3"
       10:
-        Component: Wrist
-        Input: Score
+        Input: Wrist
+        Component: Score
         Group: "4"
       11:
-        Component: Wrist
-        Input: Twist
+        Input: Wrist
+        Component: Twist
         Group: "4"
       12:
-        Component: Leg
-        Input: Score
+        Input: Leg
+        Component: Score
         Group: "5"
       13:
-        Component: Leg
-        Input: UnstableFooting
+        Input: Leg
+        Component: UnstableFooting
         Group: "5"
   AdditionalInputs:
     Groups:
       0:
         Label: ~
         Inline: True
+      1:
+        Label: ~
+        Inline: True
+      2:
+        Label: Activity Score
+        Inline: True
     Items:
       0:
-        Component: Force
-        Input: Load
+        Input: Force
+        Component: Load
         Group: "0"
       1:
-        Component: Force
-        Input: ForceBuildup
+        Input: Force
+        Component: ForceBuildup
         Group: "0"
       2:
-        Component: Misc
-        Input: CouplingScore
+        Input: Misc
+        Component: CouplingScore
+        Group: "1"
+      3:
+        Input: Misc
+        Component: BodyPartHeldStatic
+        Group: "2"
+      4:
+        Input: Misc
+        Component: RepeatedSmallActions
+        Group: "2"
+      5:
+        Input: Misc
+        Component: RapidPostureChange
+        Group: "2"
+  Postures:
+    Groups:
+      0:
+        Label: Body parts
+        Type: progress
+    Items:
+      0:
+        Input: ""
+        Component: Trunk
+        Image: bodyParts/back.png
+        Group: "0"
+      1:
+        Input: ""
+        Component: Neck
+        Image: bodyParts/neck.png
+        Group: "0"
+      2:
+        Input: ""
+        Component: Lower Arm
+        Image: bodyParts/arm.png
         Group: "0"
       3:
-        Component: Misc
-        Input: BodyPartHeldStatic
-        Label: Activity Score
+        Input: ""
+        Component: Upper Arm
+        Image: bodyParts/shoulder.png
         Group: "0"
       4:
-        Component: Misc
-        Input: RepeatedSmallActions
+        Input: ""
+        Component: Wrist
+        Image: bodyParts/wrist.png
         Group: "0"
       5:
-        Component: Misc
-        Input: RapidPostureChange
+        Input: ""
+        Component: Leg
+        Image: bodyParts/leg.png
         Group: "0"
-      
+  Results:
+    Groups:
+      0:
+        Label: ~
+        Type: riskscore
+    Items:
+      0:
+        Input: ""
+        Component: Overall
+        Group: "0"
+        Label: MSD risk score

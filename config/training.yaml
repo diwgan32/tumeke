@@ -46,21 +46,22 @@ Metadata: {}
 
 ResultValues:
   Score:
-    "[0, 30]":
-      Label: Very High
-      Score: *vhigh
-    "[30, 50]":
-      Label: High
-      Score: *high
-    "[50, 70]":
-      Label: Medium
-      Score: *medium
-    "[70, 90]":
-      Label: Low
-      Score: *low
-    "[90, None]":
-      Label: Good
-      Score: *acceptable
+    Values:
+      "[0, 30]":
+        Label: Very High
+        Score: *vhigh
+      "[30, 50]":
+        Label: High
+        Score: *high
+      "[50, 70]":
+        Label: Medium
+        Score: *medium
+      "[70, 90]":
+        Label: Low
+        Score: *low
+      "[90, None]":
+        Label: Good
+        Score: *acceptable
 
 RiskComponents:
   Main:

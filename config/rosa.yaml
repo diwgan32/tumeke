@@ -121,122 +121,136 @@ Metadata:
 
 ResultValues:
   Overall:
-    1:
-      Score: *acceptable
-    2:
-      Score: *acceptable
-    3:
-      Score: *acceptable
-    4:
-      Score: *acceptable
-    5: 
-      Score: *high
-    6:
-      Score: *high
-    7:
-      Score: *high
-    8:
-      Score: *high
-    9:
-      Score: *high
-    10:
-      Score: *high
+    Label: Overall Score
+    Values:
+      1:
+        Score: *acceptable
+      2:
+        Score: *acceptable
+      3:
+        Score: *acceptable
+      4:
+        Score: *acceptable
+      5: 
+        Score: *high
+      6:
+        Score: *high
+      7:
+        Score: *high
+      8:
+        Score: *high
+      9:
+        Score: *high
+      10:
+        Score: *high
   SeatPanHeightAndDepth:
-    2:
-      Score: *acceptable
-    3:
-      Score: *acceptable
-    4: 
-      Score: *acceptable
-    5: 
-      Score: *high
-    6: 
-      Score: *high
-    7:
-      Score: *high
+    Label: Seat pan height and depth
+    Values:
+      2:
+        Score: *acceptable
+      3:
+        Score: *acceptable
+      4: 
+        Score: *acceptable
+      5: 
+        Score: *high
+      6: 
+        Score: *high
+      7:
+        Score: *high
   ArmsBackRest:
-    2:
-      Score: *acceptable
-    3:
-      Score: *acceptable
-    4: 
-      Score: *acceptable
-    5: 
-      Score: *acceptable
-    6: 
-      Score: *high
-    7:
-      Score: *high
-    8:
-      Score: *high
-    9:
-      Score: *high
+    Label: Arms back rest
+    Values:
+      2:
+        Score: *acceptable
+      3:
+        Score: *acceptable
+      4: 
+        Score: *acceptable
+      5: 
+        Score: *acceptable
+      6: 
+        Score: *high
+      7:
+        Score: *high
+      8:
+        Score: *high
+      9:
+        Score: *high
   Monitor:
-    0:
-      Score: *acceptable
-    1:
-      Score: *acceptable
-    2: 
-      Score: *acceptable
-    3: 
-      Score: *acceptable
-    4: 
-      Score: *high
-    5:
-      Score: *high
-    6:
-      Score: *high
-    7:
-      Score: *high
+    Label: Monitor
+    Values:
+      0:
+        Score: *acceptable
+      1:
+        Score: *acceptable
+      2: 
+        Score: *acceptable
+      3: 
+        Score: *acceptable
+      4: 
+        Score: *high
+      5:
+        Score: *high
+      6:
+        Score: *high
+      7:
+        Score: *high
   Phone:
-    0:
-      Score: *acceptable
-    1:
-      Score: *acceptable
-    2: 
-      Score: *acceptable
-    3: 
-      Score: *high
-    4: 
-      Score: *high
-    5:
-      Score: *high
-    6:
-      Score: *high
+    Label: Phone
+    Values:
+      0:
+        Score: *acceptable
+      1:
+        Score: *acceptable
+      2: 
+        Score: *acceptable
+      3: 
+        Score: *high
+      4: 
+        Score: *high
+      5:
+        Score: *high
+      6:
+        Score: *high
   Mouse:
-    0:
-      Score: *acceptable
-    1:
-      Score: *acceptable
-    2: 
-      Score: *acceptable
-    3: 
-      Score: *acceptable
-    4: 
-      Score: *high
-    5:
-      Score: *high
-    6:
-      Score: *high
-    7:
-      Score: *high
+    Label: Mouse
+    Values:
+      0:
+        Score: *acceptable
+      1:
+        Score: *acceptable
+      2: 
+        Score: *acceptable
+      3: 
+        Score: *acceptable
+      4: 
+        Score: *high
+      5:
+        Score: *high
+      6:
+        Score: *high
+      7:
+        Score: *high
   Keyboard:
-    0:
-      Score: *acceptable
-    1:
-      Score: *acceptable
-    2: 
-      Score: *acceptable
-    3: 
-      Score: *acceptable
-    4: 
-      Score: *high
-    5:
-      Score: *high
-    6:
-      Score: *high
-    7:
-      Score: *high
+    Label: Keyboard
+    Values:
+      0:
+        Score: *acceptable
+      1:
+        Score: *acceptable
+      2: 
+        Score: *acceptable
+      3: 
+        Score: *acceptable
+      4: 
+        Score: *high
+      5:
+        Score: *high
+      6:
+        Score: *high
+      7:
+        Score: *high
 
 RiskComponents:
   SeatPanHeightAndDepth:

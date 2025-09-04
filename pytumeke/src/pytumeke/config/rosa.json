@@ -116,346 +116,367 @@
   },
   "ResultValues": {
     "Overall": {
-      "1": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "2": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "3": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "4": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "5": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "6": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "7": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "8": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "9": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "10": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Overall Score",
+      "Values": {
+        "1": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "2": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "3": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "4": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "5": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "6": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "7": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "8": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "9": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "10": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "SeatPanHeightAndDepth": {
-      "2": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "3": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "4": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "5": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "6": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "7": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Seat pan height and depth",
+      "Values": {
+        "2": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "3": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "4": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "5": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "6": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "7": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "ArmsBackRest": {
-      "2": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "3": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "4": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "5": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "6": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "7": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "8": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "9": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Arms back rest",
+      "Values": {
+        "2": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "3": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "4": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "5": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "6": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "7": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "8": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "9": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "Monitor": {
-      "0": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "1": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "2": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "3": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "4": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "5": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "6": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "7": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Monitor",
+      "Values": {
+        "0": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "1": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "2": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "3": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "4": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "5": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "6": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "7": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "Phone": {
-      "0": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "1": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "2": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "3": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "4": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "5": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "6": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Phone",
+      "Values": {
+        "0": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "1": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "2": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "3": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "4": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "5": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "6": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "Mouse": {
-      "0": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "1": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "2": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "3": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "4": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "5": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "6": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "7": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Mouse",
+      "Values": {
+        "0": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "1": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "2": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "3": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "4": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "5": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "6": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "7": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "Keyboard": {
-      "0": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "1": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "2": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "3": {
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "4": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "5": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "6": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "7": {
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Keyboard",
+      "Values": {
+        "0": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "1": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "2": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "3": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "4": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "5": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "6": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "7": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     }

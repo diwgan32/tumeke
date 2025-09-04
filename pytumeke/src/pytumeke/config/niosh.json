@@ -165,164 +165,189 @@
   },
   "ResultValues": {
     "li": {
-      "[None, 0]": {
-        "Label": "Unsafe lift at all weights",
-        "Score": {
-          "Value": "Unsafe",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[0, 1]": {
-        "Label": "Safe weight to lift",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[1, 3]": {
-        "Label": "Medium risk",
-        "Warning": "Object heavy",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[3, None]": {
-        "Label": "High risk",
-        "Warning": "Object far too heavy",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
+      "Label": "Lifting Index",
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unsafe lift at all weights",
+          "Score": {
+            "Value": "Unsafe",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[0, 1]": {
+          "Label": "Safe weight to lift",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[1, 3]": {
+          "Label": "Medium risk",
+          "Warning": "Object heavy",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[3, None]": {
+          "Label": "High risk",
+          "Warning": "Object far too heavy",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
         }
       }
     },
     "hm": {
-      "[0, .4]": {
-        "Label": "Poor",
-        "Warning": "Object too far away horizontally",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[.4, .6]": {
-        "Label": "Fair",
-        "Warning": "Object too far away horizontally",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[.6, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Horizontal position",
+      "Values": {
+        "[0, .4]": {
+          "Label": "Poor",
+          "Warning": "Object too far away horizontally",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[.4, .6]": {
+          "Label": "Fair",
+          "Warning": "Object too far away horizontally",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[.6, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "vm": {
-      "[0, .8]": {
-        "Label": "Poor",
-        "Warning": "Object begins too far away vertically",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[.8, .9]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[.9, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Vertical position",
+      "Values": {
+        "[0, .8]": {
+          "Label": "Poor",
+          "Warning": "Object begins too far away vertically",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[.8, .9]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[.9, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "dm": {
-      "[0, .9]": {
-        "Label": "Poor",
-        "Warning": "Object travels too far",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[.9, .95]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[.95, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Distance",
+      "Values": {
+        "[0, .9]": {
+          "Label": "Poor",
+          "Warning": "Object travels too far",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[.9, .95]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[.95, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "am": {
-      "[0, .7]": {
-        "Label": "Poor",
-        "Warning": "Person twists too much",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[.7, .9]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[.9, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Twist angle",
+      "Values": {
+        "[0, .7]": {
+          "Label": "Poor",
+          "Warning": "Person twists too much",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[.7, .9]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[.9, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "fm": {
-      "[0, .45]": {
-        "Label": "Poor",
-        "Warning": "Intervals too short",
-        "Score": {
-          "Value": "Poor",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[.45, .8]": {
-        "Label": "Fair",
-        "Score": {
-          "Value": "Fair",
-          "Color": "rgba(234, 130, 130, 1.0)"
-        }
-      },
-      "[.8, None]": {
-        "Label": "Good",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Frequency",
+      "Values": {
+        "[0, .45]": {
+          "Label": "Poor",
+          "Warning": "Intervals too short",
+          "Score": {
+            "Value": "Poor",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[.45, .8]": {
+          "Label": "Fair",
+          "Score": {
+            "Value": "Fair",
+            "Color": "rgba(234, 130, 130, 1.0)"
+          }
+        },
+        "[.8, None]": {
+          "Label": "Good",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "rwl": {
-      "[-1000, 10000]": {
-        "Label": "Recommended Weight Limit",
-        "Score": {
-          "Value": "Good",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Recommended weight limit",
+      "Units": [
+        "lbs",
+        "kgs"
+      ],
+      "Values": {
+        "[-1000, 10000]": {
+          "Label": "Recommended Weight Limit",
+          "Score": {
+            "Value": "Good",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     }
@@ -479,7 +504,10 @@
         "Type": "input",
         "Base": 51,
         "MaxInput": 1000,
-        "Units": null,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
         "Label": "Load Constant",
         "Image": null,
         "Values": null
@@ -493,6 +521,126 @@
         "Image": null,
         "Values": null,
         "IsOptional": true
+      }
+    }
+  },
+  "Form": {
+    "RiskComponents": {
+      "Groups": {
+        "0": {
+          "Label": null
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "0",
+          "Component": "asymmetryAngle",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "0",
+          "Component": "verticalStart",
+          "Group": "0"
+        },
+        "2": {
+          "Input": "0",
+          "Component": "verticalEnd",
+          "Group": "0"
+        },
+        "3": {
+          "Input": "0",
+          "Component": "horizontalStart",
+          "Group": "0"
+        },
+        "4": {
+          "Input": "0",
+          "Component": "horizontalEnd",
+          "Group": "0"
+        }
+      }
+    },
+    "AdditionalInputs": {
+      "Groups": {
+        "0": {
+          "Label": null
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "Main",
+          "Component": "coupling",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "Main",
+          "Component": "averageLoad",
+          "Group": "0"
+        },
+        "2": {
+          "Input": "Main",
+          "Component": "frequency",
+          "Group": "0"
+        },
+        "3": {
+          "Input": "Main",
+          "Component": "liftingDuration",
+          "Group": "0"
+        },
+        "4": {
+          "Input": "Main",
+          "Component": "loadConstant",
+          "Group": "0"
+        }
+      }
+    },
+    "Postures": {
+      "Groups": {
+        "0": {
+          "Label": "Posture risk",
+          "Type": "block"
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "",
+          "Component": "am",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "",
+          "Component": "vm",
+          "Group": "0"
+        },
+        "2": {
+          "Input": "",
+          "Component": "hm",
+          "Group": "0"
+        },
+        "3": {
+          "Input": "",
+          "Component": "dm",
+          "Group": "0"
+        }
+      }
+    },
+    "Results": {
+      "Groups": {
+        "0": {
+          "Label": null,
+          "Type": "score"
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "",
+          "Component": "li",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "",
+          "Component": "rwl",
+          "Group": "0"
+        }
       }
     }
   }
