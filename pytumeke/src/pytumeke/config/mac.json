@@ -59,122 +59,134 @@
   },
   "ResultValues": {
     "OverallScore": {
-      "[None, None]": {
-        "Label": "Overall score",
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
+      "Label": "Overall Score",
+      "Values": {
+        "[None, None]": {
+          "Label": "Overall score",
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
         }
       }
     },
     "LiftScore": {
-      "[None, 0]": {
-        "Label": "Unacceptable",
-        "Score": {
-          "Value": "Unacceptable",
-          "Color": "rgba(133, 4, 0, 1.0)"
-        }
-      },
-      "[0, 5]": {
-        "Label": "Acceptable",
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[5, 10]": {
-        "Label": "Medium risk",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "[10, 15]": {
-        "Label": "High risk",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[15, None]": {
-        "Label": "Unacceptable",
-        "Score": {
-          "Value": "Unacceptable",
-          "Color": "rgba(133, 4, 0, 1.0)"
+      "Label": "Lift Score",
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unacceptable",
+          "Score": {
+            "Value": "Unacceptable",
+            "Color": "rgba(133, 4, 0, 1.0)"
+          }
+        },
+        "[0, 5]": {
+          "Label": "Acceptable",
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[5, 10]": {
+          "Label": "Medium risk",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "[10, 15]": {
+          "Label": "High risk",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[15, None]": {
+          "Label": "Unacceptable",
+          "Score": {
+            "Value": "Unacceptable",
+            "Color": "rgba(133, 4, 0, 1.0)"
+          }
         }
       }
     },
     "CarryScore": {
-      "[None, 0]": {
-        "Label": "Unacceptable",
-        "Score": {
-          "Value": "Unacceptable",
-          "Color": "rgba(133, 4, 0, 1.0)"
-        }
-      },
-      "[0, 5]": {
-        "Label": "Acceptable",
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[5, 10]": {
-        "Label": "Medium risk",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "[10, 15]": {
-        "Label": "High risk",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[15, None]": {
-        "Label": "Unacceptable",
-        "Score": {
-          "Value": "Unacceptable",
-          "Color": "rgba(133, 4, 0, 1.0)"
+      "Label": "Carry Score",
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unacceptable",
+          "Score": {
+            "Value": "Unacceptable",
+            "Color": "rgba(133, 4, 0, 1.0)"
+          }
+        },
+        "[0, 5]": {
+          "Label": "Acceptable",
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[5, 10]": {
+          "Label": "Medium risk",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "[10, 15]": {
+          "Label": "High risk",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[15, None]": {
+          "Label": "Unacceptable",
+          "Score": {
+            "Value": "Unacceptable",
+            "Color": "rgba(133, 4, 0, 1.0)"
+          }
         }
       }
     },
     "TeamScore": {
-      "[None, 0]": {
-        "Label": "Unacceptable",
-        "Score": {
-          "Value": "Unacceptable",
-          "Color": "rgba(133, 4, 0, 1.0)"
-        }
-      },
-      "[0, 5]": {
-        "Label": "Acceptable",
-        "Score": {
-          "Value": "Acceptable",
-          "Color": "rgba(109, 208, 163, 1.0)"
-        }
-      },
-      "[5, 10]": {
-        "Label": "Medium risk",
-        "Score": {
-          "Value": "Medium",
-          "Color": "rgba(230, 126, 34, 1.0)"
-        }
-      },
-      "[10, 15]": {
-        "Label": "High risk",
-        "Score": {
-          "Value": "High",
-          "Color": "rgba(184, 15, 10, 1.0)"
-        }
-      },
-      "[15, None]": {
-        "Label": "Unacceptable",
-        "Score": {
-          "Value": "Unacceptable",
-          "Color": "rgba(133, 4, 0, 1.0)"
+      "Label": "Team Score",
+      "Values": {
+        "[None, 0]": {
+          "Label": "Unacceptable",
+          "Score": {
+            "Value": "Unacceptable",
+            "Color": "rgba(133, 4, 0, 1.0)"
+          }
+        },
+        "[0, 5]": {
+          "Label": "Acceptable",
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "[5, 10]": {
+          "Label": "Medium risk",
+          "Score": {
+            "Value": "Medium",
+            "Color": "rgba(230, 126, 34, 1.0)"
+          }
+        },
+        "[10, 15]": {
+          "Label": "High risk",
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "[15, None]": {
+          "Label": "Unacceptable",
+          "Score": {
+            "Value": "Unacceptable",
+            "Color": "rgba(133, 4, 0, 1.0)"
+          }
         }
       }
     }
@@ -185,10 +197,7 @@
         "Type": "select",
         "Base": 0,
         "MaxInput": null,
-        "Units": [
-          "ft",
-          "m"
-        ],
+        "Units": null,
         "Label": "Hand distance from the lower back",
         "Image": null,
         "Values": {
@@ -334,10 +343,7 @@
         "Type": "select",
         "Base": 0,
         "MaxInput": null,
-        "Units": [
-          "ft",
-          "m"
-        ],
+        "Units": null,
         "Label": "Hand distance from the lower back",
         "Image": null,
         "Values": {
@@ -387,80 +393,26 @@
           }
         }
       },
-      "VerticalLiftZones": {
+      "CarryDistance": {
         "Type": "select",
         "Base": 0,
         "MaxInput": null,
-        "Units": null,
-        "Label": "Vertical lift zones",
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Carry distance",
         "Image": null,
         "Values": {
           "0": {
-            "Label": "Hands between knee and elbow height",
+            "Label": "Between 2 m and 4 m",
             "Score": {
               "Value": "Acceptable",
               "Color": "rgba(109, 208, 163, 1.0)"
             }
           },
           "1": {
-            "Label": "Hands between knee and floor level",
-            "Warning": "Low risk",
-            "Score": {
-              "Value": "Low",
-              "Color": "rgba(241, 196, 15, 1.0)"
-            }
-          },
-          "1.1": {
-            "Label": "Hands between elbow height and head height",
-            "Warning": "Low risk",
-            "Score": {
-              "Value": "Low",
-              "Color": "rgba(241, 196, 15, 1.0)"
-            }
-          },
-          "3": {
-            "Label": "Hands at floor level or below",
-            "Warning": "High risk",
-            "Score": {
-              "Value": "High",
-              "Color": "rgba(184, 15, 10, 1.0)"
-            }
-          },
-          "3.1": {
-            "Label": "Hands at head height or above",
-            "Warning": "High risk",
-            "Score": {
-              "Value": "High",
-              "Color": "rgba(184, 15, 10, 1.0)"
-            }
-          }
-        }
-      },
-      "TorsoTwisting": {
-        "Type": "select",
-        "Base": 0,
-        "MaxInput": null,
-        "Units": "angle",
-        "Label": "Torso twisting and sideways bending",
-        "Image": null,
-        "Values": {
-          "0": {
-            "Label": "Little or no torso twisting or sideways bending",
-            "Score": {
-              "Value": "Acceptable",
-              "Color": "rgba(109, 208, 163, 1.0)"
-            }
-          },
-          "1": {
-            "Label": "Torso twisted",
-            "Warning": "Low risk",
-            "Score": {
-              "Value": "Low",
-              "Color": "rgba(241, 196, 15, 1.0)"
-            }
-          },
-          "1": {
-            "Label": "Torso bent sideways",
+            "Label": "Between 4 m and 10 m",
             "Warning": "Low risk",
             "Score": {
               "Value": "Low",
@@ -468,7 +420,7 @@
             }
           },
           "2": {
-            "Label": "Torso both twisted and bent sideways",
+            "Label": "Over 10 m",
             "Warning": "Medium risk",
             "Score": {
               "Value": "Medium",
@@ -483,15 +435,12 @@
         "Type": "select",
         "Base": 0,
         "MaxInput": null,
-        "Units": [
-          "ft",
-          "m"
-        ],
+        "Units": null,
         "Label": "Hand distance from the lower back",
         "Image": null,
         "Values": {
           "0": {
-            "Label": "Upper arms vertical AND torso upright",
+            "Label": "Upper arms vertical and torso upright",
             "Desc": "Hands close to the low back",
             "Score": {
               "Value": "Acceptable",
@@ -499,7 +448,7 @@
             }
           },
           "3": {
-            "Label": "Upper arms angled away from torso OR torso bent forward",
+            "Label": "Upper arms angled away from torso or torso bent forward",
             "Desc": "Hands at moderate distance from the low back",
             "Warning": "High risk",
             "Score": {
@@ -508,7 +457,7 @@
             }
           },
           "6": {
-            "Label": "Upper arms angled away from torso AND torso bent forward",
+            "Label": "Upper arms angled away from torso and torso bent forward",
             "Desc": "Hands far from the low back",
             "Warning": "Very high risk",
             "Score": {
@@ -576,6 +525,42 @@
           },
           "2": {
             "Label": "Torsos both twisted and bent sideways",
+            "Warning": "Medium risk",
+            "Score": {
+              "Value": "Medium",
+              "Color": "rgba(230, 126, 34, 1.0)"
+            }
+          }
+        }
+      },
+      "CarryDistance": {
+        "Type": "select",
+        "Base": 0,
+        "MaxInput": null,
+        "Units": [
+          "ft",
+          "m"
+        ],
+        "Label": "Carry distance",
+        "Image": null,
+        "Values": {
+          "0": {
+            "Label": "Between 2 m and 4 m",
+            "Score": {
+              "Value": "Acceptable",
+              "Color": "rgba(109, 208, 163, 1.0)"
+            }
+          },
+          "1": {
+            "Label": "Between 4 m and 10 m",
+            "Warning": "Low risk",
+            "Score": {
+              "Value": "Low",
+              "Color": "rgba(241, 196, 15, 1.0)"
+            }
+          },
+          "3": {
+            "Label": "Over 10 m",
             "Warning": "Medium risk",
             "Score": {
               "Value": "Medium",
@@ -984,39 +969,6 @@
           }
         }
       },
-      "CarryDistance": {
-        "Type": "select",
-        "Base": 0,
-        "MaxInput": null,
-        "Units": null,
-        "Label": "Carry distance",
-        "Image": null,
-        "Values": {
-          "0": {
-            "Label": "Between 2 m and 4 m",
-            "Score": {
-              "Value": "Acceptable",
-              "Color": "rgba(109, 208, 163, 1.0)"
-            }
-          },
-          "1": {
-            "Label": "Between 4 m and 10 m",
-            "Warning": "Low risk",
-            "Score": {
-              "Value": "Low",
-              "Color": "rgba(241, 196, 15, 1.0)"
-            }
-          },
-          "2": {
-            "Label": "Over 10 m",
-            "Warning": "Medium risk",
-            "Score": {
-              "Value": "Medium",
-              "Color": "rgba(230, 126, 34, 1.0)"
-            }
-          }
-        }
-      },
       "Obstacles": {
         "Type": "select",
         "Base": 0,
@@ -1089,10 +1041,7 @@
         "Type": "select",
         "Base": 0,
         "MaxInput": null,
-        "Units": [
-          "lbs",
-          "kgs"
-        ],
+        "Units": null,
         "Label": "Load weight",
         "Image": null,
         "Values": {
@@ -1268,39 +1217,6 @@
           }
         }
       },
-      "CarryDistance": {
-        "Type": "select",
-        "Base": 0,
-        "MaxInput": null,
-        "Units": null,
-        "Label": "Carry distance",
-        "Image": null,
-        "Values": {
-          "0": {
-            "Label": "Between 2 m and 4 m",
-            "Score": {
-              "Value": "Acceptable",
-              "Color": "rgba(109, 208, 163, 1.0)"
-            }
-          },
-          "1": {
-            "Label": "Between 4 m and 10 m",
-            "Warning": "Low risk",
-            "Score": {
-              "Value": "Low",
-              "Color": "rgba(241, 196, 15, 1.0)"
-            }
-          },
-          "3": {
-            "Label": "Over 10 m",
-            "Warning": "Medium risk",
-            "Score": {
-              "Value": "Medium",
-              "Color": "rgba(230, 126, 34, 1.0)"
-            }
-          }
-        }
-      },
       "Obstacles": {
         "Type": "select",
         "Base": 0,
@@ -1398,6 +1314,215 @@
               "Color": "rgba(230, 126, 34, 1.0)"
             }
           }
+        }
+      }
+    }
+  },
+  "Form": {
+    "RiskComponents": {
+      "Groups": {
+        "0": {
+          "Label": null,
+          "Inline": false
+        }
+      },
+      "Items": {
+        "1": {
+          "Input": "Lift",
+          "Component": "HandDistance",
+          "Group": "0"
+        },
+        "2": {
+          "Input": "Lift",
+          "Component": "VerticalLiftZones",
+          "Group": "0"
+        },
+        "3": {
+          "Input": "Lift",
+          "Component": "TorsoTwisting",
+          "Group": "0"
+        },
+        "4": {
+          "Input": "Carry",
+          "Component": "HandDistance",
+          "Group": "0"
+        },
+        "5": {
+          "Input": "Carry",
+          "Component": "CarryDistance",
+          "Group": "0"
+        },
+        "6": {
+          "Input": "Team",
+          "Component": "HandDistance",
+          "Group": "0"
+        },
+        "7": {
+          "Input": "Team",
+          "Component": "VerticalLiftZones",
+          "Group": "0"
+        },
+        "8": {
+          "Input": "Team",
+          "Component": "TorsoTwisting",
+          "Group": "0"
+        },
+        "9": {
+          "Input": "Team",
+          "Component": "CarryDistance",
+          "Group": "0"
+        }
+      }
+    },
+    "AdditionalInputs": {
+      "Groups": {
+        "0": {
+          "Label": null,
+          "Inline": false
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "Lift",
+          "Component": "LoadWeight",
+          "Group": "0"
+        },
+        "1": {
+          "Input": "Lift",
+          "Component": "Frequency",
+          "Group": "0"
+        },
+        "2": {
+          "Input": "Lift",
+          "Component": "PosturalConstraints",
+          "Group": "0"
+        },
+        "3": {
+          "Input": "Lift",
+          "Component": "GripOnLoad",
+          "Group": "0"
+        },
+        "4": {
+          "Input": "Lift",
+          "Component": "FloorSurface",
+          "Group": "0"
+        },
+        "5": {
+          "Input": "Lift",
+          "Component": "EnvironmentalFactors",
+          "Group": "0"
+        },
+        "6": {
+          "Input": "Carry",
+          "Component": "LoadWeight",
+          "Group": "0"
+        },
+        "7": {
+          "Input": "Carry",
+          "Component": "Frequency",
+          "Group": "0"
+        },
+        "8": {
+          "Input": "Carry",
+          "Component": "AsymmetricalTorso",
+          "Group": "0"
+        },
+        "9": {
+          "Input": "Carry",
+          "Component": "PosturalConstraints",
+          "Group": "0"
+        },
+        "10": {
+          "Input": "Carry",
+          "Component": "GripOnLoad",
+          "Group": "0"
+        },
+        "11": {
+          "Input": "Carry",
+          "Component": "FloorSurface",
+          "Group": "0"
+        },
+        "12": {
+          "Input": "Carry",
+          "Component": "Obstacles",
+          "Group": "0"
+        },
+        "13": {
+          "Input": "Carry",
+          "Component": "EnvironmentalFactors",
+          "Group": "0"
+        },
+        "14": {
+          "Input": "Team",
+          "Component": "LoadWeight",
+          "Group": "0"
+        },
+        "15": {
+          "Input": "Team",
+          "Component": "PosturalConstraints",
+          "Group": "0"
+        },
+        "16": {
+          "Input": "Team",
+          "Component": "GripOnLoad",
+          "Group": "0"
+        },
+        "17": {
+          "Input": "Team",
+          "Component": "FloorSurface",
+          "Group": "0"
+        },
+        "18": {
+          "Input": "Team",
+          "Component": "Obstacles",
+          "Group": "0"
+        },
+        "19": {
+          "Input": "Team",
+          "Component": "Communication",
+          "Group": "0"
+        },
+        "20": {
+          "Input": "Team",
+          "Component": "EnvironmentalFactors",
+          "Group": "0"
+        }
+      }
+    },
+    "Postures": {
+      "Groups": {
+        "0": {
+          "Label": "Posture risk",
+          "Type": "block"
+        }
+      },
+      "Items": {}
+    },
+    "Results": {
+      "Groups": {
+        "0": {
+          "Label": null,
+          "Type": "riskscore"
+        }
+      },
+      "Items": {
+        "0": {
+          "Input": "Lift",
+          "Component": "LiftScore",
+          "Group": "0",
+          "Label": "MSD risk score"
+        },
+        "1": {
+          "Input": "Carry",
+          "Component": "CarryScore",
+          "Group": "0",
+          "Label": "MSD risk score"
+        },
+        "2": {
+          "Input": "Team",
+          "Component": "TeamScore",
+          "Group": "0",
+          "Label": "MSD risk score"
         }
       }
     }

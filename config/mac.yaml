@@ -56,57 +56,65 @@ Metadata:
 
 ResultValues:
   OverallScore:
-    "[None, None]":
-      Label: Overall score
-      Score: *acceptable
+    Label: Overall Score
+    Values:
+      "[None, None]":
+        Label: Overall score
+        Score: *acceptable
   LiftScore:
-    "[None, 0]":
-      Label: Unacceptable
-      Score: *unsafe
-    "[0, 5]":
-      Label: Acceptable
-      Score: *acceptable
-    "[5, 10]":
-      Label: Medium risk
-      Score: *medium
-    "[10, 15]":
-      Label: High risk
-      Score: *high
-    "[15, None]":
-      Label: Unacceptable
-      Score: *unsafe
+    Label: Lift Score
+    Values:
+      "[None, 0]":
+        Label: Unacceptable
+        Score: *unsafe
+      "[0, 5]":
+        Label: Acceptable
+        Score: *acceptable
+      "[5, 10]":
+        Label: Medium risk
+        Score: *medium
+      "[10, 15]":
+        Label: High risk
+        Score: *high
+      "[15, None]":
+        Label: Unacceptable
+        Score: *unsafe
   CarryScore:
-    "[None, 0]":
-      Label: Unacceptable
-      Score: *unsafe
-    "[0, 5]":
-      Label: Acceptable
-      Score: *acceptable
-    "[5, 10]":
-      Label: Medium risk
-      Score: *medium
-    "[10, 15]":
-      Label: High risk
-      Score: *high
-    "[15, None]":
-      Label: Unacceptable
-      Score: *unsafe
+    Label: Carry Score
+    Values:
+      "[None, 0]":
+        Label: Unacceptable
+        Score: *unsafe
+      "[0, 5]":
+        Label: Acceptable
+        Score: *acceptable
+      "[5, 10]":
+        Label: Medium risk
+        Score: *medium
+      "[10, 15]":
+        Label: High risk
+        Score: *high
+      "[15, None]":
+        Label: Unacceptable
+        Score: *unsafe
   TeamScore:
-    "[None, 0]":
-      Label: Unacceptable
-      Score: *unsafe
-    "[0, 5]":
-      Label: Acceptable
-      Score: *acceptable
-    "[5, 10]":
-      Label: Medium risk
-      Score: *medium
-    "[10, 15]":
-      Label: High risk
-      Score: *high
-    "[15, None]":
-      Label: Unacceptable
-      Score: *unsafe
+    Label: Team Score
+    Values:
+      "[None, 0]":
+        Label: Unacceptable
+        Score: *unsafe
+      "[0, 5]":
+        Label: Acceptable
+        Score: *acceptable
+      "[5, 10]":
+        Label: Medium risk
+        Score: *medium
+      "[10, 15]":
+        Label: High risk
+        Score: *high
+      "[15, None]":
+        Label: Unacceptable
+        Score: *unsafe
 
 RiskComponents:
   Lift:
@@ -114,7 +122,7 @@ RiskComponents:
       Type: select
       Base: 0
       MaxInput: ~
-      Units: [ft, m]
+      Units: ~
       Label: Hand distance from the lower back
       Image: ~
       Values:
@@ -194,28 +202,23 @@ RiskComponents:
           Score: *medium
   Carry:
     HandDistance: *handdistance
-    VerticalLiftZones: *verticalliftzones
-    TorsoTwisting: &torsotwisting
+    CarryDistance: &carrydistance
       Type: select
       Base: 0
       MaxInput: ~
-      Units: angle
-      Label: Torso twisting and sideways bending
+      Units: [ft, m]
+      Label: Carry distance
       Image: ~
       Values:
         0:
-          Label: Little or no torso twisting or sideways bending
+          Label: Between 2 m and 4 m
           Score: *acceptable
         1:
-          Label: Torso twisted
-          Warning: Low risk
-          Score: *low
-        1:
-          Label: Torso bent sideways
+          Label: Between 4 m and 10 m
           Warning: Low risk
           Score: *low
         2:
-          Label: Torso both twisted and bent sideways
+          Label: Over 10 m
           Warning: Medium risk
           Score: *medium
   Team:
@@ -223,21 +226,21 @@ RiskComponents:
       Type: select
       Base: 0
       MaxInput: ~
-      Units: [ft, m]
+      Units: ~
       Label: Hand distance from the lower back
       Image: ~
       Values:
         0:
-          Label: Upper arms vertical AND torso upright
+          Label: Upper arms vertical and torso upright
           Desc: Hands close to the low back
           Score: *acceptable
         3:
-          Label: Upper arms angled away from torso OR torso bent forward
+          Label: Upper arms angled away from torso or torso bent forward
           Desc: Hands at moderate distance from the low back
           Warning: High risk
           Score: *high
         6:
-          Label: Upper arms angled away from torso AND torso bent forward
+          Label: Upper arms angled away from torso and torso bent forward
           Desc: Hands far from the low back
           Warning: Very high risk
           Score: *vhigh
@@ -277,6 +280,20 @@ RiskComponents:
           Score: *low
         2:
           Label: Torsos both twisted and bent sideways
+          Warning: Medium risk
+          Score: *medium
+    CarryDistance:
+      <<: *carrydistance
+      Values:
+        0:
+          Label: Between 2 m and 4 m
+          Score: *acceptable
+        1:
+          Label: Between 4 m and 10 m
+          Warning: Low risk
+          Score: *low
+        3:
+          Label: Over 10 m
           Warning: Medium risk
           Score: *medium
 
@@ -436,25 +453,6 @@ AdditionalInputs:
           Label: Slippery (greasy, oily, wet, icy) or much debris or soft or unstable or severe damage
           Warning: Poor floor surface
           Score: *high
-    CarryDistance: &carrydistance
-      Type: select
-      Base: 0
-      MaxInput: ~
-      Units: ~
-      Label: Carry distance
-      Image: ~
-      Values:
-        0:
-          Label: Between 2 m and 4 m
-          Score: *acceptable
-        1:
-          Label: Between 4 m and 10 m
-          Warning: Low risk
-          Score: *low
-        2:
-          Label: Over 10 m
-          Warning: Medium risk
-          Score: *medium
     Obstacles: &obstacles
       Type: select
       Base: 0
@@ -480,7 +478,7 @@ AdditionalInputs:
       Type: select
       Base: 0
       MaxInput: ~
-      Units: [lbs, kgs]
+      Units: ~
       Label: Load weight
       Image: ~
       Values:
@@ -535,20 +533,6 @@ AdditionalInputs:
           Warning: Poor grip
           Score: *medium
     FloorSurface: *floorsurface2
-    CarryDistance:
-      <<: *carrydistance
-      Values:
-        0:
-          Label: Between 2 m and 4 m
-          Score: *acceptable
-        1:
-          Label: Between 4 m and 10 m
-          Warning: Low risk
-          Score: *low
-        3:
-          Label: Over 10 m
-          Warning: Medium risk
-          Score: *medium
     Obstacles: *obstacles
     Communication:
       Type: select
@@ -570,3 +554,164 @@ AdditionalInputs:
           Warning: High risk
           Score: *high
     EnvironmentalFactors: *environmentalfactors
+
+Form:
+  RiskComponents:
+    Groups:
+      0:
+        Label: ~
+        Inline: False
+    Items:
+      1:
+        Input: Lift
+        Component: HandDistance
+        Group: "0"
+      2:
+        Input: Lift
+        Component: VerticalLiftZones
+        Group: "0"
+      3:
+        Input: Lift
+        Component: TorsoTwisting
+        Group: "0"
+      4:
+        Input: Carry
+        Component: HandDistance
+        Group: "0"
+      5:
+        Input: Carry
+        Component: CarryDistance
+        Group: "0"
+      6:
+        Input: Team
+        Component: HandDistance
+        Group: "0"
+      7:
+        Input: Team
+        Component: VerticalLiftZones
+        Group: "0"
+      8:
+        Input: Team
+        Component: TorsoTwisting
+        Group: "0"
+      9:
+        Input: Team
+        Component: CarryDistance
+        Group: "0"
+  AdditionalInputs:
+    Groups:
+      0:
+        Label: ~
+        Inline: False
+    Items:
+      0:
+        Input: Lift
+        Component: LoadWeight
+        Group: "0"
+      1:
+        Input: Lift
+        Component: Frequency
+        Group: "0"
+      2:
+        Input: Lift
+        Component: PosturalConstraints
+        Group: "0"
+      3:
+        Input: Lift
+        Component: GripOnLoad
+        Group: "0"
+      4:
+        Input: Lift
+        Component: FloorSurface
+        Group: "0"
+      5:
+        Input: Lift
+        Component: EnvironmentalFactors
+        Group: "0"
+      6:
+        Input: Carry
+        Component: LoadWeight
+        Group: "0"
+      7:
+        Input: Carry
+        Component: Frequency
+        Group: "0"
+      8:
+        Input: Carry
+        Component: AsymmetricalTorso
+        Group: "0"
+      9:
+        Input: Carry
+        Component: PosturalConstraints
+        Group: "0"
+      10:
+        Input: Carry
+        Component: GripOnLoad
+        Group: "0"
+      11:
+        Input: Carry
+        Component: FloorSurface
+        Group: "0"
+      12:
+        Input: Carry
+        Component: Obstacles
+        Group: "0"
+      13:
+        Input: Carry
+        Component: EnvironmentalFactors
+        Group: "0"
+      14:
+        Input: Team
+        Component: LoadWeight
+        Group: "0"
+      15:
+        Input: Team
+        Component: PosturalConstraints
+        Group: "0"
+      16:
+        Input: Team
+        Component: GripOnLoad
+        Group: "0"
+      17:
+        Input: Team
+        Component: FloorSurface
+        Group: "0"
+      18:
+        Input: Team
+        Component: Obstacles
+        Group: "0"
+      19:
+        Input: Team
+        Component: Communication
+        Group: "0"
+      20:
+        Input: Team
+        Component: EnvironmentalFactors
+        Group: "0"
+  Postures:
+    Groups:
+      0:
+        Label: Posture risk
+        Type: block
+    Items: {}
+  Results:
+    Groups:
+      0:
+        Label: ~
+        Type: riskscore
+    Items:
+      0:
+        Input: Lift
+        Component: LiftScore
+        Group: "0"
+        Label: MSD risk score
+      1:
+        Input: Carry
+        Component: CarryScore
+        Group: "0"
+        Label: MSD risk score
+      2:
+        Input: Team
+        Component: TeamScore
+        Group: "0"
+        Label: MSD risk score
