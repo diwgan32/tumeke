@@ -55,6 +55,7 @@
   "OverallScoreValue": "OverallScore",
   "Metadata": {
     "startEnd": "{ [key: string]: number[] }",
+    "numPeople": "number",
     "inputId": "number"
   },
   "ResultValues": {
@@ -1488,15 +1489,6 @@
           "Group": "0"
         }
       }
-    },
-    "Postures": {
-      "Groups": {
-        "0": {
-          "Label": "Posture risk",
-          "Type": "block"
-        }
-      },
-      "Items": {}
     },
     "Results": {
       "Groups": {

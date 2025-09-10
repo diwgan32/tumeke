@@ -52,6 +52,7 @@ OverallScoreValue: OverallScore
 
 Metadata:
   startEnd: "{ [key: string]: number[] }"
+  numPeople: "number"
   inputId: "number"
 
 ResultValues:
@@ -688,12 +689,6 @@ Form:
         Input: Team
         Component: EnvironmentalFactors
         Group: "0"
-  Postures:
-    Groups:
-      0:
-        Label: Posture risk
-        Type: block
-    Items: {}
   Results:
     Groups:
       0:

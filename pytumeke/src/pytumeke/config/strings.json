@@ -230,7 +230,8 @@
             "1": {
               "label": "general.yes"
             }
-          }
+          },
+          "tooltip": "assessments.rula.components.force.legsuddenexertion.tooltip"
         }
       },
       "Misc": {
@@ -1073,27 +1074,34 @@
     "components": {
       "0": {
         "asymmetryAngle": {
-          "label": "assessments.niosh.components.0.asymmetryangle.label"
+          "label": "assessments.niosh.components.0.asymmetryangle.label",
+          "values": {}
         },
         "horizontalEnd": {
-          "label": "assessments.niosh.components.0.horizontalend.label"
+          "label": "assessments.niosh.components.0.horizontalend.label",
+          "values": {}
         },
         "horizontalStart": {
-          "label": "assessments.niosh.components.0.horizontalstart.label"
+          "label": "assessments.niosh.components.0.horizontalstart.label",
+          "values": {}
         },
         "verticalEnd": {
-          "label": "assessments.niosh.components.0.verticalend.label"
+          "label": "assessments.niosh.components.0.verticalend.label",
+          "values": {}
         },
         "verticalStart": {
-          "label": "assessments.niosh.components.0.verticalstart.label"
+          "label": "assessments.niosh.components.0.verticalstart.label",
+          "values": {}
         }
       },
       "Main": {
         "averageLoad": {
-          "label": "assessments.niosh.components.main.averageload.label"
+          "label": "assessments.niosh.components.main.averageload.label",
+          "values": {}
         },
         "frequency": {
-          "label": "assessments.niosh.components.main.frequency.label"
+          "label": "assessments.niosh.components.main.frequency.label",
+          "values": {}
         },
         "coupling": {
           "label": "assessments.niosh.components.main.coupling.label",
@@ -1126,10 +1134,12 @@
           }
         },
         "loadConstant": {
-          "label": "assessments.niosh.components.main.loadconstant.label"
+          "label": "assessments.niosh.components.main.loadconstant.label",
+          "values": {}
         },
         "shortRest": {
-          "label": "assessments.niosh.components.main.shortrest.label"
+          "label": "assessments.niosh.components.main.shortrest.label",
+          "values": {}
         }
       }
     }
@@ -1332,7 +1342,8 @@
           }
         },
         "taskDuration": {
-          "label": "assessments.handstrain.components.main.taskduration.label"
+          "label": "assessments.handstrain.components.main.taskduration.label",
+          "values": {}
         },
         "durationPerExertionLeft": {
           "label": "assessments.handstrain.components.main.durationperexertionleft.label",
@@ -2283,25 +2294,31 @@
           }
         },
         "objectWeight": {
-          "label": "assessments.snook.components.lift.objectweight.label"
+          "label": "assessments.snook.components.lift.objectweight.label",
+          "values": {}
         },
         "frequency": {
-          "label": "assessments.niosh.components.main.frequency.label"
+          "label": "assessments.niosh.components.main.frequency.label",
+          "values": {}
         },
         "startHandHeight": {
           "label": "assessments.snook.components.lift.starthandheight.label",
+          "values": {},
           "desc": "assessments.snook.components.lift.starthandheight.desc"
         },
         "endHandHeight": {
           "label": "assessments.snook.components.lift.endhandheight.label",
+          "values": {},
           "desc": "assessments.snook.components.lift.endhandheight.desc"
         },
         "startHorizontalReach": {
           "label": "assessments.snook.components.lift.starthorizontalreach.label",
+          "values": {},
           "desc": "assessments.snook.components.lift.starthorizontalreach.desc"
         },
         "endHorizontalReach": {
           "label": "assessments.snook.components.lift.endhorizontalreach.label",
+          "values": {},
           "desc": "assessments.snook.components.lift.endhorizontalreach.desc"
         }
       },
@@ -2333,22 +2350,32 @@
           }
         },
         "objectWeight": {
-          "label": "assessments.snook.components.lift.objectweight.label"
+          "label": "assessments.snook.components.lift.objectweight.label",
+          "values": {}
         },
         "frequency": {
-          "label": "assessments.niosh.components.main.frequency.label"
+          "label": "assessments.niosh.components.main.frequency.label",
+          "values": {}
         },
         "startHandHeight": {
-          "label": "assessments.snook.components.lift.starthandheight.desc"
+          "label": "assessments.snook.components.lift.starthandheight.label",
+          "values": {},
+          "desc": "assessments.snook.components.lift.starthandheight.desc"
         },
         "endHandHeight": {
-          "label": "assessments.snook.components.lift.endhandheight.desc"
+          "label": "assessments.snook.components.lift.endhandheight.label",
+          "values": {},
+          "desc": "assessments.snook.components.lift.endhandheight.desc"
         },
         "startHorizontalReach": {
-          "label": "assessments.snook.components.lift.starthorizontalreach.desc"
+          "label": "assessments.snook.components.lift.starthorizontalreach.label",
+          "values": {},
+          "desc": "assessments.snook.components.lift.starthorizontalreach.desc"
         },
         "endHorizontalReach": {
-          "label": "assessments.snook.components.lift.endhorizontalreach.desc"
+          "label": "assessments.snook.components.lift.endhorizontalreach.label",
+          "values": {},
+          "desc": "assessments.snook.components.lift.endhorizontalreach.desc"
         }
       },
       "Push": {
@@ -2364,19 +2391,24 @@
           }
         },
         "initialForce": {
-          "label": "assessments.snook.components.push.initialforce.label"
+          "label": "assessments.snook.components.push.initialforce.label",
+          "values": {}
         },
         "sustainedForce": {
-          "label": "assessments.snook.components.push.sustainedforce.label"
+          "label": "assessments.snook.components.push.sustainedforce.label",
+          "values": {}
         },
         "horizontalDistance": {
-          "label": "assessments.snook.components.push.horizontaldistance.label"
+          "label": "assessments.snook.components.push.horizontaldistance.label",
+          "values": {}
         },
         "frequency": {
-          "label": "assessments.niosh.components.main.frequency.label"
+          "label": "assessments.niosh.components.main.frequency.label",
+          "values": {}
         },
         "verticalHandHeight": {
           "label": "assessments.snook.components.push.verticalhandheight.label",
+          "values": {},
           "desc": "assessments.snook.components.push.verticalhandheight.desc"
         }
       },
@@ -2393,19 +2425,25 @@
           }
         },
         "initialForce": {
-          "label": "assessments.snook.components.push.initialforce.label"
+          "label": "assessments.snook.components.push.initialforce.label",
+          "values": {}
         },
         "sustainedForce": {
-          "label": "assessments.snook.components.push.sustainedforce.label"
+          "label": "assessments.snook.components.push.sustainedforce.label",
+          "values": {}
         },
         "horizontalDistance": {
-          "label": "assessments.snook.components.push.horizontaldistance.label"
+          "label": "assessments.snook.components.push.horizontaldistance.label",
+          "values": {}
         },
         "frequency": {
-          "label": "assessments.niosh.components.main.frequency.label"
+          "label": "assessments.niosh.components.main.frequency.label",
+          "values": {}
         },
         "verticalHandHeight": {
-          "label": "assessments.snook.components.push.verticalhandheight.desc"
+          "label": "assessments.snook.components.push.verticalhandheight.label",
+          "values": {},
+          "desc": "assessments.snook.components.push.verticalhandheight.desc"
         }
       },
       "Carry": {
@@ -2421,16 +2459,21 @@
           }
         },
         "objectWeight": {
-          "label": "assessments.snook.components.lift.objectweight.label"
+          "label": "assessments.snook.components.lift.objectweight.label",
+          "values": {}
         },
         "horizontalDistance": {
-          "label": "assessments.snook.components.push.horizontaldistance.label"
+          "label": "assessments.snook.components.push.horizontaldistance.label",
+          "values": {}
         },
         "frequency": {
-          "label": "assessments.niosh.components.main.frequency.label"
+          "label": "assessments.niosh.components.main.frequency.label",
+          "values": {}
         },
         "verticalHandHeight": {
-          "label": "assessments.snook.components.push.verticalhandheight.desc"
+          "label": "assessments.snook.components.push.verticalhandheight.label",
+          "values": {},
+          "desc": "assessments.snook.components.push.verticalhandheight.desc"
         }
       }
     }
@@ -2466,7 +2509,8 @@
     "components": {
       "Main": {
         "Score": {
-          "label": "assessments.training.components.main.score.label"
+          "label": "assessments.training.components.main.score.label",
+          "values": {}
         }
       }
     }
@@ -3140,10 +3184,12 @@
     "components": {
       "Lift": {
         "LoadWeight": {
-          "label": "assessments.snook.components.lift.objectweight.label"
+          "label": "assessments.snook.components.lift.objectweight.label",
+          "values": {}
         },
         "Frequency": {
-          "label": "assessments.niosh.components.main.frequency.label"
+          "label": "assessments.niosh.components.main.frequency.label",
+          "values": {}
         },
         "PosturalConstraints": {
           "label": "assessments.mac.components.lift.posturalconstraints.label",
@@ -3301,10 +3347,12 @@
       },
       "Carry": {
         "LoadWeight": {
-          "label": "assessments.snook.components.lift.objectweight.label"
+          "label": "assessments.snook.components.lift.objectweight.label",
+          "values": {}
         },
         "Frequency": {
-          "label": "assessments.niosh.components.main.frequency.label"
+          "label": "assessments.niosh.components.main.frequency.label",
+          "values": {}
         },
         "AsymmetricalTorso": {
           "label": "assessments.mac.components.carry.asymmetricaltorso.label",
