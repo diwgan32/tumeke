@@ -469,7 +469,8 @@
           }
         }
       }
-    }
+    },
+    "enumLabels": {}
   },
   "reba": {
     "results": {
@@ -955,7 +956,8 @@
           }
         }
       }
-    }
+    },
+    "enumLabels": {}
   },
   "niosh": {
     "results": {
@@ -1110,7 +1112,8 @@
               "label": "general.good"
             },
             "1": {
-              "label": "general.fair"
+              "label": "general.fair",
+              "warning": "assessments.niosh.components.main.coupling.value-1.warning"
             },
             "2": {
               "label": "general.poor",
@@ -1125,7 +1128,8 @@
               "label": "assessments.niosh.components.main.liftingduration.value-0.label"
             },
             "1": {
-              "label": "assessments.niosh.components.main.liftingduration.value-1.label"
+              "label": "assessments.niosh.components.main.liftingduration.value-1.label",
+              "warning": "assessments.niosh.components.main.liftingduration.value-1.warning"
             },
             "2": {
               "label": "assessments.niosh.components.main.liftingduration.value-2.label",
@@ -1141,6 +1145,26 @@
           "label": "assessments.niosh.components.main.shortrest.label",
           "values": {}
         }
+      }
+    },
+    "enumLabels": {
+      "CouplingStatus-GOOD": {
+        "label": "general.good"
+      },
+      "CouplingStatus-FAIR": {
+        "label": "general.fair"
+      },
+      "CouplingStatus-POOR": {
+        "label": "general.poor"
+      },
+      "DurationStatus-SHORT": {
+        "label": "assessments.niosh.components.main.liftingduration.value-0.label"
+      },
+      "DurationStatus-MODERATE": {
+        "label": "assessments.niosh.enumlabels.durationstatus-moderate.label"
+      },
+      "DurationStatus-LONG": {
+        "label": "assessments.niosh.enumlabels.durationstatus-long.label"
       }
     }
   },
@@ -1473,6 +1497,32 @@
             }
           }
         }
+      }
+    },
+    "enumLabels": {
+      "Multipliers-durationPerExertionLeft": {
+        "label": "assessments.handstrain.enumlabels.multipliers-durationperexertionleft.label"
+      },
+      "Multipliers-durationPerExertionRight": {
+        "label": "assessments.handstrain.enumlabels.multipliers-durationperexertionright.label"
+      },
+      "Multipliers-flexionAngleLeft": {
+        "label": "assessments.handstrain.enumlabels.multipliers-flexionangleleft.label"
+      },
+      "Multipliers-flexionAngleRight": {
+        "label": "assessments.handstrain.enumlabels.multipliers-flexionangleright.label"
+      },
+      "Multipliers-extensionAngleLeft": {
+        "label": "assessments.handstrain.enumlabels.multipliers-flexionangleleft.label"
+      },
+      "Multipliers-extensionAngleRight": {
+        "label": "assessments.handstrain.enumlabels.multipliers-flexionangleright.label"
+      },
+      "Multipliers-effortsLeft": {
+        "label": "assessments.handstrain.enumlabels.multipliers-effortsleft.label"
+      },
+      "Multipliers-effortsRight": {
+        "label": "assessments.handstrain.enumlabels.multipliers-effortsright.label"
       }
     }
   },
@@ -2476,6 +2526,32 @@
           "desc": "assessments.snook.components.push.verticalhandheight.desc"
         }
       }
+    },
+    "enumLabels": {
+      "CouplingStatus-GOOD": {
+        "label": "assessments.snook.enumlabels.couplingstatus-good.label"
+      },
+      "CouplingStatus-POOR": {
+        "label": "assessments.snook.enumlabels.couplingstatus-poor.label"
+      },
+      "CouplingStatus-WITHOUT": {
+        "label": "assessments.snook.enumlabels.couplingstatus-without.label"
+      },
+      "InputId-1": {
+        "label": "assessments.snook.component.lift.label"
+      },
+      "InputId-2": {
+        "label": "assessments.snook.component.lower.label"
+      },
+      "InputId-3": {
+        "label": "assessments.snook.component.push.label"
+      },
+      "InputId-4": {
+        "label": "assessments.snook.component.pull.label"
+      },
+      "InputId-5": {
+        "label": "assessments.snook.component.carry.label"
+      }
     }
   },
   "training": {
@@ -2513,11 +2589,16 @@
           "values": {}
         }
       }
-    }
+    },
+    "enumLabels": {}
   },
   "rosa": {
     "results": {
       "Overall": {
+        "label": "assessments.rula.results.overall.label",
+        "values": {}
+      },
+      "Score": {
         "label": "assessments.rula.results.overall.label",
         "values": {}
       },
@@ -2591,7 +2672,8 @@
             },
             "1": {
               "label": "general.yes",
-              "warning": "assessments.rosa.components.seatpanheightanddepth.chairinsufficientspace.value-1.warning"
+              "warning": "assessments.rosa.components.seatpanheightanddepth.chairinsufficientspace.value-1.warning",
+              "desc": "assessments.rosa.components.seatpanheightanddepth.chairinsufficientspace.value-1.desc"
             }
           }
         },
@@ -2610,20 +2692,20 @@
           "label": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.label",
           "values": {
             "1": {
-              "label": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-1.imagedesc",
+              "label": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-1.label",
               "desc": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-1.desc",
               "fullDesc": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-1.fulldesc",
               "imageDesc": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-1.imagedesc"
             },
             "2": {
-              "label": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-2.imagedesc",
+              "label": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-2.label",
               "warning": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-2.warning",
               "desc": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-2.desc",
               "fullDesc": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-2.fulldesc",
               "imageDesc": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-2.imagedesc"
             },
             "2.1": {
-              "label": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-2_1.imagedesc",
+              "label": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-2_1.label",
               "warning": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-2_1.warning",
               "desc": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-2_1.desc",
               "fullDesc": "assessments.rosa.components.seatpanheightanddepth.chairpandepth.value-2_1.fulldesc",
@@ -3097,7 +3179,8 @@
           }
         }
       }
-    }
+    },
+    "enumLabels": {}
   },
   "mac": {
     "results": {
@@ -3112,10 +3195,10 @@
       "LiftScore": {
         "label": "assessments.mac.results.liftscore.label",
         "values": {
-          "[None, 0]": {
+          "[None, -0.0001]": {
             "label": "general.unacceptable"
           },
-          "[0, 5]": {
+          "[-0.0001, 5]": {
             "label": "general.acceptable"
           },
           "[5, 10]": {
@@ -3132,10 +3215,10 @@
       "CarryScore": {
         "label": "assessments.mac.results.carryscore.label",
         "values": {
-          "[None, 0]": {
+          "[None, -0.0001]": {
             "label": "general.unacceptable"
           },
-          "[0, 5]": {
+          "[-0.0001, 5]": {
             "label": "general.acceptable"
           },
           "[5, 10]": {
@@ -3152,10 +3235,10 @@
       "TeamScore": {
         "label": "assessments.mac.results.teamscore.label",
         "values": {
-          "[None, 0]": {
+          "[None, -0.0001]": {
             "label": "general.unacceptable"
           },
-          "[0, 5]": {
+          "[-0.0001, 5]": {
             "label": "general.acceptable"
           },
           "[5, 10]": {
@@ -3341,6 +3424,10 @@
             "2": {
               "label": "assessments.mac.components.lift.torsotwisting.value-2.label",
               "warning": "assessments.niosh.results.li.values.1-3.label"
+            },
+            "1.1": {
+              "label": "assessments.mac.components.lift.torsotwisting.value-1_1.label",
+              "warning": "assessments.mac.components.lift.posturalconstraints.value-1.warning"
             }
           }
         }
@@ -3537,18 +3624,34 @@
           "label": "assessments.mac.components.team.loadweight.label",
           "values": {
             "0": {
-              "label": "assessments.mac.components.team.loadweight.value-0.label"
+              "label": "assessments.mac.components.team.loadweight.value-0.label",
+              "unitsLabel": {
+                "0": "assessments.mac.components.team.loadweight.value-0.label-0",
+                "1": "assessments.mac.components.team.loadweight.value-0.label"
+              }
             },
             "4": {
               "label": "assessments.mac.components.team.loadweight.value-4.label",
+              "unitsLabel": {
+                "0": "assessments.mac.components.team.loadweight.value-4.label-0",
+                "1": "assessments.mac.components.team.loadweight.value-4.label"
+              },
               "warning": "assessments.niosh.results.li.values.1-3.label"
             },
             "6": {
               "label": "assessments.mac.components.team.loadweight.value-6.label",
+              "unitsLabel": {
+                "0": "assessments.mac.components.team.loadweight.value-6.label-0",
+                "1": "assessments.mac.components.team.loadweight.value-6.label"
+              },
               "warning": "assessments.niosh.results.li.values.3-none.label"
             },
             "10": {
               "label": "assessments.mac.components.carry.obstacles.value-3.label",
+              "unitsLabel": {
+                "0": "assessments.mac.components.carry.obstacles.value-3.label",
+                "1": "assessments.mac.components.carry.obstacles.value-3.label"
+              },
               "warning": "assessments.mac.components.team.loadweight.value-10.warning"
             }
           }
@@ -3748,6 +3851,17 @@
             }
           }
         }
+      }
+    },
+    "enumLabels": {
+      "InputId-1": {
+        "label": "assessments.mac.enumlabels.inputid-1.label"
+      },
+      "InputId-2": {
+        "label": "assessments.mac.enumlabels.inputid-2.label"
+      },
+      "InputId-3": {
+        "label": "assessments.mac.enumlabels.inputid-3.label"
       }
     }
   }

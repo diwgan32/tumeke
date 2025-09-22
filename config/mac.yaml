@@ -39,14 +39,14 @@ Constants:
 Enum:
   InputId:
     1: 
-      Value: 1
-      Label: Lift
+      Value: Lift
+      Label: Lifting operations
     2:
-      Value: 2
-      Label: Carry
+      Value: Carry
+      Label: Carrying operations
     3:
-      Value: 3
-      Label: Team
+      Value: Team
+      Label: Team handling operations
 
 OverallScoreValue: OverallScore
 
@@ -65,10 +65,10 @@ ResultValues:
   LiftScore:
     Label: Lift Score
     Values:
-      "[None, 0]":
+      "[None, -0.0001]":
         Label: Unacceptable
         Score: *unsafe
-      "[0, 5]":
+      "[-0.0001, 5]":
         Label: Acceptable
         Score: *acceptable
       "[5, 10]":
@@ -83,10 +83,10 @@ ResultValues:
   CarryScore:
     Label: Carry Score
     Values:
-      "[None, 0]":
+      "[None, -0.0001]":
         Label: Unacceptable
         Score: *unsafe
-      "[0, 5]":
+      "[-0.0001, 5]":
         Label: Acceptable
         Score: *acceptable
       "[5, 10]":
@@ -101,10 +101,10 @@ ResultValues:
   TeamScore:
     Label: Team Score
     Values:
-      "[None, 0]":
+      "[None, -0.0001]":
         Label: Unacceptable
         Score: *unsafe
-      "[0, 5]":
+      "[-0.0001, 5]":
         Label: Acceptable
         Score: *acceptable
       "[5, 10]":
@@ -125,7 +125,7 @@ RiskComponents:
       MaxInput: ~
       Units: ~
       Label: Hand distance from the lower back
-      Image: ~
+      Image: bodyParts/HandDistance.png
       Values:
         0:
           Label: Upper arms vertical and torso upright
@@ -157,7 +157,7 @@ RiskComponents:
       MaxInput: ~
       Units: ~
       Label: Vertical lift zones
-      Image: ~
+      Image: bodyParts/VerticalLiftZones.png
       Values:
         0:
           Label: Hands between knee and elbow height
@@ -184,7 +184,7 @@ RiskComponents:
       MaxInput: ~
       Units: angle
       Label: Torso twisting and sideways bending
-      Image: ~
+      Image: bodyParts/TorsoTwisting.png
       Values:
         0:
           Label: Little or no torso twisting or sideways bending
@@ -193,7 +193,7 @@ RiskComponents:
           Label: Torso twisted
           Warning: Low risk
           Score: *low
-        1:
+        1.1:
           Label: Torso bent sideways
           Warning: Low risk
           Score: *low
@@ -209,7 +209,7 @@ RiskComponents:
       MaxInput: ~
       Units: [ft, m]
       Label: Carry distance
-      Image: ~
+      Image: additionalInputs/CarryDistance.png
       Values:
         0:
           Label: Between 2 m and 4 m
@@ -229,7 +229,7 @@ RiskComponents:
       MaxInput: ~
       Units: ~
       Label: Hand distance from the lower back
-      Image: ~
+      Image: bodyParts/HandDistance.png
       Values:
         0:
           Label: Upper arms vertical and torso upright
@@ -251,7 +251,7 @@ RiskComponents:
       MaxInput: ~
       Units: ~
       Label: Vertical lift zones
-      Image: ~
+      Image: bodyParts/VerticalLiftZones.png
       Values:
         0:
           Label: Hands between knee and elbow height
@@ -270,7 +270,7 @@ RiskComponents:
       MaxInput: ~
       Units: angle
       Label: Torso twisting and sideways bending
-      Image: ~
+      Image: bodyParts/TorsoTwisting.png
       Values:
         0:
           Label: Little or no torso twisting or sideways bending
@@ -306,7 +306,7 @@ AdditionalInputs:
       MaxInput: 100
       Units: [lbs, kgs]
       Label: Object Weight
-      Image: ~
+      Image: additionalInputs/ForceLoad.png
       Values: ~
     Frequency: &frequency
       Type: input
@@ -322,7 +322,7 @@ AdditionalInputs:
       MaxInput: ~
       Units: ~
       Label: Postural constraints
-      Image: ~
+      Image: additionalInputs/PosturalConstraints.png
       Values:
         0:
           Label: No postural constraints
@@ -341,7 +341,7 @@ AdditionalInputs:
       MaxInput: ~
       Units: ~
       Label: Grip on load
-      Image: ~
+      Image: additionalInputs/Coupling.png
       Values:
         0:
           Label: Good grip
@@ -380,7 +380,7 @@ AdditionalInputs:
       MaxInput: ~
       Units: ~
       Label: Floor surface
-      Image: ~
+      Image: additionalInputs/Floor.png
       Values:
         0:
           Label: Non-slip, dry, clean, firm, level and undamaged
@@ -399,7 +399,7 @@ AdditionalInputs:
       MaxInput: ~
       Units: ~
       Label: Environmental factors
-      Image: ~
+      Image: additionalInputs/Environment.png
       Values:
         0:
           Label: No factors
@@ -421,7 +421,7 @@ AdditionalInputs:
       MaxInput: ~
       Units: ~
       Label: Asymmetrical torso or load
-      Image: ~
+      Image: additionalInputs/AssymetricalTorso.png
       Values:
         0:
           Label: Load and hands symmetrical in front of the torso
@@ -460,7 +460,7 @@ AdditionalInputs:
       MaxInput: ~
       Units: ~
       Label: Obstacles on route
-      Image: ~
+      Image: additionalInputs/Obstacles.png
       Values:
         0:
           Label: No obstacles and carry route flat or slopes gently
@@ -479,9 +479,9 @@ AdditionalInputs:
       Type: select
       Base: 0
       MaxInput: ~
-      Units: ~
+      Units: [lbs, kgs]
       Label: Load weight
-      Image: ~
+      Image: additionalInputs/AverageLoad.png
       Values:
         0:
           Label: 2 people < 35 kg, 3 people < 55 kg, 4 people < 75 kg
@@ -541,7 +541,7 @@ AdditionalInputs:
       MaxInput: ~
       Units: ~
       Label: Communication, co-ordination and control
-      Image: ~
+      Image: additionalInputs/Communication.png
       Values:
         0:
           Label: Good communication, co-ordination and control
@@ -710,3 +710,10 @@ Form:
         Component: TeamScore
         Group: "0"
         Label: MSD risk score
+  CanGenerate:
+    Report: true
+    Worksheet: true
+    Powerpoint: true
+    Csv: true
+    AIRecommendations: true
+    Project: true

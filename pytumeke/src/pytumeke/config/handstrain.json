@@ -359,7 +359,7 @@
         "MaxInput": 50,
         "Units": "sec./exertion",
         "Label": "Duration per exertion (left)",
-        "Image": null,
+        "Image": "bodyParts/wrist.png",
         "Values": {
           "[0, 10]": {
             "Label": "Good",
@@ -392,7 +392,7 @@
         "MaxInput": 50,
         "Units": "sec./exertion",
         "Label": "Duration per exertion (right)",
-        "Image": null,
+        "Image": "bodyParts/wrist.png",
         "Values": {
           "[0, 10]": {
             "Label": "Good",
@@ -425,7 +425,7 @@
         "MaxInput": 50,
         "Units": "degrees",
         "Label": "Wrist posture angle (left)",
-        "Image": null,
+        "Image": "bodyParts/wrist.png",
         "Values": {
           "[0, 10]": {
             "Label": "Good",
@@ -458,7 +458,7 @@
         "MaxInput": 50,
         "Units": "degrees",
         "Label": "Wrist posture angle (right)",
-        "Image": null,
+        "Image": "bodyParts/wrist.png",
         "Values": {
           "[0, 10]": {
             "Label": "Good",
@@ -491,7 +491,7 @@
         "MaxInput": 50,
         "Units": "degrees",
         "Label": "Extension Wrist angle (left)",
-        "Image": null,
+        "Image": "bodyParts/wrist.png",
         "Values": {
           "[0, 10]": {
             "Label": "Good",
@@ -524,7 +524,7 @@
         "MaxInput": 50,
         "Units": "degrees",
         "Label": "Extension Wrist angle (right)",
-        "Image": null,
+        "Image": "bodyParts/wrist.png",
         "Values": {
           "[0, 10]": {
             "Label": "Good",
@@ -557,7 +557,7 @@
         "MaxInput": 50,
         "Units": "efforts/min",
         "Label": "Efforts per hand (left)",
-        "Image": null,
+        "Image": "bodyParts/wrist.png",
         "Values": {
           "[0, 10]": {
             "Label": "Good",
@@ -590,7 +590,7 @@
         "MaxInput": 50,
         "Units": "efforts/min",
         "Label": "Efforts per hand (right)",
-        "Image": null,
+        "Image": "bodyParts/wrist.png",
         "Values": {
           "[0, 10]": {
             "Label": "Good",
@@ -843,6 +843,14 @@
           "Group": "1"
         }
       }
+    },
+    "CanGenerate": {
+      "Report": true,
+      "Worksheet": true,
+      "Powerpoint": true,
+      "Csv": true,
+      "AIRecommendations": false,
+      "Project": true
     }
   }
 }

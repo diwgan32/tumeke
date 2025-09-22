@@ -453,6 +453,7 @@
           },
           "1": {
             "Label": "Fair",
+            "Warning": "Fair lifting duration",
             "Score": {
               "Value": "Fair",
               "Color": "rgba(234, 130, 130, 1.0)"
@@ -485,6 +486,7 @@
           },
           "1": {
             "Label": "Moderate (1-2 hours)",
+            "Warning": "Moderate lifting duration",
             "Score": {
               "Value": "Fair",
               "Color": "rgba(234, 130, 130, 1.0)"
@@ -642,6 +644,14 @@
           "Group": "0"
         }
       }
+    },
+    "CanGenerate": {
+      "Report": true,
+      "Worksheet": true,
+      "Powerpoint": true,
+      "Csv": true,
+      "AIRecommendations": false,
+      "Project": true
     }
   }
 }

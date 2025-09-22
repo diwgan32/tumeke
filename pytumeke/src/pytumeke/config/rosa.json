@@ -49,7 +49,7 @@
         "ChairArmrests-1": "armrests-elbow-supported",
         "ChairArmrests-2": "armrests-shoulders-shrugged",
         "ChairArmrestHardDamaged": "armrest-damaged",
-        "ChairArmrestTooWide": "armrest-to-wide",
+        "ChairArmrestTooWide": "armrest-too-wide",
         "ChairArmrestNonAdjustable": "armrest-non-adjustable",
         "ChairBackSupport": "back-support",
         "ChairBackSupport-1": "back-support-adequate",
@@ -57,7 +57,7 @@
         "ChairBackSupport-2.1": "back-support-angled-too-far",
         "ChairBackSupport-2.2": "back-support-no-back-support",
         "ChairNoBackSupport": "back-support-not-found'",
-        "ChairBackSupportSurfaceTooHigh": "back-support-surface-to-high",
+        "ChairBackSupportSurfaceTooHigh": "back-support-surface-too-high",
         "ChairBackSupportNonAdjustable": "back-support-surface-non-adjustable",
         "MonitorDistance": "monitor-distance",
         "MonitorDistance-1": "monitor-screen-at-eye",
@@ -110,12 +110,77 @@
     }
   },
   "Enum": {},
-  "OverallScoreValue": "Overall",
+  "OverallScoreValue": "Score",
   "Metadata": {
     "supportDepth": "number"
   },
   "ResultValues": {
     "Overall": {
+      "Label": "Overall Score",
+      "Values": {
+        "1": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "2": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "3": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "4": {
+          "Score": {
+            "Value": "Acceptable",
+            "Color": "rgba(109, 208, 163, 1.0)"
+          }
+        },
+        "5": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "6": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "7": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "8": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "9": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        },
+        "10": {
+          "Score": {
+            "Value": "High",
+            "Color": "rgba(184, 15, 10, 1.0)"
+          }
+        }
+      }
+    },
+    "Score": {
       "Label": "Overall Score",
       "Values": {
         "1": {
@@ -539,6 +604,7 @@
           "1": {
             "Label": "Yes",
             "Warning": "No ability to cross legs",
+            "Desc": "Not possible to cross legs",
             "Solution": "Choose a suitable table",
             "Score": {
               "Value": "Medium",
@@ -772,7 +838,7 @@
         "Base": 0,
         "MaxInput": null,
         "Units": null,
-        "Label": "Armrests non adjustable",
+        "Label": "Non-adjustable armrest",
         "Image": null,
         "Solution": "Change the chair",
         "Values": {
@@ -1654,6 +1720,7 @@
           "1": {
             "Label": "Yes",
             "Warning": "No ability to cross legs",
+            "Desc": "Not possible to cross legs",
             "Solution": "Choose a suitable table",
             "Score": {
               "Value": "Medium",
@@ -1834,7 +1901,7 @@
         "Base": 0,
         "MaxInput": null,
         "Units": null,
-        "Label": "Armrests non adjustable",
+        "Label": "Non-adjustable armrest",
         "Image": null,
         "Solution": "Change the chair",
         "Values": {

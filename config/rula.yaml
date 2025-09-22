@@ -172,17 +172,21 @@ RiskComponents:
         1:
           Label: 0° - 10° forward
           Image: angleIcons/rulaReba/Neck_0_10_deg@2x.png
+          Score: *acceptable
         2:
           Label: 10° - 20° forward
           Image: angleIcons/rulaReba/Neck_10_20_deg@2x.png
+          Score: *low
         3:
           Label: 20°+ forward
           Image: angleIcons/rulaReba/Neck_20+_deg@2x.png
           Warning: Neck bent forward too much
+          Score: *medium
         4:
           Label: 0°+ backward
           Image: angleIcons/rulaReba/Neck_in_extension@2x.png
           Warning: Neck bent backward
+          Score: *high
     SideBend:
       Type: checkbox
       Base: 0
@@ -195,8 +199,10 @@ RiskComponents:
           Label: Yes
           Image: angleIcons/rulaReba/Neck_side_bending@2x.png
           Warning: Neck side bending
+          Score: *medium
         0:
           Label: No
+          Score: *acceptable
     Twist:
       Type: checkbox
       Base: 0
@@ -209,8 +215,10 @@ RiskComponents:
           Label: Yes
           Image: angleIcons/rulaReba/Neck_Twisted@2x.png
           Warning: Neck twisted
+          Score: *medium
         0:
           Label: No
+          Score: *acceptable
 
   Upper Arm:
     Score:
@@ -224,45 +232,53 @@ RiskComponents:
         1:
           Label: 20° in front - 20° behind
           Image: angleIcons/rulaReba/UpperArm_20_20_deg@2x.png
+          Score: *acceptable
         2:
           Label: 20°+ behind OR 20° - 45° in front
           Image: angleIcons/rulaReba/UpperArm_20_deg_extension@2x.png
           Image2: angleIcons/rulaReba/UpperArm_20_45_deg@2x.png
+          Score: *low
         3:
           Label: 45° - 90° in front
           Image: angleIcons/rulaReba/UpperArm_45_90_deg@2x.png
           Warning: Upper arm raised high
+          Score: *medium
         4:
           Label: 90°+ in front
           Image: angleIcons/rulaReba/UpperArm_90+_deg@2x.png
           Warning: Upper arm raised too high
+          Score: *high
     Abducted:
       Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
       Label: Abducted
-      Image: ~
+      Image: bodyParts/shoulder.png
       Values:
         1:
           Label: Yes
           Image: angleIcons/rulaReba/UpperArm_abducted@2x.png
           Warning: Shoulder abducted
+          Score: *medium
         0:
           Label: No
+          Score: *acceptable
     ShoulderRaised:
       Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
       Label: Shoulder raised
-      Image: ~
+      Image: bodyParts/shoulder.png
       Values:
         1:
           Label: Yes
           Image: angleIcons/rulaReba/UpperArm_shoulder_raised@2x.png
+          Score: *medium
         0:
           Label: No
+          Score: *acceptable
 
   Trunk:
     Score:
@@ -276,45 +292,53 @@ RiskComponents:
         1:
           Label: 0°
           Image: angleIcons/rulaReba/Trunk_0_deg@2x.png
+          Score: *acceptable
         2:
           Label: 0° - 20° forward
           Image: angleIcons/rulaReba/Trunk_0_20_deg@2x.png
+          Score: *low
         3:
           Label: 20° - 60° forward
           Image: angleIcons/rulaReba/Trunk_20_60_deg@2x.png
           Warning: Trunk bent forward too much
+          Score: *medium
         4:
           Label: 60°+ forward
           Image: angleIcons/rulaReba/Trunk_60+_deg@2x.png
           Warning: Trunk bent forward too much
+          Score: *high
     SideBend:
       Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
       Label: Side bending
-      Image: ~
+      Image: bodyParts/back.png
       Values:
         1:
           Label: Yes
           Image: angleIcons/rulaReba/Trunk_side_bending@2x.png
           Warning: Trunk side bending
+          Score: *medium
         0:
           Label: No
+          Score: *acceptable
     Twist:
       Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
       Label: Twisted
-      Image: ~
+      Image: bodyParts/back.png
       Values:
         1:
           Label: Yes
           Image: angleIcons/rulaReba/Trunk_Twisted@2x.png
           Warning: Trunk twisted
+          Score: *medium
         0:
           Label: No
+          Score: *acceptable
 
   Lower Arm:
     Score:
@@ -328,22 +352,26 @@ RiskComponents:
         1:
           Label: 60° - 100°
           Image: angleIcons/rulaReba/LowerArm_60_100_deg@2x.png
+          Score: *acceptable
         2:
           Label: 0° - 60° OR 100°+
           Image: angleIcons/rulaReba/LowerArm_0_60_deg@2x.png
           Image2: angleIcons/rulaReba/LowerArm_100+_deg@2x.png
+          Score: *medium
     Midline:
       Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
       Label: Elbow bent from side of body
-      Image: ~
+      Image: bodyParts/arm.png
       Values:
         1:
           Label: Yes
+          Score: *medium
         0:
           Label: No
+          Score: *acceptable
 
   Wrist:
     Score:
@@ -357,42 +385,49 @@ RiskComponents:
         1:
           Label: 0°
           Image: angleIcons/rulaReba/Wrist_0_deg@2x.png
+          Score: *acceptable
         2:
           Label: 15° up - 15° down
           Image: angleIcons/rulaReba/Wrist_15_15_Deg@2x.png
           Warning: Wrist bent
+          Score: *low
         3:
           Label: 15°+ up OR 15°+ down
           Image: angleIcons/rulaReba/Wrist_15+Up_Deg@2x.png
           Image2: angleIcons/rulaReba/Wrist_15+Down_Deg@2x.png
           Warning: Wrist far too bent
+          Score: *medium
     Twist:
       Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
       Label: Twisted
-      Image: ~
+      Image: bodyParts/wrist.png
       Values:
         1:
           Label: Yes
           Image: angleIcons/rulaReba/Wrist_twisted_palm_down@2x.png
           Image2: angleIcons/rulaReba/Wrist_twisted_palm_up@2x.png
+          Score: *medium
         0:
           Label: No
+          Score: *acceptable
     Midline:
       Type: checkbox
       Base: 0
       MaxInput: ~
       Units: ~
       Label: Wrist bent from midline
-      Image: ~
+      Image: bodyParts/wrist.png
       Values:
         1:
           Label: Yes
           Image: angleIcons/rulaReba/Wrist_bent_from_midline@2x.png
+          Score: *medium
         0:
           Label: No
+          Score: *acceptable
 
 AdditionalInputs:
   Force:
@@ -464,7 +499,7 @@ AdditionalInputs:
   Misc:
     LegsSupported:
       Type: checkbox
-      Base: 0
+      Base: 1
       MaxInput: ~
       Units: ~
       Label: Legs Supported
@@ -472,10 +507,10 @@ AdditionalInputs:
       Values:
         1:
           Label: Yes
-          Score: *high
+          Score: *acceptable
         0:
           Label: No
-          Score: *acceptable
+          Score: *high
   Muscle Use:
     Arm:
       Type: select
@@ -644,3 +679,10 @@ Form:
         Component: Overall
         Group: "0"
         Label: MSD risk score
+  CanGenerate:
+    Report: true
+    Worksheet: true
+    Powerpoint: true
+    Csv: true
+    AIRecommendations: true
+    Project: true

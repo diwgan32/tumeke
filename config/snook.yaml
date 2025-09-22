@@ -49,19 +49,19 @@ Enum:
 
   InputId:
     1: 
-      Value: 1
+      Value: Lift
       Label: Lift
     2:
-      Value: 2
+      Value: Lower
       Label: Lower
     3:
-      Value: 3
+      Value: Push
       Label: Push
     4:
-      Value: 4
+      Value: Pull
       Label: Pull
     5:
-      Value: 5
+      Value: Carry
       Label: Carry
 
 OverallScoreValue: mal
@@ -879,3 +879,9 @@ Form:
         Input: Carry
         Component: malePercentage
         Group: "0"
+  CanGenerate:
+    Report: true
+    Worksheet: false
+    Powerpoint: true
+    Csv: true
+    AIRecommendations: false

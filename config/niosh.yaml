@@ -321,6 +321,7 @@ AdditionalInputs:
           Score: *acceptable
         1:
           Label: Fair
+          Warning: Fair lifting duration
           Score: *low
         2:
           Label: Poor
@@ -339,6 +340,7 @@ AdditionalInputs:
           Score: *acceptable
         1:
           Label: Moderate (1-2 hours)
+          Warning: Moderate lifting duration
           Score: *low
         2:
           Label: Long (2-8 hours)
@@ -449,3 +451,10 @@ Form:
         Input: ""
         Component: rwl
         Group: "0"
+  CanGenerate:
+    Report: true
+    Worksheet: true
+    Powerpoint: true
+    Csv: true
+    AIRecommendations: false
+    Project: true

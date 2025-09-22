@@ -54,7 +54,7 @@ Constants:
       "ChairArmrests-1": "armrests-elbow-supported"
       "ChairArmrests-2": "armrests-shoulders-shrugged"
       "ChairArmrestHardDamaged": "armrest-damaged"
-      "ChairArmrestTooWide": "armrest-to-wide"
+      "ChairArmrestTooWide": "armrest-too-wide"
       "ChairArmrestNonAdjustable": "armrest-non-adjustable"
       "ChairBackSupport": "back-support"
       "ChairBackSupport-1": "back-support-adequate"
@@ -62,7 +62,7 @@ Constants:
       "ChairBackSupport-2.1": "back-support-angled-too-far"
       "ChairBackSupport-2.2": "back-support-no-back-support"
       "ChairNoBackSupport": "back-support-not-found'"
-      "ChairBackSupportSurfaceTooHigh": "back-support-surface-to-high"
+      "ChairBackSupportSurfaceTooHigh": "back-support-surface-too-high"
       "ChairBackSupportNonAdjustable": "back-support-surface-non-adjustable"
       "MonitorDistance": "monitor-distance"
       "MonitorDistance-1": "monitor-screen-at-eye"
@@ -114,13 +114,13 @@ Constants:
 
 Enum: {}
 
-OverallScoreValue: Overall
+OverallScoreValue: Score
 
 Metadata:
   supportDepth: "number"
 
 ResultValues:
-  Overall:
+  Overall: &overall
     Label: Overall Score
     Values:
       1:
@@ -143,6 +143,7 @@ ResultValues:
         Score: *high
       10:
         Score: *high
+  Score: *overall
   SeatPanHeightAndDepth:
     Label: Seat pan height and depth
     Values:
@@ -292,6 +293,7 @@ RiskComponents:
         1:
           Label: Yes
           Warning: No ability to cross legs
+          Desc: Not possible to cross legs
           Solution: Choose a suitable table
           Score: *medium
         0:
@@ -440,7 +442,7 @@ RiskComponents:
       Base: 0
       MaxInput: ~
       Units: ~
-      Label: Armrests non adjustable
+      Label: Non-adjustable armrest
       Image: ~
       Solution: Change the chair
       Values:

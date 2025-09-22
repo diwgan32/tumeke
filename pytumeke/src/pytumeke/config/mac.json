@@ -39,16 +39,16 @@
   "Enum": {
     "InputId": {
       "1": {
-        "Value": 1,
-        "Label": "Lift"
+        "Value": "Lift",
+        "Label": "Lifting operations"
       },
       "2": {
-        "Value": 2,
-        "Label": "Carry"
+        "Value": "Carry",
+        "Label": "Carrying operations"
       },
       "3": {
-        "Value": 3,
-        "Label": "Team"
+        "Value": "Team",
+        "Label": "Team handling operations"
       }
     }
   },
@@ -74,14 +74,14 @@
     "LiftScore": {
       "Label": "Lift Score",
       "Values": {
-        "[None, 0]": {
+        "[None, -0.0001]": {
           "Label": "Unacceptable",
           "Score": {
             "Value": "Unacceptable",
             "Color": "rgba(133, 4, 0, 1.0)"
           }
         },
-        "[0, 5]": {
+        "[-0.0001, 5]": {
           "Label": "Acceptable",
           "Score": {
             "Value": "Acceptable",
@@ -114,14 +114,14 @@
     "CarryScore": {
       "Label": "Carry Score",
       "Values": {
-        "[None, 0]": {
+        "[None, -0.0001]": {
           "Label": "Unacceptable",
           "Score": {
             "Value": "Unacceptable",
             "Color": "rgba(133, 4, 0, 1.0)"
           }
         },
-        "[0, 5]": {
+        "[-0.0001, 5]": {
           "Label": "Acceptable",
           "Score": {
             "Value": "Acceptable",
@@ -154,14 +154,14 @@
     "TeamScore": {
       "Label": "Team Score",
       "Values": {
-        "[None, 0]": {
+        "[None, -0.0001]": {
           "Label": "Unacceptable",
           "Score": {
             "Value": "Unacceptable",
             "Color": "rgba(133, 4, 0, 1.0)"
           }
         },
-        "[0, 5]": {
+        "[-0.0001, 5]": {
           "Label": "Acceptable",
           "Score": {
             "Value": "Acceptable",
@@ -200,7 +200,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Hand distance from the lower back",
-        "Image": null,
+        "Image": "bodyParts/HandDistance.png",
         "Values": {
           "0": {
             "Label": "Upper arms vertical and torso upright",
@@ -254,7 +254,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Vertical lift zones",
-        "Image": null,
+        "Image": "bodyParts/VerticalLiftZones.png",
         "Values": {
           "0": {
             "Label": "Hands between knee and elbow height",
@@ -303,7 +303,7 @@
         "MaxInput": null,
         "Units": "angle",
         "Label": "Torso twisting and sideways bending",
-        "Image": null,
+        "Image": "bodyParts/TorsoTwisting.png",
         "Values": {
           "0": {
             "Label": "Little or no torso twisting or sideways bending",
@@ -320,7 +320,7 @@
               "Color": "rgba(241, 196, 15, 1.0)"
             }
           },
-          "1": {
+          "1.1": {
             "Label": "Torso bent sideways",
             "Warning": "Low risk",
             "Score": {
@@ -346,7 +346,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Hand distance from the lower back",
-        "Image": null,
+        "Image": "bodyParts/HandDistance.png",
         "Values": {
           "0": {
             "Label": "Upper arms vertical and torso upright",
@@ -403,7 +403,7 @@
           "m"
         ],
         "Label": "Carry distance",
-        "Image": null,
+        "Image": "additionalInputs/CarryDistance.png",
         "Values": {
           "0": {
             "Label": "Between 2 m and 4 m",
@@ -438,7 +438,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Hand distance from the lower back",
-        "Image": null,
+        "Image": "bodyParts/HandDistance.png",
         "Values": {
           "0": {
             "Label": "Upper arms vertical and torso upright",
@@ -474,7 +474,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Vertical lift zones",
-        "Image": null,
+        "Image": "bodyParts/VerticalLiftZones.png",
         "Values": {
           "0": {
             "Label": "Hands between knee and elbow height",
@@ -507,7 +507,7 @@
         "MaxInput": null,
         "Units": "angle",
         "Label": "Torso twisting and sideways bending",
-        "Image": null,
+        "Image": "bodyParts/TorsoTwisting.png",
         "Values": {
           "0": {
             "Label": "Little or no torso twisting or sideways bending",
@@ -543,7 +543,7 @@
           "m"
         ],
         "Label": "Carry distance",
-        "Image": null,
+        "Image": "additionalInputs/CarryDistance.png",
         "Values": {
           "0": {
             "Label": "Between 2 m and 4 m",
@@ -583,7 +583,7 @@
           "kgs"
         ],
         "Label": "Object Weight",
-        "Image": null,
+        "Image": "additionalInputs/ForceLoad.png",
         "Values": null
       },
       "Frequency": {
@@ -601,7 +601,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Postural constraints",
-        "Image": null,
+        "Image": "additionalInputs/PosturalConstraints.png",
         "Values": {
           "0": {
             "Label": "No postural constraints",
@@ -634,7 +634,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Grip on load",
-        "Image": null,
+        "Image": "additionalInputs/Coupling.png",
         "Values": {
           "0": {
             "Label": "Good grip",
@@ -707,7 +707,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Floor surface",
-        "Image": null,
+        "Image": "additionalInputs/Floor.png",
         "Values": {
           "0": {
             "Label": "Non-slip, dry, clean, firm, level and undamaged",
@@ -740,7 +740,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Environmental factors",
-        "Image": null,
+        "Image": "additionalInputs/Environment.png",
         "Values": {
           "0": {
             "Label": "No factors",
@@ -778,7 +778,7 @@
           "kgs"
         ],
         "Label": "Object Weight",
-        "Image": null,
+        "Image": "additionalInputs/ForceLoad.png",
         "Values": null
       },
       "Frequency": {
@@ -796,7 +796,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Asymmetrical torso or load",
-        "Image": null,
+        "Image": "additionalInputs/AssymetricalTorso.png",
         "Values": {
           "0": {
             "Label": "Load and hands symmetrical in front of the torso",
@@ -837,7 +837,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Postural constraints",
-        "Image": null,
+        "Image": "additionalInputs/PosturalConstraints.png",
         "Values": {
           "0": {
             "Label": "No postural constraints",
@@ -870,7 +870,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Grip on load",
-        "Image": null,
+        "Image": "additionalInputs/Coupling.png",
         "Values": {
           "0": {
             "Label": "Good grip",
@@ -943,7 +943,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Floor surface",
-        "Image": null,
+        "Image": "additionalInputs/Floor.png",
         "Values": {
           "0": {
             "Label": "Non-slip, dry, clean, firm, level and undamaged",
@@ -976,7 +976,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Obstacles on route",
-        "Image": null,
+        "Image": "additionalInputs/Obstacles.png",
         "Values": {
           "0": {
             "Label": "No obstacles and carry route flat or slopes gently",
@@ -1009,7 +1009,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Environmental factors",
-        "Image": null,
+        "Image": "additionalInputs/Environment.png",
         "Values": {
           "0": {
             "Label": "No factors",
@@ -1042,9 +1042,12 @@
         "Type": "select",
         "Base": 0,
         "MaxInput": null,
-        "Units": null,
+        "Units": [
+          "lbs",
+          "kgs"
+        ],
         "Label": "Load weight",
-        "Image": null,
+        "Image": "additionalInputs/AverageLoad.png",
         "Values": {
           "0": {
             "Label": "2 people < 35 kg, 3 people < 55 kg, 4 people < 75 kg",
@@ -1085,7 +1088,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Postural constraints",
-        "Image": null,
+        "Image": "additionalInputs/PosturalConstraints.png",
         "Values": {
           "0": {
             "Label": "No postural constraints",
@@ -1118,7 +1121,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Grip on load",
-        "Image": null,
+        "Image": "additionalInputs/Coupling.png",
         "Values": {
           "0": {
             "Label": "Good grip",
@@ -1191,7 +1194,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Floor surface",
-        "Image": null,
+        "Image": "additionalInputs/Floor.png",
         "Values": {
           "0": {
             "Label": "Non-slip, dry, clean, firm, level and undamaged",
@@ -1224,7 +1227,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Obstacles on route",
-        "Image": null,
+        "Image": "additionalInputs/Obstacles.png",
         "Values": {
           "0": {
             "Label": "No obstacles and carry route flat or slopes gently",
@@ -1257,7 +1260,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Communication, co-ordination and control",
-        "Image": null,
+        "Image": "additionalInputs/Communication.png",
         "Values": {
           "0": {
             "Label": "Good communication, co-ordination and control",
@@ -1290,7 +1293,7 @@
         "MaxInput": null,
         "Units": null,
         "Label": "Environmental factors",
-        "Image": null,
+        "Image": "additionalInputs/Environment.png",
         "Values": {
           "0": {
             "Label": "No factors",
@@ -1517,6 +1520,14 @@
           "Label": "MSD risk score"
         }
       }
+    },
+    "CanGenerate": {
+      "Report": true,
+      "Worksheet": true,
+      "Powerpoint": true,
+      "Csv": true,
+      "AIRecommendations": true,
+      "Project": true
     }
   }
 }

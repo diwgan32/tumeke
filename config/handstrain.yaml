@@ -228,7 +228,7 @@ RiskComponents:
       MaxInput: 50
       Units: sec./exertion
       Label: Duration per exertion (left)
-      Image: ~
+      Image: bodyParts/wrist.png
       Values:
         "[0, 10]":
           Label: Good
@@ -247,7 +247,7 @@ RiskComponents:
       MaxInput: 50
       Units: sec./exertion
       Label: Duration per exertion (right)
-      Image: ~
+      Image: bodyParts/wrist.png
       Values:
         "[0, 10]":
           Label: Good
@@ -266,7 +266,7 @@ RiskComponents:
       MaxInput: 50
       Units: degrees
       Label: Wrist posture angle (left)
-      Image: ~
+      Image: bodyParts/wrist.png
       Values:
         "[0, 10]":
           Label: Good
@@ -285,7 +285,7 @@ RiskComponents:
       MaxInput: 50
       Units: degrees
       Label: Wrist posture angle (right)
-      Image: ~
+      Image: bodyParts/wrist.png
       Values:
         "[0, 10]":
           Label: Good
@@ -304,7 +304,7 @@ RiskComponents:
       MaxInput: 50
       Units: degrees
       Label: Extension Wrist angle (left)
-      Image: ~
+      Image: bodyParts/wrist.png
       Values:
         "[0, 10]":
           Label: Good
@@ -323,7 +323,7 @@ RiskComponents:
       MaxInput: 50
       Units: degrees
       Label: Extension Wrist angle (right)
-      Image: ~
+      Image: bodyParts/wrist.png
       Values:
         "[0, 10]":
           Label: Good
@@ -342,7 +342,7 @@ RiskComponents:
       MaxInput: 50
       Units: efforts/min
       Label: Efforts per hand (left)
-      Image: ~
+      Image: bodyParts/wrist.png
       Values:
         "[0, 10]":
           Label: Good
@@ -361,7 +361,7 @@ RiskComponents:
       MaxInput: 50
       Units: efforts/min
       Label: Efforts per hand (right)
-      Image: ~
+      Image: bodyParts/wrist.png
       Values:
         "[0, 10]":
           Label: Good
@@ -535,3 +535,10 @@ Form:
         Input: ""
         Component: resultRight
         Group: "1"
+  CanGenerate:
+    Report: true
+    Worksheet: true
+    Powerpoint: true
+    Csv: true
+    AIRecommendations: false
+    Project: true
